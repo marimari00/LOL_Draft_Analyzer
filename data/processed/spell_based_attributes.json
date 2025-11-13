@@ -665,16 +665,16 @@
       "damage_profile": "ap"
     },
     "Kaisa": {
-      "burst_damage": 369.85,
-      "burst_dps": 123.28,
-      "sustained_damage": 550.95,
-      "sustained_dps": 55.1,
-      "burst_ratio": 0.671,
-      "burst_index": 0.248,
+      "burst_damage": 677.35,
+      "burst_dps": 225.78,
+      "sustained_damage": 960.95,
+      "sustained_dps": 96.1,
+      "burst_ratio": 0.705,
+      "burst_index": 0.477,
       "cc_score": 0.0,
       "mobility_score": 1.2,
       "max_range": 3000,
-      "damage_profile": "ap"
+      "damage_profile": "ad"
     },
     "Kalista": {
       "burst_damage": 945.0,
@@ -1373,16 +1373,16 @@
       "damage_profile": "ap"
     },
     "Samira": {
-      "burst_damage": 480.43,
-      "burst_dps": 160.14,
-      "sustained_damage": 809.86,
-      "sustained_dps": 80.99,
-      "burst_ratio": 0.593,
-      "burst_index": 0.285,
+      "burst_damage": 712.23,
+      "burst_dps": 237.41,
+      "sustained_damage": 1621.86,
+      "sustained_dps": 162.19,
+      "burst_ratio": 0.439,
+      "burst_index": 0.313,
       "cc_score": 0.0,
       "mobility_score": 1.2,
       "max_range": 950,
-      "damage_profile": "ap"
+      "damage_profile": "ad"
     },
     "Sejuani": {
       "burst_damage": 467.73,
@@ -1997,12 +1997,12 @@
       "damage_profile": "ap"
     },
     "Zeri": {
-      "burst_damage": 591.68,
-      "burst_dps": 197.23,
-      "sustained_damage": 989.97,
-      "sustained_dps": 99.0,
+      "burst_damage": 547.88,
+      "burst_dps": 182.63,
+      "sustained_damage": 916.17,
+      "sustained_dps": 91.62,
       "burst_ratio": 0.598,
-      "burst_index": 0.354,
+      "burst_index": 0.328,
       "cc_score": 0.075,
       "mobility_score": 1.2,
       "max_range": 25000,
