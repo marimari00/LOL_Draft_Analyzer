@@ -4,7 +4,7 @@
     "note": "Complete spell data: damage, cooldowns, CC, ranges",
     "total_champions": 171,
     "total_spells": 684,
-    "spells_with_damage": 397,
+    "spells_with_damage": 382,
     "spells_with_cc": 254,
     "spells_missing_cooldown": 0
   },
@@ -684,15 +684,8 @@
           800
         ],
         "range": 800,
-        "base_damage_ranks": [
-          0.0,
-          15.0,
-          30.0,
-          45.0,
-          60.0,
-          75.0
-        ],
-        "base_damage": 75.0,
+        "base_damage_ranks": [],
+        "base_damage": null,
         "ad_ratio": 0.0,
         "ap_ratio": 0.0,
         "bonus_ad_ratio": 0.0,
@@ -1365,14 +1358,8 @@
           1000
         ],
         "range": 1000,
-        "base_damage_ranks": [
-          400.0,
-          500.0,
-          600.0,
-          700.0,
-          800.0
-        ],
-        "base_damage": 800.0,
+        "base_damage_ranks": [],
+        "base_damage": null,
         "ad_ratio": 0.0,
         "ap_ratio": 0.0,
         "bonus_ad_ratio": 0.0,
@@ -2540,17 +2527,10 @@
           250
         ],
         "range": 250,
-        "base_damage_ranks": [
-          0.0,
-          200.0,
-          400.0,
-          600.0,
-          800.0,
-          1000.0
-        ],
-        "base_damage": 1000.0,
+        "base_damage_ranks": [],
+        "base_damage": null,
         "ad_ratio": 0.0,
-        "ap_ratio": 0.75,
+        "ap_ratio": 0.0,
         "bonus_ad_ratio": 0.0,
         "damage_type": "magic",
         "cc_type": null,
@@ -3714,15 +3694,9 @@
           800
         ],
         "range": 800,
-        "base_damage_ranks": [
-          35.0,
-          80.0,
-          125.0,
-          170.0,
-          215.0
-        ],
-        "base_damage": 215.0,
-        "ad_ratio": 5.0,
+        "base_damage_ranks": [],
+        "base_damage": null,
+        "ad_ratio": 0.0,
         "ap_ratio": 0.0,
         "bonus_ad_ratio": 0.0,
         "damage_type": null,
@@ -3940,15 +3914,8 @@
           800
         ],
         "range": 800,
-        "base_damage_ranks": [
-          30.0,
-          60.0,
-          90.0,
-          120.0,
-          150.0,
-          180.0
-        ],
-        "base_damage": 180.0,
+        "base_damage_ranks": [],
+        "base_damage": null,
         "ad_ratio": 0.0,
         "ap_ratio": 0.0,
         "bonus_ad_ratio": 0.0,
@@ -4976,14 +4943,8 @@
           1000
         ],
         "range": 1000,
-        "base_damage_ranks": [
-          50.0,
-          55.0,
-          60.0,
-          65.0,
-          70.0
-        ],
-        "base_damage": 70.0,
+        "base_damage_ranks": [],
+        "base_damage": null,
         "ad_ratio": 0.0,
         "ap_ratio": 0.0,
         "bonus_ad_ratio": 0.0,
@@ -10579,14 +10540,8 @@
           1000
         ],
         "range": 1000,
-        "base_damage_ranks": [
-          800.0,
-          900.0,
-          1000.0,
-          1100.0,
-          1200.0
-        ],
-        "base_damage": 1200.0,
+        "base_damage_ranks": [],
+        "base_damage": null,
         "ad_ratio": 0.0,
         "ap_ratio": 0.0,
         "bonus_ad_ratio": 0.0,
@@ -14430,17 +14385,10 @@
           3000
         ],
         "range": 3000,
-        "base_damage_ranks": [
-          75.0,
-          150.0,
-          225.0,
-          300.0,
-          375.0,
-          450.0
-        ],
-        "base_damage": 450.0,
+        "base_damage_ranks": [],
+        "base_damage": null,
         "ad_ratio": 0.0,
-        "ap_ratio": 0.75,
+        "ap_ratio": 0.0,
         "bonus_ad_ratio": 0.0,
         "damage_type": "magic",
         "cc_type": "root",
@@ -20881,17 +20829,10 @@
           560
         ],
         "range": 560,
-        "base_damage_ranks": [
-          5.0,
-          55.0,
-          105.0,
-          155.0,
-          205.0,
-          255.0
-        ],
-        "base_damage": 255.0,
+        "base_damage_ranks": [],
+        "base_damage": null,
         "ad_ratio": 0.0,
-        "ap_ratio": 0.6000000238418579,
+        "ap_ratio": 0.0,
         "bonus_ad_ratio": 0.0,
         "damage_type": "magic",
         "cc_type": "stun",
@@ -22878,15 +22819,8 @@
           700
         ],
         "range": 700,
-        "base_damage_ranks": [
-          5.0,
-          10.0,
-          15.0,
-          20.0,
-          25.0,
-          30.0
-        ],
-        "base_damage": 30.0,
+        "base_damage_ranks": [],
+        "base_damage": null,
         "ad_ratio": 0.0,
         "ap_ratio": 0.0,
         "bonus_ad_ratio": 0.0,
@@ -24316,14 +24250,8 @@
           725
         ],
         "range": 725,
-        "base_damage_ranks": [
-          160.0,
-          135.0,
-          110.0,
-          85.0,
-          60.0
-        ],
-        "base_damage": 60.0,
+        "base_damage_ranks": [],
+        "base_damage": null,
         "ad_ratio": 0.0,
         "ap_ratio": 0.0,
         "bonus_ad_ratio": 0.0,
@@ -24585,15 +24513,8 @@
           680
         ],
         "range": 680,
-        "base_damage_ranks": [
-          35.0,
-          80.0,
-          125.0,
-          170.0,
-          215.0,
-          260.0
-        ],
-        "base_damage": 260.0,
+        "base_damage_ranks": [],
+        "base_damage": null,
         "ad_ratio": 0.0,
         "ap_ratio": 0.0,
         "bonus_ad_ratio": 0.0,
@@ -25212,14 +25133,8 @@
           1000
         ],
         "range": 1000,
-        "base_damage_ranks": [
-          34.0,
-          38.0,
-          42.0,
-          46.0,
-          50.0
-        ],
-        "base_damage": 50.0,
+        "base_damage_ranks": [],
+        "base_damage": null,
         "ad_ratio": 0.0,
         "ap_ratio": 0.0,
         "bonus_ad_ratio": 0.0,
@@ -25654,14 +25569,8 @@
           20
         ],
         "range": 20,
-        "base_damage_ranks": [
-          45.0,
-          50.0,
-          55.0,
-          60.0,
-          65.0
-        ],
-        "base_damage": 65.0,
+        "base_damage_ranks": [],
+        "base_damage": null,
         "ad_ratio": 0.0,
         "ap_ratio": 0.0,
         "bonus_ad_ratio": 0.0,
@@ -28754,14 +28663,8 @@
           400
         ],
         "range": 400,
-        "base_damage_ranks": [
-          320.0,
-          390.0,
-          460.0,
-          530.0,
-          600.0
-        ],
-        "base_damage": 600.0,
+        "base_damage_ranks": [],
+        "base_damage": null,
         "ad_ratio": 0.0,
         "ap_ratio": 0.0,
         "bonus_ad_ratio": 0.0,
@@ -30540,15 +30443,9 @@
           3000
         ],
         "range": 3000,
-        "base_damage_ranks": [
-          3000.0,
-          4500.0,
-          6000.0,
-          0.0,
-          0.0
-        ],
-        "base_damage": 0.0,
-        "ad_ratio": 3.0,
+        "base_damage_ranks": [],
+        "base_damage": null,
+        "ad_ratio": 0.0,
         "ap_ratio": 0.0,
         "bonus_ad_ratio": 0.0,
         "damage_type": null,

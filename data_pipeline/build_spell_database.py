@@ -42,12 +42,17 @@ class SpellDatabaseBuilder:
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
         
-        # Load source data - prefer patched data if available
+        # Load source data - prefer filtered data if available
         print("Loading source data...")
+        filtered_path = self.output_dir / 'champion_damage_data_filtered.json'
         patched_path = self.output_dir / 'champion_damage_data_patched.json'
         merged_path = self.output_dir / 'champion_damage_data_merged.json'
         
-        if patched_path.exists():
+        if filtered_path.exists():
+            print(f"  Using filtered damage data: {filtered_path}")
+            with open(filtered_path, 'r', encoding='utf-8') as f:
+                self.damage_data = json.load(f)['champions']
+        elif patched_path.exists():
             print(f"  Using patched damage data: {patched_path}")
             with open(patched_path, 'r', encoding='utf-8') as f:
                 self.damage_data = json.load(f)['champions']
