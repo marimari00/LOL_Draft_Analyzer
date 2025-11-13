@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "matches_analyzed": 139,
+    "matches_analyzed": 936,
     "min_samples": 20,
     "features": [
       "role_pair_synergies",
@@ -10,79 +10,95 @@
   },
   "role_synergies": [
     {
-      "attribute_pair": "range_melee+utility_vision",
-      "role_pair": "Middle-Support",
-      "wins": 16,
-      "games": 20,
-      "winrate": 0.8,
-      "score": 3.0
-    },
-    {
-      "attribute_pair": "damage_physical+utility_vision",
-      "role_pair": "Middle-Support",
+      "attribute_pair": "engage_frontline+range_short",
+      "role_pair": "Bottom-Top",
       "wins": 18,
       "games": 23,
       "winrate": 0.783,
       "score": 2.83
     },
     {
-      "attribute_pair": "damage_single_target+damage_single_target",
-      "role_pair": "Jungle-Top",
-      "wins": 18,
-      "games": 24,
+      "attribute_pair": "engage_flank+mobility_high",
+      "role_pair": "Support-Top",
+      "wins": 16,
+      "games": 21,
+      "winrate": 0.762,
+      "score": 2.62
+    },
+    {
+      "attribute_pair": "mobility_high+special_reset",
+      "role_pair": "Support-Top",
+      "wins": 16,
+      "games": 21,
+      "winrate": 0.762,
+      "score": 2.62
+    },
+    {
+      "attribute_pair": "range_short+survive_sustain",
+      "role_pair": "Bottom-Top",
+      "wins": 15,
+      "games": 20,
       "winrate": 0.75,
       "score": 2.5
     },
     {
-      "attribute_pair": "damage_single_target+mobility_high",
-      "role_pair": "Jungle-Top",
-      "wins": 32,
-      "games": 43,
-      "winrate": 0.744,
-      "score": 2.44
-    },
-    {
-      "attribute_pair": "damage_burst+range_melee",
-      "role_pair": "Bottom-Jungle",
-      "wins": 16,
-      "games": 22,
-      "winrate": 0.727,
-      "score": 2.27
-    },
-    {
-      "attribute_pair": "damage_single_target+engage_flank",
-      "role_pair": "Jungle-Top",
-      "wins": 16,
-      "games": 22,
-      "winrate": 0.727,
-      "score": 2.27
-    },
-    {
-      "attribute_pair": "damage_single_target+special_reset",
-      "role_pair": "Jungle-Top",
-      "wins": 16,
-      "games": 22,
-      "winrate": 0.727,
-      "score": 2.27
-    },
-    {
-      "attribute_pair": "damage_aoe+engage_dive",
+      "attribute_pair": "cc_hard+scaling_mid",
       "role_pair": "Bottom-Middle",
-      "wins": 15,
-      "games": 21,
-      "winrate": 0.714,
-      "score": 2.14
+      "wins": 7,
+      "games": 28,
+      "winrate": 0.25,
+      "score": -2.5
     },
     {
-      "attribute_pair": "cc_aoe+engage_dive",
-      "role_pair": "Bottom-Middle",
-      "wins": 15,
-      "games": 21,
-      "winrate": 0.714,
-      "score": 2.14
+      "attribute_pair": "damage_mixed+scaling_late",
+      "role_pair": "Jungle-Middle",
+      "wins": 28,
+      "games": 38,
+      "winrate": 0.737,
+      "score": 2.37
     },
     {
-      "attribute_pair": "damage_mixed+utility_engage",
+      "attribute_pair": "flexible_multi_role+scaling_late",
+      "role_pair": "Jungle-Middle",
+      "wins": 28,
+      "games": 38,
+      "winrate": 0.737,
+      "score": 2.37
+    },
+    {
+      "attribute_pair": "flexible_multi_lane+scaling_late",
+      "role_pair": "Jungle-Middle",
+      "wins": 28,
+      "games": 38,
+      "winrate": 0.737,
+      "score": 2.37
+    },
+    {
+      "attribute_pair": "scaling_late+special_transformation",
+      "role_pair": "Jungle-Middle",
+      "wins": 28,
+      "games": 38,
+      "winrate": 0.737,
+      "score": 2.37
+    },
+    {
+      "attribute_pair": "scaling_late+special_global",
+      "role_pair": "Jungle-Middle",
+      "wins": 28,
+      "games": 38,
+      "winrate": 0.737,
+      "score": 2.37
+    },
+    {
+      "attribute_pair": "engage_frontline+scaling_levels",
+      "role_pair": "Bottom-Top",
+      "wins": 23,
+      "games": 32,
+      "winrate": 0.719,
+      "score": 2.19
+    },
+    {
+      "attribute_pair": "damage_mixed+damage_mixed",
       "role_pair": "Jungle-Top",
       "wins": 15,
       "games": 21,
@@ -90,338 +106,346 @@
       "score": 2.14
     },
     {
-      "attribute_pair": "flexible_multi_role+utility_engage",
+      "attribute_pair": "damage_mixed+flexible_multi_role",
       "role_pair": "Jungle-Top",
-      "wins": 15,
-      "games": 21,
-      "winrate": 0.714,
-      "score": 2.14
-    },
-    {
-      "attribute_pair": "flexible_multi_lane+utility_engage",
-      "role_pair": "Jungle-Top",
-      "wins": 15,
-      "games": 21,
-      "winrate": 0.714,
-      "score": 2.14
-    },
-    {
-      "attribute_pair": "special_transformation+utility_engage",
-      "role_pair": "Jungle-Top",
-      "wins": 15,
-      "games": 21,
-      "winrate": 0.714,
-      "score": 2.14
-    },
-    {
-      "attribute_pair": "special_global+utility_engage",
-      "role_pair": "Jungle-Top",
-      "wins": 15,
-      "games": 21,
-      "winrate": 0.714,
-      "score": 2.14
-    },
-    {
-      "attribute_pair": "damage_burst+scaling_mid",
-      "role_pair": "Bottom-Middle",
-      "wins": 15,
-      "games": 21,
-      "winrate": 0.714,
-      "score": 2.14
-    },
-    {
-      "attribute_pair": "utility_engage+utility_peel",
-      "role_pair": "Middle-Support",
-      "wins": 15,
-      "games": 21,
-      "winrate": 0.714,
-      "score": 2.14
-    },
-    {
-      "attribute_pair": "engage_dive+engage_zone_control",
-      "role_pair": "Bottom-Middle",
-      "wins": 14,
-      "games": 20,
-      "winrate": 0.7,
-      "score": 2.0
-    },
-    {
-      "attribute_pair": "range_long+utility_engage",
-      "role_pair": "Bottom-Middle",
-      "wins": 14,
-      "games": 20,
-      "winrate": 0.7,
-      "score": 2.0
-    },
-    {
-      "attribute_pair": "mobility_low+utility_engage",
-      "role_pair": "Bottom-Middle",
-      "wins": 14,
-      "games": 20,
-      "winrate": 0.7,
-      "score": 2.0
-    },
-    {
-      "attribute_pair": "survive_range+utility_engage",
-      "role_pair": "Bottom-Middle",
-      "wins": 14,
-      "games": 20,
-      "winrate": 0.7,
-      "score": 2.0
-    },
-    {
-      "attribute_pair": "survive_shields+utility_engage",
-      "role_pair": "Middle-Support",
-      "wins": 18,
-      "games": 26,
-      "winrate": 0.692,
-      "score": 1.92
-    },
-    {
-      "attribute_pair": "engage_backline_access+scaling_early",
-      "role_pair": "Middle-Support",
-      "wins": 29,
+      "wins": 30,
       "games": 42,
+      "winrate": 0.714,
+      "score": 2.14
+    },
+    {
+      "attribute_pair": "damage_mixed+flexible_multi_lane",
+      "role_pair": "Jungle-Top",
+      "wins": 30,
+      "games": 42,
+      "winrate": 0.714,
+      "score": 2.14
+    },
+    {
+      "attribute_pair": "damage_mixed+special_transformation",
+      "role_pair": "Jungle-Top",
+      "wins": 30,
+      "games": 42,
+      "winrate": 0.714,
+      "score": 2.14
+    },
+    {
+      "attribute_pair": "damage_mixed+special_global",
+      "role_pair": "Jungle-Top",
+      "wins": 30,
+      "games": 42,
+      "winrate": 0.714,
+      "score": 2.14
+    },
+    {
+      "attribute_pair": "flexible_multi_role+flexible_multi_role",
+      "role_pair": "Jungle-Top",
+      "wins": 15,
+      "games": 21,
+      "winrate": 0.714,
+      "score": 2.14
+    },
+    {
+      "attribute_pair": "flexible_multi_lane+flexible_multi_role",
+      "role_pair": "Jungle-Top",
+      "wins": 30,
+      "games": 42,
+      "winrate": 0.714,
+      "score": 2.14
+    },
+    {
+      "attribute_pair": "flexible_multi_role+special_transformation",
+      "role_pair": "Jungle-Top",
+      "wins": 30,
+      "games": 42,
+      "winrate": 0.714,
+      "score": 2.14
+    },
+    {
+      "attribute_pair": "flexible_multi_role+special_global",
+      "role_pair": "Jungle-Top",
+      "wins": 30,
+      "games": 42,
+      "winrate": 0.714,
+      "score": 2.14
+    },
+    {
+      "attribute_pair": "flexible_multi_lane+flexible_multi_lane",
+      "role_pair": "Jungle-Top",
+      "wins": 15,
+      "games": 21,
+      "winrate": 0.714,
+      "score": 2.14
+    },
+    {
+      "attribute_pair": "flexible_multi_lane+special_transformation",
+      "role_pair": "Jungle-Top",
+      "wins": 30,
+      "games": 42,
+      "winrate": 0.714,
+      "score": 2.14
+    },
+    {
+      "attribute_pair": "flexible_multi_lane+special_global",
+      "role_pair": "Jungle-Top",
+      "wins": 30,
+      "games": 42,
+      "winrate": 0.714,
+      "score": 2.14
+    },
+    {
+      "attribute_pair": "special_transformation+special_transformation",
+      "role_pair": "Jungle-Top",
+      "wins": 15,
+      "games": 21,
+      "winrate": 0.714,
+      "score": 2.14
+    },
+    {
+      "attribute_pair": "special_global+special_transformation",
+      "role_pair": "Jungle-Top",
+      "wins": 30,
+      "games": 42,
+      "winrate": 0.714,
+      "score": 2.14
+    },
+    {
+      "attribute_pair": "special_global+special_global",
+      "role_pair": "Jungle-Top",
+      "wins": 15,
+      "games": 21,
+      "winrate": 0.714,
+      "score": 2.14
+    },
+    {
+      "attribute_pair": "survive_mobility+utility_vision",
+      "role_pair": "Jungle-Top",
+      "wins": 15,
+      "games": 21,
+      "winrate": 0.714,
+      "score": 2.14
+    },
+    {
+      "attribute_pair": "cc_soft+damage_mixed",
+      "role_pair": "Jungle-Middle",
+      "wins": 42,
+      "games": 59,
+      "winrate": 0.712,
+      "score": 2.12
+    },
+    {
+      "attribute_pair": "cc_soft+flexible_multi_role",
+      "role_pair": "Jungle-Middle",
+      "wins": 42,
+      "games": 59,
+      "winrate": 0.712,
+      "score": 2.12
+    },
+    {
+      "attribute_pair": "cc_soft+flexible_multi_lane",
+      "role_pair": "Jungle-Middle",
+      "wins": 42,
+      "games": 59,
+      "winrate": 0.712,
+      "score": 2.12
+    },
+    {
+      "attribute_pair": "cc_soft+special_transformation",
+      "role_pair": "Jungle-Middle",
+      "wins": 42,
+      "games": 59,
+      "winrate": 0.712,
+      "score": 2.12
+    },
+    {
+      "attribute_pair": "cc_soft+special_global",
+      "role_pair": "Jungle-Middle",
+      "wins": 42,
+      "games": 59,
+      "winrate": 0.712,
+      "score": 2.12
+    },
+    {
+      "attribute_pair": "range_long+scaling_early",
+      "role_pair": "Jungle-Top",
+      "wins": 12,
+      "games": 40,
+      "winrate": 0.3,
+      "score": -2.0
+    },
+    {
+      "attribute_pair": "scaling_early+survive_range",
+      "role_pair": "Jungle-Top",
+      "wins": 12,
+      "games": 40,
+      "winrate": 0.3,
+      "score": -2.0
+    },
+    {
+      "attribute_pair": "cc_soft+mobility_medium",
+      "role_pair": "Bottom-Support",
+      "wins": 28,
+      "games": 40,
+      "winrate": 0.7,
+      "score": 2.0
+    },
+    {
+      "attribute_pair": "mobility_high+mobility_high",
+      "role_pair": "Jungle-Support",
+      "wins": 14,
+      "games": 20,
+      "winrate": 0.7,
+      "score": 2.0
+    },
+    {
+      "attribute_pair": "engage_frontline+engage_frontline",
+      "role_pair": "Bottom-Top",
+      "wins": 14,
+      "games": 20,
+      "winrate": 0.7,
+      "score": 2.0
+    },
+    {
+      "attribute_pair": "cc_soft+scaling_late",
+      "role_pair": "Middle-Support",
+      "wins": 14,
+      "games": 20,
+      "winrate": 0.7,
+      "score": 2.0
+    },
+    {
+      "attribute_pair": "scaling_late+scaling_late",
+      "role_pair": "Middle-Top",
+      "wins": 7,
+      "games": 23,
+      "winrate": 0.304,
+      "score": -1.96
+    },
+    {
+      "attribute_pair": "range_short+survive_tank",
+      "role_pair": "Bottom-Top",
+      "wins": 20,
+      "games": 29,
       "winrate": 0.69,
       "score": 1.9
     },
     {
-      "attribute_pair": "damage_mixed+mobility_medium",
-      "role_pair": "Jungle-Top",
-      "wins": 22,
-      "games": 32,
-      "winrate": 0.688,
-      "score": 1.88
+      "attribute_pair": "cc_soft+engage_dive",
+      "role_pair": "Bottom-Support",
+      "wins": 30,
+      "games": 44,
+      "winrate": 0.682,
+      "score": 1.82
     },
     {
-      "attribute_pair": "flexible_multi_role+mobility_medium",
-      "role_pair": "Jungle-Top",
-      "wins": 22,
-      "games": 32,
-      "winrate": 0.688,
-      "score": 1.88
-    },
-    {
-      "attribute_pair": "flexible_multi_lane+mobility_medium",
-      "role_pair": "Jungle-Top",
-      "wins": 22,
-      "games": 32,
-      "winrate": 0.688,
-      "score": 1.88
-    },
-    {
-      "attribute_pair": "mobility_medium+special_transformation",
-      "role_pair": "Jungle-Top",
-      "wins": 22,
-      "games": 32,
-      "winrate": 0.688,
-      "score": 1.88
-    },
-    {
-      "attribute_pair": "mobility_medium+special_global",
-      "role_pair": "Jungle-Top",
-      "wins": 22,
-      "games": 32,
-      "winrate": 0.688,
-      "score": 1.88
-    },
-    {
-      "attribute_pair": "engage_backline_access+utility_engage",
-      "role_pair": "Middle-Support",
-      "wins": 33,
-      "games": 48,
-      "winrate": 0.688,
-      "score": 1.88
-    },
-    {
-      "attribute_pair": "damage_aoe+range_melee",
-      "role_pair": "Bottom-Middle",
+      "attribute_pair": "damage_burst+range_short",
+      "role_pair": "Bottom-Jungle",
       "wins": 15,
       "games": 22,
       "winrate": 0.682,
       "score": 1.82
     },
     {
-      "attribute_pair": "cc_aoe+range_melee",
-      "role_pair": "Bottom-Middle",
-      "wins": 15,
-      "games": 22,
-      "winrate": 0.682,
-      "score": 1.82
-    },
-    {
-      "attribute_pair": "cc_hard+damage_mixed",
-      "role_pair": "Jungle-Top",
-      "wins": 15,
-      "games": 22,
-      "winrate": 0.682,
-      "score": 1.82
-    },
-    {
-      "attribute_pair": "cc_hard+flexible_multi_role",
-      "role_pair": "Jungle-Top",
-      "wins": 15,
-      "games": 22,
-      "winrate": 0.682,
-      "score": 1.82
-    },
-    {
-      "attribute_pair": "cc_hard+flexible_multi_lane",
-      "role_pair": "Jungle-Top",
-      "wins": 15,
-      "games": 22,
-      "winrate": 0.682,
-      "score": 1.82
-    },
-    {
-      "attribute_pair": "cc_hard+special_transformation",
-      "role_pair": "Jungle-Top",
-      "wins": 15,
-      "games": 22,
-      "winrate": 0.682,
-      "score": 1.82
-    },
-    {
-      "attribute_pair": "cc_hard+special_global",
-      "role_pair": "Jungle-Top",
-      "wins": 15,
-      "games": 22,
-      "winrate": 0.682,
-      "score": 1.82
-    },
-    {
-      "attribute_pair": "damage_magic+engage_zone_control",
-      "role_pair": "Jungle-Top",
-      "wins": 15,
-      "games": 22,
-      "winrate": 0.682,
-      "score": 1.82
-    },
-    {
-      "attribute_pair": "survive_shields+utility_vision",
+      "attribute_pair": "engage_zone_control+scaling_late",
       "role_pair": "Jungle-Support",
-      "wins": 19,
-      "games": 28,
-      "winrate": 0.679,
-      "score": 1.79
+      "wins": 7,
+      "games": 22,
+      "winrate": 0.318,
+      "score": -1.82
     },
     {
-      "attribute_pair": "utility_engage+utility_vision",
+      "attribute_pair": "damage_aoe+scaling_late",
       "role_pair": "Jungle-Support",
-      "wins": 19,
-      "games": 28,
-      "winrate": 0.679,
-      "score": 1.79
+      "wins": 15,
+      "games": 47,
+      "winrate": 0.319,
+      "score": -1.81
     },
     {
-      "attribute_pair": "engage_dive+utility_engage",
-      "role_pair": "Middle-Support",
-      "wins": 38,
-      "games": 56,
-      "winrate": 0.679,
-      "score": 1.79
-    },
-    {
-      "attribute_pair": "engage_frontline+range_short",
-      "role_pair": "Middle-Support",
-      "wins": 9,
-      "games": 28,
-      "winrate": 0.321,
-      "score": -1.79
-    },
-    {
-      "attribute_pair": "engage_frontline+scaling_levels",
-      "role_pair": "Middle-Support",
-      "wins": 9,
-      "games": 28,
-      "winrate": 0.321,
-      "score": -1.79
-    },
-    {
-      "attribute_pair": "damage_burst+engage_zone_control",
+      "attribute_pair": "engage_flank+survive_mobility",
       "role_pair": "Support-Top",
-      "wins": 9,
-      "games": 28,
-      "winrate": 0.321,
-      "score": -1.79
+      "wins": 17,
+      "games": 25,
+      "winrate": 0.68,
+      "score": 1.8
     },
     {
-      "attribute_pair": "damage_sustained+mobility_high",
+      "attribute_pair": "special_reset+survive_mobility",
       "role_pair": "Support-Top",
-      "wins": 21,
-      "games": 31,
-      "winrate": 0.677,
-      "score": 1.77
+      "wins": 17,
+      "games": 25,
+      "winrate": 0.68,
+      "score": 1.8
     },
     {
-      "attribute_pair": "damage_single_target+survive_mobility",
-      "role_pair": "Support-Top",
-      "wins": 21,
-      "games": 31,
-      "winrate": 0.677,
-      "score": 1.77
+      "attribute_pair": "engage_frontline+mobility_medium",
+      "role_pair": "Bottom-Support",
+      "wins": 17,
+      "games": 25,
+      "winrate": 0.68,
+      "score": 1.8
     },
     {
-      "attribute_pair": "engage_flank+scaling_early",
-      "role_pair": "Middle-Support",
-      "wins": 21,
-      "games": 31,
-      "winrate": 0.677,
-      "score": 1.77
+      "attribute_pair": "damage_magic+engage_frontline",
+      "role_pair": "Bottom-Jungle",
+      "wins": 8,
+      "games": 25,
+      "winrate": 0.32,
+      "score": -1.8
     },
     {
-      "attribute_pair": "scaling_early+special_reset",
-      "role_pair": "Middle-Support",
-      "wins": 21,
-      "games": 31,
-      "winrate": 0.677,
-      "score": 1.77
+      "attribute_pair": "engage_flank+range_long",
+      "role_pair": "Jungle-Top",
+      "wins": 40,
+      "games": 59,
+      "winrate": 0.678,
+      "score": 1.78
     },
     {
-      "attribute_pair": "damage_sustained+survive_mobility",
-      "role_pair": "Support-Top",
-      "wins": 25,
-      "games": 37,
-      "winrate": 0.676,
-      "score": 1.76
-    },
-    {
-      "attribute_pair": "engage_dive+scaling_early",
-      "role_pair": "Middle-Support",
-      "wins": 31,
-      "games": 46,
-      "winrate": 0.674,
-      "score": 1.74
-    },
-    {
-      "attribute_pair": "damage_magic+engage_dive",
-      "role_pair": "Bottom-Middle",
-      "wins": 14,
-      "games": 21,
-      "winrate": 0.667,
-      "score": 1.67
-    },
-    {
-      "attribute_pair": "engage_zone_control+range_melee",
-      "role_pair": "Bottom-Middle",
-      "wins": 14,
-      "games": 21,
-      "winrate": 0.667,
-      "score": 1.67
+      "attribute_pair": "engage_flank+survive_range",
+      "role_pair": "Jungle-Top",
+      "wins": 40,
+      "games": 59,
+      "winrate": 0.678,
+      "score": 1.78
     }
   ],
   "lane_matchups": {
     "Top": [
       {
-        "matchup": "range_melee vs scaling_mid",
-        "blue_wins": 20,
-        "games": 26,
-        "blue_winrate": 0.769,
-        "advantage": 0.269,
-        "score": 2.69
+        "matchup": "engage_flank vs cc_hard",
+        "blue_wins": 19,
+        "games": 24,
+        "blue_winrate": 0.792,
+        "advantage": 0.292,
+        "score": 2.92
       },
       {
-        "matchup": "damage_physical vs utility_engage",
+        "matchup": "special_reset vs cc_hard",
+        "blue_wins": 19,
+        "games": 24,
+        "blue_winrate": 0.792,
+        "advantage": 0.292,
+        "score": 2.92
+      },
+      {
+        "matchup": "engage_flank vs survive_shields",
+        "blue_wins": 18,
+        "games": 23,
+        "blue_winrate": 0.783,
+        "advantage": 0.283,
+        "score": 2.83
+      },
+      {
+        "matchup": "special_reset vs survive_shields",
+        "blue_wins": 18,
+        "games": 23,
+        "blue_winrate": 0.783,
+        "advantage": 0.283,
+        "score": 2.83
+      },
+      {
+        "matchup": "engage_flank vs utility_engage",
         "blue_wins": 16,
         "games": 21,
         "blue_winrate": 0.762,
@@ -429,95 +453,47 @@
         "score": 2.62
       },
       {
-        "matchup": "damage_physical vs scaling_mid",
-        "blue_wins": 22,
-        "games": 29,
-        "blue_winrate": 0.759,
-        "advantage": 0.259,
-        "score": 2.59
+        "matchup": "special_reset vs utility_engage",
+        "blue_wins": 16,
+        "games": 21,
+        "blue_winrate": 0.762,
+        "advantage": 0.262,
+        "score": 2.62
       },
       {
-        "matchup": "range_melee vs cc_hard",
-        "blue_wins": 22,
-        "games": 29,
-        "blue_winrate": 0.759,
-        "advantage": 0.259,
-        "score": 2.59
-      },
-      {
-        "matchup": "damage_physical vs cc_hard",
-        "blue_wins": 25,
-        "games": 33,
-        "blue_winrate": 0.758,
-        "advantage": 0.258,
-        "score": 2.58
-      },
-      {
-        "matchup": "damage_sustained vs cc_hard",
-        "blue_wins": 31,
-        "games": 41,
-        "blue_winrate": 0.756,
-        "advantage": 0.256,
-        "score": 2.56
-      },
-      {
-        "matchup": "engage_backline_access vs survive_tank",
-        "blue_wins": 15,
-        "games": 20,
+        "matchup": "engage_flank vs scaling_mid",
+        "blue_wins": 18,
+        "games": 24,
         "blue_winrate": 0.75,
         "advantage": 0.25,
         "score": 2.5
       },
       {
-        "matchup": "range_melee vs survive_shields",
-        "blue_wins": 20,
-        "games": 27,
-        "blue_winrate": 0.741,
-        "advantage": 0.241,
-        "score": 2.41
-      },
-      {
-        "matchup": "engage_dive vs scaling_mid",
-        "blue_wins": 17,
-        "games": 23,
-        "blue_winrate": 0.739,
-        "advantage": 0.239,
-        "score": 2.39
-      },
-      {
-        "matchup": "damage_physical vs survive_shields",
-        "blue_wins": 22,
-        "games": 30,
-        "blue_winrate": 0.733,
-        "advantage": 0.233,
-        "score": 2.33
-      },
-      {
-        "matchup": "damage_sustained vs utility_peel",
-        "blue_wins": 16,
-        "games": 22,
-        "blue_winrate": 0.727,
-        "advantage": 0.227,
-        "score": 2.27
-      },
-      {
-        "matchup": "damage_sustained vs survive_shields",
-        "blue_wins": 26,
-        "games": 36,
-        "blue_winrate": 0.722,
-        "advantage": 0.222,
-        "score": 2.22
-      },
-      {
-        "matchup": "engage_dive vs cc_hard",
+        "matchup": "special_reset vs scaling_mid",
         "blue_wins": 18,
-        "games": 25,
-        "blue_winrate": 0.72,
-        "advantage": 0.22,
-        "score": 2.2
+        "games": 24,
+        "blue_winrate": 0.75,
+        "advantage": 0.25,
+        "score": 2.5
       },
       {
-        "matchup": "survive_mobility vs damage_aoe",
+        "matchup": "engage_zone_control vs cc_soft",
+        "blue_wins": 27,
+        "games": 38,
+        "blue_winrate": 0.711,
+        "advantage": 0.211,
+        "score": 2.11
+      },
+      {
+        "matchup": "damage_single_target vs scaling_early",
+        "blue_wins": 22,
+        "games": 31,
+        "blue_winrate": 0.71,
+        "advantage": 0.21,
+        "score": 2.1
+      },
+      {
+        "matchup": "engage_flank vs cc_aoe",
         "blue_wins": 17,
         "games": 24,
         "blue_winrate": 0.708,
@@ -525,7 +501,7 @@
         "score": 2.08
       },
       {
-        "matchup": "survive_tank vs cc_hard",
+        "matchup": "special_reset vs cc_aoe",
         "blue_wins": 17,
         "games": 24,
         "blue_winrate": 0.708,
@@ -533,7 +509,113 @@
         "score": 2.08
       },
       {
-        "matchup": "damage_sustained vs utility_engage",
+        "matchup": "range_long vs cc_aoe",
+        "blue_wins": 34,
+        "games": 48,
+        "blue_winrate": 0.708,
+        "advantage": 0.208,
+        "score": 2.08
+      },
+      {
+        "matchup": "survive_range vs cc_aoe",
+        "blue_wins": 34,
+        "games": 48,
+        "blue_winrate": 0.708,
+        "advantage": 0.208,
+        "score": 2.08
+      },
+      {
+        "matchup": "engage_zone_control vs range_medium",
+        "blue_wins": 24,
+        "games": 34,
+        "blue_winrate": 0.706,
+        "advantage": 0.206,
+        "score": 2.06
+      },
+      {
+        "matchup": "damage_burst vs scaling_mid",
+        "blue_wins": 38,
+        "games": 54,
+        "blue_winrate": 0.704,
+        "advantage": 0.204,
+        "score": 2.04
+      },
+      {
+        "matchup": "range_long vs utility_engage",
+        "blue_wins": 26,
+        "games": 37,
+        "blue_winrate": 0.703,
+        "advantage": 0.203,
+        "score": 2.03
+      },
+      {
+        "matchup": "survive_range vs utility_engage",
+        "blue_wins": 26,
+        "games": 37,
+        "blue_winrate": 0.703,
+        "advantage": 0.203,
+        "score": 2.03
+      },
+      {
+        "matchup": "scaling_items vs scaling_early",
+        "blue_wins": 40,
+        "games": 57,
+        "blue_winrate": 0.702,
+        "advantage": 0.202,
+        "score": 2.02
+      },
+      {
+        "matchup": "damage_single_target vs utility_peel",
+        "blue_wins": 35,
+        "games": 50,
+        "blue_winrate": 0.7,
+        "advantage": 0.2,
+        "score": 2.0
+      }
+    ],
+    "Jungle": [
+      {
+        "matchup": "cc_soft vs survive_shields",
+        "blue_wins": 19,
+        "games": 26,
+        "blue_winrate": 0.731,
+        "advantage": 0.231,
+        "score": 2.31
+      },
+      {
+        "matchup": "range_medium vs range_long",
+        "blue_wins": 21,
+        "games": 29,
+        "blue_winrate": 0.724,
+        "advantage": 0.224,
+        "score": 2.24
+      },
+      {
+        "matchup": "range_medium vs survive_range",
+        "blue_wins": 21,
+        "games": 29,
+        "blue_winrate": 0.724,
+        "advantage": 0.224,
+        "score": 2.24
+      },
+      {
+        "matchup": "survive_sustain vs survive_shields",
+        "blue_wins": 41,
+        "games": 58,
+        "blue_winrate": 0.707,
+        "advantage": 0.207,
+        "score": 2.07
+      },
+      {
+        "matchup": "cc_soft vs cc_hard",
+        "blue_wins": 24,
+        "games": 34,
+        "blue_winrate": 0.706,
+        "advantage": 0.206,
+        "score": 2.06
+      },
+      {
+        "matchup": "cc_soft vs utility_engage",
         "blue_wins": 19,
         "games": 27,
         "blue_winrate": 0.704,
@@ -541,7 +623,15 @@
         "score": 2.04
       },
       {
-        "matchup": "range_medium vs damage_aoe",
+        "matchup": "scaling_levels vs survive_shields",
+        "blue_wins": 19,
+        "games": 27,
+        "blue_winrate": 0.704,
+        "advantage": 0.204,
+        "score": 2.04
+      },
+      {
+        "matchup": "engage_frontline vs damage_magic",
         "blue_wins": 14,
         "games": 20,
         "blue_winrate": 0.7,
@@ -549,97 +639,23 @@
         "score": 2.0
       },
       {
-        "matchup": "scaling_mid vs engage_frontline",
-        "blue_wins": 14,
-        "games": 20,
-        "blue_winrate": 0.7,
-        "advantage": 0.2,
-        "score": 2.0
-      },
-      {
-        "matchup": "utility_engage vs mobility_medium",
-        "blue_wins": 14,
-        "games": 20,
-        "blue_winrate": 0.7,
-        "advantage": 0.2,
-        "score": 2.0
-      },
-      {
-        "matchup": "mobility_medium vs mobility_medium",
-        "blue_wins": 23,
-        "games": 33,
-        "blue_winrate": 0.697,
-        "advantage": 0.197,
-        "score": 1.97
-      }
-    ],
-    "Jungle": [
-      {
-        "matchup": "damage_single_target vs survive_tank",
-        "blue_wins": 15,
-        "games": 20,
-        "blue_winrate": 0.75,
-        "advantage": 0.25,
-        "score": 2.5
-      },
-      {
-        "matchup": "damage_single_target vs engage_backline_access",
-        "blue_wins": 27,
-        "games": 37,
-        "blue_winrate": 0.73,
-        "advantage": 0.23,
-        "score": 2.3
-      },
-      {
-        "matchup": "mobility_high vs engage_backline_access",
+        "matchup": "cc_soft vs damage_aoe",
         "blue_wins": 25,
-        "games": 35,
-        "blue_winrate": 0.714,
-        "advantage": 0.214,
-        "score": 2.14
+        "games": 36,
+        "blue_winrate": 0.694,
+        "advantage": 0.194,
+        "score": 1.94
       },
       {
-        "matchup": "scaling_items vs utility_engage",
-        "blue_wins": 15,
-        "games": 21,
-        "blue_winrate": 0.714,
-        "advantage": 0.214,
-        "score": 2.14
+        "matchup": "scaling_levels vs cc_hard",
+        "blue_wins": 25,
+        "games": 36,
+        "blue_winrate": 0.694,
+        "advantage": 0.194,
+        "score": 1.94
       },
       {
-        "matchup": "scaling_items vs engage_backline_access",
-        "blue_wins": 30,
-        "games": 43,
-        "blue_winrate": 0.698,
-        "advantage": 0.198,
-        "score": 1.98
-      },
-      {
-        "matchup": "damage_sustained vs damage_single_target",
-        "blue_wins": 16,
-        "games": 23,
-        "blue_winrate": 0.696,
-        "advantage": 0.196,
-        "score": 1.96
-      },
-      {
-        "matchup": "damage_single_target vs mobility_medium",
-        "blue_wins": 18,
-        "games": 26,
-        "blue_winrate": 0.692,
-        "advantage": 0.192,
-        "score": 1.92
-      },
-      {
-        "matchup": "damage_single_target vs engage_dive",
-        "blue_wins": 29,
-        "games": 42,
-        "blue_winrate": 0.69,
-        "advantage": 0.19,
-        "score": 1.9
-      },
-      {
-        "matchup": "scaling_items vs survive_tank",
+        "matchup": "cc_soft vs survive_tank",
         "blue_wins": 20,
         "games": 29,
         "blue_winrate": 0.69,
@@ -647,23 +663,23 @@
         "score": 1.9
       },
       {
-        "matchup": "damage_single_target vs damage_physical",
-        "blue_wins": 31,
-        "games": 45,
-        "blue_winrate": 0.689,
-        "advantage": 0.189,
-        "score": 1.89
+        "matchup": "scaling_levels vs utility_engage",
+        "blue_wins": 20,
+        "games": 29,
+        "blue_winrate": 0.69,
+        "advantage": 0.19,
+        "score": 1.9
       },
       {
-        "matchup": "damage_single_target vs range_melee",
-        "blue_wins": 31,
-        "games": 45,
-        "blue_winrate": 0.689,
-        "advantage": 0.189,
-        "score": 1.89
+        "matchup": "survive_sustain vs utility_engage",
+        "blue_wins": 44,
+        "games": 64,
+        "blue_winrate": 0.688,
+        "advantage": 0.188,
+        "score": 1.88
       },
       {
-        "matchup": "damage_single_target vs damage_sustained",
+        "matchup": "cc_soft vs mobility_medium",
         "blue_wins": 22,
         "games": 32,
         "blue_winrate": 0.688,
@@ -671,7 +687,7 @@
         "score": 1.88
       },
       {
-        "matchup": "damage_burst vs engage_backline_access",
+        "matchup": "cc_soft vs cc_aoe",
         "blue_wins": 24,
         "games": 35,
         "blue_winrate": 0.686,
@@ -679,89 +695,49 @@
         "score": 1.86
       },
       {
-        "matchup": "scaling_items vs survive_shields",
-        "blue_wins": 15,
-        "games": 22,
-        "blue_winrate": 0.682,
-        "advantage": 0.182,
-        "score": 1.82
+        "matchup": "damage_mixed vs cc_hard",
+        "blue_wins": 35,
+        "games": 51,
+        "blue_winrate": 0.686,
+        "advantage": 0.186,
+        "score": 1.86
       },
       {
-        "matchup": "damage_sustained vs mobility_high",
-        "blue_wins": 15,
-        "games": 22,
-        "blue_winrate": 0.682,
-        "advantage": 0.182,
-        "score": 1.82
+        "matchup": "flexible_multi_role vs cc_hard",
+        "blue_wins": 35,
+        "games": 51,
+        "blue_winrate": 0.686,
+        "advantage": 0.186,
+        "score": 1.86
       },
       {
-        "matchup": "damage_sustained vs engage_flank",
-        "blue_wins": 15,
-        "games": 22,
-        "blue_winrate": 0.682,
-        "advantage": 0.182,
-        "score": 1.82
+        "matchup": "flexible_multi_lane vs cc_hard",
+        "blue_wins": 35,
+        "games": 51,
+        "blue_winrate": 0.686,
+        "advantage": 0.186,
+        "score": 1.86
       },
       {
-        "matchup": "damage_sustained vs special_reset",
-        "blue_wins": 15,
-        "games": 22,
-        "blue_winrate": 0.682,
-        "advantage": 0.182,
-        "score": 1.82
+        "matchup": "special_transformation vs cc_hard",
+        "blue_wins": 35,
+        "games": 51,
+        "blue_winrate": 0.686,
+        "advantage": 0.186,
+        "score": 1.86
       },
       {
-        "matchup": "damage_single_target vs engage_flank",
-        "blue_wins": 15,
-        "games": 22,
-        "blue_winrate": 0.682,
-        "advantage": 0.182,
-        "score": 1.82
-      },
-      {
-        "matchup": "damage_single_target vs special_reset",
-        "blue_wins": 15,
-        "games": 22,
-        "blue_winrate": 0.682,
-        "advantage": 0.182,
-        "score": 1.82
-      },
-      {
-        "matchup": "mobility_high vs mobility_medium",
-        "blue_wins": 17,
-        "games": 25,
-        "blue_winrate": 0.68,
-        "advantage": 0.18,
-        "score": 1.8
+        "matchup": "special_global vs cc_hard",
+        "blue_wins": 35,
+        "games": 51,
+        "blue_winrate": 0.686,
+        "advantage": 0.186,
+        "score": 1.86
       }
     ],
     "Middle": [
       {
-        "matchup": "cc_soft vs damage_magic",
-        "blue_wins": 16,
-        "games": 21,
-        "blue_winrate": 0.762,
-        "advantage": 0.262,
-        "score": 2.62
-      },
-      {
-        "matchup": "cc_soft vs engage_zone_control",
-        "blue_wins": 16,
-        "games": 21,
-        "blue_winrate": 0.762,
-        "advantage": 0.262,
-        "score": 2.62
-      },
-      {
-        "matchup": "cc_soft vs damage_aoe",
-        "blue_wins": 18,
-        "games": 24,
-        "blue_winrate": 0.75,
-        "advantage": 0.25,
-        "score": 2.5
-      },
-      {
-        "matchup": "cc_soft vs range_medium",
+        "matchup": "survive_shields vs engage_backline_access",
         "blue_wins": 15,
         "games": 20,
         "blue_winrate": 0.75,
@@ -769,87 +745,31 @@
         "score": 2.5
       },
       {
-        "matchup": "cc_soft vs cc_aoe",
-        "blue_wins": 18,
-        "games": 24,
-        "blue_winrate": 0.75,
-        "advantage": 0.25,
-        "score": 2.5
-      },
-      {
-        "matchup": "scaling_mid vs survive_mobility",
-        "blue_wins": 15,
-        "games": 21,
-        "blue_winrate": 0.714,
-        "advantage": 0.214,
-        "score": 2.14
-      },
-      {
-        "matchup": "scaling_items vs survive_sustain",
-        "blue_wins": 20,
-        "games": 28,
-        "blue_winrate": 0.714,
-        "advantage": 0.214,
-        "score": 2.14
-      },
-      {
-        "matchup": "survive_sustain vs damage_magic",
-        "blue_wins": 14,
-        "games": 20,
-        "blue_winrate": 0.7,
-        "advantage": 0.2,
-        "score": 2.0
-      },
-      {
-        "matchup": "survive_sustain vs engage_zone_control",
-        "blue_wins": 14,
-        "games": 20,
-        "blue_winrate": 0.7,
-        "advantage": 0.2,
-        "score": 2.0
-      },
-      {
-        "matchup": "damage_physical vs damage_sustained",
-        "blue_wins": 14,
-        "games": 20,
-        "blue_winrate": 0.7,
-        "advantage": 0.2,
-        "score": 2.0
-      },
-      {
-        "matchup": "survive_sustain vs damage_aoe",
-        "blue_wins": 16,
-        "games": 23,
-        "blue_winrate": 0.696,
-        "advantage": 0.196,
-        "score": 1.96
-      },
-      {
-        "matchup": "survive_sustain vs cc_aoe",
-        "blue_wins": 16,
-        "games": 23,
-        "blue_winrate": 0.696,
-        "advantage": 0.196,
-        "score": 1.96
-      },
-      {
-        "matchup": "mobility_high vs range_medium",
-        "blue_wins": 16,
-        "games": 23,
-        "blue_winrate": 0.696,
-        "advantage": 0.196,
-        "score": 1.96
-      },
-      {
-        "matchup": "survive_mobility vs range_medium",
-        "blue_wins": 18,
+        "matchup": "survive_shields vs damage_physical",
+        "blue_wins": 19,
         "games": 26,
+        "blue_winrate": 0.731,
+        "advantage": 0.231,
+        "score": 2.31
+      },
+      {
+        "matchup": "survive_shields vs damage_sustained",
+        "blue_wins": 16,
+        "games": 22,
+        "blue_winrate": 0.727,
+        "advantage": 0.227,
+        "score": 2.27
+      },
+      {
+        "matchup": "survive_shields vs scaling_items",
+        "blue_wins": 27,
+        "games": 39,
         "blue_winrate": 0.692,
         "advantage": 0.192,
         "score": 1.92
       },
       {
-        "matchup": "engage_frontline vs damage_aoe",
+        "matchup": "survive_shields vs damage_burst",
         "blue_wins": 15,
         "games": 22,
         "blue_winrate": 0.682,
@@ -857,7 +777,7 @@
         "score": 1.82
       },
       {
-        "matchup": "engage_frontline vs cc_aoe",
+        "matchup": "survive_shields vs range_melee",
         "blue_wins": 15,
         "games": 22,
         "blue_winrate": 0.682,
@@ -865,7 +785,15 @@
         "score": 1.82
       },
       {
-        "matchup": "damage_burst vs survive_sustain",
+        "matchup": "utility_peel vs engage_backline_access",
+        "blue_wins": 15,
+        "games": 22,
+        "blue_winrate": 0.682,
+        "advantage": 0.182,
+        "score": 1.82
+      },
+      {
+        "matchup": "survive_shields vs scaling_mid",
         "blue_wins": 17,
         "games": 25,
         "blue_winrate": 0.68,
@@ -873,323 +801,39 @@
         "score": 1.8
       },
       {
-        "matchup": "engage_flank vs scaling_items",
-        "blue_wins": 17,
-        "games": 25,
-        "blue_winrate": 0.68,
-        "advantage": 0.18,
-        "score": 1.8
+        "matchup": "scaling_mid vs utility_peel",
+        "blue_wins": 19,
+        "games": 28,
+        "blue_winrate": 0.679,
+        "advantage": 0.179,
+        "score": 1.79
       },
       {
-        "matchup": "special_reset vs scaling_items",
-        "blue_wins": 17,
-        "games": 25,
-        "blue_winrate": 0.68,
-        "advantage": 0.18,
-        "score": 1.8
+        "matchup": "utility_peel vs damage_sustained",
+        "blue_wins": 14,
+        "games": 21,
+        "blue_winrate": 0.667,
+        "advantage": 0.167,
+        "score": 1.67
       },
       {
-        "matchup": "damage_single_target vs range_medium",
-        "blue_wins": 17,
-        "games": 25,
-        "blue_winrate": 0.68,
-        "advantage": 0.18,
-        "score": 1.8
-      }
-    ],
-    "Bottom": [
-      {
-        "matchup": "scaling_late vs damage_sustained",
-        "blue_wins": 69,
-        "games": 115,
-        "blue_winrate": 0.6,
-        "advantage": 0.1,
-        "score": 1.0
-      },
-      {
-        "matchup": "damage_physical vs damage_sustained",
-        "blue_wins": 67,
-        "games": 112,
-        "blue_winrate": 0.598,
-        "advantage": 0.098,
-        "score": 0.98
-      },
-      {
-        "matchup": "damage_single_target vs scaling_late",
-        "blue_wins": 70,
-        "games": 117,
-        "blue_winrate": 0.598,
-        "advantage": 0.098,
-        "score": 0.98
-      },
-      {
-        "matchup": "scaling_late vs scaling_late",
-        "blue_wins": 73,
-        "games": 122,
-        "blue_winrate": 0.598,
-        "advantage": 0.098,
-        "score": 0.98
+        "matchup": "utility_peel vs damage_single_target",
+        "blue_wins": 14,
+        "games": 21,
+        "blue_winrate": 0.667,
+        "advantage": 0.167,
+        "score": 1.67
       },
       {
         "matchup": "damage_physical vs scaling_late",
-        "blue_wins": 71,
-        "games": 119,
-        "blue_winrate": 0.597,
-        "advantage": 0.097,
-        "score": 0.97
-      },
-      {
-        "matchup": "damage_single_target vs damage_sustained",
-        "blue_wins": 66,
-        "games": 111,
-        "blue_winrate": 0.595,
-        "advantage": 0.095,
-        "score": 0.95
-      },
-      {
-        "matchup": "scaling_late vs damage_physical",
-        "blue_wins": 69,
-        "games": 116,
-        "blue_winrate": 0.595,
-        "advantage": 0.095,
-        "score": 0.95
-      },
-      {
-        "matchup": "scaling_late vs damage_single_target",
-        "blue_wins": 69,
-        "games": 116,
-        "blue_winrate": 0.595,
-        "advantage": 0.095,
-        "score": 0.95
-      },
-      {
-        "matchup": "scaling_late vs engage_backline_access",
-        "blue_wins": 69,
-        "games": 116,
-        "blue_winrate": 0.595,
-        "advantage": 0.095,
-        "score": 0.95
-      },
-      {
-        "matchup": "damage_physical vs damage_physical",
-        "blue_wins": 67,
-        "games": 113,
-        "blue_winrate": 0.593,
-        "advantage": 0.093,
-        "score": 0.93
-      },
-      {
-        "matchup": "damage_physical vs damage_single_target",
-        "blue_wins": 67,
-        "games": 113,
-        "blue_winrate": 0.593,
-        "advantage": 0.093,
-        "score": 0.93
-      },
-      {
-        "matchup": "damage_physical vs engage_backline_access",
-        "blue_wins": 67,
-        "games": 113,
-        "blue_winrate": 0.593,
-        "advantage": 0.093,
-        "score": 0.93
-      },
-      {
-        "matchup": "damage_single_target vs range_long",
-        "blue_wins": 70,
-        "games": 118,
-        "blue_winrate": 0.593,
-        "advantage": 0.093,
-        "score": 0.93
-      },
-      {
-        "matchup": "damage_single_target vs mobility_low",
-        "blue_wins": 70,
-        "games": 118,
-        "blue_winrate": 0.593,
-        "advantage": 0.093,
-        "score": 0.93
-      },
-      {
-        "matchup": "damage_single_target vs survive_range",
-        "blue_wins": 70,
-        "games": 118,
-        "blue_winrate": 0.593,
-        "advantage": 0.093,
-        "score": 0.93
-      },
-      {
-        "matchup": "range_long vs damage_sustained",
-        "blue_wins": 70,
-        "games": 118,
-        "blue_winrate": 0.593,
-        "advantage": 0.093,
-        "score": 0.93
-      },
-      {
-        "matchup": "mobility_low vs damage_sustained",
-        "blue_wins": 70,
-        "games": 118,
-        "blue_winrate": 0.593,
-        "advantage": 0.093,
-        "score": 0.93
-      },
-      {
-        "matchup": "survive_range vs damage_sustained",
-        "blue_wins": 70,
-        "games": 118,
-        "blue_winrate": 0.593,
-        "advantage": 0.093,
-        "score": 0.93
-      },
-      {
-        "matchup": "scaling_late vs range_long",
-        "blue_wins": 73,
-        "games": 123,
-        "blue_winrate": 0.593,
-        "advantage": 0.093,
-        "score": 0.93
-      },
-      {
-        "matchup": "scaling_late vs mobility_low",
-        "blue_wins": 73,
-        "games": 123,
-        "blue_winrate": 0.593,
-        "advantage": 0.093,
-        "score": 0.93
-      }
-    ],
-    "Support": [
-      {
-        "matchup": "range_long vs engage_zone_control",
-        "blue_wins": 17,
-        "games": 24,
-        "blue_winrate": 0.708,
-        "advantage": 0.208,
-        "score": 2.08
-      },
-      {
-        "matchup": "survive_range vs engage_zone_control",
-        "blue_wins": 17,
-        "games": 24,
-        "blue_winrate": 0.708,
-        "advantage": 0.208,
-        "score": 2.08
-      },
-      {
-        "matchup": "damage_single_target vs damage_burst",
-        "blue_wins": 14,
-        "games": 20,
-        "blue_winrate": 0.7,
-        "advantage": 0.2,
-        "score": 2.0
-      },
-      {
-        "matchup": "damage_physical vs damage_single_target",
-        "blue_wins": 15,
-        "games": 22,
-        "blue_winrate": 0.682,
-        "advantage": 0.182,
-        "score": 1.82
-      },
-      {
-        "matchup": "damage_physical vs scaling_items",
-        "blue_wins": 15,
-        "games": 22,
-        "blue_winrate": 0.682,
-        "advantage": 0.182,
-        "score": 1.82
-      },
-      {
-        "matchup": "range_melee vs scaling_items",
-        "blue_wins": 15,
-        "games": 22,
-        "blue_winrate": 0.682,
-        "advantage": 0.182,
-        "score": 1.82
-      },
-      {
-        "matchup": "damage_aoe vs mobility_medium",
-        "blue_wins": 17,
-        "games": 25,
-        "blue_winrate": 0.68,
-        "advantage": 0.18,
-        "score": 1.8
-      },
-      {
-        "matchup": "range_medium vs engage_zone_control",
-        "blue_wins": 17,
-        "games": 25,
-        "blue_winrate": 0.68,
-        "advantage": 0.18,
-        "score": 1.8
-      },
-      {
-        "matchup": "mobility_low vs engage_zone_control",
-        "blue_wins": 17,
-        "games": 25,
-        "blue_winrate": 0.68,
-        "advantage": 0.18,
-        "score": 1.8
-      },
-      {
-        "matchup": "engage_dive vs damage_physical",
-        "blue_wins": 21,
-        "games": 31,
-        "blue_winrate": 0.677,
-        "advantage": 0.177,
-        "score": 1.77
-      },
-      {
-        "matchup": "utility_peel vs scaling_items",
-        "blue_wins": 21,
-        "games": 31,
-        "blue_winrate": 0.677,
-        "advantage": 0.177,
-        "score": 1.77
-      },
-      {
-        "matchup": "engage_dive vs utility_engage",
-        "blue_wins": 14,
-        "games": 21,
+        "blue_wins": 26,
+        "games": 39,
         "blue_winrate": 0.667,
         "advantage": 0.167,
         "score": 1.67
       },
       {
-        "matchup": "range_long vs damage_burst",
-        "blue_wins": 18,
-        "games": 27,
-        "blue_winrate": 0.667,
-        "advantage": 0.167,
-        "score": 1.67
-      },
-      {
-        "matchup": "survive_range vs damage_burst",
-        "blue_wins": 18,
-        "games": 27,
-        "blue_winrate": 0.667,
-        "advantage": 0.167,
-        "score": 1.67
-      },
-      {
-        "matchup": "utility_vision vs mobility_low",
-        "blue_wins": 14,
-        "games": 21,
-        "blue_winrate": 0.667,
-        "advantage": 0.167,
-        "score": 1.67
-      },
-      {
-        "matchup": "damage_burst vs engage_frontline",
-        "blue_wins": 18,
-        "games": 27,
-        "blue_winrate": 0.667,
-        "advantage": 0.167,
-        "score": 1.67
-      },
-      {
-        "matchup": "utility_peel vs damage_burst",
+        "matchup": "range_melee vs scaling_late",
         "blue_wins": 22,
         "games": 33,
         "blue_winrate": 0.667,
@@ -1197,7 +841,283 @@
         "score": 1.67
       },
       {
-        "matchup": "range_melee vs damage_single_target",
+        "matchup": "survive_shields vs damage_magic",
+        "blue_wins": 16,
+        "games": 24,
+        "blue_winrate": 0.667,
+        "advantage": 0.167,
+        "score": 1.67
+      },
+      {
+        "matchup": "scaling_levels vs engage_backline_access",
+        "blue_wins": 33,
+        "games": 50,
+        "blue_winrate": 0.66,
+        "advantage": 0.16,
+        "score": 1.6
+      },
+      {
+        "matchup": "cc_soft vs engage_frontline",
+        "blue_wins": 14,
+        "games": 41,
+        "blue_winrate": 0.341,
+        "advantage": -0.159,
+        "score": -1.59
+      },
+      {
+        "matchup": "damage_sustained vs scaling_late",
+        "blue_wins": 27,
+        "games": 41,
+        "blue_winrate": 0.659,
+        "advantage": 0.159,
+        "score": 1.59
+      },
+      {
+        "matchup": "scaling_levels vs engage_flank",
+        "blue_wins": 23,
+        "games": 35,
+        "blue_winrate": 0.657,
+        "advantage": 0.157,
+        "score": 1.57
+      },
+      {
+        "matchup": "scaling_levels vs special_reset",
+        "blue_wins": 23,
+        "games": 35,
+        "blue_winrate": 0.657,
+        "advantage": 0.157,
+        "score": 1.57
+      },
+      {
+        "matchup": "damage_single_target vs scaling_late",
+        "blue_wins": 23,
+        "games": 35,
+        "blue_winrate": 0.657,
+        "advantage": 0.157,
+        "score": 1.57
+      }
+    ],
+    "Bottom": [
+      {
+        "matchup": "range_short vs range_long",
+        "blue_wins": 18,
+        "games": 23,
+        "blue_winrate": 0.783,
+        "advantage": 0.283,
+        "score": 2.83
+      },
+      {
+        "matchup": "range_short vs mobility_low",
+        "blue_wins": 18,
+        "games": 23,
+        "blue_winrate": 0.783,
+        "advantage": 0.283,
+        "score": 2.83
+      },
+      {
+        "matchup": "range_short vs survive_range",
+        "blue_wins": 18,
+        "games": 23,
+        "blue_winrate": 0.783,
+        "advantage": 0.283,
+        "score": 2.83
+      },
+      {
+        "matchup": "range_short vs scaling_late",
+        "blue_wins": 18,
+        "games": 23,
+        "blue_winrate": 0.783,
+        "advantage": 0.283,
+        "score": 2.83
+      },
+      {
+        "matchup": "range_short vs damage_physical",
+        "blue_wins": 17,
+        "games": 22,
+        "blue_winrate": 0.773,
+        "advantage": 0.273,
+        "score": 2.73
+      },
+      {
+        "matchup": "range_short vs damage_single_target",
+        "blue_wins": 17,
+        "games": 22,
+        "blue_winrate": 0.773,
+        "advantage": 0.273,
+        "score": 2.73
+      },
+      {
+        "matchup": "range_short vs engage_backline_access",
+        "blue_wins": 17,
+        "games": 22,
+        "blue_winrate": 0.773,
+        "advantage": 0.273,
+        "score": 2.73
+      },
+      {
+        "matchup": "survive_sustain vs damage_physical",
+        "blue_wins": 25,
+        "games": 33,
+        "blue_winrate": 0.758,
+        "advantage": 0.258,
+        "score": 2.58
+      },
+      {
+        "matchup": "survive_sustain vs damage_single_target",
+        "blue_wins": 25,
+        "games": 33,
+        "blue_winrate": 0.758,
+        "advantage": 0.258,
+        "score": 2.58
+      },
+      {
+        "matchup": "damage_single_target vs survive_sustain",
+        "blue_wins": 18,
+        "games": 24,
+        "blue_winrate": 0.75,
+        "advantage": 0.25,
+        "score": 2.5
+      },
+      {
+        "matchup": "range_short vs scaling_items",
+        "blue_wins": 18,
+        "games": 24,
+        "blue_winrate": 0.75,
+        "advantage": 0.25,
+        "score": 2.5
+      },
+      {
+        "matchup": "engage_frontline vs damage_physical",
+        "blue_wins": 18,
+        "games": 24,
+        "blue_winrate": 0.75,
+        "advantage": 0.25,
+        "score": 2.5
+      },
+      {
+        "matchup": "engage_frontline vs damage_single_target",
+        "blue_wins": 18,
+        "games": 24,
+        "blue_winrate": 0.75,
+        "advantage": 0.25,
+        "score": 2.5
+      },
+      {
+        "matchup": "engage_frontline vs range_long",
+        "blue_wins": 18,
+        "games": 24,
+        "blue_winrate": 0.75,
+        "advantage": 0.25,
+        "score": 2.5
+      },
+      {
+        "matchup": "engage_frontline vs mobility_low",
+        "blue_wins": 18,
+        "games": 24,
+        "blue_winrate": 0.75,
+        "advantage": 0.25,
+        "score": 2.5
+      },
+      {
+        "matchup": "engage_frontline vs survive_range",
+        "blue_wins": 18,
+        "games": 24,
+        "blue_winrate": 0.75,
+        "advantage": 0.25,
+        "score": 2.5
+      },
+      {
+        "matchup": "engage_frontline vs scaling_late",
+        "blue_wins": 18,
+        "games": 24,
+        "blue_winrate": 0.75,
+        "advantage": 0.25,
+        "score": 2.5
+      },
+      {
+        "matchup": "survive_sustain vs engage_backline_access",
+        "blue_wins": 24,
+        "games": 32,
+        "blue_winrate": 0.75,
+        "advantage": 0.25,
+        "score": 2.5
+      },
+      {
+        "matchup": "scaling_levels vs damage_physical",
+        "blue_wins": 18,
+        "games": 24,
+        "blue_winrate": 0.75,
+        "advantage": 0.25,
+        "score": 2.5
+      },
+      {
+        "matchup": "scaling_levels vs damage_single_target",
+        "blue_wins": 18,
+        "games": 24,
+        "blue_winrate": 0.75,
+        "advantage": 0.25,
+        "score": 2.5
+      }
+    ],
+    "Support": [
+      {
+        "matchup": "range_medium vs scaling_late",
+        "blue_wins": 15,
+        "games": 20,
+        "blue_winrate": 0.75,
+        "advantage": 0.25,
+        "score": 2.5
+      },
+      {
+        "matchup": "survive_mobility vs engage_zone_control",
+        "blue_wins": 7,
+        "games": 25,
+        "blue_winrate": 0.28,
+        "advantage": -0.22,
+        "score": -2.2
+      },
+      {
+        "matchup": "range_long vs scaling_late",
+        "blue_wins": 16,
+        "games": 23,
+        "blue_winrate": 0.696,
+        "advantage": 0.196,
+        "score": 1.96
+      },
+      {
+        "matchup": "survive_range vs scaling_late",
+        "blue_wins": 16,
+        "games": 23,
+        "blue_winrate": 0.696,
+        "advantage": 0.196,
+        "score": 1.96
+      },
+      {
+        "matchup": "scaling_mid vs scaling_late",
+        "blue_wins": 18,
+        "games": 26,
+        "blue_winrate": 0.692,
+        "advantage": 0.192,
+        "score": 1.92
+      },
+      {
+        "matchup": "survive_mobility vs damage_burst",
+        "blue_wins": 9,
+        "games": 28,
+        "blue_winrate": 0.321,
+        "advantage": -0.179,
+        "score": -1.79
+      },
+      {
+        "matchup": "survive_mobility vs scaling_early",
+        "blue_wins": 9,
+        "games": 28,
+        "blue_winrate": 0.321,
+        "advantage": -0.179,
+        "score": -1.79
+      },
+      {
+        "matchup": "utility_engage vs scaling_late",
         "blue_wins": 14,
         "games": 21,
         "blue_winrate": 0.667,
@@ -1205,1034 +1125,1114 @@
         "score": 1.67
       },
       {
-        "matchup": "damage_aoe vs damage_aoe",
-        "blue_wins": 21,
-        "games": 32,
-        "blue_winrate": 0.656,
-        "advantage": 0.156,
-        "score": 1.56
+        "matchup": "scaling_early vs scaling_late",
+        "blue_wins": 14,
+        "games": 21,
+        "blue_winrate": 0.667,
+        "advantage": 0.167,
+        "score": 1.67
       },
       {
-        "matchup": "mobility_low vs damage_burst",
+        "matchup": "survive_mobility vs damage_physical",
+        "blue_wins": 14,
+        "games": 21,
+        "blue_winrate": 0.667,
+        "advantage": 0.167,
+        "score": 1.67
+      },
+      {
+        "matchup": "survive_mobility vs range_melee",
+        "blue_wins": 14,
+        "games": 21,
+        "blue_winrate": 0.667,
+        "advantage": 0.167,
+        "score": 1.67
+      },
+      {
+        "matchup": "utility_engage vs survive_mobility",
+        "blue_wins": 16,
+        "games": 24,
+        "blue_winrate": 0.667,
+        "advantage": 0.167,
+        "score": 1.67
+      },
+      {
+        "matchup": "scaling_early vs survive_mobility",
+        "blue_wins": 14,
+        "games": 21,
+        "blue_winrate": 0.667,
+        "advantage": 0.167,
+        "score": 1.67
+      },
+      {
+        "matchup": "cc_aoe vs scaling_late",
         "blue_wins": 19,
         "games": 29,
         "blue_winrate": 0.655,
         "advantage": 0.155,
         "score": 1.55
+      },
+      {
+        "matchup": "utility_engage vs damage_burst",
+        "blue_wins": 119,
+        "games": 189,
+        "blue_winrate": 0.63,
+        "advantage": 0.13,
+        "score": 1.3
+      },
+      {
+        "matchup": "scaling_levels vs damage_burst",
+        "blue_wins": 16,
+        "games": 43,
+        "blue_winrate": 0.372,
+        "advantage": -0.128,
+        "score": -1.28
+      },
+      {
+        "matchup": "scaling_early vs damage_burst",
+        "blue_wins": 108,
+        "games": 172,
+        "blue_winrate": 0.628,
+        "advantage": 0.128,
+        "score": 1.28
+      },
+      {
+        "matchup": "survive_mobility vs utility_vision",
+        "blue_wins": 9,
+        "games": 24,
+        "blue_winrate": 0.375,
+        "advantage": -0.125,
+        "score": -1.25
+      },
+      {
+        "matchup": "scaling_levels vs scaling_items",
+        "blue_wins": 14,
+        "games": 37,
+        "blue_winrate": 0.378,
+        "advantage": -0.122,
+        "score": -1.22
+      },
+      {
+        "matchup": "utility_engage vs engage_zone_control",
+        "blue_wins": 112,
+        "games": 180,
+        "blue_winrate": 0.622,
+        "advantage": 0.122,
+        "score": 1.22
       }
     ]
   },
   "weighted_scores": {
     "synergies": {
-      "damage_mixed+survive_sustain": {
-        "winrate": 0.409,
-        "games": 22,
-        "weight": -0.91
-      },
-      "flexible_multi_lane+survive_sustain": {
-        "winrate": 0.409,
-        "games": 22,
-        "weight": -0.91
-      },
-      "flexible_multi_role+survive_sustain": {
-        "winrate": 0.409,
-        "games": 22,
-        "weight": -0.91
-      },
-      "special_global+survive_sustain": {
-        "winrate": 0.409,
-        "games": 22,
-        "weight": -0.91
-      },
-      "special_transformation+survive_sustain": {
-        "winrate": 0.409,
-        "games": 22,
-        "weight": -0.91
-      },
       "cc_soft+damage_mixed": {
-        "winrate": 0.423,
-        "games": 26,
-        "weight": -0.77
+        "winrate": 0.577,
+        "games": 213,
+        "weight": 0.77
       },
       "cc_soft+flexible_multi_lane": {
-        "winrate": 0.423,
-        "games": 26,
-        "weight": -0.77
+        "winrate": 0.577,
+        "games": 213,
+        "weight": 0.77
       },
       "cc_soft+flexible_multi_role": {
-        "winrate": 0.423,
-        "games": 26,
-        "weight": -0.77
+        "winrate": 0.577,
+        "games": 213,
+        "weight": 0.77
       },
       "cc_soft+special_global": {
-        "winrate": 0.423,
-        "games": 26,
-        "weight": -0.77
+        "winrate": 0.577,
+        "games": 213,
+        "weight": 0.77
       },
       "cc_soft+special_transformation": {
-        "winrate": 0.423,
-        "games": 26,
-        "weight": -0.77
+        "winrate": 0.577,
+        "games": 213,
+        "weight": 0.77
       },
-      "range_short+scaling_early": {
-        "winrate": 0.431,
-        "games": 65,
-        "weight": -0.69
-      },
-      "scaling_early+scaling_levels": {
-        "winrate": 0.436,
-        "games": 78,
-        "weight": -0.64
-      },
-      "mobility_medium+scaling_levels": {
-        "winrate": 0.438,
-        "games": 128,
-        "weight": -0.62
-      },
-      "engage_dive+utility_vision": {
+      "scaling_early+survive_sustain": {
         "winrate": 0.561,
-        "games": 66,
+        "games": 588,
         "weight": 0.61
       },
-      "mobility_medium+range_short": {
-        "winrate": 0.442,
-        "games": 113,
-        "weight": -0.58
+      "damage_mixed+survive_sustain": {
+        "winrate": 0.559,
+        "games": 247,
+        "weight": 0.59
       },
-      "scaling_levels+utility_engage": {
-        "winrate": 0.444,
-        "games": 108,
-        "weight": -0.56
+      "flexible_multi_lane+survive_sustain": {
+        "winrate": 0.559,
+        "games": 247,
+        "weight": 0.59
       },
-      "cc_aoe+range_short": {
-        "winrate": 0.446,
-        "games": 121,
-        "weight": -0.54
+      "flexible_multi_role+survive_sustain": {
+        "winrate": 0.559,
+        "games": 247,
+        "weight": 0.59
       },
-      "damage_aoe+range_short": {
-        "winrate": 0.446,
-        "games": 121,
-        "weight": -0.54
+      "special_global+survive_sustain": {
+        "winrate": 0.559,
+        "games": 247,
+        "weight": 0.59
       },
-      "range_short+utility_engage": {
-        "winrate": 0.446,
-        "games": 92,
-        "weight": -0.54
+      "special_transformation+survive_sustain": {
+        "winrate": 0.559,
+        "games": 247,
+        "weight": 0.59
       },
-      "cc_single+engage_flank": {
+      "cc_soft+scaling_early": {
         "winrate": 0.554,
-        "games": 56,
+        "games": 529,
         "weight": 0.54
       },
-      "cc_single+special_reset": {
-        "winrate": 0.554,
-        "games": 56,
-        "weight": 0.54
+      "range_short+scaling_early": {
+        "winrate": 0.549,
+        "games": 357,
+        "weight": 0.49
       },
-      "mobility_high+range_short": {
-        "winrate": 0.447,
-        "games": 76,
-        "weight": -0.53
-      },
-      "cc_aoe+scaling_levels": {
-        "winrate": 0.448,
-        "games": 143,
-        "weight": -0.52
-      },
-      "damage_aoe+scaling_levels": {
-        "winrate": 0.448,
-        "games": 145,
-        "weight": -0.52
-      },
-      "damage_mixed+scaling_levels": {
-        "winrate": 0.45,
-        "games": 20,
-        "weight": -0.5
-      },
-      "flexible_multi_lane+scaling_levels": {
-        "winrate": 0.45,
-        "games": 20,
-        "weight": -0.5
-      },
-      "flexible_multi_role+scaling_levels": {
-        "winrate": 0.45,
-        "games": 20,
-        "weight": -0.5
-      },
-      "scaling_levels+special_global": {
-        "winrate": 0.45,
-        "games": 20,
-        "weight": -0.5
-      },
-      "scaling_levels+special_transformation": {
-        "winrate": 0.45,
-        "games": 20,
-        "weight": -0.5
-      },
-      "range_melee+range_short": {
-        "winrate": 0.451,
-        "games": 122,
-        "weight": -0.49
-      },
-      "range_melee+scaling_levels": {
-        "winrate": 0.452,
-        "games": 146,
-        "weight": -0.48
-      },
-      "damage_mixed+engage_frontline": {
-        "winrate": 0.452,
-        "games": 42,
-        "weight": -0.48
-      },
-      "engage_frontline+flexible_multi_lane": {
-        "winrate": 0.452,
-        "games": 42,
-        "weight": -0.48
-      },
-      "engage_frontline+flexible_multi_role": {
-        "winrate": 0.452,
-        "games": 42,
-        "weight": -0.48
-      },
-      "engage_frontline+special_global": {
-        "winrate": 0.452,
-        "games": 42,
-        "weight": -0.48
-      },
-      "engage_frontline+special_transformation": {
-        "winrate": 0.452,
-        "games": 42,
-        "weight": -0.48
-      },
-      "cc_hard+scaling_levels": {
-        "winrate": 0.453,
-        "games": 139,
-        "weight": -0.47
-      },
-      "scaling_levels+survive_shields": {
-        "winrate": 0.453,
-        "games": 117,
-        "weight": -0.47
-      },
-      "range_short+survive_mobility": {
-        "winrate": 0.453,
-        "games": 86,
-        "weight": -0.47
-      },
-      "damage_mixed+mobility_high": {
-        "winrate": 0.455,
-        "games": 33,
-        "weight": -0.45
-      },
-      "flexible_multi_lane+mobility_high": {
-        "winrate": 0.455,
-        "games": 33,
-        "weight": -0.45
-      },
-      "flexible_multi_role+mobility_high": {
-        "winrate": 0.455,
-        "games": 33,
-        "weight": -0.45
-      },
-      "mobility_high+special_global": {
-        "winrate": 0.455,
-        "games": 33,
-        "weight": -0.45
-      },
-      "mobility_high+special_transformation": {
-        "winrate": 0.455,
-        "games": 33,
-        "weight": -0.45
-      },
-      "range_short+utility_vision": {
-        "winrate": 0.455,
-        "games": 33,
-        "weight": -0.45
-      },
-      "damage_magic+range_short": {
-        "winrate": 0.456,
-        "games": 125,
-        "weight": -0.44
-      },
-      "damage_physical+range_short": {
-        "winrate": 0.456,
-        "games": 125,
-        "weight": -0.44
-      },
-      "damage_physical+scaling_levels": {
-        "winrate": 0.456,
-        "games": 149,
-        "weight": -0.44
-      },
-      "damage_single_target+range_short": {
-        "winrate": 0.456,
-        "games": 125,
-        "weight": -0.44
-      },
-      "damage_single_target+scaling_levels": {
-        "winrate": 0.456,
-        "games": 149,
-        "weight": -0.44
-      },
-      "damage_sustained+range_short": {
-        "winrate": 0.456,
-        "games": 125,
-        "weight": -0.44
-      },
-      "damage_sustained+scaling_levels": {
-        "winrate": 0.456,
-        "games": 149,
-        "weight": -0.44
-      },
-      "engage_frontline+range_short": {
-        "winrate": 0.456,
-        "games": 125,
-        "weight": -0.44
-      },
-      "engage_frontline+scaling_levels": {
-        "winrate": 0.456,
-        "games": 149,
-        "weight": -0.44
-      },
-      "range_short+scaling_items": {
-        "winrate": 0.456,
-        "games": 125,
-        "weight": -0.44
-      },
-      "range_short+scaling_levels": {
-        "winrate": 0.456,
-        "games": 125,
-        "weight": -0.44
-      },
-      "range_short+survive_tank": {
-        "winrate": 0.456,
-        "games": 125,
-        "weight": -0.44
-      },
-      "scaling_items+scaling_levels": {
-        "winrate": 0.456,
-        "games": 149,
-        "weight": -0.44
-      },
-      "scaling_levels+survive_tank": {
-        "winrate": 0.456,
-        "games": 149,
-        "weight": -0.44
-      },
-      "survive_sustain+utility_vision": {
+      "damage_mixed+range_short": {
         "winrate": 0.543,
-        "games": 46,
+        "games": 140,
         "weight": 0.43
       },
-      "cc_single+range_short": {
-        "winrate": 0.457,
-        "games": 70,
-        "weight": -0.43
+      "flexible_multi_lane+range_short": {
+        "winrate": 0.543,
+        "games": 140,
+        "weight": 0.43
       },
-      "cc_hard+range_short": {
-        "winrate": 0.458,
-        "games": 120,
-        "weight": -0.42
+      "flexible_multi_role+range_short": {
+        "winrate": 0.543,
+        "games": 140,
+        "weight": 0.43
       },
-      "damage_magic+scaling_levels": {
-        "winrate": 0.459,
-        "games": 146,
-        "weight": -0.41
+      "range_short+special_global": {
+        "winrate": 0.543,
+        "games": 140,
+        "weight": 0.43
       },
-      "range_medium+range_short": {
-        "winrate": 0.459,
-        "games": 111,
-        "weight": -0.41
+      "range_short+special_transformation": {
+        "winrate": 0.543,
+        "games": 140,
+        "weight": 0.43
       },
-      "range_short+scaling_mid": {
-        "winrate": 0.459,
-        "games": 122,
-        "weight": -0.41
+      "scaling_levels+utility_vision": {
+        "winrate": 0.542,
+        "games": 365,
+        "weight": 0.42
       },
-      "scaling_levels+scaling_mid": {
-        "winrate": 0.459,
-        "games": 146,
-        "weight": -0.41
+      "scaling_early+scaling_levels": {
+        "winrate": 0.541,
+        "games": 477,
+        "weight": 0.41
       },
-      "survive_shields+utility_vision": {
+      "survive_sustain+utility_peel": {
         "winrate": 0.54,
-        "games": 50,
+        "games": 886,
         "weight": 0.4
       },
-      "cc_soft+scaling_levels": {
-        "winrate": 0.462,
-        "games": 119,
-        "weight": -0.38
+      "cc_soft+survive_mobility": {
+        "winrate": 0.54,
+        "games": 708,
+        "weight": 0.4
       },
-      "mobility_low+scaling_levels": {
-        "winrate": 0.462,
-        "games": 145,
-        "weight": -0.38
+      "range_short+utility_vision": {
+        "winrate": 0.54,
+        "games": 252,
+        "weight": 0.4
       },
-      "range_long+scaling_levels": {
-        "winrate": 0.462,
-        "games": 145,
-        "weight": -0.38
+      "damage_mixed+scaling_levels": {
+        "winrate": 0.538,
+        "games": 195,
+        "weight": 0.38
       },
-      "range_medium+scaling_levels": {
-        "winrate": 0.462,
-        "games": 132,
-        "weight": -0.38
+      "flexible_multi_lane+scaling_levels": {
+        "winrate": 0.538,
+        "games": 195,
+        "weight": 0.38
       },
-      "scaling_levels+survive_range": {
-        "winrate": 0.462,
-        "games": 145,
-        "weight": -0.38
+      "flexible_multi_role+scaling_levels": {
+        "winrate": 0.538,
+        "games": 195,
+        "weight": 0.38
       },
-      "damage_mixed+utility_engage": {
-        "winrate": 0.462,
-        "games": 52,
-        "weight": -0.38
+      "scaling_levels+special_global": {
+        "winrate": 0.538,
+        "games": 195,
+        "weight": 0.38
       },
-      "flexible_multi_lane+utility_engage": {
-        "winrate": 0.462,
-        "games": 52,
-        "weight": -0.38
+      "scaling_levels+special_transformation": {
+        "winrate": 0.538,
+        "games": 195,
+        "weight": 0.38
       },
-      "flexible_multi_role+utility_engage": {
-        "winrate": 0.462,
-        "games": 52,
-        "weight": -0.38
+      "scaling_early+survive_mobility": {
+        "winrate": 0.537,
+        "games": 792,
+        "weight": 0.37
       },
-      "special_global+utility_engage": {
-        "winrate": 0.462,
-        "games": 52,
-        "weight": -0.38
+      "damage_mixed+engage_zone_control": {
+        "winrate": 0.536,
+        "games": 371,
+        "weight": 0.36
       },
-      "special_transformation+utility_engage": {
-        "winrate": 0.462,
-        "games": 52,
-        "weight": -0.38
+      "engage_zone_control+flexible_multi_lane": {
+        "winrate": 0.536,
+        "games": 371,
+        "weight": 0.36
       },
-      "cc_soft+range_short": {
-        "winrate": 0.463,
-        "games": 95,
-        "weight": -0.37
+      "engage_zone_control+flexible_multi_role": {
+        "winrate": 0.536,
+        "games": 371,
+        "weight": 0.36
       },
-      "engage_backline_access+range_short": {
-        "winrate": 0.463,
-        "games": 123,
-        "weight": -0.37
+      "engage_zone_control+special_global": {
+        "winrate": 0.536,
+        "games": 371,
+        "weight": 0.36
       },
-      "engage_backline_access+scaling_levels": {
-        "winrate": 0.463,
-        "games": 147,
-        "weight": -0.37
+      "engage_zone_control+special_transformation": {
+        "winrate": 0.536,
+        "games": 371,
+        "weight": 0.36
       },
-      "mobility_low+range_short": {
-        "winrate": 0.463,
-        "games": 121,
-        "weight": -0.37
+      "survive_mobility+survive_sustain": {
+        "winrate": 0.536,
+        "games": 900,
+        "weight": 0.36
       },
-      "range_long+range_short": {
-        "winrate": 0.463,
-        "games": 121,
-        "weight": -0.37
+      "mobility_high+scaling_early": {
+        "winrate": 0.535,
+        "games": 662,
+        "weight": 0.35
       },
-      "range_short+survive_range": {
-        "winrate": 0.463,
-        "games": 121,
-        "weight": -0.37
+      "engage_zone_control+survive_sustain": {
+        "winrate": 0.532,
+        "games": 967,
+        "weight": 0.32
       },
-      "range_short+utility_peel": {
-        "winrate": 0.463,
-        "games": 108,
-        "weight": -0.37
+      "mobility_high+survive_sustain": {
+        "winrate": 0.532,
+        "games": 808,
+        "weight": 0.32
       },
-      "damage_mixed+scaling_early": {
-        "winrate": 0.463,
-        "games": 41,
-        "weight": -0.37
+      "range_short+survive_mobility": {
+        "winrate": 0.532,
+        "games": 528,
+        "weight": 0.32
       },
-      "flexible_multi_lane+scaling_early": {
-        "winrate": 0.463,
-        "games": 41,
-        "weight": -0.37
+      "cc_soft+engage_flank": {
+        "winrate": 0.532,
+        "games": 408,
+        "weight": 0.32
       },
-      "flexible_multi_role+scaling_early": {
-        "winrate": 0.463,
-        "games": 41,
-        "weight": -0.37
+      "cc_soft+special_reset": {
+        "winrate": 0.532,
+        "games": 408,
+        "weight": 0.32
       },
-      "scaling_early+special_global": {
-        "winrate": 0.463,
-        "games": 41,
-        "weight": -0.37
-      },
-      "scaling_early+special_transformation": {
-        "winrate": 0.463,
-        "games": 41,
-        "weight": -0.37
-      },
-      "cc_single+mobility_medium": {
-        "winrate": 0.464,
-        "games": 84,
-        "weight": -0.36
-      },
-      "scaling_levels+survive_sustain": {
-        "winrate": 0.465,
-        "games": 127,
-        "weight": -0.35
-      },
-      "engage_zone_control+scaling_levels": {
-        "winrate": 0.466,
-        "games": 131,
-        "weight": -0.34
+      "scaling_mid+survive_sustain": {
+        "winrate": 0.531,
+        "games": 1074,
+        "weight": 0.31
       },
       "range_short+survive_sustain": {
-        "winrate": 0.466,
-        "games": 103,
-        "weight": -0.34
+        "winrate": 0.531,
+        "games": 569,
+        "weight": 0.31
       },
-      "engage_dive+scaling_levels": {
-        "winrate": 0.467,
-        "games": 135,
-        "weight": -0.33
+      "damage_mixed+utility_engage": {
+        "winrate": 0.53,
+        "games": 355,
+        "weight": 0.3
       },
-      "range_short+survive_shields": {
-        "winrate": 0.467,
-        "games": 105,
-        "weight": -0.33
+      "flexible_multi_lane+utility_engage": {
+        "winrate": 0.53,
+        "games": 355,
+        "weight": 0.3
       },
-      "scaling_levels+utility_peel": {
-        "winrate": 0.467,
-        "games": 122,
-        "weight": -0.33
+      "flexible_multi_role+utility_engage": {
+        "winrate": 0.53,
+        "games": 355,
+        "weight": 0.3
       },
-      "damage_burst+scaling_levels": {
-        "winrate": 0.468,
-        "games": 126,
-        "weight": -0.32
+      "special_global+utility_engage": {
+        "winrate": 0.53,
+        "games": 355,
+        "weight": 0.3
+      },
+      "special_transformation+utility_engage": {
+        "winrate": 0.53,
+        "games": 355,
+        "weight": 0.3
+      },
+      "damage_burst+survive_sustain": {
+        "winrate": 0.53,
+        "games": 952,
+        "weight": 0.3
+      },
+      "damage_magic+survive_sustain": {
+        "winrate": 0.53,
+        "games": 1104,
+        "weight": 0.3
+      },
+      "engage_frontline+survive_sustain": {
+        "winrate": 0.53,
+        "games": 913,
+        "weight": 0.3
+      },
+      "range_melee+survive_sustain": {
+        "winrate": 0.53,
+        "games": 1106,
+        "weight": 0.3
+      },
+      "damage_mixed+scaling_early": {
+        "winrate": 0.53,
+        "games": 268,
+        "weight": 0.3
+      },
+      "flexible_multi_lane+scaling_early": {
+        "winrate": 0.53,
+        "games": 268,
+        "weight": 0.3
+      },
+      "flexible_multi_role+scaling_early": {
+        "winrate": 0.53,
+        "games": 268,
+        "weight": 0.3
+      },
+      "scaling_early+special_global": {
+        "winrate": 0.53,
+        "games": 268,
+        "weight": 0.3
+      },
+      "scaling_early+special_transformation": {
+        "winrate": 0.53,
+        "games": 268,
+        "weight": 0.3
+      },
+      "survive_sustain+utility_vision": {
+        "winrate": 0.53,
+        "games": 453,
+        "weight": 0.3
+      },
+      "damage_aoe+survive_sustain": {
+        "winrate": 0.529,
+        "games": 1079,
+        "weight": 0.29
+      },
+      "damage_physical+survive_sustain": {
+        "winrate": 0.529,
+        "games": 1120,
+        "weight": 0.29
+      },
+      "damage_single_target+survive_sustain": {
+        "winrate": 0.529,
+        "games": 1113,
+        "weight": 0.29
+      },
+      "damage_sustained+survive_sustain": {
+        "winrate": 0.529,
+        "games": 1120,
+        "weight": 0.29
+      },
+      "scaling_items+survive_sustain": {
+        "winrate": 0.529,
+        "games": 1120,
+        "weight": 0.29
+      },
+      "range_medium+range_short": {
+        "winrate": 0.529,
+        "games": 688,
+        "weight": 0.29
+      },
+      "cc_aoe+survive_sustain": {
+        "winrate": 0.528,
+        "games": 1073,
+        "weight": 0.28
+      },
+      "cc_hard+survive_sustain": {
+        "winrate": 0.528,
+        "games": 1023,
+        "weight": 0.28
+      },
+      "engage_backline_access+survive_sustain": {
+        "winrate": 0.528,
+        "games": 1096,
+        "weight": 0.28
+      },
+      "mobility_low+survive_sustain": {
+        "winrate": 0.528,
+        "games": 1114,
+        "weight": 0.28
+      },
+      "range_long+survive_sustain": {
+        "winrate": 0.528,
+        "games": 1106,
+        "weight": 0.28
+      },
+      "range_medium+survive_sustain": {
+        "winrate": 0.528,
+        "games": 1020,
+        "weight": 0.28
+      },
+      "survive_range+survive_sustain": {
+        "winrate": 0.528,
+        "games": 1106,
+        "weight": 0.28
+      },
+      "cc_soft+mobility_high": {
+        "winrate": 0.528,
+        "games": 585,
+        "weight": 0.28
       },
       "engage_zone_control+range_short": {
-        "winrate": 0.468,
-        "games": 111,
-        "weight": -0.32
+        "winrate": 0.528,
+        "games": 672,
+        "weight": 0.28
       },
-      "engage_flank+range_short": {
-        "winrate": 0.468,
-        "games": 62,
-        "weight": -0.32
+      "survive_shields+utility_vision": {
+        "winrate": 0.473,
+        "games": 507,
+        "weight": -0.27
       },
-      "range_short+special_reset": {
-        "winrate": 0.468,
-        "games": 62,
-        "weight": -0.32
+      "engage_dive+survive_sustain": {
+        "winrate": 0.527,
+        "games": 1053,
+        "weight": 0.27
+      },
+      "mobility_medium+survive_sustain": {
+        "winrate": 0.527,
+        "games": 930,
+        "weight": 0.27
+      },
+      "scaling_late+survive_sustain": {
+        "winrate": 0.527,
+        "games": 1061,
+        "weight": 0.27
+      },
+      "survive_sustain+survive_tank": {
+        "winrate": 0.527,
+        "games": 996,
+        "weight": 0.27
+      },
+      "survive_sustain+utility_engage": {
+        "winrate": 0.527,
+        "games": 818,
+        "weight": 0.27
+      },
+      "damage_burst+damage_mixed": {
+        "winrate": 0.526,
+        "games": 399,
+        "weight": 0.26
+      },
+      "damage_burst+flexible_multi_lane": {
+        "winrate": 0.526,
+        "games": 399,
+        "weight": 0.26
+      },
+      "damage_burst+flexible_multi_role": {
+        "winrate": 0.526,
+        "games": 399,
+        "weight": 0.26
+      },
+      "damage_burst+special_global": {
+        "winrate": 0.526,
+        "games": 399,
+        "weight": 0.26
+      },
+      "damage_burst+special_transformation": {
+        "winrate": 0.526,
+        "games": 399,
+        "weight": 0.26
+      },
+      "engage_zone_control+survive_mobility": {
+        "winrate": 0.526,
+        "games": 1173,
+        "weight": 0.26
+      },
+      "cc_single+survive_shields": {
+        "winrate": 0.474,
+        "games": 604,
+        "weight": -0.26
+      },
+      "damage_mixed+scaling_late": {
+        "winrate": 0.525,
+        "games": 461,
+        "weight": 0.25
+      },
+      "flexible_multi_lane+scaling_late": {
+        "winrate": 0.525,
+        "games": 461,
+        "weight": 0.25
+      },
+      "flexible_multi_role+scaling_late": {
+        "winrate": 0.525,
+        "games": 461,
+        "weight": 0.25
+      },
+      "scaling_late+special_global": {
+        "winrate": 0.525,
+        "games": 461,
+        "weight": 0.25
+      },
+      "scaling_late+special_transformation": {
+        "winrate": 0.525,
+        "games": 461,
+        "weight": 0.25
+      },
+      "cc_soft+utility_peel": {
+        "winrate": 0.525,
+        "games": 788,
+        "weight": 0.25
+      },
+      "cc_soft+range_short": {
+        "winrate": 0.525,
+        "games": 552,
+        "weight": 0.25
+      },
+      "mobility_high+range_short": {
+        "winrate": 0.525,
+        "games": 451,
+        "weight": 0.25
+      },
+      "damage_magic+damage_mixed": {
+        "winrate": 0.524,
+        "games": 466,
+        "weight": 0.24
+      },
+      "damage_magic+flexible_multi_lane": {
+        "winrate": 0.524,
+        "games": 466,
+        "weight": 0.24
+      },
+      "damage_magic+flexible_multi_role": {
+        "winrate": 0.524,
+        "games": 466,
+        "weight": 0.24
+      },
+      "damage_magic+special_global": {
+        "winrate": 0.524,
+        "games": 466,
+        "weight": 0.24
+      },
+      "damage_magic+special_transformation": {
+        "winrate": 0.524,
+        "games": 466,
+        "weight": 0.24
+      },
+      "damage_mixed+damage_single_target": {
+        "winrate": 0.524,
+        "games": 475,
+        "weight": 0.24
       }
     },
     "counters": {
-      "survive_sustain>scaling_early": {
-        "blue_winrate": 0.674,
-        "games": 43,
-        "weight": 1.74
+      "range_short>cc_single": {
+        "blue_winrate": 0.591,
+        "games": 171,
+        "weight": 0.91
       },
-      "scaling_early>scaling_early": {
-        "blue_winrate": 0.667,
-        "games": 39,
-        "weight": 1.67
-      },
-      "survive_sustain>utility_engage": {
-        "blue_winrate": 0.667,
-        "games": 60,
-        "weight": 1.67
-      },
-      "survive_mobility>utility_vision": {
-        "blue_winrate": 0.667,
-        "games": 24,
-        "weight": 1.67
-      },
-      "mobility_high>utility_vision": {
-        "blue_winrate": 0.667,
-        "games": 24,
-        "weight": 1.67
-      },
-      "utility_vision>cc_soft": {
-        "blue_winrate": 0.654,
-        "games": 26,
-        "weight": 1.54
-      },
-      "survive_sustain>cc_soft": {
-        "blue_winrate": 0.65,
-        "games": 40,
-        "weight": 1.5
-      },
-      "engage_flank>utility_vision": {
-        "blue_winrate": 0.65,
-        "games": 20,
-        "weight": 1.5
-      },
-      "special_reset>utility_vision": {
-        "blue_winrate": 0.65,
-        "games": 20,
-        "weight": 1.5
-      },
-      "cc_soft>utility_engage": {
-        "blue_winrate": 0.647,
-        "games": 51,
-        "weight": 1.47
-      },
-      "survive_sustain>mobility_medium": {
-        "blue_winrate": 0.647,
-        "games": 68,
-        "weight": 1.47
-      },
-      "engage_flank>survive_sustain": {
-        "blue_winrate": 0.646,
-        "games": 48,
-        "weight": 1.46
-      },
-      "special_reset>survive_sustain": {
-        "blue_winrate": 0.646,
-        "games": 48,
-        "weight": 1.46
-      },
-      "scaling_early>utility_engage": {
-        "blue_winrate": 0.644,
-        "games": 59,
-        "weight": 1.44
-      },
-      "mobility_high>survive_sustain": {
-        "blue_winrate": 0.644,
-        "games": 59,
-        "weight": 1.44
-      },
-      "engage_frontline>scaling_levels": {
-        "blue_winrate": 0.643,
-        "games": 56,
-        "weight": 1.43
-      },
-      "cc_soft>scaling_early": {
-        "blue_winrate": 0.641,
-        "games": 39,
-        "weight": 1.41
-      },
-      "scaling_early>cc_soft": {
-        "blue_winrate": 0.638,
-        "games": 47,
-        "weight": 1.38
-      },
-      "utility_peel>cc_soft": {
-        "blue_winrate": 0.638,
-        "games": 58,
-        "weight": 1.38
-      },
-      "scaling_early>mobility_medium": {
-        "blue_winrate": 0.634,
-        "games": 71,
-        "weight": 1.34
-      },
-      "cc_soft>cc_soft": {
-        "blue_winrate": 0.632,
-        "games": 38,
-        "weight": 1.32
-      },
-      "cc_soft>scaling_levels": {
-        "blue_winrate": 0.632,
-        "games": 38,
-        "weight": 1.32
-      },
-      "utility_vision>mobility_medium": {
-        "blue_winrate": 0.632,
-        "games": 38,
-        "weight": 1.32
+      "range_short>range_short": {
+        "blue_winrate": 0.59,
+        "games": 166,
+        "weight": 0.9
       },
       "survive_sustain>survive_shields": {
-        "blue_winrate": 0.631,
-        "games": 65,
-        "weight": 1.31
+        "blue_winrate": 0.584,
+        "games": 394,
+        "weight": 0.84
       },
-      "engage_dive>utility_engage": {
-        "blue_winrate": 0.63,
-        "games": 100,
-        "weight": 1.3
+      "range_short>engage_frontline": {
+        "blue_winrate": 0.582,
+        "games": 285,
+        "weight": 0.82
       },
-      "engage_dive>scaling_levels": {
-        "blue_winrate": 0.63,
-        "games": 73,
-        "weight": 1.3
+      "range_short>survive_shields": {
+        "blue_winrate": 0.58,
+        "games": 283,
+        "weight": 0.8
       },
-      "utility_engage>utility_vision": {
-        "blue_winrate": 0.63,
-        "games": 27,
-        "weight": 1.3
+      "range_short>scaling_levels": {
+        "blue_winrate": 0.58,
+        "games": 212,
+        "weight": 0.8
       },
-      "survive_mobility>survive_sustain": {
-        "blue_winrate": 0.629,
-        "games": 70,
-        "weight": 1.29
+      "scaling_early>cc_single": {
+        "blue_winrate": 0.579,
+        "games": 216,
+        "weight": 0.79
       },
-      "utility_vision>engage_zone_control": {
-        "blue_winrate": 0.629,
-        "games": 35,
-        "weight": 1.29
+      "survive_sustain>utility_engage": {
+        "blue_winrate": 0.578,
+        "games": 422,
+        "weight": 0.78
       },
-      "range_long>scaling_levels": {
-        "blue_winrate": 0.627,
-        "games": 75,
-        "weight": 1.27
+      "scaling_early>scaling_early": {
+        "blue_winrate": 0.578,
+        "games": 296,
+        "weight": 0.78
       },
-      "survive_range>scaling_levels": {
-        "blue_winrate": 0.627,
-        "games": 75,
-        "weight": 1.27
+      "utility_vision>flexible_multi_lane": {
+        "blue_winrate": 0.423,
+        "games": 97,
+        "weight": -0.77
       },
-      "mobility_low>scaling_levels": {
-        "blue_winrate": 0.627,
-        "games": 75,
-        "weight": 1.27
+      "utility_vision>special_transformation": {
+        "blue_winrate": 0.423,
+        "games": 97,
+        "weight": -0.77
       },
-      "cc_soft>survive_sustain": {
-        "blue_winrate": 0.625,
-        "games": 48,
-        "weight": 1.25
+      "utility_vision>special_global": {
+        "blue_winrate": 0.423,
+        "games": 97,
+        "weight": -0.77
+      },
+      "utility_vision>damage_mixed": {
+        "blue_winrate": 0.423,
+        "games": 97,
+        "weight": -0.77
+      },
+      "utility_vision>flexible_multi_role": {
+        "blue_winrate": 0.423,
+        "games": 97,
+        "weight": -0.77
+      },
+      "survive_sustain>mobility_medium": {
+        "blue_winrate": 0.577,
+        "games": 449,
+        "weight": 0.77
+      },
+      "range_short>mobility_medium": {
+        "blue_winrate": 0.576,
+        "games": 330,
+        "weight": 0.76
+      },
+      "range_short>utility_engage": {
+        "blue_winrate": 0.576,
+        "games": 311,
+        "weight": 0.76
       },
       "survive_sustain>survive_tank": {
-        "blue_winrate": 0.625,
-        "games": 72,
-        "weight": 1.25
+        "blue_winrate": 0.575,
+        "games": 466,
+        "weight": 0.75
       },
-      "utility_vision>utility_engage": {
-        "blue_winrate": 0.625,
-        "games": 32,
-        "weight": 1.25
+      "scaling_early>utility_engage": {
+        "blue_winrate": 0.57,
+        "games": 407,
+        "weight": 0.7
       },
-      "utility_vision>scaling_early": {
-        "blue_winrate": 0.625,
-        "games": 24,
-        "weight": 1.25
-      },
-      "utility_peel>survive_sustain": {
-        "blue_winrate": 0.623,
-        "games": 69,
-        "weight": 1.23
-      },
-      "utility_peel>scaling_levels": {
-        "blue_winrate": 0.623,
-        "games": 61,
-        "weight": 1.23
-      },
-      "engage_frontline>cc_soft": {
-        "blue_winrate": 0.623,
-        "games": 53,
-        "weight": 1.23
-      },
-      "utility_engage>survive_sustain": {
-        "blue_winrate": 0.622,
-        "games": 74,
-        "weight": 1.22
-      },
-      "engage_dive>mobility_medium": {
-        "blue_winrate": 0.622,
-        "games": 111,
-        "weight": 1.22
-      },
-      "engage_dive>survive_sustain": {
-        "blue_winrate": 0.622,
-        "games": 82,
-        "weight": 1.22
-      },
-      "survive_sustain>range_medium": {
-        "blue_winrate": 0.622,
-        "games": 74,
-        "weight": 1.22
-      },
-      "engage_frontline>utility_engage": {
-        "blue_winrate": 0.622,
-        "games": 82,
-        "weight": 1.22
-      },
-      "mobility_high>mobility_medium": {
-        "blue_winrate": 0.622,
-        "games": 82,
-        "weight": 1.22
-      },
-      "scaling_early>survive_sustain": {
-        "blue_winrate": 0.621,
-        "games": 58,
-        "weight": 1.21
-      },
-      "engage_frontline>survive_sustain": {
-        "blue_winrate": 0.621,
-        "games": 66,
-        "weight": 1.21
-      },
-      "survive_shields>utility_engage": {
-        "blue_winrate": 0.621,
-        "games": 87,
-        "weight": 1.21
-      },
-      "survive_mobility>mobility_medium": {
-        "blue_winrate": 0.621,
-        "games": 95,
-        "weight": 1.21
-      },
-      "engage_flank>mobility_medium": {
-        "blue_winrate": 0.621,
-        "games": 66,
-        "weight": 1.21
-      },
-      "special_reset>mobility_medium": {
-        "blue_winrate": 0.621,
-        "games": 66,
-        "weight": 1.21
-      },
-      "engage_dive>range_short": {
-        "blue_winrate": 0.621,
-        "games": 58,
-        "weight": 1.21
-      },
-      "cc_single>cc_soft": {
-        "blue_winrate": 0.621,
-        "games": 29,
-        "weight": 1.21
-      },
-      "utility_peel>utility_engage": {
-        "blue_winrate": 0.62,
-        "games": 79,
-        "weight": 1.2
-      },
-      "survive_sustain>survive_sustain": {
-        "blue_winrate": 0.62,
-        "games": 50,
-        "weight": 1.2
-      },
-      "survive_tank>scaling_levels": {
-        "blue_winrate": 0.62,
-        "games": 71,
-        "weight": 1.2
-      },
-      "cc_aoe>utility_engage": {
-        "blue_winrate": 0.619,
-        "games": 105,
-        "weight": 1.19
-      },
-      "survive_sustain>scaling_levels": {
-        "blue_winrate": 0.619,
-        "games": 42,
-        "weight": 1.19
-      },
-      "flexible_multi_role>engage_zone_control": {
-        "blue_winrate": 0.619,
-        "games": 21,
-        "weight": 1.19
-      },
-      "special_transformation>engage_zone_control": {
-        "blue_winrate": 0.619,
-        "games": 21,
-        "weight": 1.19
-      },
-      "flexible_multi_lane>engage_zone_control": {
-        "blue_winrate": 0.619,
-        "games": 21,
-        "weight": 1.19
-      },
-      "special_global>engage_zone_control": {
-        "blue_winrate": 0.619,
-        "games": 21,
-        "weight": 1.19
-      },
-      "damage_mixed>engage_zone_control": {
-        "blue_winrate": 0.619,
-        "games": 21,
-        "weight": 1.19
-      },
-      "engage_frontline>range_short": {
-        "blue_winrate": 0.619,
-        "games": 42,
-        "weight": 1.19
-      },
-      "engage_zone_control>utility_engage": {
-        "blue_winrate": 0.618,
-        "games": 89,
-        "weight": 1.18
-      },
-      "survive_sustain>scaling_late": {
-        "blue_winrate": 0.618,
-        "games": 76,
-        "weight": 1.18
-      },
-      "mobility_high>scaling_levels": {
-        "blue_winrate": 0.618,
-        "games": 55,
-        "weight": 1.18
-      },
-      "cc_soft>mobility_medium": {
-        "blue_winrate": 0.617,
-        "games": 60,
-        "weight": 1.17
-      },
-      "engage_dive>survive_tank": {
-        "blue_winrate": 0.617,
-        "games": 120,
-        "weight": 1.17
-      },
-      "survive_sustain>utility_peel": {
-        "blue_winrate": 0.617,
-        "games": 60,
-        "weight": 1.17
-      },
-      "range_long>range_short": {
-        "blue_winrate": 0.617,
-        "games": 60,
-        "weight": 1.17
-      },
-      "survive_range>range_short": {
-        "blue_winrate": 0.617,
-        "games": 60,
-        "weight": 1.17
-      },
-      "mobility_low>range_short": {
-        "blue_winrate": 0.617,
-        "games": 60,
-        "weight": 1.17
-      },
-      "scaling_late>scaling_levels": {
-        "blue_winrate": 0.616,
-        "games": 73,
-        "weight": 1.16
-      },
-      "survive_tank>utility_engage": {
-        "blue_winrate": 0.616,
-        "games": 99,
-        "weight": 1.16
-      },
-      "survive_mobility>utility_engage": {
-        "blue_winrate": 0.616,
-        "games": 86,
-        "weight": 1.16
-      },
-      "mobility_medium>cc_soft": {
-        "blue_winrate": 0.615,
-        "games": 65,
-        "weight": 1.15
-      },
-      "mobility_medium>utility_engage": {
-        "blue_winrate": 0.615,
-        "games": 96,
-        "weight": 1.15
-      },
-      "cc_soft>survive_tank": {
-        "blue_winrate": 0.615,
-        "games": 65,
-        "weight": 1.15
-      },
-      "scaling_late>utility_engage": {
-        "blue_winrate": 0.615,
-        "games": 104,
-        "weight": 1.15
-      },
-      "utility_peel>mobility_medium": {
-        "blue_winrate": 0.615,
-        "games": 91,
-        "weight": 1.15
-      },
-      "mobility_high>mobility_high": {
-        "blue_winrate": 0.615,
-        "games": 65,
-        "weight": 1.15
-      },
-      "survive_mobility>scaling_levels": {
-        "blue_winrate": 0.615,
-        "games": 65,
-        "weight": 1.15
-      },
-      "mobility_medium>scaling_levels": {
-        "blue_winrate": 0.614,
-        "games": 70,
-        "weight": 1.14
-      },
-      "utility_engage>utility_engage": {
-        "blue_winrate": 0.614,
-        "games": 88,
-        "weight": 1.14
-      },
-      "range_medium>utility_engage": {
-        "blue_winrate": 0.614,
-        "games": 88,
-        "weight": 1.14
-      },
-      "engage_flank>scaling_levels": {
-        "blue_winrate": 0.614,
-        "games": 44,
-        "weight": 1.14
-      },
-      "special_reset>scaling_levels": {
-        "blue_winrate": 0.614,
-        "games": 44,
-        "weight": 1.14
-      },
-      "range_melee>scaling_levels": {
-        "blue_winrate": 0.613,
-        "games": 75,
-        "weight": 1.13
-      },
-      "utility_engage>cc_soft": {
-        "blue_winrate": 0.613,
-        "games": 62,
-        "weight": 1.13
-      },
-      "damage_aoe>utility_engage": {
-        "blue_winrate": 0.613,
-        "games": 106,
-        "weight": 1.13
-      },
-      "engage_dive>scaling_early": {
-        "blue_winrate": 0.613,
-        "games": 75,
-        "weight": 1.13
+      "range_short>survive_tank": {
+        "blue_winrate": 0.57,
+        "games": 337,
+        "weight": 0.7
       },
       "survive_sustain>engage_frontline": {
-        "blue_winrate": 0.613,
-        "games": 62,
-        "weight": 1.13
+        "blue_winrate": 0.57,
+        "games": 393,
+        "weight": 0.7
       },
-      "scaling_mid>utility_engage": {
-        "blue_winrate": 0.613,
-        "games": 106,
-        "weight": 1.13
+      "range_short>cc_hard": {
+        "blue_winrate": 0.569,
+        "games": 360,
+        "weight": 0.69
       },
-      "engage_backline_access>utility_engage": {
-        "blue_winrate": 0.613,
-        "games": 106,
-        "weight": 1.13
+      "scaling_levels>engage_frontline": {
+        "blue_winrate": 0.569,
+        "games": 355,
+        "weight": 0.69
       },
-      "engage_flank>utility_engage": {
-        "blue_winrate": 0.613,
-        "games": 62,
-        "weight": 1.13
+      "scaling_levels>survive_shields": {
+        "blue_winrate": 0.568,
+        "games": 352,
+        "weight": 0.68
       },
-      "special_reset>utility_engage": {
-        "blue_winrate": 0.613,
-        "games": 62,
-        "weight": 1.13
+      "flexible_multi_lane>flexible_multi_lane": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
       },
-      "mobility_high>utility_engage": {
-        "blue_winrate": 0.613,
-        "games": 75,
-        "weight": 1.13
+      "flexible_multi_lane>special_transformation": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
       },
-      "engage_dive>utility_vision": {
-        "blue_winrate": 0.613,
-        "games": 31,
-        "weight": 1.13
+      "flexible_multi_lane>special_global": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
       },
-      "cc_aoe>mobility_medium": {
-        "blue_winrate": 0.612,
-        "games": 116,
-        "weight": 1.12
+      "flexible_multi_lane>damage_mixed": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "flexible_multi_lane>flexible_multi_role": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "special_transformation>flexible_multi_lane": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "special_transformation>special_transformation": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "special_transformation>special_global": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "special_transformation>damage_mixed": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "special_transformation>flexible_multi_role": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "special_global>flexible_multi_lane": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "special_global>special_transformation": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "special_global>special_global": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "special_global>damage_mixed": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "special_global>flexible_multi_role": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "damage_mixed>flexible_multi_lane": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "damage_mixed>special_transformation": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "damage_mixed>special_global": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "damage_mixed>damage_mixed": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "damage_mixed>flexible_multi_role": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "flexible_multi_role>flexible_multi_lane": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "flexible_multi_role>special_transformation": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "flexible_multi_role>special_global": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "flexible_multi_role>damage_mixed": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "flexible_multi_role>flexible_multi_role": {
+        "blue_winrate": 0.433,
+        "games": 60,
+        "weight": -0.67
+      },
+      "cc_soft>survive_shields": {
+        "blue_winrate": 0.566,
+        "games": 366,
+        "weight": 0.66
+      },
+      "cc_soft>utility_engage": {
+        "blue_winrate": 0.566,
+        "games": 403,
+        "weight": 0.66
+      },
+      "scaling_levels>utility_engage": {
+        "blue_winrate": 0.566,
+        "games": 385,
+        "weight": 0.66
+      },
+      "survive_sustain>cc_single": {
+        "blue_winrate": 0.566,
+        "games": 235,
+        "weight": 0.66
+      },
+      "scaling_early>mobility_medium": {
+        "blue_winrate": 0.564,
+        "games": 440,
+        "weight": 0.64
+      },
+      "range_short>cc_aoe": {
+        "blue_winrate": 0.564,
+        "games": 369,
+        "weight": 0.64
+      },
+      "scaling_levels>scaling_levels": {
+        "blue_winrate": 0.564,
+        "games": 264,
+        "weight": 0.64
+      },
+      "scaling_early>survive_shields": {
+        "blue_winrate": 0.563,
+        "games": 389,
+        "weight": 0.63
+      },
+      "range_short>survive_range": {
+        "blue_winrate": 0.563,
+        "games": 378,
+        "weight": 0.63
+      },
+      "range_short>range_long": {
+        "blue_winrate": 0.563,
+        "games": 378,
+        "weight": 0.63
+      },
+      "scaling_early>survive_tank": {
+        "blue_winrate": 0.562,
+        "games": 457,
+        "weight": 0.62
+      },
+      "scaling_levels>survive_tank": {
+        "blue_winrate": 0.562,
+        "games": 422,
+        "weight": 0.62
+      },
+      "survive_sustain>cc_hard": {
+        "blue_winrate": 0.562,
+        "games": 504,
+        "weight": 0.62
+      },
+      "range_short>mobility_low": {
+        "blue_winrate": 0.562,
+        "games": 379,
+        "weight": 0.62
+      },
+      "scaling_early>engage_frontline": {
+        "blue_winrate": 0.562,
+        "games": 390,
+        "weight": 0.62
+      },
+      "scaling_early>cc_hard": {
+        "blue_winrate": 0.561,
+        "games": 487,
+        "weight": 0.61
+      },
+      "range_short>damage_aoe": {
+        "blue_winrate": 0.561,
+        "games": 362,
+        "weight": 0.61
+      },
+      "range_short>utility_peel": {
+        "blue_winrate": 0.561,
+        "games": 310,
+        "weight": 0.61
+      },
+      "range_short>scaling_items": {
+        "blue_winrate": 0.561,
+        "games": 380,
+        "weight": 0.61
+      },
+      "range_short>damage_magic": {
+        "blue_winrate": 0.561,
+        "games": 374,
+        "weight": 0.61
+      },
+      "range_short>damage_physical": {
+        "blue_winrate": 0.561,
+        "games": 380,
+        "weight": 0.61
+      },
+      "range_short>damage_single_target": {
+        "blue_winrate": 0.561,
+        "games": 380,
+        "weight": 0.61
+      },
+      "scaling_early>flexible_multi_lane": {
+        "blue_winrate": 0.561,
+        "games": 132,
+        "weight": 0.61
+      },
+      "scaling_early>special_transformation": {
+        "blue_winrate": 0.561,
+        "games": 132,
+        "weight": 0.61
+      },
+      "scaling_early>special_global": {
+        "blue_winrate": 0.561,
+        "games": 132,
+        "weight": 0.61
+      },
+      "scaling_early>damage_mixed": {
+        "blue_winrate": 0.561,
+        "games": 132,
+        "weight": 0.61
+      },
+      "scaling_early>flexible_multi_role": {
+        "blue_winrate": 0.561,
+        "games": 132,
+        "weight": 0.61
+      },
+      "mobility_high>cc_single": {
+        "blue_winrate": 0.561,
+        "games": 264,
+        "weight": 0.61
+      },
+      "scaling_early>cc_soft": {
+        "blue_winrate": 0.561,
+        "games": 269,
+        "weight": 0.61
+      },
+      "cc_soft>mobility_medium": {
+        "blue_winrate": 0.56,
+        "games": 423,
+        "weight": 0.6
+      },
+      "survive_sustain>utility_vision": {
+        "blue_winrate": 0.56,
+        "games": 232,
+        "weight": 0.6
+      },
+      "range_short>engage_zone_control": {
+        "blue_winrate": 0.56,
+        "games": 323,
+        "weight": 0.6
+      },
+      "scaling_early>engage_zone_control": {
+        "blue_winrate": 0.559,
+        "games": 440,
+        "weight": 0.59
+      },
+      "scaling_levels>mobility_medium": {
+        "blue_winrate": 0.559,
+        "games": 413,
+        "weight": 0.59
+      },
+      "survive_sustain>damage_aoe": {
+        "blue_winrate": 0.559,
+        "games": 513,
+        "weight": 0.59
+      },
+      "survive_sustain>cc_aoe": {
+        "blue_winrate": 0.559,
+        "games": 521,
+        "weight": 0.59
+      },
+      "range_short>damage_sustained": {
+        "blue_winrate": 0.559,
+        "games": 379,
+        "weight": 0.59
+      },
+      "survive_mobility>cc_single": {
+        "blue_winrate": 0.559,
+        "games": 311,
+        "weight": 0.59
+      },
+      "scaling_early>scaling_mid": {
+        "blue_winrate": 0.558,
+        "games": 500,
+        "weight": 0.58
+      },
+      "scaling_early>damage_single_target": {
+        "blue_winrate": 0.558,
+        "games": 514,
+        "weight": 0.58
+      },
+      "scaling_early>survive_range": {
+        "blue_winrate": 0.557,
+        "games": 512,
+        "weight": 0.57
+      },
+      "scaling_early>range_long": {
+        "blue_winrate": 0.557,
+        "games": 512,
+        "weight": 0.57
+      },
+      "range_short>scaling_mid": {
+        "blue_winrate": 0.557,
+        "games": 375,
+        "weight": 0.57
+      },
+      "range_short>engage_backline_access": {
+        "blue_winrate": 0.557,
+        "games": 375,
+        "weight": 0.57
+      },
+      "survive_mobility>utility_engage": {
+        "blue_winrate": 0.556,
+        "games": 581,
+        "weight": 0.56
+      },
+      "scaling_early>mobility_low": {
+        "blue_winrate": 0.556,
+        "games": 514,
+        "weight": 0.56
+      },
+      "scaling_early>scaling_items": {
+        "blue_winrate": 0.556,
+        "games": 516,
+        "weight": 0.56
+      },
+      "scaling_early>damage_physical": {
+        "blue_winrate": 0.556,
+        "games": 516,
+        "weight": 0.56
+      },
+      "scaling_early>cc_aoe": {
+        "blue_winrate": 0.556,
+        "games": 502,
+        "weight": 0.56
+      },
+      "scaling_early>damage_burst": {
+        "blue_winrate": 0.556,
+        "games": 453,
+        "weight": 0.56
+      },
+      "scaling_early>engage_backline_access": {
+        "blue_winrate": 0.556,
+        "games": 511,
+        "weight": 0.56
       }
     }
   },
   "prediction_results": {
-    "total_matches": 139,
-    "correct_predictions": 92,
-    "accuracy": 0.662,
+    "total_matches": 936,
+    "correct_predictions": 579,
+    "accuracy": 0.619,
     "baseline": 0.5,
-    "improvement": 0.162
+    "improvement": 0.119
   }
 }

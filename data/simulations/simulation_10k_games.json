@@ -1,0 +1,648 @@
+{
+  "metadata": {
+    "total_games": 10000,
+    "real_matches_used_for_training": 936,
+    "features_extracted": 78,
+    "models_used": [
+      "logistic",
+      "random_forest",
+      "gradient_boosting"
+    ]
+  },
+  "analysis": {
+    "prediction_distribution": {
+      "blue_wins": 5842,
+      "red_wins": 4158,
+      "blue_win_rate": 0.5842
+    },
+    "confidence_metrics": {
+      "average_confidence": 0.5959374786789519,
+      "high_confidence_games": 4264,
+      "medium_confidence_games": 2689,
+      "low_confidence_games": 3047
+    }
+  },
+  "sample_games": {
+    "high_confidence_blue": [
+      {
+        "game_id": 8271,
+        "blue_team": {
+          "Top": "Mordekaiser",
+          "Jungle": "LeeSin",
+          "Middle": "Katarina",
+          "Bottom": "Jhin",
+          "Support": "Shaco"
+        },
+        "red_team": {
+          "Top": "Warwick",
+          "Jungle": "Sejuani",
+          "Middle": "Irelia",
+          "Bottom": "Xayah",
+          "Support": "Sona"
+        },
+        "prediction": {
+          "ensemble_prediction": "blue",
+          "blue_probability": 0.8516358242714661,
+          "red_probability": 0.1483641757285339,
+          "individual_predictions": {
+            "logistic": "blue",
+            "random_forest": "blue",
+            "gradient_boosting": "blue"
+          },
+          "individual_probabilities": {
+            "logistic": {
+              "blue": 0.755046040002276,
+              "red": 0.24495395999772396
+            },
+            "random_forest": {
+              "blue": 0.8203902299037124,
+              "red": 0.17960977009628756
+            },
+            "gradient_boosting": {
+              "blue": 0.9794712029084098,
+              "red": 0.020528797091590167
+            }
+          }
+        }
+      },
+      {
+        "game_id": 9686,
+        "blue_team": {
+          "Top": "Heimerdinger",
+          "Jungle": "Jax",
+          "Middle": "Yasuo",
+          "Bottom": "Ziggs",
+          "Support": "Taric"
+        },
+        "red_team": {
+          "Top": "Skarner",
+          "Jungle": "Brand",
+          "Middle": "Orianna",
+          "Bottom": "Seraphine",
+          "Support": "Xerath"
+        },
+        "prediction": {
+          "ensemble_prediction": "blue",
+          "blue_probability": 0.8427656113486449,
+          "red_probability": 0.15723438865135508,
+          "individual_predictions": {
+            "logistic": "blue",
+            "random_forest": "blue",
+            "gradient_boosting": "blue"
+          },
+          "individual_probabilities": {
+            "logistic": {
+              "blue": 0.8281155134990109,
+              "red": 0.1718844865009891
+            },
+            "random_forest": {
+              "blue": 0.7146715389049474,
+              "red": 0.2853284610950526
+            },
+            "gradient_boosting": {
+              "blue": 0.9855097816419762,
+              "red": 0.014490218358023776
+            }
+          }
+        }
+      },
+      {
+        "game_id": 8073,
+        "blue_team": {
+          "Top": "Yasuo",
+          "Jungle": "Talon",
+          "Middle": "Irelia",
+          "Bottom": "Varus",
+          "Support": "Pyke"
+        },
+        "red_team": {
+          "Top": "Warwick",
+          "Jungle": "Pantheon",
+          "Middle": "Annie",
+          "Bottom": "Caitlyn",
+          "Support": "Soraka"
+        },
+        "prediction": {
+          "ensemble_prediction": "blue",
+          "blue_probability": 0.8411154662473845,
+          "red_probability": 0.15888453375261546,
+          "individual_predictions": {
+            "logistic": "blue",
+            "random_forest": "blue",
+            "gradient_boosting": "blue"
+          },
+          "individual_probabilities": {
+            "logistic": {
+              "blue": 0.7840742476352435,
+              "red": 0.21592575236475653
+            },
+            "random_forest": {
+              "blue": 0.7891853192074342,
+              "red": 0.21081468079256596
+            },
+            "gradient_boosting": {
+              "blue": 0.9500868318994761,
+              "red": 0.04991316810052393
+            }
+          }
+        }
+      },
+      {
+        "game_id": 1236,
+        "blue_team": {
+          "Top": "Fiora",
+          "Jungle": "XinZhao",
+          "Middle": "Ziggs",
+          "Bottom": "MissFortune",
+          "Support": "Lux"
+        },
+        "red_team": {
+          "Top": "Sion",
+          "Jungle": "Brand",
+          "Middle": "Ahri",
+          "Bottom": "Seraphine",
+          "Support": "Yuumi"
+        },
+        "prediction": {
+          "ensemble_prediction": "blue",
+          "blue_probability": 0.840857116166209,
+          "red_probability": 0.15914288383379105,
+          "individual_predictions": {
+            "logistic": "blue",
+            "random_forest": "blue",
+            "gradient_boosting": "blue"
+          },
+          "individual_probabilities": {
+            "logistic": {
+              "blue": 0.7955061851157653,
+              "red": 0.20449381488423468
+            },
+            "random_forest": {
+              "blue": 0.73256082576207,
+              "red": 0.26743917423793
+            },
+            "gradient_boosting": {
+              "blue": 0.9945043376207916,
+              "red": 0.005495662379208399
+            }
+          }
+        }
+      },
+      {
+        "game_id": 5981,
+        "blue_team": {
+          "Top": "Vladimir",
+          "Jungle": "Talon",
+          "Middle": "Brand",
+          "Bottom": "Ziggs",
+          "Support": "Amumu"
+        },
+        "red_team": {
+          "Top": "Ornn",
+          "Jungle": "Skarner",
+          "Middle": "Irelia",
+          "Bottom": "Ashe",
+          "Support": "Heimerdinger"
+        },
+        "prediction": {
+          "ensemble_prediction": "blue",
+          "blue_probability": 0.8378129192940205,
+          "red_probability": 0.16218708070597954,
+          "individual_predictions": {
+            "logistic": "blue",
+            "random_forest": "blue",
+            "gradient_boosting": "blue"
+          },
+          "individual_probabilities": {
+            "logistic": {
+              "blue": 0.8080109686305742,
+              "red": 0.1919890313694258
+            },
+            "random_forest": {
+              "blue": 0.729355636823052,
+              "red": 0.27064436317694807
+            },
+            "gradient_boosting": {
+              "blue": 0.9760721524284351,
+              "red": 0.023927847571564853
+            }
+          }
+        }
+      }
+    ],
+    "high_confidence_red": [
+      {
+        "game_id": 8765,
+        "blue_team": {
+          "Top": "Warwick",
+          "Jungle": "Vi",
+          "Middle": "Lux",
+          "Bottom": "Caitlyn",
+          "Support": "Lulu"
+        },
+        "red_team": {
+          "Top": "Yasuo",
+          "Jungle": "Ivern",
+          "Middle": "Malzahar",
+          "Bottom": "Aphelios",
+          "Support": "Veigar"
+        },
+        "prediction": {
+          "ensemble_prediction": "red",
+          "blue_probability": 0.2098843460262457,
+          "red_probability": 0.7901156539737543,
+          "individual_predictions": {
+            "logistic": "red",
+            "random_forest": "red",
+            "gradient_boosting": "red"
+          },
+          "individual_probabilities": {
+            "logistic": {
+              "blue": 0.21777163054208137,
+              "red": 0.7822283694579186
+            },
+            "random_forest": {
+              "blue": 0.3332370925500994,
+              "red": 0.6667629074499005
+            },
+            "gradient_boosting": {
+              "blue": 0.07864431498655636,
+              "red": 0.9213556850134437
+            }
+          }
+        }
+      },
+      {
+        "game_id": 3181,
+        "blue_team": {
+          "Top": "Ambessa",
+          "Jungle": "Fiddlesticks",
+          "Middle": "Pantheon",
+          "Bottom": "Vayne",
+          "Support": "TahmKench"
+        },
+        "red_team": {
+          "Top": "Fiora",
+          "Jungle": "Poppy",
+          "Middle": "Lissandra",
+          "Bottom": "Jinx",
+          "Support": "Galio"
+        },
+        "prediction": {
+          "ensemble_prediction": "red",
+          "blue_probability": 0.23338368578714377,
+          "red_probability": 0.7666163142128563,
+          "individual_predictions": {
+            "logistic": "red",
+            "random_forest": "red",
+            "gradient_boosting": "red"
+          },
+          "individual_probabilities": {
+            "logistic": {
+              "blue": 0.27319805335843045,
+              "red": 0.7268019466415696
+            },
+            "random_forest": {
+              "blue": 0.3329172545811535,
+              "red": 0.6670827454188465
+            },
+            "gradient_boosting": {
+              "blue": 0.09403574942184739,
+              "red": 0.9059642505781527
+            }
+          }
+        }
+      },
+      {
+        "game_id": 9014,
+        "blue_team": {
+          "Top": "Illaoi",
+          "Jungle": "Udyr",
+          "Middle": "Lissandra",
+          "Bottom": "Ziggs",
+          "Support": "Shen"
+        },
+        "red_team": {
+          "Top": "Jax",
+          "Jungle": "Talon",
+          "Middle": "Viktor",
+          "Bottom": "Kalista",
+          "Support": "Shaco"
+        },
+        "prediction": {
+          "ensemble_prediction": "red",
+          "blue_probability": 0.2366608125345302,
+          "red_probability": 0.7633391874654698,
+          "individual_predictions": {
+            "logistic": "red",
+            "random_forest": "red",
+            "gradient_boosting": "red"
+          },
+          "individual_probabilities": {
+            "logistic": {
+              "blue": 0.25429923824116113,
+              "red": 0.7457007617588389
+            },
+            "random_forest": {
+              "blue": 0.3969881765576928,
+              "red": 0.6030118234423072
+            },
+            "gradient_boosting": {
+              "blue": 0.05869502280473672,
+              "red": 0.9413049771952633
+            }
+          }
+        }
+      },
+      {
+        "game_id": 4393,
+        "blue_team": {
+          "Top": "Irelia",
+          "Jungle": "RekSai",
+          "Middle": "Ziggs",
+          "Bottom": "Kaisa",
+          "Support": "Zilean"
+        },
+        "red_team": {
+          "Top": "Gnar",
+          "Jungle": "Kayn",
+          "Middle": "Taliyah",
+          "Bottom": "Swain",
+          "Support": "Twitch"
+        },
+        "prediction": {
+          "ensemble_prediction": "red",
+          "blue_probability": 0.23895247789892757,
+          "red_probability": 0.7610475221010724,
+          "individual_predictions": {
+            "logistic": "red",
+            "random_forest": "red",
+            "gradient_boosting": "red"
+          },
+          "individual_probabilities": {
+            "logistic": {
+              "blue": 0.28692651385400103,
+              "red": 0.713073486145999
+            },
+            "random_forest": {
+              "blue": 0.36749257483339753,
+              "red": 0.6325074251666026
+            },
+            "gradient_boosting": {
+              "blue": 0.06243834500938401,
+              "red": 0.937561654990616
+            }
+          }
+        }
+      },
+      {
+        "game_id": 5294,
+        "blue_team": {
+          "Top": "Mordekaiser",
+          "Jungle": "Rammus",
+          "Middle": "Annie",
+          "Bottom": "Zeri",
+          "Support": "Veigar"
+        },
+        "red_team": {
+          "Top": "Tryndamere",
+          "Jungle": "Graves",
+          "Middle": "Mel",
+          "Bottom": "Draven",
+          "Support": "Heimerdinger"
+        },
+        "prediction": {
+          "ensemble_prediction": "red",
+          "blue_probability": 0.24024641831829072,
+          "red_probability": 0.7597535816817093,
+          "individual_predictions": {
+            "logistic": "red",
+            "random_forest": "red",
+            "gradient_boosting": "red"
+          },
+          "individual_probabilities": {
+            "logistic": {
+              "blue": 0.3134838749242719,
+              "red": 0.6865161250757281
+            },
+            "random_forest": {
+              "blue": 0.3511833625297355,
+              "red": 0.6488166374702644
+            },
+            "gradient_boosting": {
+              "blue": 0.05607201750086475,
+              "red": 0.9439279824991352
+            }
+          }
+        }
+      }
+    ],
+    "closest_games": [
+      {
+        "game_id": 9351,
+        "blue_team": {
+          "Top": "Udyr",
+          "Jungle": "Rengar",
+          "Middle": "Taric",
+          "Bottom": "Seraphine",
+          "Support": "Amumu"
+        },
+        "red_team": {
+          "Top": "KSante",
+          "Jungle": "Fiddlesticks",
+          "Middle": "Yone",
+          "Bottom": "Zeri",
+          "Support": "Neeko"
+        },
+        "prediction": {
+          "ensemble_prediction": "blue",
+          "blue_probability": 0.5000064885472448,
+          "red_probability": 0.49999351145275517,
+          "individual_predictions": {
+            "logistic": "blue",
+            "random_forest": "red",
+            "gradient_boosting": "blue"
+          },
+          "individual_probabilities": {
+            "logistic": {
+              "blue": 0.5103418060025188,
+              "red": 0.48965819399748123
+            },
+            "random_forest": {
+              "blue": 0.47673087398882613,
+              "red": 0.523269126011174
+            },
+            "gradient_boosting": {
+              "blue": 0.5129467856503896,
+              "red": 0.48705321434961035
+            }
+          }
+        }
+      },
+      {
+        "game_id": 7348,
+        "blue_team": {
+          "Top": "Vayne",
+          "Jungle": "Hecarim",
+          "Middle": "Katarina",
+          "Bottom": "Senna",
+          "Support": "Zyra"
+        },
+        "red_team": {
+          "Top": "Quinn",
+          "Jungle": "Ivern",
+          "Middle": "Ahri",
+          "Bottom": "Jhin",
+          "Support": "TahmKench"
+        },
+        "prediction": {
+          "ensemble_prediction": "blue",
+          "blue_probability": 0.4999815039466295,
+          "red_probability": 0.5000184960533705,
+          "individual_predictions": {
+            "logistic": "blue",
+            "random_forest": "blue",
+            "gradient_boosting": "red"
+          },
+          "individual_probabilities": {
+            "logistic": {
+              "blue": 0.6347726238639051,
+              "red": 0.3652273761360949
+            },
+            "random_forest": {
+              "blue": 0.5504980515776264,
+              "red": 0.4495019484223737
+            },
+            "gradient_boosting": {
+              "blue": 0.3146738363983569,
+              "red": 0.6853261636016431
+            }
+          }
+        }
+      },
+      {
+        "game_id": 3882,
+        "blue_team": {
+          "Top": "Sion",
+          "Jungle": "Gwen",
+          "Middle": "TwistedFate",
+          "Bottom": "Kaisa",
+          "Support": "Janna"
+        },
+        "red_team": {
+          "Top": "Yorick",
+          "Jungle": "Udyr",
+          "Middle": "Anivia",
+          "Bottom": "KogMaw",
+          "Support": "Velkoz"
+        },
+        "prediction": {
+          "ensemble_prediction": "blue",
+          "blue_probability": 0.49995726108403593,
+          "red_probability": 0.5000427389159641,
+          "individual_predictions": {
+            "logistic": "blue",
+            "random_forest": "red",
+            "gradient_boosting": "blue"
+          },
+          "individual_probabilities": {
+            "logistic": {
+              "blue": 0.5248127196170029,
+              "red": 0.47518728038299707
+            },
+            "random_forest": {
+              "blue": 0.45251537698192285,
+              "red": 0.547484623018077
+            },
+            "gradient_boosting": {
+              "blue": 0.5225436866531822,
+              "red": 0.4774563133468178
+            }
+          }
+        }
+      },
+      {
+        "game_id": 3877,
+        "blue_team": {
+          "Top": "Fiora",
+          "Jungle": "Kindred",
+          "Middle": "Zoe",
+          "Bottom": "Nilah",
+          "Support": "Rell"
+        },
+        "red_team": {
+          "Top": "Jax",
+          "Jungle": "Hecarim",
+          "Middle": "Rumble",
+          "Bottom": "Xayah",
+          "Support": "Soraka"
+        },
+        "prediction": {
+          "ensemble_prediction": "red",
+          "blue_probability": 0.5000519026586184,
+          "red_probability": 0.49994809734138157,
+          "individual_predictions": {
+            "logistic": "blue",
+            "random_forest": "red",
+            "gradient_boosting": "red"
+          },
+          "individual_probabilities": {
+            "logistic": {
+              "blue": 0.5569133844320273,
+              "red": 0.4430866155679727
+            },
+            "random_forest": {
+              "blue": 0.4597520773291346,
+              "red": 0.5402479226708654
+            },
+            "gradient_boosting": {
+              "blue": 0.48349024621469316,
+              "red": 0.5165097537853068
+            }
+          }
+        }
+      },
+      {
+        "game_id": 9950,
+        "blue_team": {
+          "Top": "TahmKench",
+          "Jungle": "Pantheon",
+          "Middle": "Neeko",
+          "Bottom": "Ziggs",
+          "Support": "Pyke"
+        },
+        "red_team": {
+          "Top": "DrMundo",
+          "Jungle": "Diana",
+          "Middle": "Taric",
+          "Bottom": "Ashe",
+          "Support": "Braum"
+        },
+        "prediction": {
+          "ensemble_prediction": "red",
+          "blue_probability": 0.500078086163462,
+          "red_probability": 0.49992191383653795,
+          "individual_predictions": {
+            "logistic": "red",
+            "random_forest": "blue",
+            "gradient_boosting": "red"
+          },
+          "individual_probabilities": {
+            "logistic": {
+              "blue": 0.464565247455759,
+              "red": 0.535434752544241
+            },
+            "random_forest": {
+              "blue": 0.5508776494852425,
+              "red": 0.44912235051475746
+            },
+            "gradient_boosting": {
+              "blue": 0.48479136154938435,
+              "red": 0.5152086384506156
+            }
+          }
+        }
+      }
+    ]
+  }
+}
