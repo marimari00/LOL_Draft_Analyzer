@@ -113,28 +113,28 @@
       "damage_profile": "ap"
     },
     "Aphelios": {
-      "burst_damage": 89.69,
-      "burst_dps": 29.9,
-      "sustained_damage": 179.39,
-      "sustained_dps": 17.94,
+      "burst_damage": 368.49,
+      "burst_dps": 122.83,
+      "sustained_damage": 736.99,
+      "sustained_dps": 73.7,
       "burst_ratio": 0.5,
-      "burst_index": 0.045,
+      "burst_index": 0.184,
       "cc_score": 0.6,
       "mobility_score": 0.0,
       "max_range": 1450,
       "damage_profile": "ap"
     },
     "Ashe": {
-      "burst_damage": 380.78,
-      "burst_dps": 126.93,
-      "sustained_damage": 773.15,
-      "sustained_dps": 77.32,
-      "burst_ratio": 0.492,
-      "burst_index": 0.188,
+      "burst_damage": 1281.28,
+      "burst_dps": 427.09,
+      "sustained_damage": 2114.65,
+      "sustained_dps": 211.47,
+      "burst_ratio": 0.606,
+      "burst_index": 0.606,
       "cc_score": 0.05,
       "mobility_score": 0.0,
       "max_range": 25000,
-      "damage_profile": "neutral"
+      "damage_profile": "hybrid"
     },
     "AurelionSol": {
       "burst_damage": 620.31,
@@ -329,16 +329,16 @@
       "damage_profile": "ap"
     },
     "Draven": {
-      "burst_damage": 1116.2,
-      "burst_dps": 372.07,
-      "sustained_damage": 1307.4,
-      "sustained_dps": 130.74,
-      "burst_ratio": 0.854,
-      "burst_index": 0.854,
+      "burst_damage": 1224.7,
+      "burst_dps": 408.23,
+      "sustained_damage": 1534.4,
+      "sustained_dps": 153.44,
+      "burst_ratio": 0.798,
+      "burst_index": 0.798,
       "cc_score": 0.05,
       "mobility_score": 0.0,
       "max_range": 20000,
-      "damage_profile": "ap"
+      "damage_profile": "ad"
     },
     "DrMundo": {
       "burst_damage": 192.47,
@@ -677,16 +677,16 @@
       "damage_profile": "ap"
     },
     "Kalista": {
-      "burst_damage": 425.5,
-      "burst_dps": 141.83,
-      "sustained_damage": 651.0,
-      "sustained_dps": 65.1,
-      "burst_ratio": 0.654,
-      "burst_index": 0.278,
+      "burst_damage": 945.0,
+      "burst_dps": 315.0,
+      "sustained_damage": 1615.0,
+      "sustained_dps": 161.5,
+      "burst_ratio": 0.585,
+      "burst_index": 0.553,
       "cc_score": 0.06,
       "mobility_score": 1.5,
       "max_range": 5000,
-      "damage_profile": "neutral"
+      "damage_profile": "ad"
     },
     "Karma": {
       "burst_damage": 362.06,
@@ -809,16 +809,16 @@
       "damage_profile": "ap"
     },
     "KogMaw": {
-      "burst_damage": 383.87,
-      "burst_dps": 127.96,
-      "sustained_damage": 767.74,
-      "sustained_dps": 76.77,
-      "burst_ratio": 0.5,
-      "burst_index": 0.192,
+      "burst_damage": 651.27,
+      "burst_dps": 217.09,
+      "sustained_damage": 1227.54,
+      "sustained_dps": 122.75,
+      "burst_ratio": 0.531,
+      "burst_index": 0.346,
       "cc_score": 0.15,
       "mobility_score": 0.4,
       "max_range": 1800,
-      "damage_profile": "neutral"
+      "damage_profile": "hybrid"
     },
     "KSante": {
       "burst_damage": 511.53,
@@ -893,12 +893,12 @@
       "damage_profile": "ap"
     },
     "Lucian": {
-      "burst_damage": 729.36,
-      "burst_dps": 243.12,
-      "sustained_damage": 1084.72,
-      "sustained_dps": 108.47,
-      "burst_ratio": 0.672,
-      "burst_index": 0.49,
+      "burst_damage": 784.36,
+      "burst_dps": 261.45,
+      "sustained_damage": 1194.72,
+      "sustained_dps": 119.47,
+      "burst_ratio": 0.657,
+      "burst_index": 0.515,
       "cc_score": 0.0,
       "mobility_score": 1.2,
       "max_range": 1400,
@@ -1001,12 +1001,12 @@
       "damage_profile": "ap"
     },
     "MissFortune": {
-      "burst_damage": 494.84,
-      "burst_dps": 164.95,
-      "sustained_damage": 1222.67,
-      "sustained_dps": 122.27,
-      "burst_ratio": 0.405,
-      "burst_index": 0.2,
+      "burst_damage": 811.04,
+      "burst_dps": 270.35,
+      "sustained_damage": 1538.87,
+      "sustained_dps": 153.89,
+      "burst_ratio": 0.527,
+      "burst_index": 0.427,
       "cc_score": 0.086,
       "mobility_score": 0.0,
       "max_range": 25000,
@@ -1493,16 +1493,16 @@
       "damage_profile": "ap"
     },
     "Sivir": {
-      "burst_damage": 345.72,
-      "burst_dps": 115.24,
-      "sustained_damage": 691.44,
-      "sustained_dps": 69.14,
-      "burst_ratio": 0.5,
-      "burst_index": 0.173,
+      "burst_damage": 372.22,
+      "burst_dps": 124.07,
+      "sustained_damage": 642.94,
+      "sustained_dps": 64.29,
+      "burst_ratio": 0.579,
+      "burst_index": 0.215,
       "cc_score": 0.0,
       "mobility_score": 0.3,
       "max_range": 1200,
-      "damage_profile": "ap"
+      "damage_profile": "ad"
     },
     "Skarner": {
       "burst_damage": 910.86,
@@ -1661,16 +1661,16 @@
       "damage_profile": "ap"
     },
     "Tristana": {
-      "burst_damage": 839.1,
-      "burst_dps": 279.7,
-      "sustained_damage": 907.21,
-      "sustained_dps": 90.72,
-      "burst_ratio": 0.925,
-      "burst_index": 0.776,
+      "burst_damage": 1190.6,
+      "burst_dps": 396.87,
+      "sustained_damage": 1258.71,
+      "sustained_dps": 125.87,
+      "burst_ratio": 0.946,
+      "burst_index": 0.946,
       "cc_score": 0.086,
       "mobility_score": 0.0,
       "max_range": 900,
-      "damage_profile": "ap"
+      "damage_profile": "ad"
     },
     "Trundle": {
       "burst_damage": 379.54,
@@ -1709,16 +1709,16 @@
       "damage_profile": "ap"
     },
     "Twitch": {
-      "burst_damage": 330.26,
-      "burst_dps": 110.09,
-      "sustained_damage": 595.41,
-      "sustained_dps": 59.54,
-      "burst_ratio": 0.555,
-      "burst_index": 0.183,
+      "burst_damage": 691.76,
+      "burst_dps": 230.59,
+      "sustained_damage": 1318.41,
+      "sustained_dps": 131.84,
+      "burst_ratio": 0.525,
+      "burst_index": 0.363,
       "cc_score": 0.133,
       "mobility_score": 0.4,
       "max_range": 1200,
-      "damage_profile": "neutral"
+      "damage_profile": "ap"
     },
     "Udyr": {
       "burst_damage": 197.96,
@@ -1745,28 +1745,28 @@
       "damage_profile": "ap"
     },
     "Varus": {
-      "burst_damage": 973.67,
-      "burst_dps": 324.56,
-      "sustained_damage": 1137.34,
-      "sustained_dps": 113.73,
-      "burst_ratio": 0.856,
-      "burst_index": 0.834,
+      "burst_damage": 1387.07,
+      "burst_dps": 462.36,
+      "sustained_damage": 1550.74,
+      "sustained_dps": 155.07,
+      "burst_ratio": 0.894,
+      "burst_index": 0.894,
       "cc_score": 0.09,
       "mobility_score": 0.0,
       "max_range": 1300,
-      "damage_profile": "ap"
+      "damage_profile": "ad"
     },
     "Vayne": {
-      "burst_damage": 579.9,
-      "burst_dps": 193.3,
-      "sustained_damage": 724.8,
-      "sustained_dps": 72.48,
-      "burst_ratio": 0.8,
-      "burst_index": 0.464,
+      "burst_damage": 680.35,
+      "burst_dps": 226.78,
+      "sustained_damage": 1227.05,
+      "sustained_dps": 122.7,
+      "burst_ratio": 0.554,
+      "burst_index": 0.377,
       "cc_score": 0.125,
       "mobility_score": 0.0,
       "max_range": 750,
-      "damage_profile": "ap"
+      "damage_profile": "ad"
     },
     "Veigar": {
       "burst_damage": 571.01,
@@ -1877,16 +1877,16 @@
       "damage_profile": "ap"
     },
     "Xayah": {
-      "burst_damage": 479.41,
-      "burst_dps": 159.8,
-      "sustained_damage": 903.82,
-      "sustained_dps": 90.38,
-      "burst_ratio": 0.53,
-      "burst_index": 0.254,
+      "burst_damage": 496.41,
+      "burst_dps": 165.47,
+      "sustained_damage": 937.82,
+      "sustained_dps": 93.78,
+      "burst_ratio": 0.529,
+      "burst_index": 0.263,
       "cc_score": 0.225,
       "mobility_score": 1.2,
       "max_range": 2000,
-      "damage_profile": "ap"
+      "damage_profile": "ad"
     },
     "Xerath": {
       "burst_damage": 611.02,

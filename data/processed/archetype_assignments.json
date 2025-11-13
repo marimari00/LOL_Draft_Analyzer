@@ -18,18 +18,18 @@
     ]
   },
   "distribution": {
-    "burst_assassin": 15,
-    "burst_mage": 28,
-    "engage_tank": 8,
-    "juggernaut": 22,
-    "marksman": 11,
+    "burst_assassin": 12,
+    "burst_mage": 3,
+    "engage_tank": 7,
+    "juggernaut": 17,
+    "marksman": 49,
     "skirmisher": 18,
     "diver": 8,
-    "battle_mage": 26,
+    "battle_mage": 24,
     "artillery_mage": 3,
-    "catcher": 3,
+    "catcher": 2,
     "enchanter": 11,
-    "specialist": 18,
+    "specialist": 17,
     "warden": 0
   },
   "assignments": {
@@ -251,7 +251,7 @@
       }
     },
     "Anivia": {
-      "primary_archetype": "engage_tank",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.2583333333333336,
@@ -313,30 +313,30 @@
       }
     },
     "Aphelios": {
-      "primary_archetype": "catcher",
+      "primary_archetype": "battle_mage",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.0,
         "burst_mage": 0.5454545454545454,
         "engage_tank": 0.6363636363636362,
-        "juggernaut": 0.40909090909090906,
+        "juggernaut": 0.7727272727272727,
         "marksman": 0.6,
-        "skirmisher": 0.0,
-        "diver": 0.2727272727272727,
-        "battle_mage": 0.6666666666666666,
-        "artillery_mage": 0.7419354838709677,
-        "catcher": 1.0,
-        "enchanter": 0.7272727272727273,
+        "skirmisher": 0.35304347826086957,
+        "diver": 0.39045454545454544,
+        "battle_mage": 1.0,
+        "artillery_mage": 0.8374193548387098,
+        "catcher": 0.9557971014492754,
+        "enchanter": 0.3181818181818181,
         "specialist": 1.0,
         "warden": 1.0
       },
       "attributes": {
-        "burst_damage": 89.69,
-        "burst_dps": 29.9,
-        "sustained_damage": 179.39,
-        "sustained_dps": 17.94,
+        "burst_damage": 368.49,
+        "burst_dps": 122.83,
+        "sustained_damage": 736.99,
+        "sustained_dps": 73.7,
         "burst_ratio": 0.5,
-        "burst_index": 0.045,
+        "burst_index": 0.184,
         "cc_score": 0.6,
         "mobility_score": 0.0,
         "max_range": 1450,
@@ -344,34 +344,34 @@
       }
     },
     "Ashe": {
-      "primary_archetype": "battle_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
-        "burst_assassin": 0.20833333333333334,
-        "burst_mage": 0.5454545454545454,
+        "burst_assassin": 0.39999999999999974,
+        "burst_mage": 0.7545454545454542,
         "engage_tank": 0.18181818181818182,
         "juggernaut": 0.7727272727272727,
-        "marksman": 0.6,
-        "skirmisher": 0.3611594202898551,
-        "diver": 0.12409090909090914,
+        "marksman": 1.0,
+        "skirmisher": 0.6086956521739131,
+        "diver": 0.3181818181818182,
         "battle_mage": 1.0,
-        "artillery_mage": 0.8425806451612905,
-        "catcher": 0.49478260869565227,
-        "enchanter": 0.5909090909090908,
+        "artillery_mage": 1.0,
+        "catcher": 0.3478260869565218,
+        "enchanter": 0.2727272727272727,
         "specialist": 1.0,
-        "warden": 0.5909090909090908
+        "warden": 0.36363636363636365
       },
       "attributes": {
-        "burst_damage": 380.78,
-        "burst_dps": 126.93,
-        "sustained_damage": 773.15,
-        "sustained_dps": 77.32,
-        "burst_ratio": 0.492,
-        "burst_index": 0.188,
+        "burst_damage": 1281.28,
+        "burst_dps": 427.09,
+        "sustained_damage": 2114.65,
+        "sustained_dps": 211.47,
+        "burst_ratio": 0.606,
+        "burst_index": 0.606,
         "cc_score": 0.05,
         "mobility_score": 0.0,
         "max_range": 25000,
-        "damage_profile": "neutral"
+        "damage_profile": "hybrid"
       }
     },
     "AurelionSol": {
@@ -561,7 +561,7 @@
       }
     },
     "Brand": {
-      "primary_archetype": "juggernaut",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.28749999999999964,
@@ -654,7 +654,7 @@
       }
     },
     "Caitlyn": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,
@@ -747,7 +747,7 @@
       }
     },
     "Chogath": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,
@@ -871,17 +871,17 @@
       }
     },
     "Draven": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,
         "burst_mage": 1.0,
-        "engage_tank": 0.00545454545454556,
+        "engage_tank": 0.05636363636363641,
         "juggernaut": 0.7727272727272727,
         "marksman": 1.0,
-        "skirmisher": 0.30434782608695654,
+        "skirmisher": 0.32869565217391306,
         "diver": 0.3181818181818182,
-        "battle_mage": 0.7844444444444445,
+        "battle_mage": 0.8466666666666668,
         "artillery_mage": 1.0,
         "catcher": 0.3478260869565218,
         "enchanter": 0.2727272727272727,
@@ -889,16 +889,16 @@
         "warden": 0.36363636363636365
       },
       "attributes": {
-        "burst_damage": 1116.2,
-        "burst_dps": 372.07,
-        "sustained_damage": 1307.4,
-        "sustained_dps": 130.74,
-        "burst_ratio": 0.854,
-        "burst_index": 0.854,
+        "burst_damage": 1224.7,
+        "burst_dps": 408.23,
+        "sustained_damage": 1534.4,
+        "sustained_dps": 153.44,
+        "burst_ratio": 0.798,
+        "burst_index": 0.798,
         "cc_score": 0.05,
         "mobility_score": 0.0,
         "max_range": 20000,
-        "damage_profile": "ap"
+        "damage_profile": "ad"
       }
     },
     "DrMundo": {
@@ -1150,7 +1150,7 @@
       }
     },
     "Galio": {
-      "primary_archetype": "juggernaut",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.4875,
@@ -1181,7 +1181,7 @@
       }
     },
     "Gangplank": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,
@@ -1274,7 +1274,7 @@
       }
     },
     "Gragas": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.4166666666666667,
@@ -1305,7 +1305,7 @@
       }
     },
     "Graves": {
-      "primary_archetype": "burst_assassin",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 1.0,
@@ -1770,34 +1770,34 @@
       }
     },
     "Kalista": {
-      "primary_archetype": "specialist",
+      "primary_archetype": "skirmisher",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.5833333333333334,
         "burst_mage": 0.22727272727272727,
         "engage_tank": 0.5454545454545455,
-        "juggernaut": 0.3560606060606061,
-        "marksman": 0.4200000000000001,
-        "skirmisher": 0.9097101449275363,
-        "diver": 0.7036363636363636,
-        "battle_mage": 0.9722222222222222,
-        "artillery_mage": 0.7651612903225807,
-        "catcher": 0.5652173913043479,
-        "enchanter": 0.5909090909090908,
+        "juggernaut": 0.38636363636363635,
+        "marksman": 0.82,
+        "skirmisher": 1.0,
+        "diver": 0.7545454545454545,
+        "battle_mage": 1.0,
+        "artillery_mage": 0.8064516129032259,
+        "catcher": 0.3478260869565218,
+        "enchanter": 0.2727272727272727,
         "specialist": 1.0,
-        "warden": 0.22727272727272727
+        "warden": 0.0
       },
       "attributes": {
-        "burst_damage": 425.5,
-        "burst_dps": 141.83,
-        "sustained_damage": 651.0,
-        "sustained_dps": 65.1,
-        "burst_ratio": 0.654,
-        "burst_index": 0.278,
+        "burst_damage": 945.0,
+        "burst_dps": 315.0,
+        "sustained_damage": 1615.0,
+        "sustained_dps": 161.5,
+        "burst_ratio": 0.585,
+        "burst_index": 0.553,
         "cc_score": 0.06,
         "mobility_score": 1.5,
         "max_range": 5000,
-        "damage_profile": "neutral"
+        "damage_profile": "ad"
       }
     },
     "Karma": {
@@ -1832,7 +1832,7 @@
       }
     },
     "Karthus": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,
@@ -1925,7 +1925,7 @@
       }
     },
     "Kayle": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,
@@ -2111,34 +2111,34 @@
       }
     },
     "KogMaw": {
-      "primary_archetype": "battle_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.20833333333333334,
         "burst_mage": 0.5454545454545454,
         "engage_tank": 0.5454545454545455,
         "juggernaut": 0.8636363636363635,
-        "marksman": 0.6,
-        "skirmisher": 0.36927536231884056,
-        "diver": 0.40318181818181814,
+        "marksman": 1.0,
+        "skirmisher": 0.6086956521739131,
+        "diver": 0.5909090909090908,
         "battle_mage": 1.0,
-        "artillery_mage": 0.783225806451613,
-        "catcher": 0.5277536231884059,
-        "enchanter": 0.5909090909090908,
+        "artillery_mage": 0.9354838709677421,
+        "catcher": 0.3768115942028986,
+        "enchanter": 0.5145454545454544,
         "specialist": 1.0,
-        "warden": 0.4969696969696969
+        "warden": 0.4424242424242424
       },
       "attributes": {
-        "burst_damage": 383.87,
-        "burst_dps": 127.96,
-        "sustained_damage": 767.74,
-        "sustained_dps": 76.77,
-        "burst_ratio": 0.5,
-        "burst_index": 0.192,
+        "burst_damage": 651.27,
+        "burst_dps": 217.09,
+        "sustained_damage": 1227.54,
+        "sustained_dps": 122.75,
+        "burst_ratio": 0.531,
+        "burst_index": 0.346,
         "cc_score": 0.15,
         "mobility_score": 0.4,
         "max_range": 1800,
-        "damage_profile": "neutral"
+        "damage_profile": "hybrid"
       }
     },
     "KSante": {
@@ -2204,7 +2204,7 @@
       }
     },
     "LeeSin": {
-      "primary_archetype": "burst_assassin",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 1.0,
@@ -2328,14 +2328,14 @@
       }
     },
     "Lucian": {
-      "primary_archetype": "skirmisher",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.5833333333333334,
         "burst_mage": 0.5454545454545454,
         "engage_tank": 0.5454545454545455,
         "juggernaut": 0.36363636363636365,
-        "marksman": 0.8926999999999999,
+        "marksman": 1.0,
         "skirmisher": 1.0,
         "diver": 0.7272727272727273,
         "battle_mage": 1.0,
@@ -2346,12 +2346,12 @@
         "warden": 0.0
       },
       "attributes": {
-        "burst_damage": 729.36,
-        "burst_dps": 243.12,
-        "sustained_damage": 1084.72,
-        "sustained_dps": 108.47,
-        "burst_ratio": 0.672,
-        "burst_index": 0.49,
+        "burst_damage": 784.36,
+        "burst_dps": 261.45,
+        "sustained_damage": 1194.72,
+        "sustained_dps": 119.47,
+        "burst_ratio": 0.657,
+        "burst_index": 0.515,
         "cc_score": 0.0,
         "mobility_score": 1.2,
         "max_range": 1400,
@@ -2390,7 +2390,7 @@
       }
     },
     "Lux": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,
@@ -2421,7 +2421,7 @@
       }
     },
     "Malphite": {
-      "primary_archetype": "juggernaut",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.5374999999999999,
@@ -2483,7 +2483,7 @@
       }
     },
     "Maokai": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.7916666666666666,
@@ -2615,22 +2615,22 @@
         "engage_tank": 0.18181818181818182,
         "juggernaut": 0.8545454545454545,
         "marksman": 1.0,
-        "skirmisher": 0.38550724637681166,
-        "diver": 0.24136363636363642,
+        "skirmisher": 0.6086956521739131,
+        "diver": 0.41636363636363627,
         "battle_mage": 1.0,
-        "artillery_mage": 0.8580645161290325,
+        "artillery_mage": 1.0,
         "catcher": 0.3478260869565218,
-        "enchanter": 0.5909090909090908,
+        "enchanter": 0.34272727272727266,
         "specialist": 1.0,
-        "warden": 0.5909090909090908
+        "warden": 0.4136363636363636
       },
       "attributes": {
-        "burst_damage": 494.84,
-        "burst_dps": 164.95,
-        "sustained_damage": 1222.67,
-        "sustained_dps": 122.27,
-        "burst_ratio": 0.405,
-        "burst_index": 0.2,
+        "burst_damage": 811.04,
+        "burst_dps": 270.35,
+        "sustained_damage": 1538.87,
+        "sustained_dps": 153.89,
+        "burst_ratio": 0.527,
+        "burst_index": 0.427,
         "cc_score": 0.086,
         "mobility_score": 0.0,
         "max_range": 25000,
@@ -2762,7 +2762,7 @@
       }
     },
     "Nami": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.4166666666666667,
@@ -2824,7 +2824,7 @@
       }
     },
     "Nautilus": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,
@@ -2855,7 +2855,7 @@
       }
     },
     "Neeko": {
-      "primary_archetype": "burst_assassin",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 1.0,
@@ -2948,7 +2948,7 @@
       }
     },
     "Nocturne": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,
@@ -2979,7 +2979,7 @@
       }
     },
     "Nunu": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.4895833333333335,
@@ -3041,7 +3041,7 @@
       }
     },
     "Orianna": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,
@@ -3506,7 +3506,7 @@
       }
     },
     "Rumble": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,
@@ -3630,7 +3630,7 @@
       }
     },
     "Senna": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,
@@ -3692,7 +3692,7 @@
       }
     },
     "Sett": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.4166666666666667,
@@ -3785,7 +3785,7 @@
       }
     },
     "Shyvana": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,
@@ -3878,38 +3878,38 @@
       }
     },
     "Sivir": {
-      "primary_archetype": "battle_mage",
+      "primary_archetype": "specialist",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.20833333333333334,
         "burst_mage": 0.5454545454545454,
         "engage_tank": 0.5454545454545455,
-        "juggernaut": 0.7727272727272727,
+        "juggernaut": 0.7326060606060607,
         "marksman": 0.6,
-        "skirmisher": 0.3307246376811594,
-        "diver": 0.1002272727272727,
-        "battle_mage": 1.0,
-        "artillery_mage": 0.8232258064516129,
-        "catcher": 0.5540579710144928,
+        "skirmisher": 0.3823623188405798,
+        "diver": 0.16704545454545452,
+        "battle_mage": 0.9632222222222224,
+        "artillery_mage": 0.8774193548387097,
+        "catcher": 0.5652173913043479,
         "enchanter": 0.5909090909090908,
         "specialist": 1.0,
         "warden": 0.5909090909090908
       },
       "attributes": {
-        "burst_damage": 345.72,
-        "burst_dps": 115.24,
-        "sustained_damage": 691.44,
-        "sustained_dps": 69.14,
-        "burst_ratio": 0.5,
-        "burst_index": 0.173,
+        "burst_damage": 372.22,
+        "burst_dps": 124.07,
+        "sustained_damage": 642.94,
+        "sustained_dps": 64.29,
+        "burst_ratio": 0.579,
+        "burst_index": 0.215,
         "cc_score": 0.0,
         "mobility_score": 0.3,
         "max_range": 1200,
-        "damage_profile": "ap"
+        "damage_profile": "ad"
       }
     },
     "Skarner": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,
@@ -3940,7 +3940,7 @@
       }
     },
     "Smolder": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,
@@ -3971,7 +3971,7 @@
       }
     },
     "Sona": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,
@@ -4095,7 +4095,7 @@
       }
     },
     "Syndra": {
-      "primary_archetype": "juggernaut",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.20833333333333334,
@@ -4126,7 +4126,7 @@
       }
     },
     "TahmKench": {
-      "primary_archetype": "juggernaut",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.0,
@@ -4250,7 +4250,7 @@
       }
     },
     "Teemo": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,
@@ -4312,34 +4312,34 @@
       }
     },
     "Tristana": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,
         "burst_mage": 1.0,
-        "engage_tank": 0.07636363636363643,
+        "engage_tank": 0.0,
         "juggernaut": 0.8545454545454545,
-        "marksman": 0.7152,
-        "skirmisher": 0.3733333333333334,
+        "marksman": 1.0,
+        "skirmisher": 0.30434782608695654,
         "diver": 0.41636363636363627,
-        "battle_mage": 0.8711111111111112,
+        "battle_mage": 0.7777777777777776,
         "artillery_mage": 0.7580645161290323,
-        "catcher": 0.39768115942028986,
+        "catcher": 0.3478260869565218,
         "enchanter": 0.2727272727272727,
         "specialist": 1.0,
         "warden": 0.36363636363636365
       },
       "attributes": {
-        "burst_damage": 839.1,
-        "burst_dps": 279.7,
-        "sustained_damage": 907.21,
-        "sustained_dps": 90.72,
-        "burst_ratio": 0.925,
-        "burst_index": 0.776,
+        "burst_damage": 1190.6,
+        "burst_dps": 396.87,
+        "sustained_damage": 1258.71,
+        "sustained_dps": 125.87,
+        "burst_ratio": 0.946,
+        "burst_index": 0.946,
         "cc_score": 0.086,
         "mobility_score": 0.0,
         "max_range": 900,
-        "damage_profile": "ap"
+        "damage_profile": "ad"
       }
     },
     "Trundle": {
@@ -4436,34 +4436,34 @@
       }
     },
     "Twitch": {
-      "primary_archetype": "specialist",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.20833333333333334,
         "burst_mage": 0.5454545454545454,
         "engage_tank": 0.5454545454545455,
-        "juggernaut": 0.7273030303030302,
-        "marksman": 0.6,
-        "skirmisher": 0.26924637681159425,
-        "diver": 0.3425,
-        "battle_mage": 0.9104444444444443,
-        "artillery_mage": 0.7716129032258066,
-        "catcher": 0.5652173913043479,
-        "enchanter": 0.5909090909090908,
+        "juggernaut": 0.825,
+        "marksman": 1.0,
+        "skirmisher": 0.6086956521739131,
+        "diver": 0.5445454545454544,
+        "battle_mage": 1.0,
+        "artillery_mage": 0.9354838709677421,
+        "catcher": 0.3478260869565218,
+        "enchanter": 0.47848484848484835,
         "specialist": 1.0,
-        "warden": 0.4696969696969696
+        "warden": 0.3893939393939393
       },
       "attributes": {
-        "burst_damage": 330.26,
-        "burst_dps": 110.09,
-        "sustained_damage": 595.41,
-        "sustained_dps": 59.54,
-        "burst_ratio": 0.555,
-        "burst_index": 0.183,
+        "burst_damage": 691.76,
+        "burst_dps": 230.59,
+        "sustained_damage": 1318.41,
+        "sustained_dps": 131.84,
+        "burst_ratio": 0.525,
+        "burst_index": 0.363,
         "cc_score": 0.133,
         "mobility_score": 0.4,
         "max_range": 1200,
-        "damage_profile": "neutral"
+        "damage_profile": "ap"
       }
     },
     "Udyr": {
@@ -4529,17 +4529,17 @@
       }
     },
     "Varus": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,
         "burst_mage": 1.0,
-        "engage_tank": 0.023636363636363757,
+        "engage_tank": 0.0,
         "juggernaut": 0.8636363636363636,
-        "marksman": 0.9453000000000001,
+        "marksman": 1.0,
         "skirmisher": 0.30434782608695654,
         "diver": 0.4272727272727272,
-        "battle_mage": 0.8066666666666668,
+        "battle_mage": 0.7777777777777776,
         "artillery_mage": 1.0,
         "catcher": 0.3478260869565218,
         "enchanter": 0.2727272727272727,
@@ -4547,16 +4547,16 @@
         "warden": 0.36363636363636365
       },
       "attributes": {
-        "burst_damage": 973.67,
-        "burst_dps": 324.56,
-        "sustained_damage": 1137.34,
-        "sustained_dps": 113.73,
-        "burst_ratio": 0.856,
-        "burst_index": 0.834,
+        "burst_damage": 1387.07,
+        "burst_dps": 462.36,
+        "sustained_damage": 1550.74,
+        "sustained_dps": 155.07,
+        "burst_ratio": 0.894,
+        "burst_index": 0.894,
         "cc_score": 0.09,
         "mobility_score": 0.0,
         "max_range": 1300,
-        "damage_profile": "ap"
+        "damage_profile": "ad"
       }
     },
     "Vayne": {
@@ -4567,27 +4567,27 @@
         "burst_mage": 0.43181818181818177,
         "engage_tank": 0.18181818181818182,
         "juggernaut": 0.9431818181818182,
-        "marksman": 0.42000000000000004,
+        "marksman": 0.82,
         "skirmisher": 0.6086956521739131,
         "diver": 0.5227272727272726,
         "battle_mage": 1.0,
         "artillery_mage": 0.6774193548387096,
-        "catcher": 0.3559420289855072,
-        "enchanter": 0.2727272727272727,
+        "catcher": 0.1739130434782609,
+        "enchanter": 0.4487878787878787,
         "specialist": 1.0,
-        "warden": 0.36363636363636365
+        "warden": 0.4893939393939393
       },
       "attributes": {
-        "burst_damage": 579.9,
-        "burst_dps": 193.3,
-        "sustained_damage": 724.8,
-        "sustained_dps": 72.48,
-        "burst_ratio": 0.8,
-        "burst_index": 0.464,
+        "burst_damage": 680.35,
+        "burst_dps": 226.78,
+        "sustained_damage": 1227.05,
+        "sustained_dps": 122.7,
+        "burst_ratio": 0.554,
+        "burst_index": 0.377,
         "cc_score": 0.125,
         "mobility_score": 0.0,
         "max_range": 750,
-        "damage_profile": "ap"
+        "damage_profile": "ad"
       }
     },
     "Veigar": {
@@ -4877,27 +4877,27 @@
         "burst_mage": 0.5454545454545454,
         "engage_tank": 0.5454545454545455,
         "juggernaut": 0.5909090909090908,
-        "marksman": 0.7117999999999999,
-        "skirmisher": 0.886376811594203,
-        "diver": 0.9109090909090909,
+        "marksman": 0.7458,
+        "skirmisher": 0.9046376811594203,
+        "diver": 0.9252272727272728,
         "battle_mage": 1.0,
-        "artillery_mage": 0.7341935483870968,
-        "catcher": 0.646521739130435,
+        "artillery_mage": 0.7458064516129034,
+        "catcher": 0.6218840579710146,
         "enchanter": 0.5909090909090908,
         "specialist": 1.0,
         "warden": 0.45909090909090916
       },
       "attributes": {
-        "burst_damage": 479.41,
-        "burst_dps": 159.8,
-        "sustained_damage": 903.82,
-        "sustained_dps": 90.38,
-        "burst_ratio": 0.53,
-        "burst_index": 0.254,
+        "burst_damage": 496.41,
+        "burst_dps": 165.47,
+        "sustained_damage": 937.82,
+        "sustained_dps": 93.78,
+        "burst_ratio": 0.529,
+        "burst_index": 0.263,
         "cc_score": 0.225,
         "mobility_score": 1.2,
         "max_range": 2000,
-        "damage_profile": "ap"
+        "damage_profile": "ad"
       }
     },
     "Xerath": {
@@ -5211,7 +5211,7 @@
       }
     },
     "Ziggs": {
-      "primary_archetype": "burst_mage",
+      "primary_archetype": "marksman",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.625,

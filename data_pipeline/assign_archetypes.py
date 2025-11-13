@@ -75,7 +75,18 @@ def main():
             score = score_archetype(champ_attrs, archetype_def)
             scores[archetype_name] = score
         
-        primary_name = max(scores, key=scores.get)
+        # Find max score and all archetypes with that score
+        max_score = max(scores.values())
+        tied_archetypes = [name for name, score in scores.items() if score == max_score]
+        
+        # Tiebreaker: if marksman is tied with score >= 0.95 and sustained_dps >= 119.2, prefer marksman
+        # This avoids false positives while capturing true marksmen with complete data
+        if (len(tied_archetypes) > 1 and 'marksman' in tied_archetypes and 
+            scores['marksman'] >= 0.95 and champ_attrs.get('sustained_dps', 0) >= 119.2):
+            primary_name = 'marksman'
+        else:
+            primary_name = max(scores, key=scores.get)
+        
         primary_score = scores[primary_name]
         
         results[champ_name] = {
