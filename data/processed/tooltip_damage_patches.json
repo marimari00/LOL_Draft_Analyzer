@@ -1,0 +1,8 @@
+{
+  "metadata": {
+    "source": "Extracted from Community Dragon ability tooltips",
+    "note": "Supplements champion.bin damage data where missing",
+    "patched_abilities": 0
+  },
+  "patches": {}
+}

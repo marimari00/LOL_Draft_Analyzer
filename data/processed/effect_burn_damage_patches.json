@@ -1,0 +1,1305 @@
+{
+  "metadata": {
+    "source": "Extracted from Data Dragon effect_burn arrays",
+    "note": "Supplements champion.bin where damage is missing",
+    "patched_abilities": 63,
+    "champions": 46
+  },
+  "patches": {
+    "Akali": {
+      "W": {
+        "name": "Twilight Shroud",
+        "cooldown": [
+          20,
+          19,
+          18,
+          17,
+          16
+        ],
+        "base_damage": [
+          60.0,
+          65.0,
+          70.0,
+          75.0,
+          80.0
+        ],
+        "effect_slot": 5,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Alistar": {
+      "E": {
+        "name": "Trample",
+        "cooldown": [
+          12,
+          11.5,
+          11,
+          10.5,
+          10
+        ],
+        "base_damage": [
+          80.0,
+          110.0,
+          140.0,
+          170.0,
+          200.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Amumu": {
+      "Q": {
+        "name": "Bandage Toss",
+        "cooldown": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "base_damage": [
+          70.0,
+          95.0,
+          120.0,
+          145.0,
+          170.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      },
+      "E": {
+        "name": "Tantrum",
+        "cooldown": [
+          9,
+          8,
+          7,
+          6,
+          5
+        ],
+        "base_damage": [
+          65.0,
+          95.0,
+          125.0,
+          155.0,
+          185.0
+        ],
+        "effect_slot": 2,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Anivia": {
+      "W": {
+        "name": "Crystallize",
+        "cooldown": [
+          17,
+          17,
+          17,
+          17,
+          17
+        ],
+        "base_damage": [
+          400.0,
+          500.0,
+          600.0,
+          700.0,
+          800.0
+        ],
+        "effect_slot": 2,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Ashe": {
+      "W": {
+        "name": "Volley",
+        "cooldown": [
+          18,
+          14.5,
+          11,
+          7.5,
+          4
+        ],
+        "base_damage": [
+          5.0,
+          7.0,
+          9.0,
+          11.0,
+          13.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      },
+      "E": {
+        "name": "Hawkshot",
+        "cooldown": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "base_damage": [
+          50.0,
+          90.0,
+          130.0,
+          170.0,
+          210.0
+        ],
+        "effect_slot": 2,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Azir": {
+      "Q": {
+        "name": "Conquering Sands",
+        "cooldown": [
+          14,
+          12,
+          10,
+          8,
+          6
+        ],
+        "base_damage": [
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Braum": {
+      "E": {
+        "name": "Unbreakable",
+        "cooldown": [
+          16,
+          14,
+          12,
+          10,
+          8
+        ],
+        "base_damage": [
+          35.0,
+          40.0,
+          45.0,
+          50.0,
+          55.0
+        ],
+        "effect_slot": 3,
+        "ad_ratio": 4.0,
+        "ratio_slot": 2,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Caitlyn": {
+      "W": {
+        "name": "Yordle Snap Trap",
+        "cooldown": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "base_damage": [
+          35.0,
+          80.0,
+          125.0,
+          170.0,
+          215.0
+        ],
+        "effect_slot": 2,
+        "ad_ratio": 5.0,
+        "ratio_slot": 4,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Darius": {
+      "Q": {
+        "name": "Decimate",
+        "cooldown": [
+          9,
+          8,
+          7,
+          6,
+          5
+        ],
+        "base_damage": [
+          50.0,
+          80.0,
+          110.0,
+          140.0,
+          170.0
+        ],
+        "effect_slot": 2,
+        "source": "effect_burn_extraction"
+      },
+      "W": {
+        "name": "Crippling Strike",
+        "cooldown": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "ad_ratio": 1.6,
+        "ratio_slot": 4,
+        "source": "effect_burn_extraction"
+      },
+      "E": {
+        "name": "Apprehend",
+        "cooldown": [
+          26,
+          23.5,
+          21,
+          18.5,
+          16
+        ],
+        "base_damage": [
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          40.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Diana": {
+      "E": {
+        "name": "Lunar Rush",
+        "cooldown": [
+          22,
+          20,
+          18,
+          16,
+          14
+        ],
+        "base_damage": [
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0
+        ],
+        "effect_slot": 2,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Draven": {
+      "W": {
+        "name": "Blood Rush",
+        "cooldown": [
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "base_damage": [
+          50.0,
+          55.0,
+          60.0,
+          65.0,
+          70.0
+        ],
+        "effect_slot": 2,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Elise": {
+      "W": {
+        "name": "Volatile Spiderling / Skittering Frenzy",
+        "cooldown": [
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "base_damage": [
+          65.0,
+          75.0,
+          85.0,
+          95.0,
+          105.0
+        ],
+        "effect_slot": 5,
+        "source": "effect_burn_extraction"
+      },
+      "E": {
+        "name": "Cocoon / Rappel",
+        "cooldown": [
+          12,
+          11.5,
+          11,
+          10.5,
+          10
+        ],
+        "base_damage": [
+          40.0,
+          55.0,
+          70.0,
+          85.0,
+          100.0
+        ],
+        "effect_slot": 6,
+        "ad_ratio": 2.4,
+        "ratio_slot": 5,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Evelynn": {
+      "Q": {
+        "name": "Hate Spike",
+        "cooldown": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "base_damage": [
+          15.0,
+          25.0,
+          35.0,
+          45.0,
+          55.0
+        ],
+        "effect_slot": 4,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Gangplank": {
+      "Q": {
+        "name": "Parrrley",
+        "cooldown": [
+          4.5,
+          4.5,
+          4.5,
+          4.5,
+          4.5
+        ],
+        "base_damage": [
+          10.0,
+          40.0,
+          70.0,
+          100.0,
+          130.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      },
+      "W": {
+        "name": "Remove Scurvy",
+        "cooldown": [
+          22,
+          20,
+          18,
+          16,
+          14
+        ],
+        "base_damage": [
+          45.0,
+          70.0,
+          95.0,
+          120.0,
+          145.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      },
+      "E": {
+        "name": "Powder Keg",
+        "cooldown": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "base_damage": [
+          75.0,
+          105.0,
+          135.0,
+          165.0,
+          195.0
+        ],
+        "effect_slot": 3,
+        "ad_ratio": 5.0,
+        "ratio_slot": 1,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Graves": {
+      "E": {
+        "name": "Quickdraw",
+        "cooldown": [
+          16,
+          15,
+          14,
+          13,
+          12
+        ],
+        "base_damage": [
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Hecarim": {
+      "E": {
+        "name": "Devastating Charge",
+        "cooldown": [
+          20,
+          19,
+          18,
+          17,
+          16
+        ],
+        "base_damage": [
+          60.0,
+          90.0,
+          120.0,
+          150.0,
+          180.0
+        ],
+        "effect_slot": 3,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "JarvanIV": {
+      "W": {
+        "name": "Golden Aegis",
+        "cooldown": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "base_damage": [
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      },
+      "E": {
+        "name": "Demacian Standard",
+        "cooldown": [
+          12,
+          11.5,
+          11,
+          10.5,
+          10
+        ],
+        "base_damage": [
+          80.0,
+          120.0,
+          160.0,
+          200.0,
+          240.0
+        ],
+        "effect_slot": 2,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Kaisa": {
+      "E": {
+        "name": "Supercharge",
+        "cooldown": [
+          16,
+          14.5,
+          13,
+          11.5,
+          10
+        ],
+        "base_damage": [
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0
+        ],
+        "effect_slot": 5,
+        "ad_ratio": 0.75,
+        "ratio_slot": 1,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Karthus": {
+      "W": {
+        "name": "Wall of Pain",
+        "cooldown": [
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "base_damage": [
+          800.0,
+          900.0,
+          1000.0,
+          1100.0,
+          1200.0
+        ],
+        "effect_slot": 2,
+        "source": "effect_burn_extraction"
+      },
+      "E": {
+        "name": "Defile",
+        "cooldown": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "base_damage": [
+          30.0,
+          50.0,
+          70.0,
+          90.0,
+          110.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Katarina": {
+      "W": {
+        "name": "Preparation",
+        "cooldown": [
+          15,
+          14,
+          13,
+          12,
+          11
+        ],
+        "base_damage": [
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0
+        ],
+        "effect_slot": 4,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Kennen": {
+      "Q": {
+        "name": "Thundering Shuriken",
+        "cooldown": [
+          7,
+          6.25,
+          5.5,
+          4.75,
+          4
+        ],
+        "base_damage": [
+          75.0,
+          125.0,
+          175.0,
+          225.0,
+          275.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Khazix": {
+      "Q": {
+        "name": "Taste Their Fear",
+        "cooldown": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "base_damage": [
+          80.0,
+          105.0,
+          130.0,
+          155.0,
+          180.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Kindred": {
+      "W": {
+        "name": "Wolf's Frenzy",
+        "cooldown": [
+          18,
+          17,
+          16,
+          15,
+          14
+        ],
+        "base_damage": [
+          40.0,
+          45.0,
+          50.0,
+          55.0,
+          60.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Leblanc": {
+      "E": {
+        "name": "Ethereal Chains",
+        "cooldown": [
+          14,
+          13.25,
+          12.5,
+          11.75,
+          11
+        ],
+        "base_damage": [
+          14.0,
+          13.25,
+          12.5,
+          11.75,
+          11.0
+        ],
+        "effect_slot": 6,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Lucian": {
+      "Q": {
+        "name": "Piercing Light",
+        "cooldown": [
+          9,
+          8,
+          7,
+          6,
+          5
+        ],
+        "base_damage": [
+          85.0,
+          115.0,
+          145.0,
+          175.0,
+          205.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Lux": {
+      "Q": {
+        "name": "Light Binding",
+        "cooldown": [
+          11,
+          10.5,
+          10,
+          9.5,
+          9
+        ],
+        "base_damage": [
+          80.0,
+          120.0,
+          160.0,
+          200.0,
+          240.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      },
+      "W": {
+        "name": "Prismatic Barrier",
+        "cooldown": [
+          14,
+          13,
+          12,
+          11,
+          10
+        ],
+        "base_damage": [
+          40.0,
+          55.0,
+          70.0,
+          85.0,
+          100.0
+        ],
+        "effect_slot": 2,
+        "source": "effect_burn_extraction"
+      },
+      "E": {
+        "name": "Lucent Singularity",
+        "cooldown": [
+          10,
+          9.5,
+          9,
+          8.5,
+          8
+        ],
+        "base_damage": [
+          65.0,
+          115.0,
+          165.0,
+          215.0,
+          265.0
+        ],
+        "effect_slot": 2,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Nocturne": {
+      "Q": {
+        "name": "Duskbringer",
+        "cooldown": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "base_damage": [
+          65.0,
+          110.0,
+          155.0,
+          200.0,
+          245.0
+        ],
+        "effect_slot": 2,
+        "source": "effect_burn_extraction"
+      },
+      "W": {
+        "name": "Shroud of Darkness",
+        "cooldown": [
+          20,
+          18,
+          16,
+          14,
+          12
+        ],
+        "base_damage": [
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      },
+      "E": {
+        "name": "Unspeakable Horror",
+        "cooldown": [
+          15,
+          14,
+          13,
+          12,
+          11
+        ],
+        "base_damage": [
+          80.0,
+          125.0,
+          170.0,
+          215.0,
+          260.0
+        ],
+        "effect_slot": 1,
+        "ad_ratio": 2.25,
+        "ratio_slot": 2,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Olaf": {
+      "Q": {
+        "name": "Undertow",
+        "cooldown": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "base_damage": [
+          80.0,
+          125.0,
+          170.0,
+          215.0,
+          260.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Quinn": {
+      "W": {
+        "name": "Heightened Senses",
+        "cooldown": [
+          50,
+          45,
+          40,
+          35,
+          30
+        ],
+        "base_damage": [
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          40.0
+        ],
+        "effect_slot": 3,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "RekSai": {
+      "Q": {
+        "name": "Queen's Wrath / Prey Seeker",
+        "cooldown": [
+          4,
+          3.5,
+          3,
+          2.5,
+          2
+        ],
+        "base_damage": [
+          12.0,
+          11.0,
+          10.0,
+          9.0,
+          8.0
+        ],
+        "effect_slot": 5,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Ryze": {
+      "Q": {
+        "name": "Overload",
+        "cooldown": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "base_damage": [
+          70.0,
+          110.0,
+          150.0,
+          190.0,
+          230.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Shen": {
+      "Q": {
+        "name": "Twilight Assault",
+        "cooldown": [
+          8,
+          7.25,
+          6.5,
+          5.75,
+          5
+        ],
+        "base_damage": [
+          120.0,
+          140.0,
+          160.0,
+          180.0,
+          200.0
+        ],
+        "effect_slot": 7,
+        "ad_ratio": 4.0,
+        "ratio_slot": 2,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Talon": {
+      "E": {
+        "name": "Assassin's Path",
+        "cooldown": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "base_damage": [
+          160.0,
+          135.0,
+          110.0,
+          85.0,
+          60.0
+        ],
+        "effect_slot": 6,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Taric": {
+      "Q": {
+        "name": "Starlight's Touch",
+        "cooldown": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "base_damage": [
+          25.0,
+          50.0,
+          75.0,
+          100.0,
+          125.0
+        ],
+        "effect_slot": 5,
+        "ad_ratio": 5.0,
+        "ratio_slot": 6,
+        "source": "effect_burn_extraction"
+      },
+      "W": {
+        "name": "Bastion",
+        "cooldown": [
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "base_damage": [
+          7.0,
+          8.0,
+          9.0,
+          10.0,
+          11.0
+        ],
+        "effect_slot": 2,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Trundle": {
+      "W": {
+        "name": "Frozen Domain",
+        "cooldown": [
+          18,
+          17,
+          16,
+          15,
+          14
+        ],
+        "base_damage": [
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0
+        ],
+        "effect_slot": 2,
+        "source": "effect_burn_extraction"
+      },
+      "E": {
+        "name": "Pillar of Ice",
+        "cooldown": [
+          21,
+          19.5,
+          18,
+          16.5,
+          15
+        ],
+        "base_damage": [
+          34.0,
+          38.0,
+          42.0,
+          46.0,
+          50.0
+        ],
+        "effect_slot": 2,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Twitch": {
+      "Q": {
+        "name": "Ambush",
+        "cooldown": [
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "base_damage": [
+          45.0,
+          50.0,
+          55.0,
+          60.0,
+          65.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Veigar": {
+      "E": {
+        "name": "Event Horizon",
+        "cooldown": [
+          20,
+          18.5,
+          17,
+          15.5,
+          14
+        ],
+        "ad_ratio": 2.5,
+        "ratio_slot": 1,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Viktor": {
+      "E": {
+        "name": "Hextech Ray",
+        "cooldown": [
+          12,
+          11,
+          10,
+          9,
+          8
+        ],
+        "base_damage": [
+          70.0,
+          110.0,
+          150.0,
+          190.0,
+          230.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Warwick": {
+      "W": {
+        "name": "Blood Hunt",
+        "cooldown": [
+          80,
+          70,
+          60,
+          50,
+          40
+        ],
+        "base_damage": [
+          80.0,
+          90.0,
+          100.0,
+          110.0,
+          120.0
+        ],
+        "effect_slot": 4,
+        "source": "effect_burn_extraction"
+      },
+      "E": {
+        "name": "Primal Howl",
+        "cooldown": [
+          15,
+          14,
+          13,
+          12,
+          11
+        ],
+        "base_damage": [
+          35.0,
+          40.0,
+          45.0,
+          50.0,
+          55.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Xayah": {
+      "W": {
+        "name": "Deadly Plumage",
+        "cooldown": [
+          20,
+          19,
+          18,
+          17,
+          16
+        ],
+        "base_damage": [
+          35.0,
+          40.0,
+          45.0,
+          50.0,
+          55.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "XinZhao": {
+      "E": {
+        "name": "Audacious Charge",
+        "cooldown": [
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "base_damage": [
+          50.0,
+          75.0,
+          100.0,
+          125.0,
+          150.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Yasuo": {
+      "W": {
+        "name": "Wind Wall",
+        "cooldown": [
+          25,
+          23,
+          21,
+          19,
+          17
+        ],
+        "base_damage": [
+          320.0,
+          390.0,
+          460.0,
+          530.0,
+          600.0
+        ],
+        "effect_slot": 5,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Zed": {
+      "W": {
+        "name": "Living Shadow",
+        "cooldown": [
+          20,
+          19,
+          18,
+          17,
+          16
+        ],
+        "base_damage": [
+          30.0,
+          35.0,
+          40.0,
+          45.0,
+          50.0
+        ],
+        "effect_slot": 3,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Zilean": {
+      "W": {
+        "name": "Rewind",
+        "cooldown": [
+          14,
+          12,
+          10,
+          8,
+          6
+        ],
+        "base_damage": [
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0
+        ],
+        "effect_slot": 1,
+        "source": "effect_burn_extraction"
+      },
+      "E": {
+        "name": "Time Warp",
+        "cooldown": [
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "base_damage": [
+          40.0,
+          55.0,
+          70.0,
+          85.0,
+          99.0
+        ],
+        "effect_slot": 2,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Zoe": {
+      "W": {
+        "name": "Spell Thief",
+        "cooldown": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "base_damage": [
+          3000.0,
+          4500.0,
+          6000.0,
+          0.0,
+          0.0
+        ],
+        "effect_slot": 2,
+        "ad_ratio": 3.0,
+        "ratio_slot": 10,
+        "source": "effect_burn_extraction"
+      }
+    },
+    "Zyra": {
+      "W": {
+        "name": "Rampant Growth",
+        "cooldown": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "base_damage": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0
+        ],
+        "effect_slot": 8,
+        "source": "effect_burn_extraction"
+      }
+    }
+  }
+}

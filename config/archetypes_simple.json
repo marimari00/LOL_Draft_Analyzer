@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Simplified archetype definitions using only currently available attributes. Will be enhanced with damage timing curves later.",
+    "available_attributes": [
+      "cc_score", "mobility_score", "survivability_early", "survivability_mid", 
+      "survivability_late", "waveclear_speed", "gold_dependency", "sustain_score",
+      "aoe_capability", "dueling_power", "damage_pattern"
+    ]
+  },
+  "archetypes": {
+    "burst_assassin": {
+      "description": "High mobility, fragile, burst damage pattern",
+      "primary_attributes": {
+        "mobility_score": [0.7, 1.0],
+        "survivability_late": [0.0, 0.5],
+        "damage_pattern": "burst"
+      }
+    },
+    "hypercarry": {
+      "description": "High gold dependency, scales to late game",
+      "primary_attributes": {
+        "gold_dependency": [0.6, 1.0],
+        "survivability_late": [0.0, 0.5]
+      }
+    },
+    "engage_tank": {
+      "description": "High CC and survivability, low mobility",
+      "primary_attributes": {
+        "cc_score": [0.5, 1.0],
+        "survivability_late": [0.6, 1.0],
+        "mobility_score": [0.0, 0.4]
+      }
+    },
+    "skirmisher": {
+      "description": "Mobile sustained damage, good dueling",
+      "primary_attributes": {
+        "mobility_score": [0.5, 1.0],
+        "dueling_power": [0.6, 1.0],
+        "damage_pattern": "sustained"
+      }
+    },
+    "enchanter": {
+      "description": "High sustain/utility, low survivability",
+      "primary_attributes": {
+        "sustain_score": [0.7, 1.0],
+        "survivability_late": [0.0, 0.4]
+      }
+    },
+    "juggernaut": {
+      "description": "Low mobility, high durability and damage",
+      "primary_attributes": {
+        "survivability_mid": [0.7, 1.0],
+        "mobility_score": [0.0, 0.3],
+        "dueling_power": [0.6, 1.0]
+      }
+    },
+    "artillery_mage": {
+      "description": "Low mobility, high waveclear",
+      "primary_attributes": {
+        "waveclear_speed": [0.7, 1.0],
+        "mobility_score": [0.0, 0.3]
+      }
+    },
+    "teamfight_carry": {
+      "description": "High AOE capability",
+      "primary_attributes": {
+        "aoe_capability": [0.7, 1.0],
+        "waveclear_speed": [0.6, 1.0]
+      }
+    }
+  }
+}

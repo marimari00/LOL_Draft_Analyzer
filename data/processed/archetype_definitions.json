@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "note": "Archetype definitions using data-driven percentile thresholds",
+    "source": "Based on attribute_distributions.json analysis",
+    "thresholds": {
+      "burst_index": {"p25": 0.13, "p50": 0.31, "p75": 0.66, "p90": 0.81},
+      "sustained_dps": {"p25": 35.9, "p50": 67.6, "p75": 119.2, "p90": 164.62},
+      "cc_score": {"p25": 0.07, "p50": 0.15, "p75": 0.29, "p90": 0.49},
+      "mobility_score": {"p25": 0.0, "p50": 0.3, "p75": 1.2, "p90": 2.4},
+      "max_range": {"p25": 900, "p50": 1200, "p75": 4750, "p90": 25000}
+    }
+  },
+  "archetypes": {
+    "burst_assassin": {
+      "description": "High burst damage, high mobility, low CC - designed to eliminate priority targets",
+      "requirements": {
+        "burst_index": {"min": 0.66, "weight": 1.0, "fuzzy_range": 0.1},
+        "mobility_score": {"min": 1.2, "weight": 0.9, "fuzzy_range": 0.3},
+        "cc_score": {"max": 0.29, "weight": 0.5, "fuzzy_range": 0.1}
+      },
+      "examples": ["Zed", "Akali", "Talon", "Katarina"]
+    },
+    "burst_mage": {
+      "description": "High burst damage, moderate range, low mobility - burst casters",
+      "requirements": {
+        "burst_index": {"min": 0.66, "weight": 1.0, "fuzzy_range": 0.1},
+        "mobility_score": {"max": 1.2, "weight": 0.7, "fuzzy_range": 0.3},
+        "max_range": {"min": 900, "weight": 0.5, "fuzzy_range": 300}
+      },
+      "examples": ["Syndra", "Lux", "Ahri", "LeBlanc"]
+    },
+    "engage_tank": {
+      "description": "High CC, moderate mobility (engage tools), front-line initiators",
+      "requirements": {
+        "cc_score": {"min": 0.49, "weight": 1.0, "fuzzy_range": 0.15},
+        "mobility_score": {"min": 0.3, "weight": 0.8, "fuzzy_range": 0.3},
+        "burst_index": {"max": 0.66, "weight": 0.4, "fuzzy_range": 0.2}
+      },
+      "examples": ["Leona", "Nautilus", "Alistar", "Malphite"]
+    },
+    "juggernaut": {
+      "description": "Low mobility, sustained damage, moderate CC - immobile bruisers",
+      "requirements": {
+        "mobility_score": {"max": 0.3, "weight": 0.9, "fuzzy_range": 0.3},
+        "sustained_dps": {"min": 67.6, "weight": 0.8, "fuzzy_range": 30},
+        "cc_score": {"min": 0.15, "max": 0.49, "weight": 0.5, "fuzzy_range": 0.1}
+      },
+      "examples": ["Darius", "Garen", "Mordekaiser", "Illaoi"]
+    },
+    "marksman": {
+      "description": "High sustained DPS, long range, low mobility - ranged carries",
+      "requirements": {
+        "sustained_dps": {"min": 119.2, "weight": 1.0, "fuzzy_range": 40},
+        "max_range": {"min": 900, "weight": 0.9, "fuzzy_range": 300},
+        "mobility_score": {"max": 1.2, "weight": 0.6, "fuzzy_range": 0.4}
+      },
+      "examples": ["Jinx", "Caitlyn", "Ashe", "Jhin"]
+    },
+    "skirmisher": {
+      "description": "Balanced burst and sustained damage, high mobility - dueling specialists",
+      "requirements": {
+        "mobility_score": {"min": 1.2, "weight": 0.9, "fuzzy_range": 0.4},
+        "burst_index": {"min": 0.31, "max": 0.66, "weight": 0.7, "fuzzy_range": 0.15},
+        "sustained_dps": {"min": 67.6, "weight": 0.7, "fuzzy_range": 30}
+      },
+      "examples": ["Yasuo", "Irelia", "Fiora", "Jax"]
+    },
+    "diver": {
+      "description": "Moderate burst, high mobility, some CC - engage onto backline",
+      "requirements": {
+        "mobility_score": {"min": 1.2, "weight": 0.9, "fuzzy_range": 0.4},
+        "burst_index": {"min": 0.31, "weight": 0.7, "fuzzy_range": 0.2},
+        "cc_score": {"min": 0.15, "weight": 0.6, "fuzzy_range": 0.1}
+      },
+      "examples": ["Vi", "Jarvan IV", "Camille", "Diana"]
+    },
+    "battle_mage": {
+      "description": "Sustained magic damage, moderate range and mobility",
+      "requirements": {
+        "sustained_dps": {"min": 67.6, "weight": 0.9, "fuzzy_range": 30},
+        "burst_index": {"max": 0.66, "weight": 0.6, "fuzzy_range": 0.2},
+        "max_range": {"min": 700, "weight": 0.5, "fuzzy_range": 300},
+        "damage_profile": {"equals": "ap", "weight": 0.7}
+      },
+      "examples": ["Cassiopeia", "Ryze", "Azir", "Swain"]
+    },
+    "artillery_mage": {
+      "description": "Long-range poke, high burst, low mobility",
+      "requirements": {
+        "max_range": {"min": 1200, "weight": 1.0, "fuzzy_range": 400},
+        "burst_index": {"min": 0.31, "weight": 0.8, "fuzzy_range": 0.2},
+        "mobility_score": {"max": 0.3, "weight": 0.6, "fuzzy_range": 0.3},
+        "damage_profile": {"equals": "ap", "weight": 0.7}
+      },
+      "examples": ["Xerath", "Ziggs", "Vel'Koz", "Lux"]
+    },
+    "catcher": {
+      "description": "High CC, long range, support role - pick/disengage specialists",
+      "requirements": {
+        "cc_score": {"min": 0.29, "weight": 1.0, "fuzzy_range": 0.15},
+        "max_range": {"min": 900, "weight": 0.8, "fuzzy_range": 300},
+        "sustained_dps": {"max": 67.6, "weight": 0.5, "fuzzy_range": 30}
+      },
+      "examples": ["Thresh", "Blitzcrank", "Morgana", "Bard"]
+    },
+    "enchanter": {
+      "description": "Low damage, low CC, support utility (heals/shields/buffs)",
+      "requirements": {
+        "sustained_dps": {"max": 35.9, "weight": 0.9, "fuzzy_range": 20},
+        "cc_score": {"max": 0.29, "weight": 0.6, "fuzzy_range": 0.15},
+        "burst_index": {"max": 0.31, "weight": 0.7, "fuzzy_range": 0.15}
+      },
+      "note": "This archetype may require additional healing/shielding detection",
+      "examples": ["Lulu", "Janna", "Soraka", "Karma"]
+    },
+    "specialist": {
+      "description": "Unconventional playstyle, doesn't fit standard patterns",
+      "requirements": {
+        "fallback": true
+      },
+      "note": "Catch-all for champions that don't strongly match any archetype",
+      "examples": ["Heimerdinger", "Singed", "Teemo", "Shaco"]
+    },
+    "warden": {
+      "description": "Defensive tank, moderate CC, low mobility - peel specialists",
+      "requirements": {
+        "cc_score": {"min": 0.29, "weight": 0.9, "fuzzy_range": 0.15},
+        "mobility_score": {"max": 0.3, "weight": 0.8, "fuzzy_range": 0.3},
+        "burst_index": {"max": 0.31, "weight": 0.5, "fuzzy_range": 0.15}
+      },
+      "examples": ["Braum", "Tahm Kench", "Poppy", "Shen"]
+    }
+  },
+  "scoring_rules": {
+    "fuzzy_scoring": {
+      "description": "Each requirement is scored 0-1 based on how well the champion meets it",
+      "formula": "For min thresholds: 0 if value < (min - fuzzy_range), 1 if value >= min, linear between. For max thresholds: inverse.",
+      "archetype_score": "Weighted average of all requirement scores for that archetype"
+    },
+    "assignment": {
+      "primary_archetype": "Archetype with highest score",
+      "secondary_archetype": "Any archetype with score >= 0.7 of primary score",
+      "minimum_score": 0.3,
+      "fallback_to_specialist": "If no archetype scores >= 0.3"
+    }
+  }
+}

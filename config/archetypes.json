@@ -1,0 +1,281 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Strategic archetype definitions for League of Legends champions. Uses fuzzy membership - champions can belong to multiple archetypes with different scores.",
+    "attribute_ranges": {
+      "note": "All numeric attributes normalized 0.0-1.0",
+      "timing_phases": ["early (0-15min)", "mid (15-25min)", "late (25-40min)"],
+      "available_attributes": [
+        "cc_score", "mobility_score", "survivability_early", "survivability_mid", 
+        "survivability_late", "waveclear_speed", "gold_dependency", "sustain_score",
+        "aoe_capability", "dueling_power", "damage_pattern", "range_profile"
+      ],
+      "pending_attributes": [
+        "damage_early", "damage_mid", "damage_late (will be added by timing calculator)"
+      ]
+    }
+  },
+  "archetypes": {
+    "burst_assassin": {
+      "description": "High single-target burst damage, mobile, fragile. Excels at eliminating isolated targets quickly.",
+      "strategic_role": "pick",
+      "primary_attributes": {
+        "damage_pattern": "burst",
+        "mobility_score": [0.6, 1.0],
+        "survivability_late": [0.0, 0.4],
+        "gold_dependency": [0.0, 0.6],
+        "aoe_capability": [0.0, 0.4]
+      },
+      "typical_examples": ["Zed", "Talon", "Katarina", "Akali"]
+    },
+    "hypercarry": {
+      "description": "Extremely high late-game damage output, heavily gold-dependent, weak early. Scales to dominate fights.",
+      "strategic_role": "scale",
+      "primary_attributes": {
+        "damage_pattern": "sustained",
+        "gold_dependency": [0.6, 1.0],
+        "survivability_early": [0.0, 0.5],
+        "survivability_late": [0.0, 0.5],
+        "mobility_score": [0.0, 0.4]
+      },
+      "typical_examples": ["Jinx", "Kog'Maw", "Kassadin", "Vayne"]
+    },
+    "engage_tank": {
+      "description": "High crowd control and survivability. Initiates fights and absorbs damage for the team.",
+      "strategic_role": "engage",
+      "primary_attributes": {
+        "cc_score": [0.6, 1.0],
+        "survivability_mid": [0.6, 1.0],
+        "survivability_late": [0.6, 1.0],
+        "damage_late": [0.0, 0.4]
+      },
+      "typical_examples": ["Malphite", "Ornn", "Nautilus", "Leona"]
+    },
+    "poke_mage": {
+      "description": "Long-range damage dealers who whittle down enemies before fights. Controls space through threat.",
+      "strategic_role": "poke",
+      "primary_attributes": {
+        "damage_pattern": "poke",
+        "damage_mid": [0.6, 1.0],
+        "waveclear_speed": [0.6, 1.0],
+        "mobility_score": [0.0, 0.5]
+      },
+      "typical_examples": ["Xerath", "Ziggs", "Jayce", "Nidalee"]
+    },
+    "control_mage": {
+      "description": "Area denial and crowd control specialists. Zones enemies and controls fight positioning.",
+      "strategic_role": "control",
+      "primary_attributes": {
+        "cc_score": [0.5, 1.0],
+        "aoe_capability": [0.7, 1.0],
+        "waveclear_speed": [0.6, 1.0],
+        "damage_pattern": "sustained_aoe"
+      },
+      "typical_examples": ["Anivia", "Orianna", "Viktor", "Azir"]
+    },
+    "skirmisher": {
+      "description": "Strong in extended 1v1 or small fights. Mobile, sustained damage, good dueling.",
+      "strategic_role": "split_skirmish",
+      "primary_attributes": {
+        "damage_pattern": "sustained",
+        "mobility_score": [0.5, 1.0],
+        "damage_mid": [0.6, 1.0],
+        "sustain_score": [0.4, 1.0],
+        "cc_score": [0.2, 0.6]
+      },
+      "typical_examples": ["Fiora", "Yasuo", "Irelia", "Jax"]
+    },
+    "juggernaut": {
+      "description": "Low mobility, high damage and durability. Threatening when they reach targets but kitable.",
+      "strategic_role": "frontline_threat",
+      "primary_attributes": {
+        "damage_mid": [0.6, 1.0],
+        "survivability_mid": [0.7, 1.0],
+        "mobility_score": [0.0, 0.3]
+      },
+      "typical_examples": ["Darius", "Garen", "Mordekaiser", "Illaoi"]
+    },
+    "enchanter": {
+      "description": "Supports allies with heals, shields, and buffs. Fragile but force multipliers.",
+      "strategic_role": "protect",
+      "primary_attributes": {
+        "sustain_score": [0.6, 1.0],
+        "shield_power": [0.6, 1.0],
+        "utility_value": [0.7, 1.0],
+        "survivability_late": [0.0, 0.4],
+        "damage_late": [0.0, 0.3]
+      },
+      "typical_examples": ["Lulu", "Janna", "Soraka", "Yuumi"]
+    },
+    "diver": {
+      "description": "Initiates onto backline targets with moderate survivability. Disrupts enemy formation.",
+      "strategic_role": "dive",
+      "primary_attributes": {
+        "mobility_score": [0.6, 1.0],
+        "survivability_mid": [0.5, 0.8],
+        "damage_mid": [0.5, 0.9],
+        "cc_score": [0.3, 0.7]
+      },
+      "typical_examples": ["Vi", "Camille", "Diana", "Jarvan IV"]
+    },
+    "artillery": {
+      "description": "Extreme range poke and siege. Zone control through long-range threats.",
+      "strategic_role": "siege",
+      "primary_attributes": {
+        "damage_mid": [0.6, 1.0],
+        "mobility_score": [0.0, 0.3],
+        "waveclear_speed": [0.5, 1.0]
+      },
+      "typical_examples": ["Vel'Koz", "Lux", "Xerath", "Zoe"]
+    },
+    "early_game_bully": {
+      "description": "Dominates early game through superior base stats and early power spikes. Falls off later.",
+      "strategic_role": "snowball",
+      "primary_attributes": {
+        "damage_early": [0.7, 1.0],
+        "damage_late": [0.0, 0.4],
+        "gold_dependency": [0.0, 0.4]
+      },
+      "typical_examples": ["Pantheon", "Renekton", "Lee Sin", "Draven"]
+    },
+    "split_pusher": {
+      "description": "Strong side lane pressure through wave control and dueling. Forces map rotations.",
+      "strategic_role": "split_push",
+      "primary_attributes": {
+        "waveclear_speed": [0.7, 1.0],
+        "damage_mid": [0.6, 1.0],
+        "dueling_power": [0.6, 1.0],
+        "mobility_score": [0.4, 1.0]
+      },
+      "typical_examples": ["Tryndamere", "Fiora", "Camille", "Yorick"]
+    },
+    "catch_champion": {
+      "description": "Specializes in catching out-of-position enemies through long-range CC or mobility.",
+      "strategic_role": "pick",
+      "primary_attributes": {
+        "cc_score": [0.5, 1.0],
+        "mobility_score": [0.3, 1.0]
+      },
+      "typical_examples": ["Thresh", "Blitzcrank", "Ahri", "Ashe"]
+    },
+    "utility_carry": {
+      "description": "Provides damage while also offering significant utility (CC, buffs, vision). Flexible gold scaling.",
+      "strategic_role": "flex_utility",
+      "primary_attributes": {
+        "damage_mid": [0.4, 0.8],
+        "utility_value": [0.6, 1.0],
+        "gold_dependency": [0.3, 0.7],
+        "cc_score": [0.4, 0.8]
+      },
+      "typical_examples": ["Senna", "Ashe", "Seraphine", "Karma"]
+    },
+    "teamfight_carry": {
+      "description": "Excels in 5v5 teamfights through AOE damage or sustained threat. Needs team setup.",
+      "strategic_role": "teamfight",
+      "primary_attributes": {
+        "aoe_capability": [0.7, 1.0],
+        "damage_mid": [0.6, 1.0],
+        "damage_late": [0.6, 1.0],
+        "positioning_requirement": "safe"
+      },
+      "typical_examples": ["Miss Fortune", "Kennen", "Orianna", "Rumble"]
+    }
+  },
+  "attribute_definitions": {
+    "damage_pattern": {
+      "type": "categorical",
+      "values": ["burst", "sustained", "poke", "sustained_aoe", "dps"],
+      "description": "Primary damage delivery pattern"
+    },
+    "damage_early": {
+      "type": "float",
+      "range": [0.0, 1.0],
+      "description": "Normalized damage output 0-15 minutes"
+    },
+    "damage_mid": {
+      "type": "float",
+      "range": [0.0, 1.0],
+      "description": "Normalized damage output 15-25 minutes"
+    },
+    "damage_late": {
+      "type": "float",
+      "range": [0.0, 1.0],
+      "description": "Normalized damage output 25-40 minutes"
+    },
+    "survivability_early": {
+      "type": "float",
+      "range": [0.0, 1.0],
+      "description": "Effective HP and threat evasion 0-15 minutes"
+    },
+    "survivability_mid": {
+      "type": "float",
+      "range": [0.0, 1.0],
+      "description": "Effective HP and threat evasion 15-25 minutes"
+    },
+    "survivability_late": {
+      "type": "float",
+      "range": [0.0, 1.0],
+      "description": "Effective HP and threat evasion 25-40 minutes"
+    },
+    "cc_score": {
+      "type": "float",
+      "range": [0.0, 1.0],
+      "description": "Composite: Σ(duration × reliability × AOE × uptime)"
+    },
+    "mobility_score": {
+      "type": "float",
+      "range": [0.0, 1.0],
+      "description": "Dash count + movement speed modifiers"
+    },
+    "waveclear_speed": {
+      "type": "float",
+      "range": [0.0, 1.0],
+      "description": "Speed of killing minion waves (AOE damage)"
+    },
+    "gold_dependency": {
+      "type": "float",
+      "range": [0.0, 1.0],
+      "description": "How much champion power scales with gold"
+    },
+    "sustain_score": {
+      "type": "float",
+      "range": [0.0, 1.0],
+      "description": "Healing + shielding per second in combat"
+    },
+    "threat_range": {
+      "type": "int",
+      "range": [0, 3000],
+      "description": "Distance at which champion becomes threatening (units)"
+    },
+    "effective_ability_range": {
+      "type": "int",
+      "range": [0, 3000],
+      "description": "Maximum poke/engage range of primary abilities"
+    },
+    "escape_range": {
+      "type": "int",
+      "range": [0, 1500],
+      "description": "Total distance of mobility spells (dashes/blinks)"
+    },
+    "aoe_capability": {
+      "type": "float",
+      "range": [0.0, 1.0],
+      "description": "AOE damage and CC potential"
+    },
+    "utility_value": {
+      "type": "float",
+      "range": [0.0, 1.0],
+      "description": "Non-damage value: vision, CC, buffs, map pressure"
+    },
+    "dueling_power": {
+      "type": "float",
+      "range": [0.0, 1.0],
+      "description": "1v1 fighting strength in side lanes"
+    }
+  },
+  "computation_notes": {
+    "fuzzy_membership": "Champions can have partial membership in multiple archetypes. Score = Σ(attribute_matches) / total_attributes",
+    "threshold": "Membership > 0.6 is strong, 0.4-0.6 is moderate, < 0.4 is weak",
+    "theoretical_fallback": "For champions without pro data, compute attributes from abilities and assign archetypes algorithmically"
+  }
+}

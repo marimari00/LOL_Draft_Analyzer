@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "version": "2.0.0",
+    "description": "Strategic archetype definitions using enhanced attributes including real damage timing curves.",
+    "available_attributes": [
+      "cc_score", "mobility_score", "survivability_early", "survivability_mid", 
+      "survivability_late", "waveclear_speed", "gold_dependency", "sustain_score",
+      "aoe_capability", "dueling_power", "range_profile",
+      "burst_pattern", "sustained_pattern", "damage_early", "damage_mid", "damage_late"
+    ],
+    "note": "Most numeric attributes are normalized 0.0-1.0. CC_SCORE is RAW (not normalized) - typical range 0.0-1.2, with 0.25+ = high CC, 0.1-0.25 = medium, <0.1 = low. Ranges are [min, max] inclusive. Weights adjust archetype priority (higher = more important)."
+  },
+  "archetypes": {
+    "burst_assassin": {
+      "description": "High mobility, eliminates squishy targets with burst windows. Fragile.",
+      "strategic_role": "pick",
+      "weight": 1.0,
+      "primary_attributes": {
+        "burst_pattern": [0.7, 1.0],
+        "mobility_score": [0.7, 1.0],
+        "survivability_late": [0.0, 0.5],
+        "cc_score": [0.0, 0.15]
+      },
+      "exclusions": {
+        "auto_attack_range": [500, 700]
+      },
+      "typical_examples": ["Zed", "Talon", "Katarina", "Akali", "Fizz"]
+    },
+    "hypercarry": {
+      "description": "Scales extremely hard with gold. Weak early, dominant late game.",
+      "strategic_role": "scale",
+      "weight": 1.0,
+      "primary_attributes": {
+        "sustained_pattern": [0.5, 1.0],
+        "gold_dependency": [0.0, 1.0],
+        "damage_late": [0.6, 1.0],
+        "survivability_early": [0.0, 0.5]
+      },
+      "typical_examples": ["Jinx", "Kog'Maw", "Kassadin", "Vayne", "Kayle"]
+    },
+    "engage_tank": {
+      "description": "High CC and survivability. Initiates teamfights for the team.",
+      "strategic_role": "engage",
+      "weight": 1.0,
+      "primary_attributes": {
+        "cc_score": [0.25, 10.0],
+        "survivability_mid": [0.6, 1.0],
+        "survivability_late": [0.5, 1.0]
+      },
+      "range_constraints": {
+        "auto_attack": [0, 250]
+      },
+      "typical_examples": ["Malphite", "Ornn", "Nautilus", "Leona", "Zac"]
+    },
+    "poke_champion": {
+      "description": "Long-range harassment. Softens enemies before engages.",
+      "strategic_role": "poke",
+      "weight": 1.0,
+      "primary_attributes": {
+        "waveclear_speed": [0.4, 1.0],
+        "mobility_score": [0.0, 0.6],
+        "gold_dependency": [0.3, 0.9],
+        "aoe_capability": [0.3, 1.0]
+      },
+      "range_constraints": {
+        "effective_ability": [800, 3000]
+      },
+      "typical_examples": ["Xerath", "Ziggs", "Jayce", "Nidalee", "Zoe"]
+    },
+    "control_mage": {
+      "description": "Area denial and zone control. Dominates teamfights through AOE.",
+      "strategic_role": "control",
+      "weight": 1.0,
+      "primary_attributes": {
+        "cc_score": [0.25, 10.0],
+        "aoe_capability": [0.6, 1.0],
+        "waveclear_speed": [0.6, 1.0]
+      },
+      "range_constraints": {
+        "auto_attack": [450, 600]
+      },
+      "typical_examples": ["Anivia", "Orianna", "Viktor", "Azir", "Syndra"]
+    },
+    "skirmisher": {
+      "description": "Excels in extended fights and duels. Mobile with sustained damage.",
+      "strategic_role": "split_skirmish",
+      "weight": 1.0,
+      "primary_attributes": {
+        "sustained_pattern": [0.5, 1.0],
+        "mobility_score": [0.5, 1.0],
+        "dueling_power": [0.6, 1.0],
+        "survivability_mid": [0.4, 0.9]
+      },
+      "range_constraints": {
+        "auto_attack": [0, 250]
+      },
+      "typical_examples": ["Fiora", "Yasuo", "Irelia", "Jax", "Yone"]
+    },
+    "juggernaut": {
+      "description": "High damage and durability but low mobility. Threatening in range.",
+      "strategic_role": "frontline_threat",
+      "weight": 1.0,
+      "primary_attributes": {
+        "survivability_mid": [0.6, 1.0],
+        "mobility_score": [0.0, 0.3],
+        "dueling_power": [0.5, 1.0],
+        "gold_dependency": [0.0, 0.6]
+      },
+      "range_constraints": {
+        "auto_attack": [0, 200]
+      },
+      "typical_examples": ["Darius", "Garen", "Mordekaiser", "Illaoi", "Sett"]
+    },
+    "enchanter": {
+      "description": "Protects and buffs allies. High utility, low personal survivability.",
+      "strategic_role": "protect",
+      "weight": 1.0,
+      "primary_attributes": {
+        "sustain_score": [0.6, 1.0],
+        "damage_early": [0.0, 0.3],
+        "damage_mid": [0.0, 0.4],
+        "damage_late": [0.0, 0.5]
+      },
+      "range_constraints": {
+        "auto_attack": [450, 600]
+      },
+      "typical_examples": ["Lulu", "Janna", "Soraka", "Yuumi", "Nami"]
+    },
+    "diver": {
+      "description": "Dives backline with moderate survivability. Disrupts enemy team.",
+      "strategic_role": "dive",
+      "weight": 1.0,
+      "primary_attributes": {
+        "mobility_score": [0.6, 1.0],
+        "survivability_mid": [0.4, 0.8],
+        "dueling_power": [0.4, 0.9],
+        "cc_score": [0.1, 0.4]
+      },
+      "range_constraints": {
+        "auto_attack": [0, 250]
+      },
+      "typical_examples": ["Vi", "Camille", "Diana", "Jarvan IV", "Hecarim"]
+    },
+    "marksman": {
+      "description": "Sustained ranged physical damage. Main DPS source, needs protection.",
+      "strategic_role": "dps",
+      "weight": 1.0,
+      "primary_attributes": {
+        "damage_late": [0.3, 1.0]
+      },
+      "range_constraints": {
+        "auto_attack": [500, 700]
+      },
+      "typical_examples": ["Jinx", "Caitlyn", "Ashe", "Miss Fortune", "Tristana"]
+    },
+    "split_pusher": {
+      "description": "Strong side lane pressure through waveclear and dueling.",
+      "strategic_role": "split_push",
+      "weight": 1.0,
+      "primary_attributes": {
+        "waveclear_speed": [0.6, 1.0],
+        "dueling_power": [0.6, 1.0],
+        "mobility_score": [0.3, 1.0],
+        "survivability_mid": [0.4, 0.9]
+      },
+      "typical_examples": ["Tryndamere", "Fiora", "Camille", "Yorick", "Jax"]
+    },
+    "catch_champion": {
+      "description": "Catches out-of-position enemies with long-range CC or gap closers.",
+      "strategic_role": "pick",
+      "weight": 1.0,
+      "primary_attributes": {
+        "cc_score": [0.15, 10.0],
+        "mobility_score": [0.3, 1.0],
+        "dueling_power": [0.3, 0.8]
+      },
+      "range_constraints": {
+        "effective_ability": [700, 2500]
+      },
+      "typical_examples": ["Thresh", "Blitzcrank", "Ahri", "Ashe", "Pyke"]
+    },
+    "utility_carry": {
+      "description": "Provides damage while offering significant utility. Flexible gold scaling.",
+      "strategic_role": "flex_utility",
+      "weight": 1.0,
+      "primary_attributes": {
+        "gold_dependency": [0.2, 0.7],
+        "cc_score": [0.1, 0.5],
+        "waveclear_speed": [0.4, 1.0],
+        "survivability_mid": [0.3, 0.7]
+      },
+      "typical_examples": ["Senna", "Ashe", "Seraphine", "Karma", "Orianna"]
+    },
+    "teamfight_carry": {
+      "description": "Excels in 5v5 through AOE damage. Needs frontline protection.",
+      "strategic_role": "teamfight",
+      "weight": 1.0,
+      "primary_attributes": {
+        "aoe_capability": [0.6, 1.0],
+        "waveclear_speed": [0.5, 1.0],
+        "gold_dependency": [0.4, 0.9],
+        "mobility_score": [0.0, 0.5]
+      },
+      "damage_pattern_preference": ["sustained_aoe", "sustained"],
+      "typical_examples": ["Miss Fortune", "Kennen", "Orianna", "Rumble", "Karthus"]
+    },
+    "early_game_bully": {
+      "description": "Dominates lane phase. Falls off without snowball advantage.",
+      "strategic_role": "snowball",
+      "weight": 1.0,
+      "primary_attributes": {
+        "damage_early": [0.75, 1.0],
+        "damage_late": [0.0, 0.45]
+      },
+      "typical_examples": ["Pantheon", "Renekton", "Lee Sin", "Draven", "Lucian"]
+    }
+  },
+  "matching_algorithm": {
+    "description": "Fuzzy membership scoring system",
+    "steps": [
+      "1. For each archetype, check all primary_attributes",
+      "2. For numeric attributes, score = 1.0 if in range, gradual falloff outside (trapezoidal)",
+      "3. For categorical attributes (damage_pattern), score = 1.0 if match, 0.0 if not",
+      "4. For range_constraints, score = 1.0 if champion's range is within bounds",
+      "5. Final archetype_score = (sum of attribute scores) / (number of attributes)",
+      "6. Threshold: > 0.6 = strong match, 0.4-0.6 = moderate, < 0.4 = weak"
+    ],
+    "falloff_formula": "score = max(0, 1.0 - (distance_outside_range * penalty_factor))",
+    "penalty_factor": 2.0
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "data_dragon": {
+    "base_url": "https://ddragon.leagueoflegends.com",
+    "cache_duration_hours": 24,
+    "retry_attempts": 3,
+    "retry_delay_seconds": 2
+  },
+  "league_wiki": {
+    "base_url": "https://leagueoflegends.fandom.com",
+    "champion_page_pattern": "/wiki/{champion_name}/LoL",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "request_delay_seconds": 1,
+    "selectors": {
+      "ability_table": "table.wikitable",
+      "ability_name": "th.ability-name",
+      "stat_row": "tr",
+      "damage_info": "td",
+      "cc_duration": "span.cc-duration",
+      "cooldown": "span.cooldown",
+      "range": "span.range"
+    },
+    "special_champions": {
+      "note": "Champions with multiple forms or complex abilities requiring special parsing",
+      "list": [
+        "Kayn",
+        "Shyvana",
+        "Nidalee",
+        "Elise",
+        "Jayce",
+        "Gnar",
+        "Aphelios",
+        "Hwei"
+      ]
+    }
+  },
+  "timing_phases": {
+    "early": {
+      "min_time": 0,
+      "max_time": 15,
+      "description": "Laning phase, voidgrubs, first 2 dragons"
+    },
+    "mid": {
+      "min_time": 15,
+      "max_time": 25,
+      "description": "Third dragon, herald, mid game skirmishes"
+    },
+    "late": {
+      "min_time": 25,
+      "max_time": 40,
+      "description": "Atakhan, baron, late game teamfights"
+    }
+  },
+  "attribute_computation": {
+    "cc_reliability": {
+      "point_click": 1.0,
+      "conditional": 0.7,
+      "easy_skillshot": 0.6,
+      "hard_skillshot": 0.3
+    },
+    "cc_target_multiplier": {
+      "single": 1.0,
+      "small_aoe": 1.5,
+      "medium_aoe": 2.0,
+      "large_aoe": 2.5
+    },
+    "mobility_types": {
+      "dash": 1.0,
+      "blink": 1.2,
+      "movespeed_buff": 0.5,
+      "unstoppable": 1.5
+    },
+    "damage_types": {
+      "physical": "AD",
+      "magic": "AP",
+      "true": "TRUE",
+      "mixed": "MIXED"
+    }
+  },
+  "role_definitions": {
+    "roles": ["Top", "Jungle", "Mid", "ADC", "Support"],
+    "role_order_importance": "First role in array is primary, subsequent are flex picks"
+  }
+}
