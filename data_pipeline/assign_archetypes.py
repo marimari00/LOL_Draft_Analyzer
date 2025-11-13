@@ -36,7 +36,19 @@ def score_archetype(champion_attrs, archetype_def):
     for attr_name, requirement in requirements.items():
         value = champion_attrs.get(attr_name, 0.0)
         
-        # Convert string values to float
+        # Handle categorical requirements (e.g., damage_profile with allowed values)
+        if isinstance(requirement, dict) and 'allowed' in requirement:
+            allowed_values = requirement['allowed']
+            if value in allowed_values:
+                score = 1.0
+            else:
+                score = 0.0
+            weight = requirement.get('weight', 1.0)
+            weighted_sum += score * weight
+            total_weight += weight
+            continue
+        
+        # Convert string values to float for numeric requirements
         if isinstance(value, str):
             try:
                 value = float(value)
