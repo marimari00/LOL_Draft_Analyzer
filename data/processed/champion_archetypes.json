@@ -4,7 +4,9 @@
     "total_champions": 171,
     "matched_with_info_json": 171,
     "unmatched": 0,
-    "note": "Roles assigned directly from info.lua, attributes from patched data"
+    "note": "Roles assigned directly from info.lua, attributes from patched data",
+    "positions_added": true,
+    "matched_positions": 171
   },
   "distribution": {
     "juggernaut": 14,
@@ -42,7 +44,11 @@
         "max_range": 25000,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Ahri": {
       "primary_archetype": "burst_mage",
@@ -64,7 +70,11 @@
         "max_range": 975,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Akali": {
       "primary_archetype": "burst_assassin",
@@ -86,7 +96,12 @@
         "max_range": 825,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle"
+      ]
     },
     "Akshan": {
       "primary_archetype": "marksman",
@@ -111,7 +126,11 @@
         "max_range": 5500,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Alistar": {
       "primary_archetype": "engage_tank",
@@ -133,7 +152,11 @@
         "max_range": 650,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     },
     "Ambessa": {
       "primary_archetype": "diver",
@@ -158,7 +181,11 @@
         "max_range": 1250,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Amumu": {
       "primary_archetype": "engage_tank",
@@ -180,7 +207,12 @@
         "max_range": 1100,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle",
+        "Support"
+      ]
     },
     "Anivia": {
       "primary_archetype": "battle_mage",
@@ -202,7 +234,11 @@
         "max_range": 1075,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Annie": {
       "primary_archetype": "burst_mage",
@@ -224,7 +260,11 @@
         "max_range": 800,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Aphelios": {
       "primary_archetype": "marksman",
@@ -246,7 +286,11 @@
         "max_range": 1450,
         "damage_profile": "ad",
         "total_ad_ratio": 1.2
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
     },
     "Ashe": {
       "primary_archetype": "marksman",
@@ -268,7 +312,12 @@
         "max_range": 25000,
         "damage_profile": "ap",
         "total_ad_ratio": 1.0
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom",
+        "Support"
+      ]
     },
     "AurelionSol": {
       "primary_archetype": "battle_mage",
@@ -290,7 +339,11 @@
         "max_range": 1500,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Aurora": {
       "primary_archetype": "burst_mage",
@@ -315,7 +368,12 @@
         "max_range": 900,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Top"
+      ]
     },
     "Azir": {
       "primary_archetype": "specialist",
@@ -337,7 +395,11 @@
         "max_range": 1100,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Bard": {
       "primary_archetype": "catcher",
@@ -359,7 +421,11 @@
         "max_range": 25000,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     },
     "Belveth": {
       "primary_archetype": "skirmisher",
@@ -381,7 +447,11 @@
         "max_range": 715,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Blitzcrank": {
       "primary_archetype": "catcher",
@@ -403,7 +473,11 @@
         "max_range": 1079,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     },
     "Brand": {
       "primary_archetype": "burst_mage",
@@ -425,7 +499,13 @@
         "max_range": 1050,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle",
+        "Middle",
+        "Support"
+      ]
     },
     "Braum": {
       "primary_archetype": "warden",
@@ -447,7 +527,11 @@
         "max_range": 25000,
         "damage_profile": "ad",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     },
     "Briar": {
       "primary_archetype": "diver",
@@ -469,7 +553,11 @@
         "max_range": 12000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Caitlyn": {
       "primary_archetype": "marksman",
@@ -491,7 +579,11 @@
         "max_range": 3500,
         "damage_profile": "ad",
         "total_ad_ratio": 3.3
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
     },
     "Camille": {
       "primary_archetype": "diver",
@@ -513,7 +605,12 @@
         "max_range": 800,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Support"
+      ]
     },
     "Cassiopeia": {
       "primary_archetype": "battle_mage",
@@ -535,7 +632,11 @@
         "max_range": 850,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Chogath": {
       "primary_archetype": "specialist",
@@ -557,7 +658,11 @@
         "max_range": 950,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Corki": {
       "primary_archetype": "marksman",
@@ -579,7 +684,11 @@
         "max_range": 1225,
         "damage_profile": "hybrid",
         "total_ad_ratio": 0.9
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Darius": {
       "primary_archetype": "juggernaut",
@@ -601,7 +710,11 @@
         "max_range": 535,
         "damage_profile": "ap",
         "total_ad_ratio": 1.6
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Diana": {
       "primary_archetype": "burst_assassin",
@@ -626,7 +739,12 @@
         "max_range": 900,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle",
+        "Middle"
+      ]
     },
     "Draven": {
       "primary_archetype": "marksman",
@@ -648,7 +766,11 @@
         "max_range": 20000,
         "damage_profile": "ad",
         "total_ad_ratio": 1.25
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
     },
     "DrMundo": {
       "primary_archetype": "juggernaut",
@@ -670,7 +792,11 @@
         "max_range": 975,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Ekko": {
       "primary_archetype": "burst_assassin",
@@ -692,7 +818,12 @@
         "max_range": 1600,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle",
+        "Middle"
+      ]
     },
     "Elise": {
       "primary_archetype": "diver",
@@ -714,7 +845,11 @@
         "max_range": 1075,
         "damage_profile": "ad",
         "total_ad_ratio": 2.4
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Evelynn": {
       "primary_archetype": "burst_assassin",
@@ -736,7 +871,11 @@
         "max_range": 25000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Ezreal": {
       "primary_archetype": "marksman",
@@ -758,7 +897,11 @@
         "max_range": 25000,
         "damage_profile": "ap",
         "total_ad_ratio": 1.8
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
     },
     "Fiddlesticks": {
       "primary_archetype": "specialist",
@@ -780,7 +923,11 @@
         "max_range": 850,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Fiora": {
       "primary_archetype": "skirmisher",
@@ -802,7 +949,11 @@
         "max_range": 750,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Fizz": {
       "primary_archetype": "burst_assassin",
@@ -824,7 +975,11 @@
         "max_range": 1300,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Galio": {
       "primary_archetype": "warden",
@@ -846,7 +1001,12 @@
         "max_range": 5500,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support"
+      ]
     },
     "Gangplank": {
       "primary_archetype": "specialist",
@@ -868,7 +1028,11 @@
         "max_range": 30000,
         "damage_profile": "ad",
         "total_ad_ratio": 5.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Garen": {
       "primary_archetype": "juggernaut",
@@ -890,7 +1054,11 @@
         "max_range": 400,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Gnar": {
       "primary_archetype": "specialist",
@@ -912,7 +1080,11 @@
         "max_range": 1100,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Gragas": {
       "primary_archetype": "engage_tank",
@@ -934,7 +1106,13 @@
         "max_range": 1000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle",
+        "Middle"
+      ]
     },
     "Graves": {
       "primary_archetype": "specialist",
@@ -956,7 +1134,11 @@
         "max_range": 1000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Gwen": {
       "primary_archetype": "skirmisher",
@@ -978,7 +1160,12 @@
         "max_range": 1200,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle"
+      ]
     },
     "Hecarim": {
       "primary_archetype": "diver",
@@ -1000,7 +1187,11 @@
         "max_range": 50000,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Heimerdinger": {
       "primary_archetype": "specialist",
@@ -1022,7 +1213,13 @@
         "max_range": 1325,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle",
+        "Support"
+      ]
     },
     "Hwei": {
       "primary_archetype": "artillery_mage",
@@ -1044,7 +1241,12 @@
         "max_range": 1300,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support"
+      ]
     },
     "Illaoi": {
       "primary_archetype": "juggernaut",
@@ -1066,7 +1268,11 @@
         "max_range": 900,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Irelia": {
       "primary_archetype": "diver",
@@ -1088,7 +1294,12 @@
         "max_range": 950,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle"
+      ]
     },
     "Ivern": {
       "primary_archetype": "catcher",
@@ -1110,7 +1321,11 @@
         "max_range": 1150,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Janna": {
       "primary_archetype": "enchanter",
@@ -1132,7 +1347,11 @@
         "max_range": 4294967295,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     },
     "JarvanIV": {
       "primary_archetype": "diver",
@@ -1154,7 +1373,11 @@
         "max_range": 860,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Jax": {
       "primary_archetype": "skirmisher",
@@ -1176,7 +1399,12 @@
         "max_range": 700,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle"
+      ]
     },
     "Jayce": {
       "primary_archetype": "artillery_mage",
@@ -1198,7 +1426,12 @@
         "max_range": 600,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle"
+      ]
     },
     "Jhin": {
       "primary_archetype": "marksman",
@@ -1223,7 +1456,11 @@
         "max_range": 25000,
         "damage_profile": "ap",
         "total_ad_ratio": 1.15
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
     },
     "Jinx": {
       "primary_archetype": "marksman",
@@ -1245,7 +1482,11 @@
         "max_range": 25000,
         "damage_profile": "ad",
         "total_ad_ratio": 2.6
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
     },
     "Kaisa": {
       "primary_archetype": "marksman",
@@ -1267,7 +1508,11 @@
         "max_range": 3000,
         "damage_profile": "ad",
         "total_ad_ratio": 1.7
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
     },
     "Kalista": {
       "primary_archetype": "marksman",
@@ -1289,7 +1534,11 @@
         "max_range": 5000,
         "damage_profile": "ad",
         "total_ad_ratio": 1.25
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
     },
     "Karma": {
       "primary_archetype": "burst_mage",
@@ -1314,7 +1563,13 @@
         "max_range": 1100,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle",
+        "Support"
+      ]
     },
     "Karthus": {
       "primary_archetype": "battle_mage",
@@ -1336,7 +1591,11 @@
         "max_range": 10000,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Kassadin": {
       "primary_archetype": "burst_assassin",
@@ -1358,7 +1617,11 @@
         "max_range": 650,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Katarina": {
       "primary_archetype": "burst_assassin",
@@ -1380,7 +1643,11 @@
         "max_range": 25000,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Kayle": {
       "primary_archetype": "specialist",
@@ -1402,7 +1669,11 @@
         "max_range": 900,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Kayn": {
       "primary_archetype": "skirmisher",
@@ -1424,7 +1695,11 @@
         "max_range": 700,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Kennen": {
       "primary_archetype": "specialist",
@@ -1446,7 +1721,11 @@
         "max_range": 950,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Khazix": {
       "primary_archetype": "burst_assassin",
@@ -1468,7 +1747,11 @@
         "max_range": 25000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Kindred": {
       "primary_archetype": "marksman",
@@ -1490,7 +1773,11 @@
         "max_range": 560,
         "damage_profile": "ad",
         "total_ad_ratio": 1.55
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Kled": {
       "primary_archetype": "skirmisher",
@@ -1512,7 +1799,11 @@
         "max_range": 4500,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "KogMaw": {
       "primary_archetype": "marksman",
@@ -1534,7 +1825,11 @@
         "max_range": 1800,
         "damage_profile": "hybrid",
         "total_ad_ratio": 0.7
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
     },
     "KSante": {
       "primary_archetype": "warden",
@@ -1559,7 +1854,11 @@
         "max_range": 600,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Leblanc": {
       "primary_archetype": "burst_mage",
@@ -1584,7 +1883,11 @@
         "max_range": 25000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "LeeSin": {
       "primary_archetype": "diver",
@@ -1606,7 +1909,11 @@
         "max_range": 1100,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Leona": {
       "primary_archetype": "engage_tank",
@@ -1628,7 +1935,11 @@
         "max_range": 1200,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     },
     "Lillia": {
       "primary_archetype": "skirmisher",
@@ -1650,7 +1961,11 @@
         "max_range": 1600,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Lissandra": {
       "primary_archetype": "burst_mage",
@@ -1672,7 +1987,11 @@
         "max_range": 1050,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Lucian": {
       "primary_archetype": "marksman",
@@ -1694,7 +2013,11 @@
         "max_range": 1400,
         "damage_profile": "ap",
         "total_ad_ratio": 0.75
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
     },
     "Lulu": {
       "primary_archetype": "enchanter",
@@ -1716,7 +2039,11 @@
         "max_range": 925,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     },
     "Lux": {
       "primary_archetype": "burst_mage",
@@ -1741,7 +2068,12 @@
         "max_range": 3340,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support"
+      ]
     },
     "Malphite": {
       "primary_archetype": "engage_tank",
@@ -1763,7 +2095,13 @@
         "max_range": 1000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle",
+        "Support"
+      ]
     },
     "Malzahar": {
       "primary_archetype": "battle_mage",
@@ -1785,7 +2123,11 @@
         "max_range": 900,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Maokai": {
       "primary_archetype": "engage_tank",
@@ -1807,7 +2149,12 @@
         "max_range": 3000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle",
+        "Support"
+      ]
     },
     "MasterYi": {
       "primary_archetype": "skirmisher",
@@ -1829,7 +2176,11 @@
         "max_range": 600,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Mel": {
       "primary_archetype": "artillery_mage",
@@ -1851,7 +2202,12 @@
         "max_range": 25000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support"
+      ]
     },
     "Milio": {
       "primary_archetype": "enchanter",
@@ -1873,7 +2229,11 @@
         "max_range": 1200,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     },
     "MissFortune": {
       "primary_archetype": "marksman",
@@ -1895,7 +2255,11 @@
         "max_range": 25000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.8
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
     },
     "MonkeyKing": {
       "primary_archetype": "diver",
@@ -1917,7 +2281,12 @@
         "max_range": 650,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle"
+      ]
     },
     "Mordekaiser": {
       "primary_archetype": "juggernaut",
@@ -1939,7 +2308,11 @@
         "max_range": 25000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Morgana": {
       "primary_archetype": "catcher",
@@ -1961,7 +2334,12 @@
         "max_range": 1250,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support",
+        "Middle"
+      ]
     },
     "Naafiri": {
       "primary_archetype": "burst_assassin",
@@ -1983,7 +2361,11 @@
         "max_range": 900,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Nami": {
       "primary_archetype": "enchanter",
@@ -2005,7 +2387,11 @@
         "max_range": 2550,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     },
     "Nasus": {
       "primary_archetype": "juggernaut",
@@ -2027,7 +2413,11 @@
         "max_range": 700,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Nautilus": {
       "primary_archetype": "engage_tank",
@@ -2049,7 +2439,11 @@
         "max_range": 1150,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     },
     "Neeko": {
       "primary_archetype": "burst_mage",
@@ -2074,7 +2468,12 @@
         "max_range": 1000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support"
+      ]
     },
     "Nidalee": {
       "primary_archetype": "specialist",
@@ -2096,7 +2495,11 @@
         "max_range": 1500,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Nilah": {
       "primary_archetype": "skirmisher",
@@ -2118,7 +2521,11 @@
         "max_range": 600,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
     },
     "Nocturne": {
       "primary_archetype": "burst_assassin",
@@ -2140,7 +2547,11 @@
         "max_range": 4000,
         "damage_profile": "ad",
         "total_ad_ratio": 2.25
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Nunu": {
       "primary_archetype": "engage_tank",
@@ -2162,7 +2573,11 @@
         "max_range": 7500,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Olaf": {
       "primary_archetype": "diver",
@@ -2184,7 +2599,11 @@
         "max_range": 1000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Orianna": {
       "primary_archetype": "burst_mage",
@@ -2206,7 +2625,11 @@
         "max_range": 1095,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Ornn": {
       "primary_archetype": "engage_tank",
@@ -2228,7 +2651,11 @@
         "max_range": 25000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Pantheon": {
       "primary_archetype": "diver",
@@ -2250,7 +2677,14 @@
         "max_range": 5500,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle",
+        "Middle",
+        "Support"
+      ]
     },
     "Poppy": {
       "primary_archetype": "warden",
@@ -2272,7 +2706,12 @@
         "max_range": 500,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle"
+      ]
     },
     "Pyke": {
       "primary_archetype": "burst_assassin",
@@ -2297,7 +2736,11 @@
         "max_range": 750,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     },
     "Qiyana": {
       "primary_archetype": "burst_assassin",
@@ -2319,7 +2762,11 @@
         "max_range": 1100,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Quinn": {
       "primary_archetype": "specialist",
@@ -2341,7 +2788,11 @@
         "max_range": 2100,
         "damage_profile": "ad",
         "total_ad_ratio": 1.1
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Rakan": {
       "primary_archetype": "catcher",
@@ -2363,7 +2814,11 @@
         "max_range": 850,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     },
     "Rammus": {
       "primary_archetype": "engage_tank",
@@ -2385,7 +2840,11 @@
         "max_range": 25000,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "RekSai": {
       "primary_archetype": "diver",
@@ -2407,7 +2866,11 @@
         "max_range": 1650,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Rell": {
       "primary_archetype": "engage_tank",
@@ -2429,7 +2892,11 @@
         "max_range": 1200,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     },
     "Renata": {
       "primary_archetype": "enchanter",
@@ -2451,7 +2918,11 @@
         "max_range": 2000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     },
     "Renekton": {
       "primary_archetype": "diver",
@@ -2473,7 +2944,11 @@
         "max_range": 450,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Rengar": {
       "primary_archetype": "burst_assassin",
@@ -2498,7 +2973,12 @@
         "max_range": 3500,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle"
+      ]
     },
     "Riven": {
       "primary_archetype": "skirmisher",
@@ -2520,7 +3000,11 @@
         "max_range": 275,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Rumble": {
       "primary_archetype": "battle_mage",
@@ -2542,7 +3026,12 @@
         "max_range": 1750,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle"
+      ]
     },
     "Ryze": {
       "primary_archetype": "battle_mage",
@@ -2564,7 +3053,11 @@
         "max_range": 3000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Samira": {
       "primary_archetype": "marksman",
@@ -2586,7 +3079,11 @@
         "max_range": 950,
         "damage_profile": "ad",
         "total_ad_ratio": 2.4
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
     },
     "Sejuani": {
       "primary_archetype": "engage_tank",
@@ -2608,7 +3105,11 @@
         "max_range": 1300,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Senna": {
       "primary_archetype": "marksman",
@@ -2633,7 +3134,12 @@
         "max_range": 25000,
         "damage_profile": "ap",
         "total_ad_ratio": 1.1
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom",
+        "Support"
+      ]
     },
     "Seraphine": {
       "primary_archetype": "burst_mage",
@@ -2658,7 +3164,12 @@
         "max_range": 25000,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom",
+        "Support"
+      ]
     },
     "Sett": {
       "primary_archetype": "juggernaut",
@@ -2680,7 +3191,11 @@
         "max_range": 25000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Shaco": {
       "primary_archetype": "burst_assassin",
@@ -2702,7 +3217,12 @@
         "max_range": 625,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle",
+        "Support"
+      ]
     },
     "Shen": {
       "primary_archetype": "warden",
@@ -2724,7 +3244,12 @@
         "max_range": 35000,
         "damage_profile": "ad",
         "total_ad_ratio": 4.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Support"
+      ]
     },
     "Shyvana": {
       "primary_archetype": "juggernaut",
@@ -2746,7 +3271,11 @@
         "max_range": 925,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Singed": {
       "primary_archetype": "specialist",
@@ -2768,7 +3297,11 @@
         "max_range": 1000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Sion": {
       "primary_archetype": "engage_tank",
@@ -2790,7 +3323,11 @@
         "max_range": 10000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Sivir": {
       "primary_archetype": "marksman",
@@ -2812,7 +3349,11 @@
         "max_range": 1200,
         "damage_profile": "ad",
         "total_ad_ratio": 1.8
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
     },
     "Skarner": {
       "primary_archetype": "engage_tank",
@@ -2837,7 +3378,12 @@
         "max_range": 1700,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle",
+        "Top"
+      ]
     },
     "Smolder": {
       "primary_archetype": "marksman",
@@ -2859,7 +3405,13 @@
         "max_range": 4200,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle",
+        "Bottom"
+      ]
     },
     "Sona": {
       "primary_archetype": "enchanter",
@@ -2881,7 +3433,11 @@
         "max_range": 1000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     },
     "Soraka": {
       "primary_archetype": "enchanter",
@@ -2903,7 +3459,11 @@
         "max_range": 25000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     },
     "Swain": {
       "primary_archetype": "battle_mage",
@@ -2925,7 +3485,13 @@
         "max_range": 7500,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support",
+        "Bottom"
+      ]
     },
     "Sylas": {
       "primary_archetype": "burst_mage",
@@ -2950,7 +3516,12 @@
         "max_range": 950,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle"
+      ]
     },
     "Syndra": {
       "primary_archetype": "burst_mage",
@@ -2972,7 +3543,11 @@
         "max_range": 925,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "TahmKench": {
       "primary_archetype": "warden",
@@ -2994,7 +3569,12 @@
         "max_range": 25000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Support"
+      ]
     },
     "Taliyah": {
       "primary_archetype": "battle_mage",
@@ -3016,7 +3596,12 @@
         "max_range": 6500,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle",
+        "Middle"
+      ]
     },
     "Talon": {
       "primary_archetype": "burst_assassin",
@@ -3038,7 +3623,11 @@
         "max_range": 725,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Taric": {
       "primary_archetype": "enchanter",
@@ -3063,7 +3652,12 @@
         "max_range": 800,
         "damage_profile": "ad",
         "total_ad_ratio": 5.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support"
+      ]
     },
     "Teemo": {
       "primary_archetype": "specialist",
@@ -3085,7 +3679,13 @@
         "max_range": 900,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle",
+        "Support"
+      ]
     },
     "Thresh": {
       "primary_archetype": "catcher",
@@ -3107,7 +3707,11 @@
         "max_range": 1075,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     },
     "Tristana": {
       "primary_archetype": "marksman",
@@ -3129,7 +3733,12 @@
         "max_range": 900,
         "damage_profile": "ad",
         "total_ad_ratio": 2.25
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Bottom"
+      ]
     },
     "Trundle": {
       "primary_archetype": "juggernaut",
@@ -3151,7 +3760,12 @@
         "max_range": 1000,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle"
+      ]
     },
     "Tryndamere": {
       "primary_archetype": "skirmisher",
@@ -3173,7 +3787,11 @@
         "max_range": 850,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "TwistedFate": {
       "primary_archetype": "burst_mage",
@@ -3195,7 +3813,13 @@
         "max_range": 10000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle",
+        "Bottom"
+      ]
     },
     "Twitch": {
       "primary_archetype": "marksman",
@@ -3217,7 +3841,12 @@
         "max_range": 1200,
         "damage_profile": "ap",
         "total_ad_ratio": 0.6
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom",
+        "Support"
+      ]
     },
     "Udyr": {
       "primary_archetype": "juggernaut",
@@ -3239,7 +3868,12 @@
         "max_range": 600,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle"
+      ]
     },
     "Urgot": {
       "primary_archetype": "juggernaut",
@@ -3261,7 +3895,11 @@
         "max_range": 2500,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Varus": {
       "primary_archetype": "marksman",
@@ -3286,7 +3924,11 @@
         "max_range": 1300,
         "damage_profile": "ap",
         "total_ad_ratio": 2.0
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
     },
     "Vayne": {
       "primary_archetype": "marksman",
@@ -3308,7 +3950,12 @@
         "max_range": 750,
         "damage_profile": "ap",
         "total_ad_ratio": 0.7
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Bottom"
+      ]
     },
     "Veigar": {
       "primary_archetype": "burst_mage",
@@ -3330,7 +3977,12 @@
         "max_range": 1000,
         "damage_profile": "ad",
         "total_ad_ratio": 2.5
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support"
+      ]
     },
     "Velkoz": {
       "primary_archetype": "artillery_mage",
@@ -3352,7 +4004,12 @@
         "max_range": 1575,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support"
+      ]
     },
     "Vex": {
       "primary_archetype": "burst_mage",
@@ -3374,7 +4031,11 @@
         "max_range": 3000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Vi": {
       "primary_archetype": "diver",
@@ -3396,7 +4057,11 @@
         "max_range": 800,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Viego": {
       "primary_archetype": "skirmisher",
@@ -3418,7 +4083,11 @@
         "max_range": 750,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Viktor": {
       "primary_archetype": "battle_mage",
@@ -3440,7 +4109,11 @@
         "max_range": 800,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Vladimir": {
       "primary_archetype": "battle_mage",
@@ -3462,7 +4135,12 @@
         "max_range": 625,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle"
+      ]
     },
     "Volibear": {
       "primary_archetype": "juggernaut",
@@ -3484,7 +4162,12 @@
         "max_range": 1200,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle"
+      ]
     },
     "Warwick": {
       "primary_archetype": "diver",
@@ -3506,7 +4189,12 @@
         "max_range": 25000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle"
+      ]
     },
     "Xayah": {
       "primary_archetype": "marksman",
@@ -3528,7 +4216,11 @@
         "max_range": 2000,
         "damage_profile": "ad",
         "total_ad_ratio": 1.2
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
     },
     "Xerath": {
       "primary_archetype": "artillery_mage",
@@ -3550,7 +4242,12 @@
         "max_range": 5000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support"
+      ]
     },
     "XinZhao": {
       "primary_archetype": "diver",
@@ -3572,7 +4269,11 @@
         "max_range": 1000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
     },
     "Yasuo": {
       "primary_archetype": "skirmisher",
@@ -3594,7 +4295,13 @@
         "max_range": 1400,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle",
+        "Bottom"
+      ]
     },
     "Yone": {
       "primary_archetype": "burst_assassin",
@@ -3619,7 +4326,12 @@
         "max_range": 25000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle"
+      ]
     },
     "Yorick": {
       "primary_archetype": "juggernaut",
@@ -3641,7 +4353,11 @@
         "max_range": 700,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
     },
     "Yunara": {
       "primary_archetype": "marksman",
@@ -3663,7 +4379,11 @@
         "max_range": 1150,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
     },
     "Yuumi": {
       "primary_archetype": "enchanter",
@@ -3685,7 +4405,11 @@
         "max_range": 25000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     },
     "Zac": {
       "primary_archetype": "engage_tank",
@@ -3707,7 +4431,13 @@
         "max_range": 800,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle",
+        "Support"
+      ]
     },
     "Zed": {
       "primary_archetype": "burst_assassin",
@@ -3729,7 +4459,12 @@
         "max_range": 900,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle",
+        "Middle"
+      ]
     },
     "Zeri": {
       "primary_archetype": "marksman",
@@ -3751,7 +4486,11 @@
         "max_range": 25000,
         "damage_profile": "hybrid",
         "total_ad_ratio": 2.4
-      }
+      },
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
     },
     "Ziggs": {
       "primary_archetype": "artillery_mage",
@@ -3773,7 +4512,12 @@
         "max_range": 5000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Bottom"
+      ]
     },
     "Zilean": {
       "primary_archetype": "specialist",
@@ -3795,7 +4539,11 @@
         "max_range": 900,
         "damage_profile": "neutral",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     },
     "Zoe": {
       "primary_archetype": "burst_mage",
@@ -3817,7 +4565,11 @@
         "max_range": 3000,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
     },
     "Zyra": {
       "primary_archetype": "catcher",
@@ -3839,7 +4591,11 @@
         "max_range": 1100,
         "damage_profile": "ap",
         "total_ad_ratio": 0.0
-      }
+      },
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
     }
   }
 }
