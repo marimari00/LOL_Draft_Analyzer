@@ -1229,38 +1229,25 @@
       "champion_id": "Caitlyn",
       "spells": {
         "Q": {
-          "spell_key": "Q",
-          "spell_name": "CaitlynQ",
+          "name": "Piltover Peacemaker",
           "base_damage": [
-            10.0,
-            50.0,
-            90.0,
-            130.0,
-            170.0,
-            210.0
+            50,
+            90,
+            130,
+            170,
+            210
           ],
+          "ad_ratio": 1.3,
           "ap_ratio": 0.0,
-          "ad_ratio": 0.0,
           "bonus_ad_ratio": 0.0,
-          "max_hp_ratio": 0.0,
-          "target_max_hp_ratio": 0.0,
           "cooldown": [
-            11.0,
-            10.0,
-            9.0,
-            8.0,
-            7.0,
-            6.0
+            11,
+            10,
+            9,
+            8,
+            7
           ],
-          "mana_cost": [
-            55.0,
-            60.0,
-            65.0,
-            70.0,
-            75.0,
-            80.0
-          ],
-          "damage_type": "magic"
+          "source": "manual_patch"
         },
         "E": {
           "spell_key": "E",
@@ -1316,6 +1303,23 @@
             0.5
           ],
           "source": "effect_burn_extraction"
+        },
+        "R": {
+          "name": "Ace in the Hole",
+          "base_damage": [
+            300,
+            525,
+            750
+          ],
+          "ad_ratio": 2.0,
+          "ap_ratio": 0.0,
+          "bonus_ad_ratio": 0.0,
+          "cooldown": [
+            180,
+            165,
+            150
+          ],
+          "source": "manual_patch"
         }
       }
     },
@@ -1902,38 +1906,25 @@
       "champion_id": "Ezreal",
       "spells": {
         "Q": {
-          "spell_key": "Q",
-          "spell_name": "EzrealQ",
+          "name": "Mystic Shot",
           "base_damage": [
-            -5.0,
-            20.0,
-            45.0,
-            70.0,
-            95.0,
-            120.0
+            20,
+            45,
+            70,
+            95,
+            120
           ],
-          "ap_ratio": 0.0,
-          "ad_ratio": 0.0,
+          "ad_ratio": 1.3,
+          "ap_ratio": 0.15,
           "bonus_ad_ratio": 0.0,
-          "max_hp_ratio": 0.0,
-          "target_max_hp_ratio": 0.0,
           "cooldown": [
-            5.75,
             5.5,
             5.25,
-            5.0,
+            5,
             4.75,
             4.5
           ],
-          "mana_cost": [
-            28.0,
-            31.0,
-            34.0,
-            37.0,
-            40.0,
-            43.0
-          ],
-          "damage_type": "magic"
+          "source": "manual_patch"
         },
         "W": {
           "spell_key": "W",
@@ -1970,38 +1961,25 @@
           "damage_type": "magic"
         },
         "E": {
-          "spell_key": "E",
-          "spell_name": "EzrealE",
+          "name": "Arcane Shift",
           "base_damage": [
-            30.0,
-            80.0,
-            130.0,
-            180.0,
-            230.0,
-            280.0
+            80,
+            130,
+            180,
+            230,
+            280
           ],
-          "ap_ratio": 0.5,
-          "ad_ratio": 0.0,
+          "ad_ratio": 0.5,
+          "ap_ratio": 0.75,
           "bonus_ad_ratio": 0.0,
-          "max_hp_ratio": 0.0,
-          "target_max_hp_ratio": 0.0,
           "cooldown": [
-            26.0,
-            26.0,
-            23.0,
-            20.0,
-            17.0,
-            14.0
+            25,
+            22,
+            19,
+            16,
+            13
           ],
-          "mana_cost": [
-            70.0,
-            70.0,
-            70.0,
-            70.0,
-            70.0,
-            70.0
-          ],
-          "damage_type": "magic"
+          "source": "manual_patch"
         },
         "R": {
           "spell_key": "R",
@@ -3530,72 +3508,46 @@
       "champion_id": "Jhin",
       "spells": {
         "Q": {
-          "spell_key": "Q",
-          "spell_name": "JhinQ",
+          "name": "Dancing Grenade",
           "base_damage": [
-            19.0,
-            44.0,
-            69.0,
-            94.0,
-            119.0,
-            144.0
+            45,
+            70,
+            95,
+            120,
+            145
           ],
-          "ap_ratio": 0.6000000238418579,
-          "ad_ratio": 0.0,
+          "ad_ratio": 0.4,
+          "ap_ratio": 0.6,
           "bonus_ad_ratio": 0.0,
-          "max_hp_ratio": 0.0,
-          "target_max_hp_ratio": 0.0,
           "cooldown": [
-            7.5,
-            7.0,
+            7,
             6.5,
-            6.0,
+            6,
             5.5,
-            5.0
+            5
           ],
-          "mana_cost": [
-            40.0,
-            45.0,
-            50.0,
-            55.0,
-            60.0,
-            65.0
-          ],
-          "damage_type": "magic"
+          "source": "manual_patch"
         },
         "W": {
-          "spell_key": "W",
-          "spell_name": "JhinW",
+          "name": "Deadly Flourish",
           "base_damage": [
-            25.0,
-            60.0,
-            95.0,
-            130.0,
-            165.0,
-            200.0
+            60,
+            85,
+            110,
+            135,
+            160
           ],
-          "ap_ratio": 0.5,
-          "ad_ratio": 0.0,
+          "ad_ratio": 0.5,
+          "ap_ratio": 0.0,
           "bonus_ad_ratio": 0.0,
-          "max_hp_ratio": 0.0,
-          "target_max_hp_ratio": 0.0,
           "cooldown": [
-            12.0,
-            12.0,
-            12.0,
-            12.0,
-            12.0,
-            12.0
+            14,
+            13,
+            12,
+            11,
+            10
           ],
-          "mana_cost": [
-            50.0,
-            55.0,
-            60.0,
-            65.0,
-            70.0,
-            75.0
-          ],
-          "damage_type": "magic"
+          "source": "manual_patch"
         },
         "E": {
           "spell_key": "E",
@@ -3632,38 +3584,21 @@
           "damage_type": "magic"
         },
         "R": {
-          "spell_key": "R",
-          "spell_name": "JhinR",
+          "name": "Curtain Call",
           "base_damage": [
-            0.0,
-            64.0,
-            128.0,
-            192.0,
-            256.0,
-            320.0
+            50,
+            115,
+            180
           ],
+          "ad_ratio": 0.25,
           "ap_ratio": 0.0,
-          "ad_ratio": 0.0,
           "bonus_ad_ratio": 0.0,
-          "max_hp_ratio": 0.0,
-          "target_max_hp_ratio": 0.0,
           "cooldown": [
-            120.0,
-            120.0,
-            105.0,
-            90.0,
-            0.0,
-            0.0
+            120,
+            105,
+            90
           ],
-          "mana_cost": [
-            100.0,
-            100.0,
-            100.0,
-            100.0,
-            100.0,
-            100.0
-          ],
-          "damage_type": "magic"
+          "source": "manual_patch"
         }
       }
     },
@@ -3739,38 +3674,38 @@
           "damage_type": "magic"
         },
         "R": {
-          "spell_key": "R",
-          "spell_name": "JinxR",
+          "name": "Super Mega Death Rocket",
           "base_damage": [
-            15.0,
-            30.0,
-            45.0,
-            60.0,
-            75.0,
-            90.0
+            250,
+            350,
+            450
           ],
-          "ap_ratio": 1.704999953508377,
-          "ad_ratio": 0.0,
+          "ad_ratio": 1.5,
+          "ap_ratio": 0.0,
           "bonus_ad_ratio": 0.0,
-          "max_hp_ratio": 0.0,
-          "target_max_hp_ratio": 0.0,
           "cooldown": [
-            85.0,
-            85.0,
-            65.0,
-            45.0,
-            45.0,
-            45.0
+            90,
+            75,
+            60
           ],
-          "mana_cost": [
-            100.0,
-            100.0,
-            100.0,
-            100.0,
-            100.0,
-            100.0
+          "source": "manual_patch"
+        },
+        "Q": {
+          "name": "Switcheroo",
+          "base_damage": [
+            0,
+            0,
+            0,
+            0,
+            0
           ],
-          "damage_type": "magic"
+          "ad_ratio": 1.1,
+          "ap_ratio": 0.0,
+          "bonus_ad_ratio": 0.0,
+          "cooldown": [
+            0
+          ],
+          "source": "manual_patch"
         }
       }
     },
@@ -4265,31 +4200,25 @@
       "champion_id": "Kindred",
       "spells": {
         "Q": {
-          "spell_key": "Q",
-          "spell_name": "KindredQ",
-          "base_damage": [],
-          "ap_ratio": 0.8000000007450581,
-          "ad_ratio": 0.0,
+          "name": "Dance of Arrows",
+          "base_damage": [
+            60,
+            90,
+            120,
+            150,
+            180
+          ],
+          "ad_ratio": 0.75,
+          "ap_ratio": 0.0,
           "bonus_ad_ratio": 0.0,
-          "max_hp_ratio": 0.0,
-          "target_max_hp_ratio": 0.0,
           "cooldown": [
-            9.0,
-            9.0,
-            9.0,
-            9.0,
-            9.0,
-            9.0
+            9,
+            8,
+            7,
+            6,
+            5
           ],
-          "mana_cost": [
-            35.0,
-            35.0,
-            35.0,
-            35.0,
-            35.0,
-            35.0
-          ],
-          "damage_type": "magic"
+          "source": "manual_patch"
         },
         "W": {
           "name": "Wolf's Frenzy",
@@ -4311,6 +4240,27 @@
             14
           ],
           "source": "effect_burn_extraction"
+        },
+        "E": {
+          "name": "Mounting Dread",
+          "base_damage": [
+            80,
+            85,
+            90,
+            95,
+            100
+          ],
+          "ad_ratio": 0.8,
+          "ap_ratio": 0.0,
+          "bonus_ad_ratio": 0.0,
+          "cooldown": [
+            16,
+            15,
+            14,
+            13,
+            12
+          ],
+          "source": "manual_patch"
         }
       }
     },
@@ -6961,65 +6911,46 @@
       "champion_id": "Quinn",
       "spells": {
         "Q": {
-          "spell_key": "Q",
-          "spell_name": "QuinnQ",
+          "name": "Blinding Assault",
           "base_damage": [
-            30.0,
-            65.0,
-            100.0,
-            135.0,
-            170.0,
-            205.0
+            25,
+            55,
+            85,
+            115,
+            145
           ],
-          "ap_ratio": 0.0,
-          "ad_ratio": 0.0,
+          "ad_ratio": 0.9,
+          "ap_ratio": 0.5,
           "bonus_ad_ratio": 0.0,
-          "max_hp_ratio": 0.0,
-          "target_max_hp_ratio": 0.0,
           "cooldown": [
-            11.5,
-            11.0,
+            11,
             10.5,
-            10.0,
+            10,
             9.5,
-            9.0
+            9
           ],
-          "mana_cost": [
-            50.0,
-            55.0,
-            60.0,
-            65.0,
-            70.0,
-            75.0
-          ],
-          "damage_type": "magic"
+          "source": "manual_patch"
         },
         "E": {
-          "spell_key": "E",
-          "spell_name": "QuinnE",
-          "base_damage": [],
-          "ap_ratio": 0.20000000298023224,
-          "ad_ratio": 0.0,
+          "name": "Vault",
+          "base_damage": [
+            40,
+            70,
+            100,
+            130,
+            160
+          ],
+          "ad_ratio": 0.2,
+          "ap_ratio": 0.0,
           "bonus_ad_ratio": 0.0,
-          "max_hp_ratio": 0.0,
-          "target_max_hp_ratio": 0.0,
           "cooldown": [
-            13.0,
-            12.0,
-            11.0,
-            10.0,
-            9.0,
-            8.0
+            12,
+            11,
+            10,
+            9,
+            8
           ],
-          "mana_cost": [
-            50.0,
-            50.0,
-            50.0,
-            50.0,
-            50.0,
-            50.0
-          ],
-          "damage_type": "magic"
+          "source": "manual_patch"
         },
         "R": {
           "spell_key": "R",
@@ -7862,72 +7793,46 @@
       "champion_id": "Senna",
       "spells": {
         "Q": {
-          "spell_key": "Q",
-          "spell_name": "SennaQ",
+          "name": "Piercing Darkness",
           "base_damage": [
-            0.0,
-            30.0,
-            60.0,
-            90.0,
-            120.0,
-            150.0
+            40,
+            70,
+            100,
+            130,
+            160
           ],
-          "ap_ratio": 0.40250000602100044,
-          "ad_ratio": 0.0,
+          "ad_ratio": 0.4,
+          "ap_ratio": 0.4,
           "bonus_ad_ratio": 0.0,
-          "max_hp_ratio": 0.0,
-          "target_max_hp_ratio": 0.0,
           "cooldown": [
-            15.0,
-            15.0,
-            15.0,
-            15.0,
-            15.0,
-            15.0
+            8,
+            7,
+            6,
+            5,
+            4
           ],
-          "mana_cost": [
-            70.0,
-            80.0,
-            90.0,
-            100.0,
-            110.0,
-            110.0
-          ],
-          "damage_type": "magic"
+          "source": "manual_patch"
         },
         "W": {
-          "spell_key": "W",
-          "spell_name": "SennaW",
+          "name": "Last Embrace",
           "base_damage": [
-            25.0,
-            70.0,
-            115.0,
-            160.0,
-            205.0,
-            250.0
+            70,
+            115,
+            160,
+            205,
+            250
           ],
-          "ap_ratio": 0.699999988079071,
-          "ad_ratio": 0.0,
+          "ad_ratio": 0.7,
+          "ap_ratio": 0.0,
           "bonus_ad_ratio": 0.0,
-          "max_hp_ratio": 0.0,
-          "target_max_hp_ratio": 0.0,
           "cooldown": [
-            11.0,
-            11.0,
-            11.0,
-            11.0,
-            11.0,
-            11.0
+            11,
+            10.5,
+            10,
+            9.5,
+            9
           ],
-          "mana_cost": [
-            50.0,
-            55.0,
-            60.0,
-            65.0,
-            70.0,
-            70.0
-          ],
-          "damage_type": "magic"
+          "source": "manual_patch"
         },
         "E": {
           "spell_key": "E",
@@ -12827,38 +12732,25 @@
       "champion_id": "Corki",
       "spells": {
         "Q": {
-          "spell_key": "Q",
-          "spell_name": "PhosphorusBomb",
+          "name": "Phosphorus Bomb",
           "base_damage": [
-            15.0,
-            60.0,
-            105.0,
-            150.0,
-            195.0,
-            240.0
+            80,
+            130,
+            180,
+            230,
+            280
           ],
-          "ap_ratio": 0.0,
-          "ad_ratio": 0.0,
+          "ad_ratio": 0.5,
+          "ap_ratio": 0.7,
           "bonus_ad_ratio": 0.0,
-          "max_hp_ratio": 0.0,
-          "target_max_hp_ratio": 0.0,
           "cooldown": [
-            8.0,
-            9.0,
-            8.5,
-            8.0,
+            8,
             7.5,
-            7.0
+            7,
+            6.5,
+            6
           ],
-          "mana_cost": [
-            60.0,
-            65.0,
-            70.0,
-            75.0,
-            80.0,
-            80.0
-          ],
-          "damage_type": "magic"
+          "source": "manual_patch"
         },
         "W": {
           "spell_key": "W",
@@ -12927,6 +12819,27 @@
             35.0
           ],
           "damage_type": "magic"
+        },
+        "E": {
+          "name": "Gatling Gun",
+          "base_damage": [
+            20,
+            32,
+            44,
+            56,
+            68
+          ],
+          "ad_ratio": 0.4,
+          "ap_ratio": 0.0,
+          "bonus_ad_ratio": 0.0,
+          "cooldown": [
+            16,
+            15,
+            14,
+            13,
+            12
+          ],
+          "source": "manual_patch"
         }
       }
     },
@@ -15836,59 +15749,40 @@
           "source": "manual_patch"
         },
         "R": {
-          "spell_key": "R",
-          "spell_name": "TwitchFullAutomatic",
+          "name": "Spray and Pray",
           "base_damage": [
-            0.10000000149011612,
-            0.10000000149011612,
-            0.10000000149011612,
-            0.10000000149011612,
-            0.10000000149011612,
-            0.10000000149011612
+            20,
+            30,
+            40
           ],
+          "ad_ratio": 0.25,
           "ap_ratio": 0.0,
-          "ad_ratio": 0.0,
           "bonus_ad_ratio": 0.0,
-          "max_hp_ratio": 0.0,
-          "target_max_hp_ratio": 0.0,
           "cooldown": [
-            90.0,
-            90.0,
-            90.0,
-            90.0,
-            90.0,
-            90.0
+            90
           ],
-          "mana_cost": [
-            100.0,
-            100.0,
-            100.0,
-            0.0,
-            0.0,
-            0.0
-          ],
-          "damage_type": "magic"
+          "source": "manual_patch"
         },
         "Q": {
           "name": "Ambush",
           "base_damage": [
-            45.0,
-            50.0,
-            55.0,
-            60.0,
-            65.0
+            0,
+            0,
+            0,
+            0,
+            0
           ],
-          "ad_ratio": 0.0,
+          "ad_ratio": 0.3,
           "ap_ratio": 0.0,
           "bonus_ad_ratio": 0.0,
           "cooldown": [
             16,
-            16,
-            16,
-            16,
-            16
+            15.5,
+            15,
+            14.5,
+            14
           ],
-          "source": "effect_burn_extraction"
+          "source": "manual_patch"
         }
       }
     },
