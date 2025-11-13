@@ -14,7 +14,8 @@
       "cc_score": 0.15,
       "mobility_score": 1.2,
       "max_range": 25000,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Ahri": {
       "burst_damage": 637.25,
@@ -26,7 +27,8 @@
       "cc_score": 0.113,
       "mobility_score": 1.2,
       "max_range": 975,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Akali": {
       "burst_damage": 1131.71,
@@ -38,7 +40,8 @@
       "cc_score": 0.4,
       "mobility_score": 2.4,
       "max_range": 825,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Akshan": {
       "burst_damage": 258.12,
@@ -50,7 +53,8 @@
       "cc_score": 0.0,
       "mobility_score": 0.4,
       "max_range": 5500,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Alistar": {
       "burst_damage": 894.67,
@@ -62,7 +66,8 @@
       "cc_score": 0.31,
       "mobility_score": 0.0,
       "max_range": 650,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Ambessa": {
       "burst_damage": 817.62,
@@ -74,7 +79,8 @@
       "cc_score": 0.263,
       "mobility_score": 2.7,
       "max_range": 1250,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Amumu": {
       "burst_damage": 459.79,
@@ -86,7 +92,8 @@
       "cc_score": 0.53,
       "mobility_score": 0.0,
       "max_range": 1100,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Anivia": {
       "burst_damage": 559.89,
@@ -98,7 +105,8 @@
       "cc_score": 0.729,
       "mobility_score": 1.1,
       "max_range": 1075,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Annie": {
       "burst_damage": 528.19,
@@ -110,7 +118,8 @@
       "cc_score": 0.0,
       "mobility_score": 0.0,
       "max_range": 800,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Aphelios": {
       "burst_damage": 368.49,
@@ -122,7 +131,8 @@
       "cc_score": 0.6,
       "mobility_score": 0.0,
       "max_range": 1450,
-      "damage_profile": "ap"
+      "damage_profile": "ad",
+      "total_ad_ratio": 1.2
     },
     "Ashe": {
       "burst_damage": 1281.28,
@@ -134,7 +144,8 @@
       "cc_score": 0.05,
       "mobility_score": 0.0,
       "max_range": 25000,
-      "damage_profile": "hybrid"
+      "damage_profile": "ap",
+      "total_ad_ratio": 1.0
     },
     "AurelionSol": {
       "burst_damage": 620.31,
@@ -146,7 +157,8 @@
       "cc_score": 0.13,
       "mobility_score": 1.1,
       "max_range": 1500,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Aurora": {
       "burst_damage": 1214.67,
@@ -158,7 +170,8 @@
       "cc_score": 0.067,
       "mobility_score": 2.7,
       "max_range": 900,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Azir": {
       "burst_damage": 479.33,
@@ -170,7 +183,8 @@
       "cc_score": 0.05,
       "mobility_score": 1.2,
       "max_range": 1100,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Bard": {
       "burst_damage": 328.0,
@@ -182,7 +196,8 @@
       "cc_score": 0.214,
       "mobility_score": 0.0,
       "max_range": 25000,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Belveth": {
       "burst_damage": 873.04,
@@ -194,7 +209,8 @@
       "cc_score": 0.35,
       "mobility_score": 1.2,
       "max_range": 715,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Blitzcrank": {
       "burst_damage": 617.77,
@@ -206,7 +222,8 @@
       "cc_score": 0.1,
       "mobility_score": 0.0,
       "max_range": 1079,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Brand": {
       "burst_damage": 901.2,
@@ -218,7 +235,8 @@
       "cc_score": 0.265,
       "mobility_score": 0.0,
       "max_range": 1050,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Braum": {
       "burst_damage": 1075.19,
@@ -230,7 +248,8 @@
       "cc_score": 0.112,
       "mobility_score": 1.2,
       "max_range": 25000,
-      "damage_profile": "ad"
+      "damage_profile": "ad",
+      "total_ad_ratio": 4.0
     },
     "Briar": {
       "burst_damage": 1015.8,
@@ -242,7 +261,8 @@
       "cc_score": 0.294,
       "mobility_score": 2.4,
       "max_range": 12000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Caitlyn": {
       "burst_damage": 2027.27,
@@ -254,7 +274,8 @@
       "cc_score": 0.21,
       "mobility_score": 0.0,
       "max_range": 3500,
-      "damage_profile": "ad"
+      "damage_profile": "ad",
+      "total_ad_ratio": 3.3
     },
     "Camille": {
       "burst_damage": 287.71,
@@ -266,7 +287,8 @@
       "cc_score": 0.192,
       "mobility_score": 2.4,
       "max_range": 800,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Cassiopeia": {
       "burst_damage": 67.13,
@@ -278,7 +300,8 @@
       "cc_score": 0.075,
       "mobility_score": 0.0,
       "max_range": 850,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Chogath": {
       "burst_damage": 1853.25,
@@ -290,7 +313,8 @@
       "cc_score": 0.25,
       "mobility_score": 0.0,
       "max_range": 950,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Corki": {
       "burst_damage": 1546.23,
@@ -302,7 +326,8 @@
       "cc_score": 0.0,
       "mobility_score": 1.1,
       "max_range": 1225,
-      "damage_profile": "ad"
+      "damage_profile": "hybrid",
+      "total_ad_ratio": 0.9
     },
     "Darius": {
       "burst_damage": 950.46,
@@ -314,7 +339,8 @@
       "cc_score": 0.12,
       "mobility_score": 1.2,
       "max_range": 535,
-      "damage_profile": "ad"
+      "damage_profile": "ap",
+      "total_ad_ratio": 1.6
     },
     "Diana": {
       "burst_damage": 1068.96,
@@ -326,7 +352,8 @@
       "cc_score": 0.022,
       "mobility_score": 1.6,
       "max_range": 900,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Draven": {
       "burst_damage": 1154.7,
@@ -338,7 +365,8 @@
       "cc_score": 0.05,
       "mobility_score": 0.0,
       "max_range": 20000,
-      "damage_profile": "ad"
+      "damage_profile": "ad",
+      "total_ad_ratio": 1.25
     },
     "DrMundo": {
       "burst_damage": 192.47,
@@ -350,7 +378,8 @@
       "cc_score": 0.15,
       "mobility_score": 0.0,
       "max_range": 975,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Ekko": {
       "burst_damage": 1137.57,
@@ -362,7 +391,8 @@
       "cc_score": 0.193,
       "mobility_score": 2.3,
       "max_range": 1600,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Elise": {
       "burst_damage": 631.84,
@@ -374,7 +404,8 @@
       "cc_score": 0.15,
       "mobility_score": 0.4,
       "max_range": 1075,
-      "damage_profile": "ad"
+      "damage_profile": "ad",
+      "total_ad_ratio": 2.4
     },
     "Evelynn": {
       "burst_damage": 333.15,
@@ -386,7 +417,8 @@
       "cc_score": 0.123,
       "mobility_score": 0.8,
       "max_range": 25000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Ezreal": {
       "burst_damage": 2473.73,
@@ -398,7 +430,8 @@
       "cc_score": 0.0,
       "mobility_score": 1.5,
       "max_range": 25000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 1.8
     },
     "Fiddlesticks": {
       "burst_damage": 1108.31,
@@ -410,7 +443,8 @@
       "cc_score": 0.404,
       "mobility_score": 0.0,
       "max_range": 850,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Fiora": {
       "burst_damage": 615.93,
@@ -422,7 +456,8 @@
       "cc_score": 0.179,
       "mobility_score": 0.0,
       "max_range": 750,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Fizz": {
       "burst_damage": 496.56,
@@ -434,7 +469,8 @@
       "cc_score": 0.143,
       "mobility_score": 2.0,
       "max_range": 1300,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Galio": {
       "burst_damage": 1266.19,
@@ -446,7 +482,8 @@
       "cc_score": 0.35,
       "mobility_score": 0.0,
       "max_range": 5500,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Gangplank": {
       "burst_damage": 1462.64,
@@ -458,7 +495,8 @@
       "cc_score": 0.13,
       "mobility_score": 0.0,
       "max_range": 30000,
-      "damage_profile": "ad"
+      "damage_profile": "ad",
+      "total_ad_ratio": 5.0
     },
     "Garen": {
       "burst_damage": 893.79,
@@ -470,7 +508,8 @@
       "cc_score": 0.15,
       "mobility_score": 0.0,
       "max_range": 400,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Gnar": {
       "burst_damage": 276.45,
@@ -482,7 +521,8 @@
       "cc_score": 0.589,
       "mobility_score": 1.2,
       "max_range": 1100,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Gragas": {
       "burst_damage": 1405.0,
@@ -494,7 +534,8 @@
       "cc_score": 0.575,
       "mobility_score": 0.0,
       "max_range": 1000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Graves": {
       "burst_damage": 1622.59,
@@ -506,7 +547,8 @@
       "cc_score": 0.0,
       "mobility_score": 1.2,
       "max_range": 1000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Gwen": {
       "burst_damage": 300.44,
@@ -518,7 +560,8 @@
       "cc_score": 0.011,
       "mobility_score": 1.2,
       "max_range": 1200,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Hecarim": {
       "burst_damage": 545.53,
@@ -530,7 +573,8 @@
       "cc_score": 0.0,
       "mobility_score": 0.0,
       "max_range": 50000,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Heimerdinger": {
       "burst_damage": 584.17,
@@ -542,7 +586,8 @@
       "cc_score": 0.273,
       "mobility_score": 0.0,
       "max_range": 1325,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Hwei": {
       "burst_damage": 113.29,
@@ -554,7 +599,8 @@
       "cc_score": 0.015,
       "mobility_score": 0.0,
       "max_range": 1300,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Illaoi": {
       "burst_damage": 724.53,
@@ -566,7 +612,8 @@
       "cc_score": 0.023,
       "mobility_score": 1.2,
       "max_range": 900,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Irelia": {
       "burst_damage": 550.15,
@@ -578,7 +625,8 @@
       "cc_score": 0.161,
       "mobility_score": 1.2,
       "max_range": 950,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Ivern": {
       "burst_damage": 629.5,
@@ -590,7 +638,8 @@
       "cc_score": 0.266,
       "mobility_score": 1.2,
       "max_range": 1150,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Janna": {
       "burst_damage": 856.27,
@@ -602,7 +651,8 @@
       "cc_score": 0.1,
       "mobility_score": 0.0,
       "max_range": 4294967295,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "JarvanIV": {
       "burst_damage": 1708.54,
@@ -614,7 +664,8 @@
       "cc_score": 0.467,
       "mobility_score": 1.2,
       "max_range": 860,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Jax": {
       "burst_damage": 880.17,
@@ -626,7 +677,8 @@
       "cc_score": 0.333,
       "mobility_score": 1.2,
       "max_range": 700,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Jayce": {
       "burst_damage": 1036.73,
@@ -638,7 +690,8 @@
       "cc_score": 0.3,
       "mobility_score": 1.2,
       "max_range": 600,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Jhin": {
       "burst_damage": 1159.51,
@@ -650,7 +703,8 @@
       "cc_score": 0.76,
       "mobility_score": 0.0,
       "max_range": 25000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 1.15
     },
     "Jinx": {
       "burst_damage": 1490.37,
@@ -662,7 +716,8 @@
       "cc_score": 0.72,
       "mobility_score": 0.0,
       "max_range": 25000,
-      "damage_profile": "ad"
+      "damage_profile": "ad",
+      "total_ad_ratio": 2.6
     },
     "Kaisa": {
       "burst_damage": 677.35,
@@ -674,7 +729,8 @@
       "cc_score": 0.0,
       "mobility_score": 1.2,
       "max_range": 3000,
-      "damage_profile": "ad"
+      "damage_profile": "ad",
+      "total_ad_ratio": 1.7
     },
     "Kalista": {
       "burst_damage": 945.0,
@@ -686,7 +742,8 @@
       "cc_score": 0.06,
       "mobility_score": 1.5,
       "max_range": 5000,
-      "damage_profile": "ad"
+      "damage_profile": "ad",
+      "total_ad_ratio": 1.25
     },
     "Karma": {
       "burst_damage": 362.06,
@@ -698,7 +755,8 @@
       "cc_score": 0.15,
       "mobility_score": 0.0,
       "max_range": 1100,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Karthus": {
       "burst_damage": 1116.27,
@@ -710,7 +768,8 @@
       "cc_score": 0.0,
       "mobility_score": 0.0,
       "max_range": 10000,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Kassadin": {
       "burst_damage": 859.81,
@@ -722,7 +781,8 @@
       "cc_score": 0.071,
       "mobility_score": 1.5,
       "max_range": 650,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Katarina": {
       "burst_damage": 436.26,
@@ -734,7 +794,8 @@
       "cc_score": 0.229,
       "mobility_score": 1.5,
       "max_range": 25000,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Kayle": {
       "burst_damage": 1107.28,
@@ -746,7 +807,8 @@
       "cc_score": 0.075,
       "mobility_score": 0.0,
       "max_range": 900,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Kayn": {
       "burst_damage": 803.64,
@@ -758,7 +820,8 @@
       "cc_score": 0.067,
       "mobility_score": 1.2,
       "max_range": 700,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Kennen": {
       "burst_damage": 1013.14,
@@ -770,7 +833,8 @@
       "cc_score": 0.0,
       "mobility_score": 0.0,
       "max_range": 950,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Khazix": {
       "burst_damage": 542.34,
@@ -782,7 +846,8 @@
       "cc_score": 0.438,
       "mobility_score": 1.2,
       "max_range": 25000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Kindred": {
       "burst_damage": 752.45,
@@ -794,7 +859,8 @@
       "cc_score": 0.075,
       "mobility_score": 0.0,
       "max_range": 560,
-      "damage_profile": "ad"
+      "damage_profile": "ad",
+      "total_ad_ratio": 1.55
     },
     "Kled": {
       "burst_damage": 350.0,
@@ -806,7 +872,8 @@
       "cc_score": 0.0,
       "mobility_score": 1.2,
       "max_range": 4500,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "KogMaw": {
       "burst_damage": 651.27,
@@ -818,7 +885,8 @@
       "cc_score": 0.15,
       "mobility_score": 0.4,
       "max_range": 1800,
-      "damage_profile": "hybrid"
+      "damage_profile": "hybrid",
+      "total_ad_ratio": 0.7
     },
     "KSante": {
       "burst_damage": 511.53,
@@ -830,7 +898,8 @@
       "cc_score": 0.493,
       "mobility_score": 3.6,
       "max_range": 600,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Leblanc": {
       "burst_damage": 510.29,
@@ -842,7 +911,8 @@
       "cc_score": 0.123,
       "mobility_score": 1.2,
       "max_range": 25000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "LeeSin": {
       "burst_damage": 1384.88,
@@ -854,7 +924,8 @@
       "cc_score": 0.217,
       "mobility_score": 1.2,
       "max_range": 1100,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Leona": {
       "burst_damage": 227.31,
@@ -866,7 +937,8 @@
       "cc_score": 1.25,
       "mobility_score": 1.2,
       "max_range": 1200,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Lillia": {
       "burst_damage": 125.97,
@@ -878,7 +950,8 @@
       "cc_score": 0.104,
       "mobility_score": 0.0,
       "max_range": 1600,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Lissandra": {
       "burst_damage": 616.69,
@@ -890,7 +963,8 @@
       "cc_score": 0.694,
       "mobility_score": 0.8,
       "max_range": 1050,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Lucian": {
       "burst_damage": 784.36,
@@ -902,7 +976,8 @@
       "cc_score": 0.0,
       "mobility_score": 1.2,
       "max_range": 1400,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.75
     },
     "Lulu": {
       "burst_damage": 522.27,
@@ -914,7 +989,8 @@
       "cc_score": 0.282,
       "mobility_score": 0.0,
       "max_range": 925,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Lux": {
       "burst_damage": 1536.25,
@@ -926,7 +1002,8 @@
       "cc_score": 0.239,
       "mobility_score": 0.0,
       "max_range": 3340,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Malphite": {
       "burst_damage": 1548.82,
@@ -938,7 +1015,8 @@
       "cc_score": 0.277,
       "mobility_score": 0.0,
       "max_range": 1000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Malzahar": {
       "burst_damage": 351.97,
@@ -950,7 +1028,8 @@
       "cc_score": 0.231,
       "mobility_score": 0.0,
       "max_range": 900,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Maokai": {
       "burst_damage": 702.86,
@@ -962,7 +1041,8 @@
       "cc_score": 0.46,
       "mobility_score": 1.2,
       "max_range": 3000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "MasterYi": {
       "burst_damage": 777.87,
@@ -974,7 +1054,8 @@
       "cc_score": 0.09,
       "mobility_score": 1.5,
       "max_range": 600,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Mel": {
       "burst_damage": 401.01,
@@ -986,7 +1067,8 @@
       "cc_score": 0.36,
       "mobility_score": 0.3,
       "max_range": 25000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Milio": {
       "burst_damage": 128.62,
@@ -998,7 +1080,8 @@
       "cc_score": 0.2,
       "mobility_score": 0.3,
       "max_range": 1200,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "MissFortune": {
       "burst_damage": 811.04,
@@ -1010,7 +1093,8 @@
       "cc_score": 0.086,
       "mobility_score": 0.0,
       "max_range": 25000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.8
     },
     "MonkeyKing": {
       "burst_damage": 468.73,
@@ -1022,7 +1106,8 @@
       "cc_score": 0.022,
       "mobility_score": 2.4,
       "max_range": 650,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Mordekaiser": {
       "burst_damage": 203.32,
@@ -1034,7 +1119,8 @@
       "cc_score": 0.2,
       "mobility_score": 0.0,
       "max_range": 25000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Morgana": {
       "burst_damage": 1078.14,
@@ -1046,7 +1132,8 @@
       "cc_score": 0.095,
       "mobility_score": 0.0,
       "max_range": 1250,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Naafiri": {
       "burst_damage": 853.74,
@@ -1058,7 +1145,8 @@
       "cc_score": 0.0,
       "mobility_score": 4.4,
       "max_range": 900,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Nami": {
       "burst_damage": 1284.34,
@@ -1070,7 +1158,8 @@
       "cc_score": 0.627,
       "mobility_score": 0.0,
       "max_range": 2550,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Nasus": {
       "burst_damage": 177.54,
@@ -1082,7 +1171,8 @@
       "cc_score": 0.0,
       "mobility_score": 0.0,
       "max_range": 700,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Nautilus": {
       "burst_damage": 1417.46,
@@ -1094,7 +1184,8 @@
       "cc_score": 0.277,
       "mobility_score": 0.0,
       "max_range": 1150,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Neeko": {
       "burst_damage": 1450.14,
@@ -1106,7 +1197,8 @@
       "cc_score": 0.23,
       "mobility_score": 1.2,
       "max_range": 1000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Nidalee": {
       "burst_damage": 538.73,
@@ -1118,7 +1210,8 @@
       "cc_score": 0.0,
       "mobility_score": 1.1,
       "max_range": 1500,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Nilah": {
       "burst_damage": 318.43,
@@ -1130,7 +1223,8 @@
       "cc_score": 0.0,
       "mobility_score": 1.5,
       "max_range": 600,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Nocturne": {
       "burst_damage": 1061.08,
@@ -1142,7 +1236,8 @@
       "cc_score": 0.123,
       "mobility_score": 0.0,
       "max_range": 4000,
-      "damage_profile": "ad"
+      "damage_profile": "ad",
+      "total_ad_ratio": 2.25
     },
     "Nunu": {
       "burst_damage": 2223.76,
@@ -1154,7 +1249,8 @@
       "cc_score": 0.355,
       "mobility_score": 0.0,
       "max_range": 7500,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Olaf": {
       "burst_damage": 575.64,
@@ -1166,7 +1262,8 @@
       "cc_score": 0.089,
       "mobility_score": 0.0,
       "max_range": 1000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Orianna": {
       "burst_damage": 1295.07,
@@ -1178,7 +1275,8 @@
       "cc_score": 0.171,
       "mobility_score": 0.0,
       "max_range": 1095,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Ornn": {
       "burst_damage": 569.48,
@@ -1190,7 +1288,8 @@
       "cc_score": 0.305,
       "mobility_score": 0.0,
       "max_range": 25000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Pantheon": {
       "burst_damage": 1322.05,
@@ -1202,7 +1301,8 @@
       "cc_score": 0.167,
       "mobility_score": 2.4,
       "max_range": 5500,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Poppy": {
       "burst_damage": 795.16,
@@ -1214,7 +1314,8 @@
       "cc_score": 0.4,
       "mobility_score": 2.4,
       "max_range": 500,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Pyke": {
       "burst_damage": 789.34,
@@ -1226,7 +1327,8 @@
       "cc_score": 0.136,
       "mobility_score": 3.1,
       "max_range": 750,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Qiyana": {
       "burst_damage": 1356.85,
@@ -1238,7 +1340,8 @@
       "cc_score": 0.025,
       "mobility_score": 2.4,
       "max_range": 1100,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Quinn": {
       "burst_damage": 864.31,
@@ -1250,7 +1353,8 @@
       "cc_score": 0.075,
       "mobility_score": 1.2,
       "max_range": 2100,
-      "damage_profile": "ad"
+      "damage_profile": "ad",
+      "total_ad_ratio": 1.1
     },
     "Rakan": {
       "burst_damage": 728.29,
@@ -1262,7 +1366,8 @@
       "cc_score": 0.215,
       "mobility_score": 2.3,
       "max_range": 850,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Rammus": {
       "burst_damage": 104.54,
@@ -1274,7 +1379,8 @@
       "cc_score": 0.235,
       "mobility_score": 0.0,
       "max_range": 25000,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "RekSai": {
       "burst_damage": 232.24,
@@ -1286,7 +1392,8 @@
       "cc_score": 0.5,
       "mobility_score": 0.8,
       "max_range": 1650,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Rell": {
       "burst_damage": 357.72,
@@ -1298,7 +1405,8 @@
       "cc_score": 0.267,
       "mobility_score": 0.0,
       "max_range": 1200,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Renata": {
       "burst_damage": 579.59,
@@ -1310,7 +1418,8 @@
       "cc_score": 0.203,
       "mobility_score": 0.0,
       "max_range": 2000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Renekton": {
       "burst_damage": 985.06,
@@ -1322,7 +1431,8 @@
       "cc_score": 0.094,
       "mobility_score": 1.2,
       "max_range": 450,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Rengar": {
       "burst_damage": 700.36,
@@ -1334,7 +1444,8 @@
       "cc_score": 0.18,
       "mobility_score": 1.2,
       "max_range": 3500,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Riven": {
       "burst_damage": 821.59,
@@ -1346,7 +1457,8 @@
       "cc_score": 0.429,
       "mobility_score": 0.0,
       "max_range": 275,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Rumble": {
       "burst_damage": 1037.59,
@@ -1358,7 +1470,8 @@
       "cc_score": 0.068,
       "mobility_score": 0.0,
       "max_range": 1750,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Ryze": {
       "burst_damage": 787.41,
@@ -1370,7 +1483,8 @@
       "cc_score": 0.2,
       "mobility_score": 1.5,
       "max_range": 3000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Samira": {
       "burst_damage": 712.23,
@@ -1382,7 +1496,8 @@
       "cc_score": 0.0,
       "mobility_score": 1.2,
       "max_range": 950,
-      "damage_profile": "ad"
+      "damage_profile": "ad",
+      "total_ad_ratio": 2.4
     },
     "Sejuani": {
       "burst_damage": 467.73,
@@ -1394,7 +1509,8 @@
       "cc_score": 1.291,
       "mobility_score": 0.0,
       "max_range": 1300,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Senna": {
       "burst_damage": 1808.86,
@@ -1406,7 +1522,8 @@
       "cc_score": 0.164,
       "mobility_score": 0.4,
       "max_range": 25000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 1.1
     },
     "Seraphine": {
       "burst_damage": 436.81,
@@ -1418,7 +1535,8 @@
       "cc_score": 0.017,
       "mobility_score": 0.0,
       "max_range": 25000,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Sett": {
       "burst_damage": 1171.2,
@@ -1430,7 +1548,8 @@
       "cc_score": 0.473,
       "mobility_score": 0.0,
       "max_range": 25000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Shaco": {
       "burst_damage": 606.89,
@@ -1442,7 +1561,8 @@
       "cc_score": 0.255,
       "mobility_score": 1.5,
       "max_range": 625,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Shen": {
       "burst_damage": 1118.07,
@@ -1454,7 +1574,8 @@
       "cc_score": 0.39,
       "mobility_score": 2.7,
       "max_range": 35000,
-      "damage_profile": "ad"
+      "damage_profile": "ad",
+      "total_ad_ratio": 4.0
     },
     "Shyvana": {
       "burst_damage": 1272.08,
@@ -1466,7 +1587,8 @@
       "cc_score": 0.0,
       "mobility_score": 0.0,
       "max_range": 925,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Singed": {
       "burst_damage": 152.79,
@@ -1478,7 +1600,8 @@
       "cc_score": 0.271,
       "mobility_score": 0.0,
       "max_range": 1000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Sion": {
       "burst_damage": 273.94,
@@ -1490,7 +1613,8 @@
       "cc_score": 0.742,
       "mobility_score": 0.0,
       "max_range": 10000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Sivir": {
       "burst_damage": 372.22,
@@ -1502,7 +1626,8 @@
       "cc_score": 0.0,
       "mobility_score": 0.3,
       "max_range": 1200,
-      "damage_profile": "ad"
+      "damage_profile": "ad",
+      "total_ad_ratio": 1.8
     },
     "Skarner": {
       "burst_damage": 910.86,
@@ -1514,7 +1639,8 @@
       "cc_score": 0.239,
       "mobility_score": 0.0,
       "max_range": 1700,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Smolder": {
       "burst_damage": 1195.34,
@@ -1526,7 +1652,8 @@
       "cc_score": 0.012,
       "mobility_score": 0.0,
       "max_range": 4200,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Sona": {
       "burst_damage": 934.6,
@@ -1538,7 +1665,8 @@
       "cc_score": 0.015,
       "mobility_score": 0.0,
       "max_range": 1000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Soraka": {
       "burst_damage": 547.5,
@@ -1550,7 +1678,8 @@
       "cc_score": 0.488,
       "mobility_score": 0.0,
       "max_range": 25000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Swain": {
       "burst_damage": 484.5,
@@ -1562,7 +1691,8 @@
       "cc_score": 0.223,
       "mobility_score": 0.0,
       "max_range": 7500,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Sylas": {
       "burst_damage": 496.47,
@@ -1574,7 +1704,8 @@
       "cc_score": 0.1,
       "mobility_score": 1.2,
       "max_range": 950,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Syndra": {
       "burst_damage": 822.62,
@@ -1586,7 +1717,8 @@
       "cc_score": 0.225,
       "mobility_score": 0.0,
       "max_range": 925,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "TahmKench": {
       "burst_damage": 808.92,
@@ -1598,7 +1730,8 @@
       "cc_score": 0.476,
       "mobility_score": 0.0,
       "max_range": 25000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Taliyah": {
       "burst_damage": 501.59,
@@ -1610,7 +1743,8 @@
       "cc_score": 0.507,
       "mobility_score": 1.2,
       "max_range": 6500,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Talon": {
       "burst_damage": 636.31,
@@ -1622,7 +1756,8 @@
       "cc_score": 0.086,
       "mobility_score": 1.2,
       "max_range": 725,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Taric": {
       "burst_damage": 978.81,
@@ -1634,7 +1769,8 @@
       "cc_score": 0.125,
       "mobility_score": 0.0,
       "max_range": 800,
-      "damage_profile": "ad"
+      "damage_profile": "ad",
+      "total_ad_ratio": 5.0
     },
     "Teemo": {
       "burst_damage": 849.0,
@@ -1646,7 +1782,8 @@
       "cc_score": 0.149,
       "mobility_score": 0.0,
       "max_range": 900,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Thresh": {
       "burst_damage": 447.49,
@@ -1658,7 +1795,8 @@
       "cc_score": 0.096,
       "mobility_score": 1.2,
       "max_range": 1075,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Tristana": {
       "burst_damage": 1190.6,
@@ -1670,7 +1808,8 @@
       "cc_score": 0.086,
       "mobility_score": 0.0,
       "max_range": 900,
-      "damage_profile": "ad"
+      "damage_profile": "ad",
+      "total_ad_ratio": 2.25
     },
     "Trundle": {
       "burst_damage": 329.54,
@@ -1682,7 +1821,8 @@
       "cc_score": 0.291,
       "mobility_score": 0.0,
       "max_range": 1000,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Tryndamere": {
       "burst_damage": 535.66,
@@ -1694,7 +1834,8 @@
       "cc_score": 0.0,
       "mobility_score": 0.0,
       "max_range": 850,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "TwistedFate": {
       "burst_damage": 1046.32,
@@ -1706,7 +1847,8 @@
       "cc_score": 0.0,
       "mobility_score": 1.5,
       "max_range": 10000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Twitch": {
       "burst_damage": 704.16,
@@ -1718,7 +1860,8 @@
       "cc_score": 0.133,
       "mobility_score": 0.4,
       "max_range": 1200,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.6
     },
     "Udyr": {
       "burst_damage": 197.96,
@@ -1730,7 +1873,8 @@
       "cc_score": 0.45,
       "mobility_score": 0.3,
       "max_range": 600,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Urgot": {
       "burst_damage": 459.43,
@@ -1742,7 +1886,8 @@
       "cc_score": 0.195,
       "mobility_score": 0.0,
       "max_range": 2500,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Varus": {
       "burst_damage": 1387.07,
@@ -1754,7 +1899,8 @@
       "cc_score": 0.09,
       "mobility_score": 0.0,
       "max_range": 1300,
-      "damage_profile": "ad"
+      "damage_profile": "ap",
+      "total_ad_ratio": 2.0
     },
     "Vayne": {
       "burst_damage": 680.35,
@@ -1766,7 +1912,8 @@
       "cc_score": 0.125,
       "mobility_score": 0.0,
       "max_range": 750,
-      "damage_profile": "ad"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.7
     },
     "Veigar": {
       "burst_damage": 571.01,
@@ -1778,7 +1925,8 @@
       "cc_score": 0.107,
       "mobility_score": 0.0,
       "max_range": 1000,
-      "damage_profile": "ad"
+      "damage_profile": "ad",
+      "total_ad_ratio": 2.5
     },
     "Velkoz": {
       "burst_damage": 574.66,
@@ -1790,7 +1938,8 @@
       "cc_score": 0.286,
       "mobility_score": 0.0,
       "max_range": 1575,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Vex": {
       "burst_damage": 996.29,
@@ -1802,7 +1951,8 @@
       "cc_score": 0.046,
       "mobility_score": 1.2,
       "max_range": 3000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Vi": {
       "burst_damage": 264.76,
@@ -1814,7 +1964,8 @@
       "cc_score": 0.011,
       "mobility_score": 0.0,
       "max_range": 800,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Viego": {
       "burst_damage": 654.6,
@@ -1826,7 +1977,8 @@
       "cc_score": 0.188,
       "mobility_score": 3.1,
       "max_range": 750,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Viktor": {
       "burst_damage": 323.34,
@@ -1838,7 +1990,8 @@
       "cc_score": 0.115,
       "mobility_score": 0.0,
       "max_range": 800,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Vladimir": {
       "burst_damage": 89.86,
@@ -1850,7 +2003,8 @@
       "cc_score": 0.037,
       "mobility_score": 0.8,
       "max_range": 625,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Volibear": {
       "burst_damage": 652.14,
@@ -1862,7 +2016,8 @@
       "cc_score": 0.198,
       "mobility_score": 1.2,
       "max_range": 1200,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Warwick": {
       "burst_damage": 267.87,
@@ -1874,7 +2029,8 @@
       "cc_score": 0.021,
       "mobility_score": 1.2,
       "max_range": 25000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Xayah": {
       "burst_damage": 496.41,
@@ -1886,7 +2042,8 @@
       "cc_score": 0.225,
       "mobility_score": 1.2,
       "max_range": 2000,
-      "damage_profile": "ad"
+      "damage_profile": "ad",
+      "total_ad_ratio": 1.2
     },
     "Xerath": {
       "burst_damage": 611.02,
@@ -1898,7 +2055,8 @@
       "cc_score": 0.334,
       "mobility_score": 0.0,
       "max_range": 5000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "XinZhao": {
       "burst_damage": 956.61,
@@ -1910,7 +2068,8 @@
       "cc_score": 0.439,
       "mobility_score": 0.0,
       "max_range": 1000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Yasuo": {
       "burst_damage": 285.28,
@@ -1922,7 +2081,8 @@
       "cc_score": 0.75,
       "mobility_score": 2.7,
       "max_range": 1400,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Yone": {
       "burst_damage": 1406.76,
@@ -1934,7 +2094,8 @@
       "cc_score": 0.75,
       "mobility_score": 2.7,
       "max_range": 25000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Yorick": {
       "burst_damage": 216.42,
@@ -1946,7 +2107,8 @@
       "cc_score": 0.075,
       "mobility_score": 0.0,
       "max_range": 700,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Yunara": {
       "burst_damage": 358.73,
@@ -1958,7 +2120,8 @@
       "cc_score": 0.06,
       "mobility_score": 1.2,
       "max_range": 1150,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Yuumi": {
       "burst_damage": 44.62,
@@ -1970,7 +2133,8 @@
       "cc_score": 0.062,
       "mobility_score": 1.2,
       "max_range": 25000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Zac": {
       "burst_damage": 157.32,
@@ -1982,7 +2146,8 @@
       "cc_score": 0.097,
       "mobility_score": 0.0,
       "max_range": 800,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Zed": {
       "burst_damage": 618.5,
@@ -1994,7 +2159,8 @@
       "cc_score": 0.4,
       "mobility_score": 2.4,
       "max_range": 900,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Zeri": {
       "burst_damage": 547.88,
@@ -2006,7 +2172,8 @@
       "cc_score": 0.075,
       "mobility_score": 1.2,
       "max_range": 25000,
-      "damage_profile": "ap"
+      "damage_profile": "hybrid",
+      "total_ad_ratio": 2.4
     },
     "Ziggs": {
       "burst_damage": 1720.47,
@@ -2018,7 +2185,8 @@
       "cc_score": 0.037,
       "mobility_score": 0.0,
       "max_range": 5000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Zilean": {
       "burst_damage": 552.54,
@@ -2030,7 +2198,8 @@
       "cc_score": 0.75,
       "mobility_score": 1.5,
       "max_range": 900,
-      "damage_profile": "neutral"
+      "damage_profile": "neutral",
+      "total_ad_ratio": 0.0
     },
     "Zoe": {
       "burst_damage": 588.23,
@@ -2042,7 +2211,8 @@
       "cc_score": 0.15,
       "mobility_score": 2.6,
       "max_range": 3000,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     },
     "Zyra": {
       "burst_damage": 392.75,
@@ -2054,7 +2224,8 @@
       "cc_score": 0.495,
       "mobility_score": 0.0,
       "max_range": 1100,
-      "damage_profile": "ap"
+      "damage_profile": "ap",
+      "total_ad_ratio": 0.0
     }
   }
 }

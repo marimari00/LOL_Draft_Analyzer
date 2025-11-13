@@ -120,17 +120,30 @@ class SpellAttributeComputer:
         return score
 
     def _damage_profile(self, champion_spells: Dict[str, Dict]) -> str:
-        total_ap = 0.0
-        total_ad = 0.0
+        """Determine damage profile weighted by base damage to avoid utility spell bias."""
+        weighted_ap = 0.0
+        weighted_ad = 0.0
+        
         for spell in champion_spells.values():
-            total_ap += spell.get("ap_ratio", 0.0)
-            total_ad += spell.get("ad_ratio", 0.0) + spell.get("bonus_ad_ratio", 0.0)
+            base_dmg = spell.get("base_damage", 0.0)
+            if base_dmg is None:
+                base_dmg = 0.0
+            
+            # Weight ratios by base damage (utility spells with low base won't dominate)
+            # Add 50 base minimum to avoid completely ignoring low-base high-scaling abilities
+            weight = max(base_dmg, 50.0)
+            
+            ap_ratio = spell.get("ap_ratio", 0.0)
+            ad_ratio = spell.get("ad_ratio", 0.0) + spell.get("bonus_ad_ratio", 0.0)
+            
+            weighted_ap += ap_ratio * weight
+            weighted_ad += ad_ratio * weight
 
-        if total_ap == 0 and total_ad == 0:
+        if weighted_ap == 0 and weighted_ad == 0:
             return "neutral"
-        if total_ap >= total_ad * 1.2:
+        if weighted_ap >= weighted_ad * 1.2:
             return "ap"
-        if total_ad >= total_ap * 1.2:
+        if weighted_ad >= weighted_ap * 1.2:
             return "ad"
         return "hybrid"
 
@@ -202,6 +215,10 @@ class SpellAttributeComputer:
             burst_magnitude_factor = min(1.0, burst_damage / burst_baseline)
             burst_index = burst_ratio * burst_magnitude_factor
 
+            # Compute total AD ratios for marksman filtering
+            total_ad_ratio = sum(s.get("ad_ratio", 0) + s.get("bonus_ad_ratio", 0) 
+                                for s in champion_spells.values())
+
             attributes[champion] = {
                 "burst_damage": round(burst_damage, 2),
                 "burst_dps": round(burst_dps, 2),
@@ -213,6 +230,7 @@ class SpellAttributeComputer:
                 "mobility_score": round(mobility_score, 2),
                 "max_range": round(max_range, 1),
                 "damage_profile": self._damage_profile(champion_spells),
+                "total_ad_ratio": round(total_ad_ratio, 2),
             }
 
         return attributes
