@@ -52,7 +52,8 @@
       "requirements": {
         "sustained_dps": {"min": 119.2, "weight": 1.0, "fuzzy_range": 40},
         "max_range": {"min": 900, "weight": 0.9, "fuzzy_range": 300},
-        "mobility_score": {"max": 1.2, "weight": 0.6, "fuzzy_range": 0.4}
+        "mobility_score": {"max": 1.2, "weight": 0.6, "fuzzy_range": 0.4},
+        "burst_index": {"max": 0.7, "weight": 0.7, "fuzzy_range": 0.15}
       },
       "examples": ["Jinx", "Caitlyn", "Ashe", "Jhin"]
     },
