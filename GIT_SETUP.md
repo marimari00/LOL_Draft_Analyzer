@@ -3,12 +3,14 @@
 ## Install Git for Windows
 
 ### Option 1: Using winget (Windows Package Manager)
+
 ```powershell
 winget install --id Git.Git -e --source winget
 ```
 
 ### Option 2: Download Installer
-1. Visit: https://git-scm.com/download/win
+
+1. Visit: <https://git-scm.com/download/win>
 2. Download Git for Windows
 3. Run installer with default settings
 4. Restart PowerShell after installation
@@ -34,6 +36,7 @@ git commit -m "Initial commit: Draft Analyzer project structure"
 ## Recommended Workflow
 
 After making changes:
+
 ```powershell
 # Check what changed
 git status
