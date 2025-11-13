@@ -3,12 +3,14 @@
 This folder contains temporary scripts used for debugging, validation, and analysis during development.
 
 ## Purpose
+
 - Quick validation scripts
 - One-off analysis scripts
 - Debugging tools
 - Investigation scripts
 
 ## When to Add Files Here
+
 Any Python script that matches these patterns should go in this folder:
 - `check_*.py` - Validation/checking scripts
 - `debug_*.py` - Debugging scripts
@@ -22,9 +24,11 @@ Any Python script that matches these patterns should go in this folder:
 - `final_*.py` - Final validation scripts
 
 ## Cleanup
+
 These files are temporary and can be deleted once the issue is resolved. Feel free to clean up old scripts periodically.
 
 ## Usage
+
 ```bash
 # Run a validation script
 python DEBUG_TEMP/validate_marksmen_final.py

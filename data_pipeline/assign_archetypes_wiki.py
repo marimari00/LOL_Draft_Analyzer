@@ -1,19 +1,12 @@
-"""Assign archetypes to champions using fuzzy scoring.
-
-NOTE: This is the OLD computed approach (70% precision, 34.6% recall).
-The NEW authoritative approach uses info.lua via extract_roles_from_info.py
-which achieves 100% precision and 100% recall.
-
-Use this script only for research/comparison purposes.
-For production, use: python data_pipeline/extract_roles_from_info.py
+"""
+Assign archetypes to champions using wiki data (single source of truth).
 """
 
 import json
-
+from pathlib import Path
 
 def fuzzy_score(value, requirement):
     """Calculate fuzzy membership score."""
-    # Handle non-dict requirements (skip)
     if not isinstance(requirement, dict):
         return 1.0
     
@@ -44,7 +37,7 @@ def score_archetype(champion_attrs, archetype_def):
     for attr_name, requirement in requirements.items():
         value = champion_attrs.get(attr_name, 0.0)
         
-        # Handle categorical requirements (e.g., damage_profile with allowed values)
+        # Handle categorical requirements (e.g., damage_profile)
         if isinstance(requirement, dict) and 'allowed' in requirement:
             allowed_values = requirement['allowed']
             if value in allowed_values:
@@ -56,7 +49,7 @@ def score_archetype(champion_attrs, archetype_def):
             total_weight += weight
             continue
         
-        # Convert string values to float for numeric requirements
+        # Convert string values to float
         if isinstance(value, str):
             try:
                 value = float(value)
@@ -64,8 +57,6 @@ def score_archetype(champion_attrs, archetype_def):
                 value = 0.0
         
         score = fuzzy_score(value, requirement)
-        
-        # Weight is inside the requirement dict in our format
         weight = requirement.get('weight', 1.0) if isinstance(requirement, dict) else 1.0
         
         weighted_sum += score * weight
@@ -75,18 +66,20 @@ def score_archetype(champion_attrs, archetype_def):
 
 
 def main():
-    with open('data/processed/spell_based_attributes_patched.json', 'r', encoding='utf-8') as f:
+    print("="*60)
+    print("Assigning Archetypes (Wiki Data)")
+    print("="*60)
+    
+    # Load wiki-based attributes
+    with open('data/processed/spell_based_attributes_wiki.json', 'r', encoding='utf-8') as f:
         champion_attrs = json.load(f)['attributes']
     
+    # Load archetype definitions
     with open('data/processed/archetype_definitions.json', 'r', encoding='utf-8') as f:
         archetypes = json.load(f)['archetypes']
     
     results = {}
     archetype_counts = {name: 0 for name in archetypes.keys()}
-    
-    print("=" * 70)
-    print("Assigning Archetypes")
-    print("=" * 70)
     
     for champ_name, champ_attrs in champion_attrs.items():
         scores = {}
@@ -95,12 +88,11 @@ def main():
             score = score_archetype(champ_attrs, archetype_def)
             scores[archetype_name] = score
         
-        # Find max score and all archetypes with that score
+        # Find max score
         max_score = max(scores.values())
         tied_archetypes = [name for name, score in scores.items() if score == max_score]
         
-        # Tiebreaker: if marksman is tied with score >= 0.95 and sustained_dps >= 119.2, prefer marksman
-        # This avoids false positives while capturing true marksmen with complete data
+        # Tiebreaker: marksman preference only if truly marksman-like
         if (len(tied_archetypes) > 1 and 'marksman' in tied_archetypes and 
             scores['marksman'] >= 0.95 and champ_attrs.get('sustained_dps', 0) >= 119.2):
             primary_name = 'marksman'
@@ -118,8 +110,11 @@ def main():
         
         archetype_counts[primary_name] += 1
     
+    # Save results
     output = {
         'metadata': {
+            'source': 'spell_based_attributes_wiki.json',
+            'note': 'Uses clean wiki data - fixes Braum false positive',
             'total_champions': len(results),
             'archetypes': list(archetypes.keys())
         },
@@ -127,16 +122,37 @@ def main():
         'assignments': results
     }
     
-    with open('data/processed/archetype_assignments.json', 'w', encoding='utf-8') as f:
+    with open('data/processed/archetype_assignments_wiki.json', 'w', encoding='utf-8') as f:
         json.dump(output, f, indent=2)
     
-    print(f"\nAssigned {len(results)} champions")
+    print(f"\n✓ Assigned {len(results)} champions")
     print("\nArchetype Distribution:")
     for archetype, count in sorted(archetype_counts.items(), key=lambda x: -x[1]):
         pct = 100.0 * count / len(results)
         print(f"  {archetype:20s}: {count:3d} ({pct:5.1f}%)")
     
-    print("\nSaved to: data/processed/archetype_assignments.json")
+    # Show marksmen assignments
+    marksmen = [name for name, data in results.items() 
+                if data['primary_archetype'] == 'marksman']
+    
+    print(f"\n{'='*60}")
+    print(f"Marksmen ({len(marksmen)}):")
+    print('='*60)
+    for marksman in sorted(marksmen):
+        attrs = results[marksman]['attributes']
+        score = results[marksman]['primary_score']
+        print(f"  {marksman:15s}: DPS={attrs['sustained_dps']:6.1f}, "
+              f"AD_ratio={attrs['total_ad_ratio']:4.2f}, score={score:.3f}")
+    
+    # Check if Braum is classified as marksman
+    if 'Braum' in results:
+        braum_arch = results['Braum']['primary_archetype']
+        if braum_arch == 'marksman':
+            print(f"\n⚠️  WARNING: Braum still classified as marksman!")
+        else:
+            print(f"\n✓ Braum correctly classified as: {braum_arch}")
+    
+    print(f"\nSaved to: data/processed/archetype_assignments_wiki.json")
 
 
 if __name__ == '__main__':

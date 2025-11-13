@@ -22,14 +22,14 @@
     "burst_mage": 27,
     "engage_tank": 9,
     "juggernaut": 21,
-    "marksman": 11,
+    "marksman": 10,
     "skirmisher": 22,
     "diver": 6,
     "battle_mage": 26,
     "artillery_mage": 4,
     "catcher": 3,
     "enchanter": 11,
-    "specialist": 17,
+    "specialist": 18,
     "warden": 0
   },
   "assignments": {
@@ -610,35 +610,35 @@
       }
     },
     "Braum": {
-      "primary_archetype": "marksman",
+      "primary_archetype": "specialist",
       "primary_score": 1.0,
       "all_scores": {
         "burst_assassin": 0.5833333333333334,
         "burst_mage": 0.5454545454545454,
         "engage_tank": 0.5454545454545455,
-        "juggernaut": 0.5045454545454545,
-        "marksman": 1.0,
-        "skirmisher": 1.0,
+        "juggernaut": 0.2996969696969698,
+        "marksman": 0.5238095238095238,
+        "skirmisher": 0.8285507246376813,
         "diver": 0.8963636363636364,
-        "battle_mage": 1.0,
+        "battle_mage": 0.8122222222222224,
         "artillery_mage": 0.8064516129032259,
-        "catcher": 0.3478260869565218,
-        "enchanter": 0.2727272727272727,
+        "catcher": 0.5652173913043479,
+        "enchanter": 0.379090909090909,
         "specialist": 1.0,
         "warden": 0.0
       },
       "attributes": {
         "burst_damage": 1075.19,
         "burst_dps": 358.4,
-        "sustained_damage": 2150.38,
-        "sustained_dps": 215.04,
+        "sustained_damage": 507.0,
+        "sustained_dps": 50.7,
         "burst_ratio": 0.5,
         "burst_index": 0.5,
         "cc_score": 0.112,
         "mobility_score": 1.2,
         "max_range": 25000,
         "damage_profile": "ad",
-        "total_ad_ratio": 4.0
+        "total_ad_ratio": 0.0
       }
     },
     "Briar": {

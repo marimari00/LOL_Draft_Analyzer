@@ -1,6 +1,31 @@
 # GitHub Copilot Instructions for Draft Analyzer Project
 
+## CRITICAL RULES (NEVER VIOLATE)
+
+### 1. NO PLACEHOLDERS OR INCOMPLETE CODE
+- **NEVER** use placeholders like `...existing code...`, `// TODO`, or `# implement later`
+- **ALWAYS** write complete, functional code
+- If you don't have the data, say so - don't make it up
+- Every function must have a complete implementation
+
+### 2. USE FACTUAL DATA ONLY
+- **NEVER** invent champion stats, ability values, or game mechanics
+- **ONLY** use data from:
+  - `data/processed/champion_archetypes.json` (production output)
+  - `validation/info.lua` (official Riot taxonomy)
+  - Existing database files in `data/`
+- If data doesn't exist, extract it from official sources or mark as TODO
+
+### 3. ALWAYS TEST BEFORE CLAIMING SUCCESS
+- Run scripts after creating them
+- Verify output files exist and are valid
+- Check for errors in terminal output
+- Don't assume code works - prove it
+
+---
+
 ## Project Overview
+
 **Goal**: Build a web-based draft analyzer that recommends champions for specific team compositions based on attributes and archetypes (similar to iTero/DPMLOL but theory-driven, not winrate-driven). Focus on reaching new and unexpected conclusions about picks and bans through archetype synergies and counters.
 
 ---
@@ -8,7 +33,9 @@
 ## File Organization Rules
 
 ### 1. Debug & Temporary Files
+
 **ALWAYS use the `DEBUG_TEMP/` folder for:**
+
 - Debug scripts (e.g., `check_*.py`, `debug_*.py`, `test_*.py`)
 - Validation scripts (e.g., `validate_*.py`, `quick_*.py`)
 - Analysis scratch files (e.g., `analyze_*.py` that aren't part of main pipeline)
@@ -18,6 +45,7 @@
 **Exception**: Core pipeline scripts stay in `data_pipeline/`
 
 ### 2. Documentation Structure
+
 **Use a SINGLE `PROJECT_STATUS.md` file with clear sections:**
 
 ```markdown
@@ -46,6 +74,7 @@
 ```
 
 **Delete these files** (consolidate into PROJECT_STATUS.md):
+
 - DEEP_AUDIT_FINDINGS.md
 - MATHEMATICAL_FINDINGS.md
 - SCIENTIFIC_FINDINGS.md
@@ -58,17 +87,20 @@
 ## Development Workflow
 
 ### Before Making Changes
+
 1. **Check git status**: `git status` to see uncommitted work
 2. **Read PROJECT_STATUS.md**: Understand current state
 3. **Update todo list**: Mark tasks as in-progress
 
 ### After Making Changes
+
 1. **Move debug files**: Any new debug scripts → `DEBUG_TEMP/`
 2. **Update PROJECT_STATUS.md**: Document what changed
 3. **Commit with clear message**: Describe WHAT and WHY
 4. **Mark todos complete**: Update status in PROJECT_STATUS.md
 
 ### Git Commit Message Format
+
 ```
 [Component] Brief description
 
@@ -78,6 +110,7 @@
 ```
 
 Examples:
+
 - `[Pipeline] Fix attack speed scaling bug - Divided by 100, marksmen DPS now correct`
 - `[Data] Add effect_burn extraction - 63 new abilities, improves marksman detection`
 - `[Archetypes] Implement fuzzy scoring algorithm - Enables multi-archetype membership`
@@ -87,6 +120,7 @@ Examples:
 ## Project Goals (Prioritized)
 
 ### Phase 1: Core Data Pipeline ✅ (90% Complete)
+
 **Goal**: Accurate champion attribute extraction from game data
 
 - [x] Extract champion stats from Data Dragon
@@ -97,13 +131,15 @@ Examples:
 - [ ] Validate all 171 champions have complete data
 - [ ] Manual patches for complex champions (Aphelios, Sylas, etc.)
 
-**Blockers**: 
+**Blockers**:
+
 - 14/18 marksmen misclassified due to incomplete spell data
 - Some utility abilities incorrectly marked as damage
 
 ---
 
 ### Phase 2: Archetype Classification System 🔄 (70% Complete)
+
 **Goal**: Assign strategic archetypes based on champion attributes
 
 - [x] Define 13 archetypes with data-driven thresholds
@@ -115,20 +151,24 @@ Examples:
 - [ ] Create archetype similarity matrix
 
 **Current Metrics**:
+
 - 171 champions classified
 - 11/18 marksmen above DPS threshold (but only 4 classified correctly)
 - 15 burst_assassins detected (target: 18-20)
 
 **Blockers**:
+
 - Need better spell damage data for marksmen
 - False positives from effect_burn extraction (utility abilities)
 
 ---
 
 ### Phase 3: Archetype Synergies & Counters ⏳ (Not Started)
+
 **Goal**: Define which archetypes synergize and counter each other
 
 **Tasks**:
+
 - [ ] Research team composition theory (front-to-back, dive, poke, etc.)
 - [ ] Define synergy rules (e.g., engage_tank + marksman, diver + enchanter)
 - [ ] Define counter rules (e.g., burst_assassin counters enchanter)
@@ -137,6 +177,7 @@ Examples:
 - [ ] Validate against known team comps (e.g., "Protect the Kog'Maw")
 
 **Data Structure**:
+
 ```json
 {
   "burst_assassin": {
@@ -150,9 +191,11 @@ Examples:
 ---
 
 ### Phase 4: Draft Recommendation Engine ⏳ (Not Started)
+
 **Goal**: Recommend champions for specific draft positions
 
 **Features**:
+
 1. **Input**: Current team composition (0-4 picked champions)
 2. **Analysis**:
    - Missing archetype coverage (need engage? poke? sustain DPS?)
@@ -162,6 +205,7 @@ Examples:
 3. **Output**: Ranked list of recommended champions with reasoning
 
 **Algorithm Outline**:
+
 ```python
 def recommend_champion(ally_picks, enemy_picks, position):
     # 1. Identify missing archetypes on team
@@ -185,15 +229,18 @@ def recommend_champion(ally_picks, enemy_picks, position):
 ---
 
 ### Phase 5: Web Interface ⏳ (Not Started)
+
 **Goal**: Interactive web app for draft analysis
 
 **Tech Stack** (Suggested):
+
 - Frontend: React + TypeScript
 - Backend: FastAPI (Python)
 - Data: JSON files (no database needed initially)
 - Deployment: Vercel/Netlify (frontend) + Render/Railway (backend)
 
 **UI Components**:
+
 1. **Draft Board**: 5v5 champion selection grid
 2. **Recommendation Panel**: Top 10 champions with reasoning
 3. **Team Analysis**: Archetype coverage visualization
@@ -201,6 +248,7 @@ def recommend_champion(ally_picks, enemy_picks, position):
 5. **Filter Panel**: By role, archetype, attribute ranges
 
 **Mockup Priority**:
+
 - [ ] Sketch basic UI layout
 - [ ] Define API endpoints
 - [ ] Create backend API structure
@@ -212,6 +260,7 @@ def recommend_champion(ally_picks, enemy_picks, position):
 ## Current Technical Debt
 
 ### Critical (Fix Before Phase 3)
+
 1. **Incomplete spell damage data**: 14/18 marksmen below DPS threshold
    - Solution: Manual patch file for missing abilities
    - Affected: Ashe, Vayne, Lucian, Varus, Tristana, etc.
@@ -225,6 +274,7 @@ def recommend_champion(ally_picks, enemy_picks, position):
    - Needed for: Hybrid picks like Ezreal (marksman + burst_assassin)
 
 ### Medium (Fix During Phase 3-4)
+
 1. **Global ability range cap**: Janna/Shen/GP have 25000-50000 range
    - Solution: Cap at 5000 for classification purposes
    - Impact: Marksman detection slightly skewed
@@ -238,6 +288,7 @@ def recommend_champion(ally_picks, enemy_picks, position):
    - Solution: Use actual AS curves from Data Dragon
 
 ### Low (Nice to Have)
+
 1. **No item build integration**: Assumes generic builds
    - Impact: Can't model on-hit vs crit marksmen
    - Future: Add common builds per archetype
@@ -279,19 +330,22 @@ Raw Data Sources
 
 ## When Working on This Project
 
-### Always Ask Yourself:
+### Always Ask Yourself
+
 1. **Does this move us toward the final goal?** (Draft recommendation web app)
 2. **Is this debug/temp code?** → Put in `DEBUG_TEMP/`
 3. **Does this need documentation?** → Update `PROJECT_STATUS.md`
 4. **Can users understand why this change matters?** → Clear commit message
 
-### Avoid:
+### Avoid
+
 - Creating multiple progress/findings markdown files (use 1 file)
 - Leaving debug scripts in root directory
 - Committing without updating PROJECT_STATUS.md
 - Working on low-priority tasks when critical blockers exist
 
-### Prioritize:
+### Prioritize
+
 - Fixing marksman classification (blocks Phase 2 completion)
 - Completing archetype validation (enables Phase 3)
 - Clear documentation (helps user understand progress)
@@ -302,6 +356,7 @@ Raw Data Sources
 ## Quick Reference Commands
 
 ### Git Workflow
+
 ```bash
 git status                  # Check what changed
 git diff                    # See file differences
@@ -312,6 +367,7 @@ git checkout HEAD -- file   # Restore file from last commit
 ```
 
 ### Pipeline Execution
+
 ```bash
 # Rebuild full pipeline
 python data_pipeline/build_spell_database.py
@@ -324,6 +380,7 @@ python DEBUG_TEMP/check_archetype_distribution.py
 ```
 
 ### File Organization
+
 ```bash
 # Move debug files
 Move-Item check_*.py DEBUG_TEMP/
@@ -339,30 +396,35 @@ Remove-Item DEBUG_TEMP/*.json
 ## Success Metrics
 
 ### Phase 1 (Data Pipeline): DONE when
+
 - ✅ All 171 champions have attributes computed
 - ✅ 95%+ of abilities have damage/CC data
 - ✅ Marksmen DPS values are realistic (100-300 range)
 - [ ] No false positives in damage extraction (<5% error rate)
 
 ### Phase 2 (Archetypes): DONE when
+
 - [ ] 16+/18 marksmen classified correctly (90%+)
 - [ ] 18-20 burst_assassins detected
 - [ ] All expected archetypes have 5+ champions
 - [ ] Secondary archetypes tracked for hybrids
 
 ### Phase 3 (Synergies): DONE when
+
 - [ ] 13x13 synergy matrix created
 - [ ] Validated against 10+ known team comps
 - [ ] Counter relationships defined
 - [ ] Synergy scoring algorithm implemented
 
 ### Phase 4 (Recommendations): DONE when
+
 - [ ] API returns top 10 champions with reasoning
 - [ ] Explanations are human-readable
 - [ ] Recommendations match theory (e.g., suggest engage vs poke comp)
 - [ ] Performance: <100ms response time
 
 ### Phase 5 (Web App): DONE when
+
 - [ ] Users can input draft state (10 champions)
 - [ ] Real-time recommendations displayed
 - [ ] Team composition analysis visible
