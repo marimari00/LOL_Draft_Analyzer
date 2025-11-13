@@ -9,11 +9,12 @@ After expanding to **936 matches** (6.7x more data), we discovered:
 
 ## Current State (Updated with 936 Matches)
 
-- **Best Model:** Logistic Regression at 53.4% test accuracy
+- **Best Model:** Ensemble Prediction (Logistic 54.3%, Random Forest 50.5%, Gradient Boosting 50.0%)
 - **Data:** 936 Diamond+ matches (EUW + KR)
-- **Features:** 79 extracted features (attribute counts, role-pair synergies, damage/range/mobility profiles)
-- **Method:** Ensemble ML (Logistic Regression + Random Forest + Gradient Boosting)
+- **Features:** 78 extracted features (attribute counts, role-pair synergies, damage/range/mobility profiles)
+- **Method:** Weighted ensemble ML (combines all 3 models by confidence)
 - **Validation:** 5-fold cross-validation, train/test split (80/20)
+- **API:** FastAPI server with draft recommendation endpoints ✅ COMPLETE
 
 ## Improvement Strategies
 

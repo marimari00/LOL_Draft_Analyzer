@@ -491,6 +491,20 @@ def main():
         json.dump(output, f, indent=2)
     
     print(f"✓ Saved simulation results to: {output_path}")
+    
+    # Save trained models for ensemble prediction
+    if models:
+        import pickle
+        models_path = Path("data/simulations/trained_models.pkl")
+        # Save both models and feature names
+        model_data = {
+            'models': models,
+            'feature_names': feature_names
+        }
+        with open(models_path, 'wb') as f:
+            pickle.dump(model_data, f)
+        print(f"✓ Saved trained models to: {models_path}")
+    
     print()
     
     # Summary
