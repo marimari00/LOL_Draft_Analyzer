@@ -1,0 +1,4296 @@
+{
+  "metadata": {
+    "total_matches": 172,
+    "created": "2025-11-13T13:44:06.042421",
+    "source": "Generated sample data"
+  },
+  "matches": [
+    {
+      "match_id": "EUW1_7592642000",
+      "blue_team": {
+        "Top": "Gangplank",
+        "Jungle": "Sylas",
+        "Middle": "Irelia",
+        "": "Yunara",
+        "Support": "Neeko"
+      },
+      "red_team": {
+        "Top": "Cassiopeia",
+        "Jungle": "Graves",
+        "Middle": "AurelionSol",
+        "Bottom": "Kaisa",
+        "Support": "Alistar"
+      },
+      "winner": "red",
+      "date": "2025-11-04T20:00:36.593000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 236,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600972506",
+      "blue_team": {
+        "Top": "Shen",
+        "Jungle": "Viego",
+        "Middle": "Syndra",
+        "Bottom": "Yunara",
+        "Support": "Nautilus"
+      },
+      "red_team": {
+        "Top": "Ambessa",
+        "Jungle": "Zed",
+        "Middle": "Zoe",
+        "Bottom": "Ashe",
+        "Support": "Bard"
+      },
+      "winner": "blue",
+      "date": "2025-11-12T09:16:16.906000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1482,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7577991408",
+      "blue_team": {
+        "Top": "Yorick",
+        "Jungle": "Naafiri",
+        "Middle": "Aurora",
+        "Bottom": "Jinx",
+        "Support": "Bard"
+      },
+      "red_team": {
+        "Top": "Mordekaiser",
+        "Jungle": "Zed",
+        "Middle": "Taliyah",
+        "Bottom": "Yunara",
+        "Support": "Lulu"
+      },
+      "winner": "blue",
+      "date": "2025-10-23T08:08:55.218000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1713,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7602013808",
+      "blue_team": {
+        "Top": "Akali",
+        "Jungle": "Sylas",
+        "Middle": "Yone",
+        "Bottom": "Smolder",
+        "Support": "Alistar"
+      },
+      "red_team": {
+        "Top": "Fiora",
+        "Jungle": "Graves",
+        "Middle": "Syndra",
+        "Bottom": "Kaisa",
+        "Support": "Rell"
+      },
+      "winner": "red",
+      "date": "2025-11-13T07:45:06.876000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1696,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601546857",
+      "blue_team": {},
+      "red_team": {},
+      "winner": null,
+      "date": "1969-12-31T21:00:00",
+      "patch": [
+        ""
+      ],
+      "duration": 0,
+      "queue_id": 0
+    },
+    {
+      "match_id": "EUW1_7597241576",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "Nocturne",
+        "Middle": "Taliyah",
+        "Bottom": "Ziggs",
+        "Support": "Camille"
+      },
+      "red_team": {
+        "Top": "Irelia",
+        "Jungle": "Khazix",
+        "Middle": "Kassadin",
+        "Bottom": "Jhin",
+        "Support": "Shaco"
+      },
+      "winner": "red",
+      "date": "2025-11-09T04:01:54.965000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1762,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7592303994",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "Qiyana",
+        "Middle": "Syndra",
+        "Bottom": "Yunara",
+        "Support": "Nautilus"
+      },
+      "red_team": {
+        "Top": "Camille",
+        "Jungle": "Diana",
+        "Middle": "Kaisa",
+        "Bottom": "Smolder",
+        "Support": "Zilean"
+      },
+      "winner": "blue",
+      "date": "2025-11-04T15:20:30.583000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1654,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7597456720",
+      "blue_team": {
+        "Top": "Darius",
+        "Jungle": "MonkeyKing",
+        "Middle": "Anivia",
+        "Bottom": "Varus",
+        "Support": "Bard"
+      },
+      "red_team": {
+        "Top": "Urgot",
+        "Jungle": "Talon",
+        "Middle": "Sylas",
+        "Bottom": "Vayne",
+        "Support": "Karma"
+      },
+      "winner": "red",
+      "date": "2025-11-09T10:15:46.637000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1487,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7586847910",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "Rumble",
+        "Middle": "TwistedFate",
+        "Bottom": "Caitlyn",
+        "Support": "Elise"
+      },
+      "red_team": {
+        "Top": "Aurora",
+        "Jungle": "XinZhao",
+        "Middle": "Smolder",
+        "Bottom": "Jhin",
+        "Support": "Pantheon"
+      },
+      "winner": "blue",
+      "date": "2025-10-30T16:15:23.925000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 922,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7594314202",
+      "blue_team": {
+        "Top": "KSante",
+        "Jungle": "Diana",
+        "Middle": "Yone",
+        "Bottom": "Ashe",
+        "Support": "Braum"
+      },
+      "red_team": {
+        "Top": "Fiora",
+        "Jungle": "Sylas",
+        "Middle": "Ahri",
+        "Bottom": "Jhin",
+        "Support": "Amumu"
+      },
+      "winner": "red",
+      "date": "2025-11-06T15:17:04.947000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1745,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7597220906",
+      "blue_team": {
+        "Top": "Malphite",
+        "Jungle": "Nidalee",
+        "Middle": "Ekko",
+        "Bottom": "Kaisa",
+        "Support": "Nami"
+      },
+      "red_team": {
+        "Top": "Gnar",
+        "Jungle": "Talon",
+        "Middle": "Akali",
+        "Bottom": "Twitch",
+        "Support": "Janna"
+      },
+      "winner": "red",
+      "date": "2025-11-09T01:54:30.744000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2343,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600118933",
+      "blue_team": {
+        "Top": "Fiora",
+        "Jungle": "JarvanIV",
+        "Middle": "Malzahar",
+        "Bottom": "Jhin",
+        "Support": "Rakan"
+      },
+      "red_team": {
+        "Top": "Rumble",
+        "Jungle": "Nidalee",
+        "Middle": "Irelia",
+        "Bottom": "Yunara",
+        "Support": "Velkoz"
+      },
+      "winner": "blue",
+      "date": "2025-11-11T14:09:04.136000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1541,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7597083789",
+      "blue_team": {
+        "Top": "Teemo",
+        "Jungle": "Ivern",
+        "Middle": "Hwei",
+        "Bottom": "Yunara",
+        "Support": "Leona"
+      },
+      "red_team": {
+        "Top": "Sylas",
+        "Jungle": "Khazix",
+        "Middle": "AurelionSol",
+        "Bottom": "Caitlyn",
+        "Support": "Senna"
+      },
+      "winner": "blue",
+      "date": "2025-11-08T20:48:12.895000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1641,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7579460417",
+      "blue_team": {
+        "Top": "Gangplank",
+        "Jungle": "JarvanIV",
+        "Middle": "Akali",
+        "Bottom": "Jhin",
+        "Support": "Pyke"
+      },
+      "red_team": {
+        "Top": "KSante",
+        "Jungle": "Sylas",
+        "Middle": "Vex",
+        "Bottom": "Corki",
+        "Support": "Senna"
+      },
+      "winner": "blue",
+      "date": "2025-10-24T12:50:45.039000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 2121,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7584595142",
+      "blue_team": {
+        "Top": "Rumble",
+        "Jungle": "MonkeyKing",
+        "Middle": "Ahri",
+        "Bottom": "Ezreal",
+        "Support": "Rakan"
+      },
+      "red_team": {
+        "Top": "Kennen",
+        "Jungle": "Talon",
+        "Bottom": "Kaisa",
+        "Middle": "Quinn",
+        "Support": "Rell"
+      },
+      "winner": "blue",
+      "date": "2025-10-28T14:56:32.633000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1699,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7583206606",
+      "blue_team": {
+        "Top": "Gnar",
+        "Jungle": "Graves",
+        "Middle": "Aurora",
+        "Bottom": "Corki",
+        "Support": "Neeko"
+      },
+      "red_team": {
+        "Top": "Smolder",
+        "Jungle": "Nidalee",
+        "Middle": "Taliyah",
+        "Bottom": "Ezreal",
+        "Support": "Rell"
+      },
+      "winner": "blue",
+      "date": "2025-10-27T11:07:54.768000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1959,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7597256503",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "Talon",
+        "Middle": "Orianna",
+        "Bottom": "Twitch",
+        "Support": "Nami"
+      },
+      "red_team": {
+        "Top": "Renekton",
+        "Jungle": "Kindred",
+        "Middle": "Akali",
+        "Bottom": "Ziggs",
+        "Support": "Bard"
+      },
+      "winner": "blue",
+      "date": "2025-11-09T05:12:57.109000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1190,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599033347",
+      "blue_team": {
+        "Top": "Irelia",
+        "Jungle": "Viego",
+        "Middle": "Ekko",
+        "Bottom": "Kaisa",
+        "Support": "Nautilus"
+      },
+      "red_team": {
+        "Top": "Tryndamere",
+        "Jungle": "Hecarim",
+        "Middle": "Ryze",
+        "Bottom": "Sivir",
+        "Support": "JarvanIV"
+      },
+      "winner": "red",
+      "date": "2025-11-10T15:38:01.297000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2010,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7584618043",
+      "blue_team": {
+        "Top": "Gnar",
+        "Jungle": "Graves",
+        "Middle": "Azir",
+        "Bottom": "Yunara",
+        "Support": "Velkoz"
+      },
+      "red_team": {
+        "Top": "Singed",
+        "Jungle": "RekSai",
+        "Middle": "Syndra",
+        "Bottom": "Ashe",
+        "Support": "Nautilus"
+      },
+      "winner": "blue",
+      "date": "2025-10-28T15:13:19.951000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1435,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7586918610",
+      "blue_team": {
+        "Top": "Sion",
+        "Jungle": "Talon",
+        "Middle": "Teemo",
+        "Bottom": "Vayne",
+        "Support": "Blitzcrank"
+      },
+      "red_team": {
+        "Top": "Heimerdinger",
+        "Jungle": "Qiyana",
+        "Middle": "Azir",
+        "Bottom": "Ezreal",
+        "Support": "Rell"
+      },
+      "winner": "red",
+      "date": "2025-10-30T17:00:47.952000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1747,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601961391",
+      "blue_team": {
+        "Top": "Smolder",
+        "Jungle": "Khazix",
+        "Middle": "Orianna",
+        "Bottom": "Varus",
+        "Support": "Braum"
+      },
+      "red_team": {
+        "Top": "Ornn",
+        "Jungle": "JarvanIV",
+        "Middle": "Syndra",
+        "Bottom": "Kaisa",
+        "Support": "Nidalee"
+      },
+      "winner": "red",
+      "date": "2025-11-13T06:07:13.943000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 916,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598653999",
+      "blue_team": {
+        "Top": "Karma",
+        "Jungle": "Qiyana",
+        "Middle": "Leblanc",
+        "Bottom": "Ezreal",
+        "Support": "Rakan"
+      },
+      "red_team": {
+        "Top": "Olaf",
+        "Jungle": "Diana",
+        "Middle": "Viktor",
+        "Bottom": "Kaisa",
+        "Support": "Nautilus"
+      },
+      "winner": "red",
+      "date": "2025-11-10T09:56:07.887000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1691,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7595920039",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "Nidalee",
+        "Middle": "Vex",
+        "Bottom": "Tristana",
+        "Support": "Karma"
+      },
+      "red_team": {
+        "Top": "Quinn",
+        "Jungle": "Naafiri",
+        "Middle": "Leblanc",
+        "Bottom": "Kaisa",
+        "Support": "Alistar"
+      },
+      "winner": "blue",
+      "date": "2025-11-07T21:28:31.775000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1504,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601407888",
+      "blue_team": {
+        "Top": "Heimerdinger",
+        "Jungle": "Graves",
+        "Middle": "Malzahar",
+        "Bottom": "Lucian",
+        "Support": "Seraphine"
+      },
+      "red_team": {
+        "Top": "Sion",
+        "Jungle": "Hecarim",
+        "Middle": "Irelia",
+        "Bottom": "Kaisa",
+        "Support": "Sylas"
+      },
+      "winner": "blue",
+      "date": "2025-11-12T16:08:24.668000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1688,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601254250",
+      "blue_team": {
+        "Top": "Heimerdinger",
+        "Jungle": "Hecarim",
+        "Middle": "Zed",
+        "Bottom": "Ashe",
+        "Support": "Rakan"
+      },
+      "red_team": {
+        "Top": "Sion",
+        "Jungle": "Diana",
+        "Middle": "Yasuo",
+        "Bottom": "Smolder",
+        "Support": "Pyke"
+      },
+      "winner": "blue",
+      "date": "2025-11-12T14:23:01.293000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2044,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600279892",
+      "blue_team": {
+        "Top": "Rumble",
+        "Jungle": "Qiyana",
+        "Middle": "Irelia",
+        "Bottom": "AurelionSol",
+        "Support": "Rell"
+      },
+      "red_team": {
+        "Top": "KSante",
+        "Jungle": "Sylas",
+        "Middle": "Leblanc",
+        "Bottom": "Draven",
+        "Support": "Braum"
+      },
+      "winner": "red",
+      "date": "2025-11-11T15:51:54.918000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2165,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7596874537",
+      "blue_team": {
+        "Top": "Ornn",
+        "Jungle": "Ekko",
+        "Middle": "Orianna",
+        "Bottom": "Tristana",
+        "Support": "Aatrox"
+      },
+      "red_team": {
+        "Top": "Teemo",
+        "Jungle": "Graves",
+        "Middle": "Veigar",
+        "Bottom": "Yunara",
+        "Support": "KSante"
+      },
+      "winner": "red",
+      "date": "2025-11-08T18:16:35.906000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1635,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599487092",
+      "blue_team": {
+        "Top": "Yone",
+        "Jungle": "Kayn",
+        "Middle": "Ekko",
+        "Bottom": "Twitch",
+        "Support": "Braum"
+      },
+      "red_team": {
+        "Top": "Renekton",
+        "Jungle": "Khazix",
+        "Middle": "Sylas",
+        "Bottom": "Veigar",
+        "Support": "Nautilus"
+      },
+      "winner": "blue",
+      "date": "2025-11-10T20:15:08.114000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1159,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598192764",
+      "blue_team": {
+        "Top": "Sion",
+        "Jungle": "Ekko",
+        "Middle": "Galio",
+        "Bottom": "Kaisa",
+        "Support": "Bard"
+      },
+      "red_team": {
+        "Top": "Gwen",
+        "Jungle": "Zed",
+        "Middle": "Akali",
+        "Bottom": "Lucian",
+        "Support": "Nautilus"
+      },
+      "winner": "blue",
+      "date": "2025-11-09T18:20:56.430000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1570,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7597041678",
+      "blue_team": {
+        "Top": "Rumble",
+        "Jungle": "Khazix",
+        "Middle": "Riven",
+        "Bottom": "Yunara",
+        "Support": "Karma"
+      },
+      "red_team": {
+        "Top": "Gwen",
+        "Jungle": "Rengar",
+        "Middle": "Hwei",
+        "Bottom": "Caitlyn",
+        "Support": "Teemo"
+      },
+      "winner": "red",
+      "date": "2025-11-08T20:09:05.104000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1554,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601641285",
+      "blue_team": {
+        "Top": "Ornn",
+        "Jungle": "Nocturne",
+        "Middle": "Orianna",
+        "Bottom": "Yunara",
+        "Support": "Sona"
+      },
+      "red_team": {
+        "Top": "Fiora",
+        "Jungle": "Qiyana",
+        "Middle": "Akali",
+        "Bottom": "Lucian",
+        "Support": "Braum"
+      },
+      "winner": "red",
+      "date": "2025-11-12T18:28:57.722000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1316,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7578074471",
+      "blue_team": {
+        "Top": "Rumble",
+        "Jungle": "Qiyana",
+        "Middle": "Ryze",
+        "Bottom": "Olaf",
+        "Support": "Alistar"
+      },
+      "red_team": {
+        "Top": "Gwen",
+        "Jungle": "LeeSin",
+        "Middle": "Aurora",
+        "Bottom": "Jhin",
+        "Support": "Nautilus"
+      },
+      "winner": "blue",
+      "date": "2025-10-23T09:40:58.116000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1656,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599500926",
+      "blue_team": {
+        "Middle": "Gangplank",
+        "Jungle": "Khazix",
+        "Top": "Mel",
+        "Bottom": "Ashe",
+        "Support": "Nautilus"
+      },
+      "red_team": {
+        "Top": "Aurora",
+        "Jungle": "Sylas",
+        "Middle": "Jayce",
+        "Bottom": "Kaisa",
+        "Support": "Pyke"
+      },
+      "winner": "red",
+      "date": "2025-11-10T20:27:52.874000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1909,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601916002",
+      "blue_team": {
+        "Top": "Sion",
+        "Jungle": "Khazix",
+        "Middle": "TwistedFate",
+        "Bottom": "Twitch",
+        "Support": "Bard"
+      },
+      "red_team": {
+        "Top": "RekSai",
+        "Jungle": "Talon",
+        "Middle": "Akali",
+        "Bottom": "Draven",
+        "Support": "Nautilus"
+      },
+      "winner": "red",
+      "date": "2025-11-13T01:44:37.639000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2563,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599029536",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "Zed",
+        "Middle": "Akali",
+        "Bottom": "Caitlyn",
+        "Support": "Camille"
+      },
+      "red_team": {
+        "Top": "Sion",
+        "Jungle": "Diana",
+        "Middle": "Syndra",
+        "Bottom": "Sivir",
+        "Support": "Braum"
+      },
+      "winner": "blue",
+      "date": "2025-11-10T15:32:47.338000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1598,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7597152512",
+      "blue_team": {
+        "Top": "Kayle",
+        "Jungle": "Rengar",
+        "Middle": "Quinn",
+        "Bottom": "Kaisa",
+        "Support": "Nautilus"
+      },
+      "red_team": {
+        "Top": "Singed",
+        "Jungle": "Khazix",
+        "Middle": "Syndra",
+        "Bottom": "AurelionSol",
+        "Support": "Rell"
+      },
+      "winner": "blue",
+      "date": "2025-11-08T22:06:38.977000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2401,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7592591952",
+      "blue_team": {
+        "Top": "Gangplank",
+        "Jungle": "Zyra",
+        "Middle": "Irelia",
+        "Bottom": "Yunara",
+        "Support": "Alistar"
+      },
+      "red_team": {
+        "Top": "Camille",
+        "Jungle": "MonkeyKing",
+        "Middle": "Ryze",
+        "Bottom": "Kaisa",
+        "Support": "Neeko"
+      },
+      "winner": "blue",
+      "date": "2025-11-04T19:19:34.391000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1618,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598503967",
+      "blue_team": {
+        "Top": "Riven",
+        "Jungle": "Trundle",
+        "Middle": "Akali",
+        "Bottom": "Lucian",
+        "Support": "Thresh"
+      },
+      "red_team": {
+        "Top": "Shen",
+        "Jungle": "MonkeyKing",
+        "Middle": "Orianna",
+        "Bottom": "Yunara",
+        "Support": "Soraka"
+      },
+      "winner": "red",
+      "date": "2025-11-10T05:01:36.417000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1571,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7576232000",
+      "blue_team": {
+        "Bottom": "Shen",
+        "Jungle": "JarvanIV",
+        "Middle": "Vladimir",
+        "Top": "Aphelios",
+        "Support": "Lulu"
+      },
+      "red_team": {
+        "Top": "Sion",
+        "Jungle": "LeeSin",
+        "Middle": "Anivia",
+        "Bottom": "Kaisa",
+        "Support": "Taric"
+      },
+      "winner": "red",
+      "date": "2025-10-21T14:47:27.634000",
+      "patch": [
+        "15",
+        "20"
+      ],
+      "duration": 1848,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7591472184",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "Ekko",
+        "Middle": "Irelia",
+        "Bottom": "Ashe",
+        "Support": "Leona"
+      },
+      "red_team": {
+        "Top": "Jayce",
+        "Jungle": "Khazix",
+        "Middle": "Orianna",
+        "Bottom": "Kaisa",
+        "Support": "Nautilus"
+      },
+      "winner": "red",
+      "date": "2025-11-03T17:35:14.216000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1312,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598019101",
+      "blue_team": {
+        "Top": "Sion",
+        "Jungle": "JarvanIV",
+        "Middle": "Irelia",
+        "Bottom": "Malzahar",
+        "Support": "Ekko"
+      },
+      "red_team": {
+        "Top": "Jax",
+        "Jungle": "Sylas",
+        "Middle": "Mel",
+        "Bottom": "Yunara",
+        "Support": "Karma"
+      },
+      "winner": "red",
+      "date": "2025-11-09T16:41:05.452000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1196,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7597256119",
+      "blue_team": {
+        "Top": "Gwen",
+        "Jungle": "Naafiri",
+        "Middle": "Malzahar",
+        "Bottom": "Yunara",
+        "Support": "Lulu"
+      },
+      "red_team": {
+        "Top": "Sion",
+        "Jungle": "Diana",
+        "Middle": "Orianna",
+        "Bottom": "Lucian",
+        "Support": "Nami"
+      },
+      "winner": "blue",
+      "date": "2025-11-09T05:29:59.800000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 937,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7602213213",
+      "blue_team": {
+        "Top": "Akshan",
+        "Jungle": "JarvanIV",
+        "Middle": "Syndra",
+        "Bottom": "Akali",
+        "Support": "Pyke"
+      },
+      "red_team": {
+        "Top": "Karma",
+        "Jungle": "Hecarim",
+        "Middle": "Qiyana",
+        "Bottom": "Kaisa",
+        "Support": "Bard"
+      },
+      "winner": "blue",
+      "date": "2025-11-13T12:16:31.070000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1421,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7602213800",
+      "blue_team": {
+        "Top": "Rumble",
+        "Jungle": "DrMundo",
+        "Middle": "Vex",
+        "Bottom": "Smolder",
+        "Support": "Karma"
+      },
+      "red_team": {
+        "Top": "Yasuo",
+        "Jungle": "Nidalee",
+        "Middle": "Irelia",
+        "Bottom": "Yunara",
+        "Support": "Nautilus"
+      },
+      "winner": "red",
+      "date": "2025-11-13T12:12:09.666000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1584,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600932862",
+      "blue_team": {
+        "Middle": "Riven",
+        "Jungle": "Qiyana",
+        "Top": "Viego",
+        "Bottom": "Ziggs",
+        "Support": "Poppy"
+      },
+      "red_team": {
+        "Top": "Vex",
+        "Jungle": "Vi",
+        "Middle": "Orianna",
+        "Bottom": "Kaisa",
+        "Support": "Pyke"
+      },
+      "winner": "blue",
+      "date": "2025-11-12T08:17:46.176000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2252,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7594135316",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "JarvanIV",
+        "Middle": "Malzahar",
+        "Bottom": "Vayne",
+        "Support": "Janna"
+      },
+      "red_team": {
+        "Top": "Rumble",
+        "Jungle": "MonkeyKing",
+        "Middle": "Vladimir",
+        "Bottom": "Jhin",
+        "Support": "Velkoz"
+      },
+      "winner": "blue",
+      "date": "2025-11-06T12:43:44.523000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1665,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7589240052",
+      "blue_team": {
+        "Top": "Fiora",
+        "Jungle": "Sylas",
+        "Middle": "Galio",
+        "Bottom": "Lucian",
+        "Support": "Alistar"
+      },
+      "red_team": {
+        "Top": "Rumble",
+        "Jungle": "Shen",
+        "Middle": "Leblanc",
+        "Bottom": "Jinx",
+        "Support": "Rell"
+      },
+      "winner": "red",
+      "date": "2025-11-01T18:39:39.887000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 2067,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598980458",
+      "blue_team": {
+        "Top": "Kayle",
+        "Jungle": "Kayn",
+        "Middle": "Vayne",
+        "Bottom": "Yunara",
+        "Support": "Rell"
+      },
+      "red_team": {
+        "Top": "Zed",
+        "Jungle": "Shaco",
+        "Middle": "Yasuo",
+        "Bottom": "Smolder",
+        "Support": "Karma"
+      },
+      "winner": "red",
+      "date": "2025-11-10T14:58:47.910000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1809,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600641366",
+      "blue_team": {
+        "Top": "Gangplank",
+        "Jungle": "JarvanIV",
+        "Middle": "Hwei",
+        "Bottom": "Kaisa",
+        "Support": "Rell"
+      },
+      "red_team": {
+        "Top": "Ambessa",
+        "Jungle": "Sylas",
+        "Middle": "Yone",
+        "Bottom": "Caitlyn",
+        "Support": "Ornn"
+      },
+      "winner": "red",
+      "date": "2025-11-11T19:28:37.516000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2187,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7593288324",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "Qiyana",
+        "Middle": "Aurora",
+        "Bottom": "Aphelios",
+        "Support": "Poppy"
+      },
+      "red_team": {
+        "Top": "Jayce",
+        "Jungle": "Sylas",
+        "Middle": "TwistedFate",
+        "Bottom": "Yunara",
+        "Support": "Rell"
+      },
+      "winner": "red",
+      "date": "2025-11-05T15:35:06.632000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1789,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7602105013",
+      "blue_team": {
+        "Top": "Jayce",
+        "Jungle": "Graves",
+        "Middle": "Zilean",
+        "Bottom": "Yunara",
+        "Support": "Bard"
+      },
+      "red_team": {
+        "Top": "Malphite",
+        "Jungle": "Elise",
+        "Middle": "Yone",
+        "Bottom": "Kaisa",
+        "Support": "Nautilus"
+      },
+      "winner": "red",
+      "date": "2025-11-13T10:10:49.273000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2334,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600763591",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "Viego",
+        "Middle": "Annie",
+        "Bottom": "Yunara",
+        "Support": "Pyke"
+      },
+      "red_team": {
+        "Top": "Vayne",
+        "Jungle": "Sylas",
+        "Middle": "Viktor",
+        "Bottom": "Jhin",
+        "Support": "Nautilus"
+      },
+      "winner": "blue",
+      "date": "2025-11-11T21:33:45.445000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 932,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601994925",
+      "blue_team": {
+        "Top": "Singed",
+        "Jungle": "JarvanIV",
+        "Middle": "Zoe",
+        "Bottom": "Yunara",
+        "Support": "Karma"
+      },
+      "red_team": {
+        "Top": "Rumble",
+        "Jungle": "Graves",
+        "Middle": "Taliyah",
+        "Bottom": "Aphelios",
+        "Support": "Pyke"
+      },
+      "winner": "blue",
+      "date": "2025-11-13T07:09:15.528000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1830,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600576323",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "Sylas",
+        "Middle": "Sion",
+        "Bottom": "Caitlyn",
+        "Support": "Bard"
+      },
+      "red_team": {
+        "Top": "FiddleSticks",
+        "Jungle": "Elise",
+        "Middle": "Zed",
+        "Bottom": "Ashe",
+        "Support": "Karma"
+      },
+      "winner": "blue",
+      "date": "2025-11-11T18:44:21.124000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1815,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600810527",
+      "blue_team": {
+        "Top": "Fiora",
+        "Jungle": "Talon",
+        "Middle": "Twitch",
+        "Bottom": "Hwei",
+        "Support": "Rakan"
+      },
+      "red_team": {
+        "Top": "Malphite",
+        "Jungle": "Shaco",
+        "Middle": "Fizz",
+        "Bottom": "Olaf",
+        "Support": "Karma"
+      },
+      "winner": "red",
+      "date": "2025-11-11T23:39:58.185000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1753,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600815318",
+      "blue_team": {
+        "Top": "Swain",
+        "Jungle": "Viego",
+        "Middle": "Naafiri",
+        "Bottom": "Twitch",
+        "Support": "Pyke"
+      },
+      "red_team": {
+        "Top": "Ambessa",
+        "Jungle": "Khazix",
+        "Middle": "Yasuo",
+        "Bottom": "Kaisa",
+        "Support": "Soraka"
+      },
+      "winner": "red",
+      "date": "2025-11-12T00:43:25.840000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1387,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7602246309",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "JarvanIV",
+        "Middle": "Sylas",
+        "Bottom": "Kaisa",
+        "Support": "Shaco"
+      },
+      "red_team": {
+        "Top": "Rumble",
+        "Jungle": "Naafiri",
+        "Middle": "Aurora",
+        "Bottom": "Yunara",
+        "Support": "Alistar"
+      },
+      "winner": "red",
+      "date": "2025-11-13T12:47:48.771000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2064,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7602037526",
+      "blue_team": {
+        "Bottom": "KSante",
+        "Jungle": "JarvanIV",
+        "Middle": "Akali",
+        "Top": "Sivir",
+        "Support": "Poppy"
+      },
+      "red_team": {
+        "Top": "Gnar",
+        "Jungle": "XinZhao",
+        "Middle": "Irelia",
+        "Bottom": "Ziggs",
+        "Support": "Rakan"
+      },
+      "winner": "red",
+      "date": "2025-11-13T08:21:11.776000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1616,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598495535",
+      "blue_team": {
+        "Top": "Renekton",
+        "Jungle": "Naafiri",
+        "Middle": "Viktor",
+        "Bottom": "Smolder",
+        "Support": "Janna"
+      },
+      "red_team": {
+        "Top": "Shen",
+        "Jungle": "JarvanIV",
+        "Middle": "Orianna",
+        "Bottom": "Corki",
+        "Support": "Nami"
+      },
+      "winner": "red",
+      "date": "2025-11-10T04:12:08.707000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1706,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601930954",
+      "blue_team": {
+        "Top": "Jax",
+        "Jungle": "Talon",
+        "Middle": "Akali",
+        "Bottom": "Kaisa",
+        "Support": "Alistar"
+      },
+      "red_team": {
+        "Top": "Vayne",
+        "Jungle": "Diana",
+        "Middle": "Zed",
+        "Bottom": "Fizz",
+        "Support": "Braum"
+      },
+      "winner": "red",
+      "date": "2025-11-13T03:48:45.156000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1489,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7593033280",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "LeeSin",
+        "Middle": "Syndra",
+        "Bottom": "Jhin",
+        "Support": "Karma"
+      },
+      "red_team": {
+        "Top": "Sion",
+        "Jungle": "Nocturne",
+        "Middle": "Zilean",
+        "Bottom": "Yunara",
+        "Support": "Brand"
+      },
+      "winner": "blue",
+      "date": "2025-11-05T11:51:07.037000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1582,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7596944498",
+      "blue_team": {
+        "Top": "Jax",
+        "Jungle": "Nidalee",
+        "Middle": "Orianna",
+        "Bottom": "Smolder",
+        "Support": "Bard"
+      },
+      "red_team": {
+        "Top": "Teemo",
+        "Jungle": "XinZhao",
+        "Middle": "Ekko",
+        "Bottom": "Yunara",
+        "Support": "Renata"
+      },
+      "winner": "red",
+      "date": "2025-11-08T19:01:43.867000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 913,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599332894",
+      "blue_team": {
+        "Top": "Orianna",
+        "Jungle": "Viego",
+        "Middle": "Yone",
+        "Bottom": "Kaisa",
+        "Support": "Leona"
+      },
+      "red_team": {
+        "Top": "Jax",
+        "Jungle": "JarvanIV",
+        "Middle": "Malzahar",
+        "Bottom": "Lucian",
+        "Support": "Nautilus"
+      },
+      "winner": "blue",
+      "date": "2025-11-10T18:30:11.144000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1115,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600732171",
+      "blue_team": {
+        "Top": "Irelia",
+        "Jungle": "Viego",
+        "Middle": "Malphite",
+        "Bottom": "Yunara",
+        "Support": "Alistar"
+      },
+      "red_team": {
+        "Top": "Yone",
+        "Jungle": "Vi",
+        "Middle": "Akali",
+        "Bottom": "Ashe",
+        "Support": "Zoe"
+      },
+      "winner": "blue",
+      "date": "2025-11-11T20:56:47.797000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1433,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7578271586",
+      "blue_team": {
+        "Top": "Rumble",
+        "Jungle": "XinZhao",
+        "Middle": "Irelia",
+        "Bottom": "Ashe",
+        "Support": "Neeko"
+      },
+      "red_team": {
+        "Top": "Jax",
+        "Jungle": "Talon",
+        "Middle": "Vex",
+        "Bottom": "Jhin",
+        "Support": "Rakan"
+      },
+      "winner": "blue",
+      "date": "2025-10-23T12:46:47.109000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 2270,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7586740835",
+      "blue_team": {
+        "Top": "Sion",
+        "Jungle": "Rumble",
+        "Middle": "Malphite",
+        "Bottom": "Yunara",
+        "Support": "Karma"
+      },
+      "red_team": {
+        "Top": "Gwen",
+        "Jungle": "Elise",
+        "Middle": "Quinn",
+        "Bottom": "Caitlyn",
+        "Support": "Nautilus"
+      },
+      "winner": "blue",
+      "date": "2025-10-30T14:55:10.614000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1454,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601575722",
+      "blue_team": {
+        "Top": "Rumble",
+        "Jungle": "JarvanIV",
+        "Middle": "Katarina",
+        "Bottom": "Kaisa",
+        "Support": "Karma"
+      },
+      "red_team": {
+        "Top": "Ornn",
+        "Jungle": "Graves",
+        "Middle": "Galio",
+        "Bottom": "Yunara",
+        "Support": "Veigar"
+      },
+      "winner": "red",
+      "date": "2025-11-12T17:46:40.997000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1623,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599242648",
+      "blue_team": {
+        "Top": "Vayne",
+        "Jungle": "JarvanIV",
+        "Middle": "Yone",
+        "Bottom": "Hwei",
+        "Support": "Sylas"
+      },
+      "red_team": {
+        "Top": "Sion",
+        "Jungle": "XinZhao",
+        "Middle": "Orianna",
+        "Bottom": "Kaisa",
+        "Support": "Pyke"
+      },
+      "winner": "red",
+      "date": "2025-11-10T17:38:25.701000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1418,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598575142",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "Zac",
+        "Middle": "Orianna",
+        "Bottom": "Yunara",
+        "Support": "FiddleSticks"
+      },
+      "red_team": {
+        "Top": "Shen",
+        "Jungle": "JarvanIV",
+        "Middle": "Akali",
+        "Bottom": "Kaisa",
+        "Support": "Pyke"
+      },
+      "winner": "blue",
+      "date": "2025-11-10T07:58:25.067000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2251,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7588946238",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "Sylas",
+        "Middle": "Akali",
+        "Bottom": "Kaisa",
+        "Support": "Rell"
+      },
+      "red_team": {
+        "Top": "Poppy",
+        "Jungle": "Trundle",
+        "Middle": "Orianna",
+        "Bottom": "Mel",
+        "Support": "Rakan"
+      },
+      "winner": "blue",
+      "date": "2025-11-01T15:14:33.454000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1659,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7592657821",
+      "blue_team": {
+        "Top": "Varus",
+        "Jungle": "LeeSin",
+        "Middle": "Akali",
+        "Bottom": "Corki",
+        "Support": "Nautilus"
+      },
+      "red_team": {
+        "Top": "Aurora",
+        "Jungle": "Qiyana",
+        "Middle": "Taliyah",
+        "Bottom": "Kaisa",
+        "Support": "Rell"
+      },
+      "winner": "blue",
+      "date": "2025-11-04T20:13:25.614000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1733,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599089261",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "Ekko",
+        "Middle": "Zed",
+        "Bottom": "Kaisa",
+        "Support": "Leona"
+      },
+      "red_team": {
+        "Top": "Irelia",
+        "Jungle": "JarvanIV",
+        "Middle": "Malzahar",
+        "Bottom": "Ezreal",
+        "Support": "Alistar"
+      },
+      "winner": "blue",
+      "date": "2025-11-10T16:14:44.970000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2113,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601438092",
+      "blue_team": {
+        "Top": "Fiora",
+        "Jungle": "Diana",
+        "Middle": "LeeSin",
+        "Bottom": "Yasuo",
+        "Support": "Blitzcrank"
+      },
+      "red_team": {
+        "Top": "Volibear",
+        "Jungle": "Khazix",
+        "Middle": "Taliyah",
+        "Bottom": "Hwei",
+        "Support": "Braum"
+      },
+      "winner": "blue",
+      "date": "2025-11-12T16:28:26.755000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1669,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598248640",
+      "blue_team": {
+        "Top": "Fiora",
+        "Jungle": "LeeSin",
+        "Middle": "Leblanc",
+        "Bottom": "Tristana",
+        "Support": "Rell"
+      },
+      "red_team": {
+        "Top": "Malphite",
+        "Jungle": "Graves",
+        "Middle": "Neeko",
+        "Bottom": "AurelionSol",
+        "Support": "Camille"
+      },
+      "winner": "blue",
+      "date": "2025-11-09T18:54:01.428000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1308,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7579292132",
+      "blue_team": {
+        "Top": "KSante",
+        "Jungle": "Khazix",
+        "Middle": "Vladimir",
+        "Bottom": "Aphelios",
+        "Support": "Thresh"
+      },
+      "red_team": {
+        "Top": "Shen",
+        "Jungle": "Diana",
+        "Middle": "Viktor",
+        "Bottom": "Smolder",
+        "Support": "Karma"
+      },
+      "winner": "blue",
+      "date": "2025-10-24T10:25:37.643000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 2177,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7586833207",
+      "blue_team": {
+        "Top": "Singed",
+        "Jungle": "Zed",
+        "Middle": "Orianna",
+        "Bottom": "Jhin",
+        "Support": "Karma"
+      },
+      "red_team": {
+        "Top": "Yorick",
+        "Jungle": "Sylas",
+        "Middle": "Akshan",
+        "Bottom": "Ezreal",
+        "Support": "Blitzcrank"
+      },
+      "winner": "red",
+      "date": "2025-10-30T16:07:25.717000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 2381,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7597208299",
+      "blue_team": {
+        "Middle": "Talon",
+        "Jungle": "Khazix",
+        "Top": "Ryze",
+        "Bottom": "Caitlyn",
+        "Support": "Bard"
+      },
+      "red_team": {
+        "Top": "Kayle",
+        "Jungle": "JarvanIV",
+        "Middle": "Kassadin",
+        "Bottom": "Twitch",
+        "Support": "Veigar"
+      },
+      "winner": "red",
+      "date": "2025-11-09T00:48:28.799000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1969,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7582231156",
+      "blue_team": {
+        "Top": "Rumble",
+        "Jungle": "Sylas",
+        "Middle": "Irelia",
+        "Bottom": "Ezreal",
+        "Support": "Braum"
+      },
+      "red_team": {
+        "Top": "Ryze",
+        "Jungle": "JarvanIV",
+        "Middle": "Cassiopeia",
+        "Bottom": "Sivir",
+        "Support": "Poppy"
+      },
+      "winner": "blue",
+      "date": "2025-10-26T14:12:15.837000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1299,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7579597757",
+      "blue_team": {
+        "Top": "Rumble",
+        "Jungle": "Sylas",
+        "Middle": "LeeSin",
+        "Bottom": "Ashe",
+        "Support": "Milio"
+      },
+      "red_team": {
+        "Top": "Gragas",
+        "Jungle": "XinZhao",
+        "Middle": "Galio",
+        "Bottom": "Ezreal",
+        "Support": "Rakan"
+      },
+      "winner": "red",
+      "date": "2025-10-24T14:30:16.675000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 2437,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599726352",
+      "blue_team": {
+        "Top": "Sion",
+        "Jungle": "Nocturne",
+        "Middle": "Sylas",
+        "Bottom": "Kaisa",
+        "Support": "Blitzcrank"
+      },
+      "red_team": {
+        "Top": "Mordekaiser",
+        "Jungle": "Zed",
+        "Middle": "Ryze",
+        "Bottom": "Ashe",
+        "Support": "Thresh"
+      },
+      "winner": "blue",
+      "date": "2025-11-11T07:40:37.428000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1711,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7597281897",
+      "blue_team": {
+        "Top": "RekSai",
+        "Jungle": "Talon",
+        "Middle": "Katarina",
+        "Bottom": "Kaisa",
+        "Support": "Rakan"
+      },
+      "red_team": {
+        "Top": "Pantheon",
+        "Jungle": "Khazix",
+        "Middle": "Akali",
+        "Bottom": "Yunara",
+        "Support": "Renata"
+      },
+      "winner": "blue",
+      "date": "2025-11-09T06:30:55.219000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2262,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7594203772",
+      "blue_team": {
+        "Top": "Sion",
+        "Jungle": "Qiyana",
+        "Middle": "AurelionSol",
+        "Bottom": "Jhin",
+        "Support": "Pyke"
+      },
+      "red_team": {
+        "Top": "Aatrox",
+        "Jungle": "LeeSin",
+        "Middle": "Ahri",
+        "Bottom": "Ashe",
+        "Support": "FiddleSticks"
+      },
+      "winner": "blue",
+      "date": "2025-11-06T13:44:16.308000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2039,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598326326",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "Viego",
+        "Middle": "Leblanc",
+        "Bottom": "Hwei",
+        "Support": "Alistar"
+      },
+      "red_team": {
+        "Top": "Yone",
+        "Jungle": "Talon",
+        "Bottom": "Ekko",
+        "Middle": "Taliyah",
+        "Support": "Poppy"
+      },
+      "winner": "red",
+      "date": "2025-11-09T19:58:15.915000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1179,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599519872",
+      "blue_team": {
+        "Top": "Rumble",
+        "Jungle": "LeeSin",
+        "Middle": "Taliyah",
+        "Bottom": "Kaisa",
+        "Support": "Nautilus"
+      },
+      "red_team": {
+        "Top": "Gwen",
+        "Jungle": "Khazix",
+        "Middle": "Aurora",
+        "Bottom": "Yunara",
+        "Support": "Neeko"
+      },
+      "winner": "red",
+      "date": "2025-11-10T20:46:59.468000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1413,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601002865",
+      "blue_team": {
+        "Top": "Sion",
+        "Jungle": "JarvanIV",
+        "Middle": "Akali",
+        "Bottom": "Kaisa",
+        "Support": "Rell"
+      },
+      "red_team": {
+        "Top": "Gnar",
+        "Jungle": "Diana",
+        "Middle": "Galio",
+        "Bottom": "Caitlyn",
+        "Support": "Nautilus"
+      },
+      "winner": "blue",
+      "date": "2025-11-12T10:04:23.275000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1626,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7586619136",
+      "blue_team": {
+        "Top": "Rumble",
+        "Jungle": "Qiyana",
+        "Middle": "Leblanc",
+        "Bottom": "Cassiopeia",
+        "Support": "Senna"
+      },
+      "red_team": {
+        "Top": "Aatrox",
+        "Jungle": "LeeSin",
+        "Middle": "Syndra",
+        "Bottom": "Kaisa",
+        "Support": "Leona"
+      },
+      "winner": "blue",
+      "date": "2025-10-30T13:13:37.959000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1761,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598474228",
+      "blue_team": {
+        "Top": "Garen",
+        "Jungle": "Khazix",
+        "Middle": "Orianna",
+        "Bottom": "Lucian",
+        "Support": "Neeko"
+      },
+      "red_team": {
+        "Top": "Ryze",
+        "Jungle": "Pantheon",
+        "Middle": "Smolder",
+        "Bottom": "Brand",
+        "Support": "Nami"
+      },
+      "winner": "blue",
+      "date": "2025-11-10T01:58:49.832000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1813,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600868789",
+      "blue_team": {
+        "Top": "Sion",
+        "Jungle": "Jax",
+        "Middle": "Sylas",
+        "Bottom": "Ezreal",
+        "Support": "Janna"
+      },
+      "red_team": {
+        "Top": "Riven",
+        "Jungle": "Vi",
+        "Middle": "Vladimir",
+        "Bottom": "Kaisa",
+        "Support": "Bard"
+      },
+      "winner": "blue",
+      "date": "2025-11-12T05:58:22.094000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1445,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7579528394",
+      "blue_team": {
+        "Top": "Aatrox",
+        "Jungle": "Qiyana",
+        "Middle": "Akali",
+        "Bottom": "Corki",
+        "Support": "Senna"
+      },
+      "red_team": {
+        "Top": "Shen",
+        "Jungle": "Viego",
+        "Middle": "Annie",
+        "Bottom": "Ezreal",
+        "Support": "Nautilus"
+      },
+      "winner": "blue",
+      "date": "2025-10-24T13:41:19.603000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1977,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600714231",
+      "blue_team": {
+        "Top": "Vayne",
+        "Jungle": "DrMundo",
+        "Middle": "Naafiri",
+        "Bottom": "Hwei",
+        "Support": "Senna"
+      },
+      "red_team": {
+        "Top": "Gwen",
+        "Jungle": "Qiyana",
+        "Middle": "Syndra",
+        "Bottom": "Ashe",
+        "Support": "Karma"
+      },
+      "winner": "blue",
+      "date": "2025-11-11T20:33:45.864000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1090,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599296956",
+      "blue_team": {
+        "Middle": "Orianna",
+        "Jungle": "Olaf",
+        "Top": "Vayne",
+        "Bottom": "Jhin",
+        "Support": "Neeko"
+      },
+      "red_team": {
+        "Top": "Gragas",
+        "Jungle": "Talon",
+        "Middle": "AurelionSol",
+        "Bottom": "Ashe",
+        "Support": "Braum"
+      },
+      "winner": "red",
+      "date": "2025-11-10T18:10:45.202000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2116,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599126373",
+      "blue_team": {
+        "Top": "Rumble",
+        "Jungle": "Shaco",
+        "Middle": "Taliyah",
+        "Bottom": "Varus",
+        "Support": "Poppy"
+      },
+      "red_team": {
+        "Top": "Sion",
+        "Jungle": "Graves",
+        "Middle": "Yone",
+        "Bottom": "Ziggs",
+        "Support": "Rell"
+      },
+      "winner": "blue",
+      "date": "2025-11-10T16:36:55.437000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2121,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601984492",
+      "blue_team": {
+        "Top": "Vayne",
+        "Jungle": "XinZhao",
+        "Middle": "Orianna",
+        "Bottom": "Karma",
+        "Support": "Bard"
+      },
+      "red_team": {
+        "Top": "Jayce",
+        "Jungle": "Karthus",
+        "Middle": "Corki",
+        "Bottom": "Kaisa",
+        "Support": "Janna"
+      },
+      "winner": "red",
+      "date": "2025-11-13T06:39:32.073000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1205,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599945903",
+      "blue_team": {
+        "Top": "KSante",
+        "Jungle": "JarvanIV",
+        "Middle": "Leblanc",
+        "Bottom": "MissFortune",
+        "Support": "Bard"
+      },
+      "red_team": {
+        "Top": "Vayne",
+        "Jungle": "Nocturne",
+        "Middle": "Syndra",
+        "Bottom": "Kaisa",
+        "Support": "Neeko"
+      },
+      "winner": "red",
+      "date": "2025-11-11T11:50:17.702000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1085,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7592386029",
+      "blue_team": {
+        "Top": "Vayne",
+        "Jungle": "MonkeyKing",
+        "Middle": "Ekko",
+        "Bottom": "Ashe",
+        "Support": "Nautilus"
+      },
+      "red_team": {
+        "Top": "Rumble",
+        "Jungle": "Khazix",
+        "Middle": "Leblanc",
+        "Bottom": "Yunara",
+        "Support": "Lulu"
+      },
+      "winner": "blue",
+      "date": "2025-11-04T16:18:59.895000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1826,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601518622",
+      "blue_team": {
+        "Top": "Jax",
+        "Jungle": "Graves",
+        "Middle": "Galio",
+        "Bottom": "Veigar",
+        "Support": "Karma"
+      },
+      "red_team": {
+        "Top": "Sion",
+        "Jungle": "JarvanIV",
+        "Middle": "Akali",
+        "Bottom": "Jhin",
+        "Support": "Nautilus"
+      },
+      "winner": "red",
+      "date": "2025-11-12T17:14:35.317000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1334,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599565889",
+      "blue_team": {
+        "Top": "Aatrox",
+        "Jungle": "Nidalee",
+        "Middle": "Ekko",
+        "Bottom": "Twitch",
+        "Support": "Blitzcrank"
+      },
+      "red_team": {
+        "Top": "Fiora",
+        "Jungle": "Talon",
+        "Middle": "Kassadin",
+        "Bottom": "Caitlyn",
+        "Support": "Lux"
+      },
+      "winner": "blue",
+      "date": "2025-11-10T21:45:44.434000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1488,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599838692",
+      "blue_team": {
+        "Top": "Rumble",
+        "Jungle": "JarvanIV",
+        "Middle": "Syndra",
+        "Bottom": "Varus",
+        "Support": "Rell"
+      },
+      "red_team": {
+        "Top": "Aatrox",
+        "Jungle": "MonkeyKing",
+        "Middle": "Orianna",
+        "Bottom": "Ashe",
+        "Support": "Leona"
+      },
+      "winner": "blue",
+      "date": "2025-11-11T10:03:22.511000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1455,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7593083562",
+      "blue_team": {
+        "Top": "Sett",
+        "Jungle": "Naafiri",
+        "Middle": "Xerath",
+        "Bottom": "Yunara",
+        "Support": "Janna"
+      },
+      "red_team": {
+        "Top": "Aatrox",
+        "Jungle": "Graves",
+        "Middle": "Lux",
+        "Bottom": "Caitlyn",
+        "Support": "Bard"
+      },
+      "winner": "blue",
+      "date": "2025-11-05T12:37:32.980000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1757,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7593343514",
+      "blue_team": {
+        "Top": "Poppy",
+        "Jungle": "Talon",
+        "Middle": "Annie",
+        "Bottom": "Yunara",
+        "Support": "Anivia"
+      },
+      "red_team": {
+        "Top": "Jax",
+        "Jungle": "Viego",
+        "Middle": "Leblanc",
+        "Bottom": "Jhin",
+        "Support": "Pyke"
+      },
+      "winner": "red",
+      "date": "2025-11-05T16:11:35.023000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1177,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7580878241",
+      "blue_team": {
+        "Top": "Gwen",
+        "Jungle": "MonkeyKing",
+        "Middle": "Aurora",
+        "Bottom": "Smolder",
+        "Support": "Senna"
+      },
+      "red_team": {
+        "Top": "Aatrox",
+        "Jungle": "JarvanIV",
+        "Middle": "Taliyah",
+        "Bottom": "Corki",
+        "Support": "Nautilus"
+      },
+      "winner": "red",
+      "date": "2025-10-25T14:15:17.002000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1963,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600082050",
+      "blue_team": {
+        "Top": "Fiora",
+        "Jungle": "Belveth",
+        "Middle": "Katarina",
+        "Bottom": "Kaisa",
+        "Support": "Thresh"
+      },
+      "red_team": {
+        "Top": "Gragas",
+        "Jungle": "Pantheon",
+        "Middle": "Ryze",
+        "Bottom": "Xayah",
+        "Support": "Nautilus"
+      },
+      "winner": "blue",
+      "date": "2025-11-11T13:43:14.288000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 911,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7593218188",
+      "blue_team": {
+        "Top": "Camille",
+        "Jungle": "Graves",
+        "Middle": "Taliyah",
+        "Bottom": "Jhin",
+        "Support": "Bard"
+      },
+      "red_team": {
+        "Top": "Jax",
+        "Jungle": "Sylas",
+        "Middle": "Ambessa",
+        "Bottom": "Seraphine",
+        "Support": "Pantheon"
+      },
+      "winner": "red",
+      "date": "2025-11-05T14:40:54.784000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1474,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598400655",
+      "blue_team": {
+        "Top": "Irelia",
+        "Jungle": "Diana",
+        "Middle": "Qiyana",
+        "Bottom": "Jhin",
+        "Support": "Pyke"
+      },
+      "red_team": {
+        "Top": "Renekton",
+        "Jungle": "Graves",
+        "Middle": "Malzahar",
+        "Bottom": "Yunara",
+        "Support": "Rell"
+      },
+      "winner": "blue",
+      "date": "2025-11-09T21:13:53.081000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1590,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7594102652",
+      "blue_team": {
+        "Top": "Renekton",
+        "Jungle": "Qiyana",
+        "Middle": "Azir",
+        "Bottom": "Ezreal",
+        "Support": "Karma"
+      },
+      "red_team": {
+        "Top": "Rumble",
+        "Jungle": "XinZhao",
+        "Middle": "Cassiopeia",
+        "Bottom": "Velkoz",
+        "Support": "Bard"
+      },
+      "winner": "blue",
+      "date": "2025-11-06T12:03:36.944000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2125,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600853661",
+      "blue_team": {
+        "Top": "Akali",
+        "Jungle": "LeeSin",
+        "Middle": "Orianna",
+        "Bottom": "KogMaw",
+        "Support": "Lulu"
+      },
+      "red_team": {
+        "Top": "Jax",
+        "Jungle": "Nidalee",
+        "Middle": "Irelia",
+        "Bottom": "Caitlyn",
+        "Support": "Velkoz"
+      },
+      "winner": "blue",
+      "date": "2025-11-12T04:52:22.638000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1748,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7577958044",
+      "blue_team": {
+        "Top": "Sion",
+        "Jungle": "Qiyana",
+        "Middle": "Viktor",
+        "Bottom": "Yunara",
+        "Support": "Rakan"
+      },
+      "red_team": {
+        "Top": "Aatrox",
+        "Jungle": "DrMundo",
+        "Middle": "Orianna",
+        "Bottom": "Jinx",
+        "Support": "Pyke"
+      },
+      "winner": "red",
+      "date": "2025-10-23T07:13:15.082000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1855,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7581112425",
+      "blue_team": {
+        "Top": "Jax",
+        "Jungle": "Khazix",
+        "Middle": "Ryze",
+        "Bottom": "Yunara",
+        "Support": "Sylas"
+      },
+      "red_team": {
+        "Top": "RekSai",
+        "Jungle": "Graves",
+        "Middle": "Leblanc",
+        "Bottom": "Smolder",
+        "Support": "Rell"
+      },
+      "winner": "blue",
+      "date": "2025-10-25T17:00:18.463000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1611,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600862007",
+      "blue_team": {
+        "Top": "Sion",
+        "Jungle": "Viego",
+        "Middle": "Orianna",
+        "Bottom": "Ziggs",
+        "Support": "Rell"
+      },
+      "red_team": {
+        "Top": "Ambessa",
+        "Jungle": "Sylas",
+        "Middle": "Ekko",
+        "Bottom": "Kaisa",
+        "Support": "Nautilus"
+      },
+      "winner": "blue",
+      "date": "2025-11-12T05:40:25.236000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2086,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598534142",
+      "blue_team": {
+        "Top": "LeeSin",
+        "Jungle": "JarvanIV",
+        "Middle": "Sylas",
+        "Bottom": "Smolder",
+        "Support": "Senna"
+      },
+      "red_team": {
+        "Top": "Kled",
+        "Jungle": "Udyr",
+        "Middle": "Viktor",
+        "Bottom": "Sivir",
+        "Support": "Rakan"
+      },
+      "winner": "blue",
+      "date": "2025-11-10T06:39:40.144000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2091,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599436103",
+      "blue_team": {
+        "Top": "DrMundo",
+        "Jungle": "Sylas",
+        "Middle": "Yone",
+        "Bottom": "Caitlyn",
+        "Support": "Elise"
+      },
+      "red_team": {
+        "Top": "Gwen",
+        "Jungle": "Pantheon",
+        "Middle": "Twitch",
+        "Bottom": "Jhin",
+        "Support": "Lux"
+      },
+      "winner": "red",
+      "date": "2025-11-10T19:35:49.329000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1956,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601384570",
+      "blue_team": {
+        "Top": "Rumble",
+        "Jungle": "JarvanIV",
+        "Middle": "Ryze",
+        "Bottom": "Caitlyn",
+        "Support": "Neeko"
+      },
+      "red_team": {
+        "Top": "Sylas",
+        "Jungle": "MonkeyKing",
+        "Middle": "Syndra",
+        "Bottom": "Ezreal",
+        "Support": "Rakan"
+      },
+      "winner": "blue",
+      "date": "2025-11-12T15:52:00.194000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1001,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598961369",
+      "blue_team": {
+        "Top": "Jayce",
+        "Jungle": "LeeSin",
+        "Middle": "Ekko",
+        "Bottom": "Yunara",
+        "Support": "Thresh"
+      },
+      "red_team": {
+        "Top": "Malphite",
+        "Jungle": "JarvanIV",
+        "Middle": "Taliyah",
+        "Bottom": "Xayah",
+        "Support": "Rakan"
+      },
+      "winner": "red",
+      "date": "2025-11-10T14:51:49.357000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1766,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7586582256",
+      "blue_team": {
+        "Top": "Aatrox",
+        "Jungle": "Qiyana",
+        "Middle": "Syndra",
+        "Bottom": "Jhin",
+        "Support": "Karma"
+      },
+      "red_team": {
+        "Top": "Rumble",
+        "Jungle": "Naafiri",
+        "Middle": "Cassiopeia",
+        "Bottom": "Ezreal",
+        "Support": "Bard"
+      },
+      "winner": "red",
+      "date": "2025-10-30T12:39:32.610000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1698,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7596692810",
+      "blue_team": {
+        "Top": "Irelia",
+        "Jungle": "Graves",
+        "Middle": "Galio",
+        "Bottom": "Yunara",
+        "Support": "Pyke"
+      },
+      "red_team": {
+        "Top": "Malphite",
+        "Jungle": "Zyra",
+        "Middle": "Akali",
+        "Bottom": "Ezreal",
+        "Support": "Neeko"
+      },
+      "winner": "blue",
+      "date": "2025-11-08T16:13:02.611000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1954,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601949119",
+      "blue_team": {
+        "Top": "Chogath",
+        "Jungle": "XinZhao",
+        "Middle": "Sylas",
+        "Bottom": "Ashe",
+        "Support": "Rakan"
+      },
+      "red_team": {
+        "Top": "Rumble",
+        "Jungle": "JarvanIV",
+        "Middle": "Viktor",
+        "Bottom": "Caitlyn",
+        "Support": "Rell"
+      },
+      "winner": "blue",
+      "date": "2025-11-13T05:28:16.566000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 915,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598540591",
+      "blue_team": {
+        "Top": "Riven",
+        "Jungle": "MonkeyKing",
+        "Middle": "Zed",
+        "Bottom": "AurelionSol",
+        "Support": "Alistar"
+      },
+      "red_team": {
+        "Top": "KSante",
+        "Jungle": "Khazix",
+        "Middle": "Syndra",
+        "Bottom": "Kaisa",
+        "Support": "Poppy"
+      },
+      "winner": "red",
+      "date": "2025-11-10T06:49:04.442000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1586,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600792343",
+      "blue_team": {
+        "Top": "Kennen",
+        "Jungle": "Talon",
+        "Middle": "Quinn",
+        "Bottom": "Kaisa",
+        "Support": "Pyke"
+      },
+      "red_team": {
+        "Top": "Vayne",
+        "Jungle": "Qiyana",
+        "Middle": "Ekko",
+        "Bottom": "Lucian",
+        "Support": "Rakan"
+      },
+      "winner": "blue",
+      "date": "2025-11-11T23:05:03.929000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 918,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599106169",
+      "blue_team": {
+        "Top": "Rumble",
+        "Jungle": "Hecarim",
+        "Middle": "TwistedFate",
+        "Bottom": "Tristana",
+        "Support": "Poppy"
+      },
+      "red_team": {
+        "Top": "KSante",
+        "Jungle": "Sylas",
+        "Middle": "Vayne",
+        "Bottom": "Lucian",
+        "Support": "Rell"
+      },
+      "winner": "blue",
+      "date": "2025-11-10T16:23:51.289000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1621,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7602018296",
+      "blue_team": {
+        "Middle": "Sion",
+        "Jungle": "Diana",
+        "Top": "Tryndamere",
+        "Bottom": "Yunara",
+        "Support": "Galio"
+      },
+      "red_team": {
+        "Top": "Olaf",
+        "Jungle": "Khazix",
+        "Middle": "Hwei",
+        "Bottom": "Kaisa",
+        "Support": "Janna"
+      },
+      "winner": "blue",
+      "date": "2025-11-13T08:00:40.979000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1780,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600784564",
+      "blue_team": {
+        "Middle": "Ambessa",
+        "Jungle": "Sylas",
+        "Top": "Yasuo",
+        "Bottom": "Yunara",
+        "Support": "Bard"
+      },
+      "red_team": {
+        "Top": "Vayne",
+        "Jungle": "Naafiri",
+        "Middle": "Viktor",
+        "Bottom": "Lucian",
+        "Support": "Alistar"
+      },
+      "winner": "red",
+      "date": "2025-11-11T22:16:55.267000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1640,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600218759",
+      "blue_team": {
+        "Top": "Renekton",
+        "Jungle": "Elise",
+        "Middle": "Zed",
+        "Bottom": "Sivir",
+        "Support": "Mel"
+      },
+      "red_team": {
+        "Top": "Tryndamere",
+        "Jungle": "LeeSin",
+        "Middle": "Veigar",
+        "Bottom": "Ashe",
+        "Support": "Neeko"
+      },
+      "winner": "red",
+      "date": "2025-11-11T15:16:27.971000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2154,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7602013045",
+      "blue_team": {
+        "Top": "Gragas",
+        "Jungle": "JarvanIV",
+        "Middle": "Mel",
+        "Bottom": "Aphelios",
+        "Support": "Nautilus"
+      },
+      "red_team": {
+        "Top": "DrMundo",
+        "Jungle": "Karthus",
+        "Middle": "Jayce",
+        "Bottom": "Corki",
+        "Support": "Pyke"
+      },
+      "winner": "blue",
+      "date": "2025-11-13T07:49:14.856000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1790,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7602186581",
+      "blue_team": {
+        "Top": "Ornn",
+        "Jungle": "Diana",
+        "Middle": "Yasuo",
+        "Bottom": "Zeri",
+        "Support": "Rakan"
+      },
+      "red_team": {
+        "Top": "Gnar",
+        "Jungle": "Nocturne",
+        "Middle": "TwistedFate",
+        "Bottom": "Ashe",
+        "Support": "Nautilus"
+      },
+      "winner": "blue",
+      "date": "2025-11-13T11:43:28.575000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1405,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7585854280",
+      "blue_team": {
+        "Top": "Sejuani",
+        "Jungle": "Jax",
+        "Middle": "Taliyah",
+        "Bottom": "Kaisa",
+        "Support": "Elise"
+      },
+      "red_team": {
+        "Top": "Rumble",
+        "Jungle": "Graves",
+        "Middle": "Quinn",
+        "Bottom": "Yunara",
+        "Support": "Milio"
+      },
+      "winner": "blue",
+      "date": "2025-10-29T17:05:26.104000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 2006,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598622728",
+      "blue_team": {
+        "Top": "Sion",
+        "Jungle": "XinZhao",
+        "Middle": "Veigar",
+        "Bottom": "Yunara",
+        "Support": "Karma"
+      },
+      "red_team": {
+        "Top": "Riven",
+        "Jungle": "JarvanIV",
+        "Middle": "Akali",
+        "Bottom": "Caitlyn",
+        "Support": "Lux"
+      },
+      "winner": "red",
+      "date": "2025-11-10T09:09:13.862000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1633,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7596750922",
+      "blue_team": {
+        "Top": "Camille",
+        "Jungle": "Zed",
+        "Middle": "Akali",
+        "Bottom": "Ezreal",
+        "Support": "Galio"
+      },
+      "red_team": {
+        "Top": "Irelia",
+        "Jungle": "Graves",
+        "Middle": "Orianna",
+        "Bottom": "Kaisa",
+        "Support": "Rell"
+      },
+      "winner": "red",
+      "date": "2025-11-08T16:55:50.935000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1556,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7602038835",
+      "blue_team": {
+        "Top": "Ornn",
+        "Jungle": "Hecarim",
+        "Middle": "Mel",
+        "Bottom": "Yasuo",
+        "Support": "Elise"
+      },
+      "red_team": {
+        "Top": "Yone",
+        "Jungle": "Karthus",
+        "Middle": "Syndra",
+        "Bottom": "Jinx",
+        "Support": "Nautilus"
+      },
+      "winner": "blue",
+      "date": "2025-11-13T08:27:59.281000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1122,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7597113407",
+      "blue_team": {
+        "Top": "Riven",
+        "Jungle": "LeeSin",
+        "Middle": "Ekko",
+        "Bottom": "Kalista",
+        "Support": "Nautilus"
+      },
+      "red_team": {
+        "Top": "Renekton",
+        "Jungle": "JarvanIV",
+        "Middle": "Pantheon",
+        "Bottom": "Yunara",
+        "Support": "Braum"
+      },
+      "winner": "blue",
+      "date": "2025-11-08T21:23:59.337000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 977,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7579203833",
+      "blue_team": {
+        "Top": "Yorick",
+        "Jungle": "JarvanIV",
+        "Middle": "Taliyah",
+        "Bottom": "Draven",
+        "Support": "Bard"
+      },
+      "red_team": {
+        "Top": "Jax",
+        "Jungle": "Udyr",
+        "Middle": "Zed",
+        "Bottom": "Ziggs",
+        "Support": "Nidalee"
+      },
+      "winner": "red",
+      "date": "2025-10-24T08:45:35.288000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1704,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599373977",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "Olaf",
+        "Middle": "Twitch",
+        "Bottom": "Sivir",
+        "Support": "Soraka"
+      },
+      "red_team": {
+        "Top": "Rumble",
+        "Jungle": "Zed",
+        "Middle": "Ahri",
+        "Bottom": "Jhin",
+        "Support": "Elise"
+      },
+      "winner": "blue",
+      "date": "2025-11-10T18:55:00.775000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1385,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598117251",
+      "blue_team": {
+        "Top": "Jayce",
+        "Jungle": "Vi",
+        "Middle": "Taliyah",
+        "Bottom": "Yunara",
+        "Support": "Thresh"
+      },
+      "red_team": {
+        "Top": "Yone",
+        "Jungle": "Sylas",
+        "Middle": "Malzahar",
+        "Bottom": "Kaisa",
+        "Support": "Alistar"
+      },
+      "winner": "blue",
+      "date": "2025-11-09T17:38:25.195000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1411,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7579232820",
+      "blue_team": {
+        "Top": "Aatrox",
+        "Jungle": "Viego",
+        "Middle": "Akali",
+        "Bottom": "Kaisa",
+        "Support": "Pyke"
+      },
+      "red_team": {
+        "Top": "Jayce",
+        "Jungle": "Nunu",
+        "Middle": "Sion",
+        "Bottom": "Yunara",
+        "Support": "Lulu"
+      },
+      "winner": "red",
+      "date": "2025-10-24T09:19:27.100000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1889,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599644314",
+      "blue_team": {
+        "Top": "Poppy",
+        "Jungle": "Sylas",
+        "Middle": "Veigar",
+        "Bottom": "Tristana",
+        "Support": "Lulu"
+      },
+      "red_team": {
+        "Top": "Garen",
+        "Jungle": "Naafiri",
+        "Middle": "Viktor",
+        "Bottom": "Aphelios",
+        "Support": "Thresh"
+      },
+      "winner": "red",
+      "date": "2025-11-11T03:51:04.930000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1361,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7592349219",
+      "blue_team": {
+        "Top": "Gwen",
+        "Jungle": "XinZhao",
+        "Middle": "Orianna",
+        "Bottom": "Ezreal",
+        "Support": "Yuumi"
+      },
+      "red_team": {
+        "Top": "Ambessa",
+        "Jungle": "JarvanIV",
+        "Middle": "Taliyah",
+        "Bottom": "Kaisa",
+        "Support": "Leona"
+      },
+      "winner": "red",
+      "date": "2025-11-04T15:53:34.359000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1211,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599797835",
+      "blue_team": {
+        "Top": "Gnar",
+        "Jungle": "Qiyana",
+        "Middle": "Corki",
+        "Bottom": "Ziggs",
+        "Support": "Pyke"
+      },
+      "red_team": {
+        "Top": "Urgot",
+        "Jungle": "Jax",
+        "Middle": "Syndra",
+        "Bottom": "Caitlyn",
+        "Support": "Galio"
+      },
+      "winner": "blue",
+      "date": "2025-11-11T09:15:12.476000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2977,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7597195562",
+      "blue_team": {
+        "Top": "Riven",
+        "Jungle": "Zed",
+        "Middle": "Viktor",
+        "Bottom": "Zeri",
+        "Support": "Rell"
+      },
+      "red_team": {
+        "Top": "Shen",
+        "Jungle": "Karthus",
+        "Middle": "Akshan",
+        "Bottom": "Draven",
+        "Support": "Poppy"
+      },
+      "winner": "red",
+      "date": "2025-11-08T23:35:48.340000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1768,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598430528",
+      "blue_team": {
+        "Top": "Gragas",
+        "Jungle": "JarvanIV",
+        "Middle": "Ekko",
+        "Bottom": "Caitlyn",
+        "Support": "Bard"
+      },
+      "red_team": {
+        "Top": "Cassiopeia",
+        "Jungle": "Karthus",
+        "Middle": "Irelia",
+        "Bottom": "Draven",
+        "Support": "Rell"
+      },
+      "winner": "red",
+      "date": "2025-11-09T22:06:56.856000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1944,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601970792",
+      "blue_team": {
+        "Top": "Vayne",
+        "Jungle": "Viego",
+        "Middle": "Sylas",
+        "Bottom": "Sivir",
+        "Support": "Alistar"
+      },
+      "red_team": {
+        "Top": "KSante",
+        "Jungle": "Karthus",
+        "Middle": "Veigar",
+        "Bottom": "Zeri",
+        "Support": "Pyke"
+      },
+      "winner": "blue",
+      "date": "2025-11-13T06:14:58.786000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1094,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7602078250",
+      "blue_team": {
+        "Top": "Singed",
+        "Jungle": "Pantheon",
+        "Middle": "Syndra",
+        "Bottom": "Jhin",
+        "Support": "Alistar"
+      },
+      "red_team": {
+        "Top": "Fiora",
+        "Jungle": "Elise",
+        "Middle": "Yasuo",
+        "Bottom": "Varus",
+        "Support": "Braum"
+      },
+      "winner": "blue",
+      "date": "2025-11-13T09:37:47.782000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1352,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599171538",
+      "blue_team": {
+        "Top": "Vayne",
+        "Jungle": "Qiyana",
+        "Middle": "Syndra",
+        "Bottom": "Smolder",
+        "Support": "Bard"
+      },
+      "red_team": {
+        "Top": "Ambessa",
+        "Jungle": "Sylas",
+        "Middle": "Ekko",
+        "Bottom": "Xayah",
+        "Support": "Rakan"
+      },
+      "winner": "blue",
+      "date": "2025-11-10T16:59:25.637000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2042,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7597228177",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "XinZhao",
+        "Middle": "Akali",
+        "Bottom": "Kaisa",
+        "Support": "Janna"
+      },
+      "red_team": {
+        "Top": "Yasuo",
+        "Jungle": "Khazix",
+        "Middle": "TwistedFate",
+        "Bottom": "Smolder",
+        "Support": "Blitzcrank"
+      },
+      "winner": "red",
+      "date": "2025-11-09T02:54:55.717000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1911,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600170755",
+      "blue_team": {
+        "Top": "Chogath",
+        "Jungle": "JarvanIV",
+        "Middle": "Xerath",
+        "Bottom": "Yunara",
+        "Support": "Senna"
+      },
+      "red_team": {
+        "Top": "Sion",
+        "Jungle": "Taliyah",
+        "Middle": "Yone",
+        "Bottom": "Ashe",
+        "Support": "Nautilus"
+      },
+      "winner": "red",
+      "date": "2025-11-11T14:44:10.917000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1410,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598519511",
+      "blue_team": {
+        "Top": "Urgot",
+        "Jungle": "Graves",
+        "Middle": "Akali",
+        "Bottom": "Kaisa",
+        "Support": "Nautilus"
+      },
+      "red_team": {
+        "Top": "Sion",
+        "Jungle": "Diana",
+        "Middle": "Yasuo",
+        "Bottom": "Lucian",
+        "Support": "Nami"
+      },
+      "winner": "blue",
+      "date": "2025-11-10T05:52:38.796000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1582,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600296860",
+      "blue_team": {
+        "Top": "Rumble",
+        "Jungle": "JarvanIV",
+        "Middle": "Kassadin",
+        "Bottom": "Corki",
+        "Support": "Malzahar"
+      },
+      "red_team": {
+        "Top": "Renekton",
+        "Jungle": "Graves",
+        "Middle": "Veigar",
+        "Bottom": "Smolder",
+        "Support": "Rell"
+      },
+      "winner": "red",
+      "date": "2025-11-11T16:02:32.261000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1994,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7599476741",
+      "blue_team": {
+        "Top": "Vladimir",
+        "Jungle": "JarvanIV",
+        "Middle": "Taliyah",
+        "Bottom": "Ashe",
+        "Support": "Braum"
+      },
+      "red_team": {
+        "Top": "Zed",
+        "Jungle": "Nidalee",
+        "Middle": "Zoe",
+        "Bottom": "Ezreal",
+        "Support": "Leona"
+      },
+      "winner": "red",
+      "date": "2025-11-10T20:03:33.044000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2166,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601873274",
+      "blue_team": {
+        "Top": "Chogath",
+        "Jungle": "JarvanIV",
+        "Middle": "Quinn",
+        "Bottom": "AurelionSol",
+        "Support": "Mel"
+      },
+      "red_team": {
+        "Top": "Ambessa",
+        "Jungle": "MonkeyKing",
+        "Middle": "Galio",
+        "Bottom": "Twitch",
+        "Support": "Anivia"
+      },
+      "winner": "red",
+      "date": "2025-11-12T22:26:34.034000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1707,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600901388",
+      "blue_team": {
+        "Top": "Chogath",
+        "Jungle": "LeeSin",
+        "Middle": "Viktor",
+        "Bottom": "Jhin",
+        "Support": "Nautilus"
+      },
+      "red_team": {
+        "Top": "Aatrox",
+        "Jungle": "Zed",
+        "Middle": "Syndra",
+        "Bottom": "Kaisa",
+        "Support": "Neeko"
+      },
+      "winner": "blue",
+      "date": "2025-11-12T07:25:53.364000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1884,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601028740",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "Diana",
+        "Middle": "Yasuo",
+        "Bottom": "Caitlyn",
+        "Support": "Alistar"
+      },
+      "red_team": {
+        "Top": "Tryndamere",
+        "Jungle": "XinZhao",
+        "Middle": "Akali",
+        "Bottom": "Mel",
+        "Support": "Poppy"
+      },
+      "winner": "red",
+      "date": "2025-11-12T10:37:23.078000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1510,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7594253560",
+      "blue_team": {
+        "Top": "Sion",
+        "Jungle": "Diana",
+        "Middle": "Zed",
+        "Bottom": "Ziggs",
+        "Support": "Rell"
+      },
+      "red_team": {
+        "Top": "Rumble",
+        "Jungle": "Qiyana",
+        "Middle": "Annie",
+        "Bottom": "Kaisa",
+        "Support": "Blitzcrank"
+      },
+      "winner": "blue",
+      "date": "2025-11-06T14:25:07.337000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2204,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598482270",
+      "blue_team": {
+        "Top": "Gragas",
+        "Jungle": "Talon",
+        "Middle": "TwistedFate",
+        "Bottom": "Zeri",
+        "Support": "Pyke"
+      },
+      "red_team": {
+        "Top": "KSante",
+        "Jungle": "Graves",
+        "Middle": "Taliyah",
+        "Bottom": "Kaisa",
+        "Support": "Janna"
+      },
+      "winner": "blue",
+      "date": "2025-11-10T03:11:24.055000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1147,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598442932",
+      "blue_team": {
+        "Top": "Sion",
+        "Jungle": "Talon",
+        "Middle": "Ryze",
+        "Bottom": "Kaisa",
+        "Support": "Rell"
+      },
+      "red_team": {
+        "Top": "Rumble",
+        "Jungle": "MonkeyKing",
+        "Middle": "Qiyana",
+        "Bottom": "Zilean",
+        "Support": "Senna"
+      },
+      "winner": "blue",
+      "date": "2025-11-09T22:46:18.848000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1678,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7586691915",
+      "blue_team": {
+        "Top": "Aurora",
+        "Jungle": "Graves",
+        "Middle": "Ezreal",
+        "Bottom": "Mel",
+        "Support": "Rakan"
+      },
+      "red_team": {
+        "Top": "Ambessa",
+        "Jungle": "Rumble",
+        "Middle": "Ziggs",
+        "Bottom": "Yunara",
+        "Support": "Nautilus"
+      },
+      "winner": "blue",
+      "date": "2025-10-30T14:16:59.838000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1662,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7596977349",
+      "blue_team": {
+        "Bottom": "Sion",
+        "Jungle": "Nidalee",
+        "Middle": "Taliyah",
+        "Top": "Yunara",
+        "Support": "Karma"
+      },
+      "red_team": {
+        "Top": "Ornn",
+        "Jungle": "Elise",
+        "Middle": "Irelia",
+        "Bottom": "Draven",
+        "Support": "Nautilus"
+      },
+      "winner": "red",
+      "date": "2025-11-08T19:27:05.128000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1604,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7602056260",
+      "blue_team": {
+        "Middle": "Vladimir",
+        "Jungle": "Naafiri",
+        "Top": "Sion",
+        "Bottom": "Corki",
+        "Support": "Kennen"
+      },
+      "red_team": {
+        "Top": "Yorick",
+        "Jungle": "JarvanIV",
+        "Middle": "Akali",
+        "Bottom": "Kaisa",
+        "Support": "Karma"
+      },
+      "winner": "red",
+      "date": "2025-11-13T09:00:48.115000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1644,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601937017",
+      "blue_team": {
+        "Top": "RekSai",
+        "Jungle": "Khazix",
+        "Middle": "Orianna",
+        "Bottom": "Kaisa",
+        "Support": "Nautilus"
+      },
+      "red_team": {
+        "Top": "Zed",
+        "Jungle": "Graves",
+        "Middle": "Akali",
+        "Bottom": "Corki",
+        "Support": "Blitzcrank"
+      },
+      "winner": "red",
+      "date": "2025-11-13T04:25:39.539000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1840,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7595855933",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "Trundle",
+        "Middle": "Viktor",
+        "Bottom": "Kaisa",
+        "Support": "Fizz"
+      },
+      "red_team": {
+        "Top": "Yasuo",
+        "Jungle": "Naafiri",
+        "Middle": "Orianna",
+        "Bottom": "Yunara",
+        "Support": "Nautilus"
+      },
+      "winner": "blue",
+      "date": "2025-11-07T20:28:19.153000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1675,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7601984344",
+      "blue_team": {
+        "Top": "Sion",
+        "Jungle": "JarvanIV",
+        "Middle": "Galio",
+        "Bottom": "Corki",
+        "Support": "Pyke"
+      },
+      "red_team": {
+        "Top": "KSante",
+        "Jungle": "Hecarim",
+        "Middle": "Akali",
+        "Bottom": "Lucian",
+        "Support": "Neeko"
+      },
+      "winner": "red",
+      "date": "2025-11-13T06:57:26.257000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 2103,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600226564",
+      "blue_team": {
+        "Top": "Rumble",
+        "Jungle": "Nocturne",
+        "Middle": "Syndra",
+        "Bottom": "Aphelios",
+        "Support": "Nautilus"
+      },
+      "red_team": {
+        "Top": "Ambessa",
+        "Jungle": "MonkeyKing",
+        "Middle": "Orianna",
+        "Bottom": "Kaisa",
+        "Support": "Pyke"
+      },
+      "winner": "blue",
+      "date": "2025-11-11T15:20:39.440000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1006,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7597307884",
+      "blue_team": {
+        "Top": "Gangplank",
+        "Jungle": "Nasus",
+        "Middle": "Ryze",
+        "Bottom": "Lucian",
+        "Support": "Pantheon"
+      },
+      "red_team": {
+        "Middle": "Anivia",
+        "Jungle": "Talon",
+        "Top": "Akali",
+        "Bottom": "Ashe",
+        "Support": "Renata"
+      },
+      "winner": "red",
+      "date": "2025-11-09T07:17:52.481000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1312,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7597439944",
+      "blue_team": {
+        "Top": "Rumble",
+        "Jungle": "Udyr",
+        "Middle": "Yone",
+        "Bottom": "Hwei",
+        "Support": "Blitzcrank"
+      },
+      "red_team": {
+        "Top": "Varus",
+        "Jungle": "DrMundo",
+        "Middle": "Syndra",
+        "Bottom": "Corki",
+        "Support": "Leona"
+      },
+      "winner": "blue",
+      "date": "2025-11-09T10:04:43.685000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 927,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7586786785",
+      "blue_team": {
+        "Top": "Gnar",
+        "Jungle": "Graves",
+        "Middle": "Syndra",
+        "Bottom": "Xayah",
+        "Support": "Rakan"
+      },
+      "red_team": {
+        "Top": "Riven",
+        "Jungle": "Qiyana",
+        "Middle": "Galio",
+        "Bottom": "Kaisa",
+        "Support": "Fiora"
+      },
+      "winner": "red",
+      "date": "2025-10-30T15:29:26.847000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1998,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7589206708",
+      "blue_team": {
+        "Top": "Renekton",
+        "Jungle": "Rumble",
+        "Middle": "Yasuo",
+        "Bottom": "Corki",
+        "Support": "Alistar"
+      },
+      "red_team": {
+        "Top": "Yone",
+        "Jungle": "Taliyah",
+        "Middle": "Akali",
+        "Bottom": "Kaisa",
+        "Support": "Poppy"
+      },
+      "winner": "red",
+      "date": "2025-11-01T18:15:43.767000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 941,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600970380",
+      "blue_team": {
+        "Top": "KSante",
+        "Jungle": "Rengar",
+        "Middle": "Orianna",
+        "Bottom": "Ezreal",
+        "Support": "Leona"
+      },
+      "red_team": {
+        "Top": "Jayce",
+        "Jungle": "LeeSin",
+        "Middle": "Syndra",
+        "Bottom": "Seraphine",
+        "Support": "Rakan"
+      },
+      "winner": "blue",
+      "date": "2025-11-12T09:24:15.829000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1616,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7598559507",
+      "blue_team": {
+        "Top": "Sion",
+        "Jungle": "Vi",
+        "Middle": "Aurora",
+        "Bottom": "Yunara",
+        "Support": "Rell"
+      },
+      "red_team": {
+        "Top": "KSante",
+        "Jungle": "JarvanIV",
+        "Middle": "Viktor",
+        "Bottom": "Jinx",
+        "Support": "Lulu"
+      },
+      "winner": "red",
+      "date": "2025-11-10T07:25:35.549000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1421,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7580820113",
+      "blue_team": {
+        "Top": "Karma",
+        "Jungle": "Naafiri",
+        "Middle": "Olaf",
+        "Bottom": "Velkoz",
+        "Support": "Nautilus"
+      },
+      "red_team": {
+        "Top": "Aatrox",
+        "Jungle": "Shyvana",
+        "Middle": "Zed",
+        "Bottom": "Ziggs",
+        "Support": "Senna"
+      },
+      "winner": "blue",
+      "date": "2025-10-25T13:30:13.928000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1660,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7597392461",
+      "blue_team": {
+        "Top": "Gragas",
+        "Jungle": "Talon",
+        "Middle": "Orianna",
+        "Bottom": "Yasuo",
+        "Support": "Rell"
+      },
+      "red_team": {
+        "Top": "Darius",
+        "Jungle": "Jax",
+        "Middle": "Syndra",
+        "Bottom": "Xayah",
+        "Support": "Nidalee"
+      },
+      "winner": "blue",
+      "date": "2025-11-09T09:15:15.083000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1742,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7595896158",
+      "blue_team": {
+        "Top": "Varus",
+        "Jungle": "Khazix",
+        "Middle": "Ryze",
+        "Bottom": "Kaisa",
+        "Support": "Alistar"
+      },
+      "red_team": {
+        "Top": "Yorick",
+        "Jungle": "Hecarim",
+        "Middle": "Fizz",
+        "Bottom": "Yunara",
+        "Support": "Rakan"
+      },
+      "winner": "red",
+      "date": "2025-11-07T21:06:30.428000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 919,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7590322949",
+      "blue_team": {
+        "Top": "Gnar",
+        "Jungle": "Khazix",
+        "Middle": "Leblanc",
+        "Bottom": "AurelionSol",
+        "Support": "Thresh"
+      },
+      "red_team": {
+        "Top": "Akali",
+        "Jungle": "Viego",
+        "Middle": "Naafiri",
+        "Bottom": "Seraphine",
+        "Support": "Nautilus"
+      },
+      "winner": "red",
+      "date": "2025-11-02T16:12:17.654000",
+      "patch": [
+        "15",
+        "21"
+      ],
+      "duration": 1153,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600439951",
+      "blue_team": {
+        "Top": "Jayce",
+        "Jungle": "Taliyah",
+        "Middle": "Tristana",
+        "Bottom": "Varus",
+        "Support": "Braum"
+      },
+      "red_team": {
+        "Top": "Malphite",
+        "Jungle": "XinZhao",
+        "Middle": "Leblanc",
+        "Bottom": "Yunara",
+        "Support": "Leona"
+      },
+      "winner": "red",
+      "date": "2025-11-11T17:23:56.577000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1655,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7602144884",
+      "blue_team": {
+        "Top": "KSante",
+        "Jungle": "Karthus",
+        "Middle": "Corki",
+        "Bottom": "Ziggs",
+        "Support": "Rakan"
+      },
+      "red_team": {
+        "Top": "Rumble",
+        "Jungle": "JarvanIV",
+        "Middle": "Irelia",
+        "Bottom": "Mel",
+        "Support": "Janna"
+      },
+      "winner": "red",
+      "date": "2025-11-13T10:59:44.391000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1840,
+      "queue_id": 420
+    },
+    {
+      "match_id": "EUW1_7600679476",
+      "blue_team": {
+        "Top": "Ambessa",
+        "Jungle": "Graves",
+        "Middle": "Akali",
+        "Bottom": "Quinn",
+        "Support": "Leona"
+      },
+      "red_team": {
+        "Top": "Aatrox",
+        "Jungle": "LeeSin",
+        "Middle": "Mel",
+        "Bottom": "Varus",
+        "Support": "Nautilus"
+      },
+      "winner": "blue",
+      "date": "2025-11-11T19:52:11.091000",
+      "patch": [
+        "15",
+        "22"
+      ],
+      "duration": 1750,
+      "queue_id": 420
+    }
+  ]
+}

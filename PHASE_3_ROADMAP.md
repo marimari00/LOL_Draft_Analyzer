@@ -3,11 +3,13 @@
 ## Objective
 
 Build a 13x13 matrix defining:
+
 1. **Synergies**: Which archetypes work well together
 2. **Counters**: Which archetypes counter others
 3. **Importance Weights**: How critical each relationship is
 
 This enables the recommendation engine to:
+
 - Identify team composition gaps
 - Suggest counter-picks
 - Explain strategic reasoning
@@ -43,20 +45,24 @@ From `champion_archetypes.json` (171 champions):
 **Core Identity**: Protect the backline carry, fight with frontline peel
 
 **Required Roles:**
+
 - engage_tank OR warden (frontline)
 - marksman OR burst_mage (primary DPS)
 - enchanter (peel/sustain)
 
 **Optional:**
+
 - diver (secondary engage)
 - catcher (picks before fight)
 
 **Strengths:**
+
 - Scales well into late game
 - Strong 5v5 teamfighting
 - Clear role assignments
 
 **Weaknesses:**
+
 - Weak to poke (can't engage safely)
 - Vulnerable to split push
 - Needs good positioning
@@ -70,20 +76,24 @@ From `champion_archetypes.json` (171 champions):
 **Core Identity**: Engage onto backline, assassinate carries
 
 **Required Roles:**
+
 - diver OR burst_assassin (primary dive)
 - engage_tank (engage tool)
 - enchanter OR warden (protect diver on exit)
 
 **Optional:**
+
 - skirmisher (clean-up fights)
 - battle_mage (sustained damage in chaos)
 
 **Strengths:**
+
 - Forces enemy into disadvantageous fights
 - Strong mid-game power spikes
 - Punishes immobile carries
 
 **Weaknesses:**
+
 - Requires execution skill
 - Falls off if behind
 - Weak to disengage/peel
@@ -97,20 +107,24 @@ From `champion_archetypes.json` (171 champions):
 **Core Identity**: Whittle down enemy before they can engage
 
 **Required Roles:**
+
 - artillery_mage (primary poke)
 - catcher OR enchanter (disengage)
 - marksman OR burst_mage (follow-up if poke succeeds)
 
 **Optional:**
+
 - warden (zone control)
 - burst_assassin (punish enemy retreat)
 
 **Strengths:**
+
 - Controls space, denies objectives
 - No-risk damage
 - Forces enemy to engage unfavorably
 
 **Weaknesses:**
+
 - Weak if poke lands poorly
 - Vulnerable to hard engage
 - Scales worse than front-to-back
@@ -124,20 +138,24 @@ From `champion_archetypes.json` (171 champions):
 **Core Identity**: Draw enemy away, win side lanes
 
 **Required Roles:**
+
 - skirmisher OR juggernaut (primary split pusher - wins 1v1)
 - specialist (waveclear to stall)
 - catcher OR engage_tank (create picks during stall)
 
 **Optional:**
+
 - marksman (safe waveclear mid)
 - enchanter (sustain for split pusher)
 
 **Strengths:**
+
 - Map pressure forces enemy choices
 - Wins via macro, not teamfights
 - Punishes uncoordinated teams
 
 **Weaknesses:**
+
 - Requires team coordination
 - Weak to hard engage 5v4
 - Vulnerable if split pusher caught
@@ -151,20 +169,24 @@ From `champion_archetypes.json` (171 champions):
 **Core Identity**: Get picks, snowball via numbers advantage
 
 **Required Roles:**
+
 - catcher (primary engage tool - hook/bind)
 - burst_assassin OR burst_mage (kill target quickly)
 - diver (follow-up engage if 5v4)
 
 **Optional:**
+
 - warden (zone after pick)
 - enchanter (sustain between picks)
 
 **Strengths:**
+
 - Forces enemy to play safe
 - Snowballs via vision control
 - Strong in coordinated play
 
 **Weaknesses:**
+
 - Useless if picks fail
 - Weak to 5-man grouping
 - Falls off late game
@@ -175,7 +197,8 @@ From `champion_archetypes.json` (171 champions):
 
 ## Synergy Matrix (13x13)
 
-**Scale**: 
+**Scale**:
+
 - **+2**: Strong synergy (enables each other)
 - **+1**: Moderate synergy (works well together)
 - **0**: Neutral (no special interaction)
@@ -250,13 +273,14 @@ From `champion_archetypes.json` (171 champions):
 | battle_mage | +1 | Sustain enables battle mage to DPS |
 | specialist | 0 | Depends on specialist |
 
-*(Continue for all 13 archetypes...)*
+(Continue for all 13 archetypes...)
 
 ---
 
 ## Counter Matrix (13x13)
 
 **Scale**:
+
 - **+2**: Hard counter (strongly favored)
 - **+1**: Soft counter (slightly favored)
 - **0**: Neutral matchup
@@ -297,7 +321,7 @@ From `champion_archetypes.json` (171 champions):
 | battle_mage | 0 | Battle mage has sustain (assassin can't one-shot) |
 | specialist | 0 | Depends on specialist |
 
-*(Continue for all 13 archetypes...)*
+(Continue for all 13 archetypes...)
 
 ---
 
@@ -362,6 +386,7 @@ def score_counter_advantage(our_archetypes, enemy_archetypes, counter_matrix):
 ### Step 3: Validate Against Known Compositions
 
 Test cases:
+
 - **Front-to-back**: engage_tank + marksman + enchanter = high synergy
 - **Dive**: diver + burst_assassin + warden = high synergy
 - **Counter**: burst_assassin vs marksman = +2 (assassin favored)

@@ -3,12 +3,14 @@
 ## CRITICAL RULES (NEVER VIOLATE)
 
 ### 1. NO PLACEHOLDERS OR INCOMPLETE CODE
+
 - **NEVER** use placeholders like `...existing code...`, `// TODO`, or `# implement later`
 - **ALWAYS** write complete, functional code
 - If you don't have the data, say so - don't make it up
 - Every function must have a complete implementation
 
 ### 2. USE FACTUAL DATA ONLY
+
 - **NEVER** invent champion stats, ability values, or game mechanics
 - **ONLY** use data from:
   - `data/processed/champion_archetypes.json` (production output)
@@ -17,6 +19,7 @@
 - If data doesn't exist, extract it from official sources or mark as TODO
 
 ### 3. ALWAYS TEST BEFORE CLAIMING SUCCESS
+
 - Run scripts after creating them
 - Verify output files exist and are valid
 - Check for errors in terminal output
@@ -101,7 +104,7 @@
 
 ### Git Commit Message Format
 
-```
+```text
 [Component] Brief description
 
 - Bullet point of change 1
@@ -301,7 +304,7 @@ def recommend_champion(ally_picks, enemy_picks, position):
 
 ## Data Pipeline Architecture
 
-```
+```text
 Raw Data Sources
 ├── Data Dragon API (stats, abilities, cooldowns)
 ├── champion.bin (damage formulas, ratios)

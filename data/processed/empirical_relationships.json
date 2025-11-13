@@ -1,0 +1,436 @@
+{
+  "metadata": {
+    "matches_analyzed": 172,
+    "min_games_threshold": 30,
+    "analysis_date": "2025-11-13"
+  },
+  "synergies": {
+    "burst_mage+specialist": {
+      "score": 1,
+      "winrate": 0.5348837209302325,
+      "games": 43
+    },
+    "diver+specialist": {
+      "score": 2,
+      "winrate": 0.5555555555555556,
+      "games": 36
+    },
+    "marksman+specialist": {
+      "score": 0,
+      "winrate": 0.5058823529411764,
+      "games": 85
+    },
+    "burst_mage+diver": {
+      "score": 0,
+      "winrate": 0.49523809523809526,
+      "games": 105
+    },
+    "burst_mage+marksman": {
+      "score": -1,
+      "winrate": 0.48,
+      "games": 200
+    },
+    "burst_mage+burst_mage": {
+      "score": -1,
+      "winrate": 0.46875,
+      "games": 32
+    },
+    "diver+marksman": {
+      "score": 0,
+      "winrate": 0.4973821989528796,
+      "games": 191
+    },
+    "battle_mage+marksman": {
+      "score": -2,
+      "winrate": 0.44166666666666665,
+      "games": 120
+    },
+    "battle_mage+engage_tank": {
+      "score": 0,
+      "winrate": 0.49056603773584906,
+      "games": 53
+    },
+    "engage_tank+specialist": {
+      "score": -1,
+      "winrate": 0.4634146341463415,
+      "games": 41
+    },
+    "engage_tank+marksman": {
+      "score": 1,
+      "winrate": 0.54,
+      "games": 150
+    },
+    "burst_mage+warden": {
+      "score": -1,
+      "winrate": 0.47058823529411764,
+      "games": 34
+    },
+    "marksman+warden": {
+      "score": 0,
+      "winrate": 0.49230769230769234,
+      "games": 65
+    },
+    "burst_mage+skirmisher": {
+      "score": 2,
+      "winrate": 0.6,
+      "games": 45
+    },
+    "marksman+skirmisher": {
+      "score": 0,
+      "winrate": 0.5068493150684932,
+      "games": 73
+    },
+    "engage_tank+skirmisher": {
+      "score": 1,
+      "winrate": 0.5405405405405406,
+      "games": 37
+    },
+    "burst_mage+engage_tank": {
+      "score": 1,
+      "winrate": 0.5256410256410257,
+      "games": 78
+    },
+    "burst_assassin+diver": {
+      "score": 0,
+      "winrate": 0.5148514851485149,
+      "games": 101
+    },
+    "catcher+diver": {
+      "score": -1,
+      "winrate": 0.4666666666666667,
+      "games": 30
+    },
+    "burst_assassin+burst_mage": {
+      "score": -1,
+      "winrate": 0.46226415094339623,
+      "games": 106
+    },
+    "burst_assassin+marksman": {
+      "score": 1,
+      "winrate": 0.5265486725663717,
+      "games": 226
+    },
+    "burst_assassin+catcher": {
+      "score": -1,
+      "winrate": 0.475,
+      "games": 40
+    },
+    "burst_mage+catcher": {
+      "score": -2,
+      "winrate": 0.2903225806451613,
+      "games": 31
+    },
+    "catcher+marksman": {
+      "score": -1,
+      "winrate": 0.45901639344262296,
+      "games": 61
+    },
+    "burst_assassin+juggernaut": {
+      "score": 2,
+      "winrate": 0.5666666666666667,
+      "games": 30
+    },
+    "juggernaut+marksman": {
+      "score": -2,
+      "winrate": 0.4318181818181818,
+      "games": 44
+    },
+    "battle_mage+burst_assassin": {
+      "score": -2,
+      "winrate": 0.44776119402985076,
+      "games": 67
+    },
+    "enchanter+marksman": {
+      "score": 1,
+      "winrate": 0.5277777777777778,
+      "games": 36
+    },
+    "burst_assassin+burst_assassin": {
+      "score": 2,
+      "winrate": 0.7021276595744681,
+      "games": 47
+    },
+    "burst_assassin+engage_tank": {
+      "score": 1,
+      "winrate": 0.5454545454545454,
+      "games": 99
+    },
+    "battle_mage+diver": {
+      "score": -2,
+      "winrate": 0.43037974683544306,
+      "games": 79
+    },
+    "diver+engage_tank": {
+      "score": 2,
+      "winrate": 0.5730337078651685,
+      "games": 89
+    },
+    "burst_assassin+specialist": {
+      "score": 2,
+      "winrate": 0.6222222222222222,
+      "games": 45
+    },
+    "marksman+marksman": {
+      "score": -1,
+      "winrate": 0.4666666666666667,
+      "games": 30
+    },
+    "battle_mage+burst_mage": {
+      "score": -2,
+      "winrate": 0.42105263157894735,
+      "games": 38
+    },
+    "burst_assassin+warden": {
+      "score": 2,
+      "winrate": 0.5681818181818182,
+      "games": 44
+    },
+    "diver+skirmisher": {
+      "score": 2,
+      "winrate": 0.5714285714285714,
+      "games": 35
+    },
+    "artillery_mage+marksman": {
+      "score": -2,
+      "winrate": 0.4473684210526316,
+      "games": 38
+    },
+    "burst_assassin+skirmisher": {
+      "score": 2,
+      "winrate": 0.5892857142857143,
+      "games": 56
+    }
+  },
+  "counters": {
+    "specialist>marksman": {
+      "score": 2,
+      "advantage": 0.21568627450980382,
+      "games": 51
+    },
+    "specialist>engage_tank": {
+      "score": 0,
+      "advantage": 0.09677419354838701,
+      "games": 31
+    },
+    "burst_mage>battle_mage": {
+      "score": 0,
+      "advantage": 0.02127659574468077,
+      "games": 47
+    },
+    "burst_mage>marksman": {
+      "score": 0,
+      "advantage": 0.0,
+      "games": 100
+    },
+    "burst_mage>engage_tank": {
+      "score": -1,
+      "advantage": -0.17391304347826086,
+      "games": 46
+    },
+    "diver>battle_mage": {
+      "score": 1,
+      "advantage": 0.19999999999999996,
+      "games": 50
+    },
+    "diver>marksman": {
+      "score": 0,
+      "advantage": 0.09259259259259256,
+      "games": 108
+    },
+    "diver>engage_tank": {
+      "score": 0,
+      "advantage": 0.022222222222222143,
+      "games": 45
+    },
+    "marksman>battle_mage": {
+      "score": 2,
+      "advantage": 0.21739130434782616,
+      "games": 69
+    },
+    "marksman>specialist": {
+      "score": 0,
+      "advantage": 0.06976744186046502,
+      "games": 43
+    },
+    "marksman>marksman": {
+      "score": 0,
+      "advantage": 0.06508875739644981,
+      "games": 169
+    },
+    "marksman>engage_tank": {
+      "score": 0,
+      "advantage": -0.07317073170731703,
+      "games": 82
+    },
+    "skirmisher>burst_assassin": {
+      "score": -1,
+      "advantage": -0.1515151515151515,
+      "games": 33
+    },
+    "skirmisher>marksman": {
+      "score": 0,
+      "advantage": 0.07692307692307687,
+      "games": 39
+    },
+    "burst_mage>diver": {
+      "score": 2,
+      "advantage": 0.21568627450980382,
+      "games": 51
+    },
+    "burst_mage>burst_assassin": {
+      "score": -1,
+      "advantage": -0.16981132075471694,
+      "games": 53
+    },
+    "burst_mage>burst_mage": {
+      "score": 2,
+      "advantage": 0.21739130434782616,
+      "games": 46
+    },
+    "marksman>diver": {
+      "score": 0,
+      "advantage": 0.05263157894736836,
+      "games": 95
+    },
+    "marksman>burst_assassin": {
+      "score": 0,
+      "advantage": 0.009009009009008917,
+      "games": 111
+    },
+    "marksman>burst_mage": {
+      "score": 1,
+      "advantage": 0.13461538461538458,
+      "games": 104
+    },
+    "engage_tank>diver": {
+      "score": 2,
+      "advantage": 0.37777777777777777,
+      "games": 45
+    },
+    "engage_tank>burst_assassin": {
+      "score": 0,
+      "advantage": 0.0625,
+      "games": 64
+    },
+    "engage_tank>burst_mage": {
+      "score": 1,
+      "advantage": 0.1914893617021276,
+      "games": 47
+    },
+    "engage_tank>marksman": {
+      "score": 2,
+      "advantage": 0.22077922077922074,
+      "games": 77
+    },
+    "burst_assassin>burst_assassin": {
+      "score": 0,
+      "advantage": 0.04651162790697683,
+      "games": 86
+    },
+    "burst_assassin>battle_mage": {
+      "score": 2,
+      "advantage": 0.4375,
+      "games": 32
+    },
+    "burst_assassin>marksman": {
+      "score": 1,
+      "advantage": 0.12396694214876036,
+      "games": 121
+    },
+    "catcher>burst_assassin": {
+      "score": 0,
+      "advantage": 0.02857142857142847,
+      "games": 35
+    },
+    "catcher>marksman": {
+      "score": 0,
+      "advantage": 0.07692307692307687,
+      "games": 39
+    },
+    "burst_assassin>skirmisher": {
+      "score": 0,
+      "advantage": -0.09677419354838712,
+      "games": 31
+    },
+    "burst_assassin>specialist": {
+      "score": 0,
+      "advantage": -0.0625,
+      "games": 32
+    },
+    "burst_assassin>burst_mage": {
+      "score": 0,
+      "advantage": 0.08235294117647052,
+      "games": 85
+    },
+    "burst_assassin>engage_tank": {
+      "score": 1,
+      "advantage": 0.1428571428571428,
+      "games": 56
+    },
+    "marksman>skirmisher": {
+      "score": 0,
+      "advantage": -0.050000000000000044,
+      "games": 40
+    },
+    "diver>diver": {
+      "score": 0,
+      "advantage": 0.0793650793650793,
+      "games": 63
+    },
+    "diver>burst_assassin": {
+      "score": 0,
+      "advantage": 0.0,
+      "games": 70
+    },
+    "burst_assassin>diver": {
+      "score": 1,
+      "advantage": 0.1428571428571428,
+      "games": 63
+    },
+    "battle_mage>diver": {
+      "score": 0,
+      "advantage": 0.0,
+      "games": 40
+    },
+    "battle_mage>burst_assassin": {
+      "score": -2,
+      "advantage": -0.3529411764705882,
+      "games": 34
+    },
+    "battle_mage>marksman": {
+      "score": 0,
+      "advantage": -0.016393442622950838,
+      "games": 61
+    },
+    "diver>burst_mage": {
+      "score": 0,
+      "advantage": -0.04225352112676062,
+      "games": 71
+    },
+    "battle_mage>burst_mage": {
+      "score": 0,
+      "advantage": -0.07999999999999996,
+      "games": 50
+    },
+    "specialist>burst_assassin": {
+      "score": 0,
+      "advantage": -0.08571428571428574,
+      "games": 35
+    },
+    "burst_assassin>warden": {
+      "score": 0,
+      "advantage": 0.0,
+      "games": 30
+    },
+    "marksman>warden": {
+      "score": 0,
+      "advantage": -0.030303030303030276,
+      "games": 33
+    },
+    "battle_mage>engage_tank": {
+      "score": 1,
+      "advantage": 0.16129032258064524,
+      "games": 31
+    }
+  }
+}

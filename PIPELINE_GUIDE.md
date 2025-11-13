@@ -2,7 +2,7 @@
 
 ## Current Pipeline Status
 
-**✅ PRODUCTION PIPELINE (100% Accuracy)**
+✅ PRODUCTION PIPELINE (100% Accuracy)
 
 The authoritative pipeline uses `info.lua` (official Riot Games data) as the single source of truth for champion roles.
 
@@ -18,6 +18,7 @@ python data_pipeline/extract_roles_from_info.py        # Assign roles from info.
 ```
 
 **Metrics:**
+
 - **Precision**: 100.0% (0 false positives)
 - **Recall**: 100.0% (26/26 marksmen correct)
 - **Coverage**: 171/173 champions matched
@@ -32,10 +33,12 @@ python data_pipeline/extract_roles_from_info.py        # Assign roles from info.
 **Script**: `data_pipeline/build_spell_database.py`
 
 **Input:**
+
 - `data/raw/data_dragon_champions.json` (base stats, abilities)
 - `data/raw/champion_damage_data.json` (damage formulas from champion.bin)
 
 **Output:**
+
 - `data/processed/complete_spell_database.json` (684 spells with metadata)
 
 **Purpose**: Merge spell metadata with damage formulas, detect CC types, normalize ranges.
@@ -49,14 +52,17 @@ python data_pipeline/extract_roles_from_info.py        # Assign roles from info.
 **Script**: `data_pipeline/compute_spell_attributes.py`
 
 **Input:**
+
 - `data/processed/complete_spell_database.json`
 
 **Output:**
+
 - `data/processed/spell_based_attributes_patched.json` (171 champions with computed attributes)
 
 **Purpose**: Calculate burst/sustained DPS, CC scores, mobility, and ranges for each champion.
 
 **Key Attributes Computed:**
+
 - `sustained_dps`: DPS over 10 seconds (spells + auto-attacks)
 - `burst_index`: Burst damage / sustained damage ratio
 - `cc_score`: Total CC duration across all abilities
@@ -73,15 +79,18 @@ python data_pipeline/extract_roles_from_info.py        # Assign roles from info.
 **Script**: `data_pipeline/extract_roles_from_info.py` ✅
 
 **Input:**
+
 - `validation/info.lua` (Riot official role taxonomy - 173 champions)
 - `data/processed/spell_based_attributes_patched.json`
 
 **Output:**
+
 - `data/processed/champion_archetypes.json` (171 champions with official roles)
 
 **Purpose**: Use Riot's official role assignments as primary archetype, enrich with computed attributes.
 
 **How It Works:**
+
 1. Parse `info.lua` Lua table format to extract roles for 173 champions
 2. Normalize champion names (Kai'Sa→Kaisa, Kog'Maw→KogMaw, etc.)
 3. Map Riot roles to archetypes (Marksman→marksman, Vanguard→engage_tank, etc.)
@@ -90,12 +99,14 @@ python data_pipeline/extract_roles_from_info.py        # Assign roles from info.
 6. Set confidence=1.0 for matched champions (official data)
 
 **Key Features:**
+
 - **Official Roles**: Uses Riot taxonomy directly (13 role types)
 - **Secondary Roles**: Tracks hybrid champions (26 have 2+ roles)
 - **Perfect Accuracy**: 100% precision, 100% recall for marksmen
 - **Name Handling**: Manual mappings for apostrophes, spaces, special cases
 
 **Validation:**
+
 ```bash
 python validation/validate_against_source_of_truth.py  # Check against info.lua
 python validation/final_check.py                       # Verify Braum + marksmen
@@ -111,6 +122,7 @@ python validation/comprehensive_report.py              # Before/after comparison
 **Script**: `data_pipeline/assign_archetypes.py` (OLD)
 
 **Metrics:**
+
 - Precision: 90.0%
 - Recall: 34.6%
 - Only 9/26 marksmen correct
@@ -197,6 +209,7 @@ python validation/comprehensive_report.py              # Before/after comparison
 ## Quick Commands
 
 ### Run Full Pipeline
+
 ```bash
 cd c:\Users\marin\Desktop\Draft_Analyzer_Project
 
@@ -207,6 +220,7 @@ python data_pipeline/extract_roles_from_info.py
 ```
 
 ### Validation
+
 ```bash
 # Check against ground truth
 python validation/validate_against_source_of_truth.py
@@ -219,6 +233,7 @@ python validation/comprehensive_report.py
 ```
 
 ### View Results
+
 ```bash
 # View all marksmen
 python -c "import json; data = json.load(open('data/processed/champion_archetypes.json', encoding='utf-8')); marksmen = [c for c,v in data['assignments'].items() if v['primary_archetype']=='marksman']; print(f'{len(marksmen)} marksmen:', sorted(marksmen))"
@@ -249,18 +264,21 @@ python -c "import json; data = json.load(open('data/processed/champion_archetype
 ## Troubleshooting
 
 ### "FileNotFoundError: validation/info.lua"
+
 - Ensure `info.lua` exists in the `validation/` directory
 - This file contains official Riot Games champion data (173 champions)
 
 ### "Matched 0 champions with info.lua"
+
 - Check name normalization mappings in `extract_roles_from_info.py`
 - Verify champion names match between info.lua and spell_based_attributes_patched.json
 
 ### "Low precision/recall"
+
 - If using old `assign_archetypes.py`, switch to `extract_roles_from_info.py`
 - Old approach: 90% precision, 34.6% recall
 - New approach: 100% precision, 100% recall
 
 ---
 
-*Last Updated: November 13, 2025*
+Last Updated: November 13, 2025
