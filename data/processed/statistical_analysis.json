@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "matches_analyzed": 139,
+    "significance_level": 0.05,
+    "bonferroni_corrected_alpha": 0.0001,
+    "minimum_sample_size": 30,
+    "confidence_level": 0.95
+  },
+  "synergies": {
+    "total_pairs": 780,
+    "significant": 0,
+    "strong_effects": 0,
+    "top_10": []
+  },
+  "counters": {
+    "total_matchups": 1346,
+    "significant": 169,
+    "strong_effects": 0,
+    "top_10": []
+  },
+  "predictive_model": {
+    "total_matches": 139,
+    "correct_predictions": 80,
+    "accuracy": 0.576,
+    "baseline": 0.5,
+    "improvement_over_baseline": 0.076,
+    "improvement_percentage": 7.6
+  }
+}
