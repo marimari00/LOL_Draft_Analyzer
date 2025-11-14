@@ -8,13 +8,16 @@ An empirical draft prediction system that uses real Diamond+ match data, attribu
 
 **✅ Phase 2 Complete**: 100% accurate archetype classification (171 champions, 13 archetypes, info.lua integration)
 
-**✅ Phase 3 Complete**: Empirical validation with ML models
+**✅ Phase 3 Complete**: Empirical validation + ML ensemble + **Interactive Frontend**
+
 - **Dataset**: 936 Diamond+ matches from EUW + KR
 - **Attribute System**: 45 attributes across 8 categories (damage, range, mobility, survive, cc, scaling, engage, special)
-- **ML Models**: Logistic Regression (53.4%), Random Forest (47.3%), Gradient Boosting (50.0%)
+- **ML Models**: Logistic Regression (54.3%), Random Forest (50.5%), Gradient Boosting (50.0%)
+- **Ensemble Prediction**: Weighted average achieves 54.3% accuracy
+- **FastAPI Backend**: 5 endpoints (analyze, recommend, champions, archetypes, health)
+- **React Frontend**: Visual draft board with AI recommendations and composition analysis
 - **Validation**: 5-fold cross-validation, 80/20 train/test split
 - **Simulation**: 10,000 random game predictions
-- **Reality Check**: Discovered 66.2% accuracy on 139 matches was overfitting → 53.4% is true performance
 
 **📊 Key Insight**: Draft accounts for only 5-10% of match outcome. 53.4% matches professional analyst baseline (52-58%). See [REALITY_CHECK.md](REALITY_CHECK.md) for detailed analysis.
 
@@ -22,16 +25,49 @@ An empirical draft prediction system that uses real Diamond+ match data, attribu
 
 ---
 
+## Local Development Workflow
+
+1. **Run `SETUP_FIRST.bat` once** – installs every Python and Node.js dependency automatically.
+2. **Launch with `START_HERE.bat`** – frees ports 3000/8000, then boots the FastAPI backend and React frontend for you. Two terminals open so you can watch logs.
+3. **Stop the app** by closing both terminals (or `Ctrl+C`). The script will re-run safely even if the previous session crashed because it always cleans the ports first.
+
+Need a manual start? Power users can still run `start_backend.bat` and `start_frontend.bat` separately, or the underlying `python backend/draft_api.py` / `npm start` commands.
+
 ## Quick Start
 
-### Fetch Real Match Data
+### One-Time Setup
 
 ```bash
-# Fetch 1000 Diamond+ matches from EUW + KR
-python data_extraction/fetch_match_data.py
+SETUP_FIRST.bat
 ```
 
-### Train ML Models
+### Daily Launch
+
+```bash
+START_HERE.bat
+```
+
+The frontend opens at `http://localhost:3000` and proxies API calls to `http://localhost:8000`.
+
+### Manual Commands (Optional)
+
+```bash
+python backend/draft_api.py          # Backend only
+cd frontend && npm start             # Frontend only
+```
+
+### Using the Draft Board
+
+- Select team (Blue/Red)
+- Toggle Pick/Ban mode
+- Filter by role (TOP, JUNGLE, MIDDLE, BOTTOM, UTILITY)
+- View AI recommendations with reasoning
+- Pick champions (click recommendations or use selector)
+- See winner prediction after 5v5 complete
+
+---
+
+### Train ML Models (Development)
 
 ```bash
 # Run attribute analysis + ML training
@@ -43,6 +79,13 @@ python validation/retrain_all_models.py
 ```bash
 # Generate predictions for 10,000 random team compositions
 python validation/ml_simulation.py
+```
+
+### Fetch Real Match Data
+
+```bash
+# Fetch 1000 Diamond+ matches from EUW + KR
+python data_extraction/fetch_match_data.py
 ```
 
 ---
@@ -93,19 +136,25 @@ draft-analyzer/
 ## Key Achievements
 
 ### Phase 2: Perfect Classification ✅
+
 - **100% precision, 100% recall** on archetype classification
 - 171 champions tagged with 13 archetypes (marksman, burst_mage, engage_tank, etc.)
 - Used official Riot `info.lua` taxonomy
 
-### Phase 3: Empirical Validation ✅
+### Phase 3: Empirical Validation + Full-Stack Application ✅
+
 - **936 real matches** fetched from Diamond through Challenger (EUW + KR)
 - **45 attributes** defined (damage_burst, range_long, mobility_high, cc_hard, etc.)
 - **Role-aware analysis**: 6,865 role-specific attribute synergies tracked
 - **Statistical validation**: Chi-square tests, Wilson 95% CI, Cohen's h effect sizes
-- **ML models**: Logistic Regression (53.4%), Random Forest (47.3%), Gradient Boosting (50.0%)
+- **ML models**: Logistic Regression (54.3%), Random Forest (50.5%), Gradient Boosting (50.0%)
+- **Ensemble prediction**: Weighted average combining all 3 models
 - **10K simulation**: Validated model stability across 10,000 random team compositions
+- **FastAPI Backend**: 5 REST endpoints (analyze, recommend, champions, archetypes, health)
+- **React Frontend**: Interactive visual draft board with AI recommendations and composition analysis
 
 ### Critical Discovery: Overfitting Exposure
+
 - Initial 139 matches: 66.2% accuracy (role-aware model)
 - Expanded 936 matches: 53.4% accuracy (Logistic Regression) ← **TRUE PERFORMANCE**
 - Lesson: Small datasets memorize patterns; large datasets reveal reality
@@ -134,17 +183,31 @@ See [IMPROVEMENT_PLAN.md](IMPROVEMENT_PLAN.md) for detailed plan.
 **Current**: 53.4% (professional grade baseline)
 
 **Phase 1** (Data Quality + Feature Engineering):
+
 - Filter to Challenger-only matches (reduce skill variance) → +1-2%
 - Focus on last 2 patches (reduce meta shifts) → +0.5-1%
 - Champion mastery integration (OTP detection) → +2-3%
 
 **Phase 2** (Ensemble + API):
+
 - Weighted ensemble prediction (LR + RF + GB) → +1-2%
 - Build draft recommendation API (FastAPI)
 
 **Target**: 57-58% accuracy (realistic maximum given draft's limited impact)
 
 **Theoretical Ceiling**: 58-60% (approaching limit of draft-only prediction)
+
+---
+
+## Next Steps
+
+Long-form progress tracking now lives in [`PROJECT_STATUS.md`](PROJECT_STATUS.md). The immediate application-focused priorities are:
+
+- **Champion data parity**: Finish the manual damage patches so all 171 champions load cleanly (removes the UI's fallback champion list).
+- **Synergy matrix API**: Expose the archetype synergy/counter data through `/draft/recommend` so recommendations cite concrete matchup logic instead of heuristics.
+- **Frontend draft flow polish**: Enforce pick order templates, show lane badges, and surface the recommendations' reasoning inline with the draft board.
+- **Model management**: Add a lightweight cache plus version banner for the ensemble predictor so users know which training run is active.
+- **Deployment ergonomics**: Containerize the backend + frontend pair for easier hosting while keeping `START_HERE.bat` for local dev parity.
 
 ---
 
@@ -214,6 +277,7 @@ prediction, confidence = predict_with_role_awareness(
 ### Attribute System
 
 45 attributes across 8 categories:
+
 - **Damage**: burst, sustained, execute, poke
 - **Range**: long, short, global
 - **Mobility**: high, dash, blink
@@ -226,6 +290,7 @@ prediction, confidence = predict_with_role_awareness(
 ### Feature Extraction (79 Features)
 
 From `ml_simulation.py`:
+
 1. **Attribute Counts** (45): Sum of each attribute across team
 2. **Role-Pair Synergies** (25): Synergy scores for 10 role combinations (TOP-JUNGLE, JUNGLE-MIDDLE, etc.)
 3. **Damage Profile** (3): burst_count, sustained_count, poke_count
@@ -245,18 +310,22 @@ All models use 5-fold cross-validation and 80/20 train/test split.
 ## Key Files
 
 ### Match Data
+
 - `data/matches/multi_region_1000_matches.json`: 936 Diamond+ matches (EUW + KR)
 
 ### Champion Data
+
 - `data/processed/champion_archetypes.json`: 171 champions with 13 archetypes
 - `data/processed/archetype_attributes.json`: 45 attributes defined
 
 ### Analysis Results
+
 - `data/processed/role_aware_relationships.json`: 6,865 role-specific synergies
 - `data/processed/statistical_analysis.json`: 820 attribute pairs, 15 significant synergies
 - `data/simulations/simulation_10k_games.json`: 10,000 random game predictions
 
 ### Documentation
+
 - `REALITY_CHECK.md`: Why 66.2% was overfitting, 53.4% is real
 - `IMPROVEMENT_PLAN.md`: Roadmap to 57-58% accuracy
 - `COPILOT_INSTRUCTIONS.md`: Development rules (NO SAMPLE DATA)

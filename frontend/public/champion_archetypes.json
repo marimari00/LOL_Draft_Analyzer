@@ -1,0 +1,4701 @@
+{
+  "metadata": {
+    "source": "info.lua (Riot official role taxonomy)",
+    "total_champions": 171,
+    "matched_with_info_json": 171,
+    "unmatched": 0,
+    "note": "Roles assigned directly from info.lua, attributes from patched data",
+    "positions_added": true,
+    "matched_positions": 171
+  },
+  "distribution": {
+    "juggernaut": 14,
+    "burst_mage": 17,
+    "burst_assassin": 17,
+    "marksman": 26,
+    "engage_tank": 15,
+    "diver": 16,
+    "battle_mage": 11,
+    "specialist": 14,
+    "catcher": 7,
+    "skirmisher": 13,
+    "warden": 6,
+    "artillery_mage": 6,
+    "enchanter": 9
+  },
+  "assignments": {
+    "Aatrox": {
+      "primary_archetype": "juggernaut",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Juggernaut"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Ahri": {
+      "primary_archetype": "burst_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Burst"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_aoe",
+        "scaling_mid",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Akali": {
+      "primary_archetype": "burst_assassin",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Assassin"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_burst",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "engage_flank",
+        "engage_backline_access",
+        "survive_mobility",
+        "scaling_mid",
+        "scaling_items",
+        "special_reset"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle"
+      ]
+    },
+    "Akshan": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [
+        "burst_assassin"
+      ],
+      "riot_roles": [
+        "Marksman",
+        "Assassin"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Alistar": {
+      "primary_archetype": "engage_tank",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Vanguard"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    },
+    "Ambessa": {
+      "primary_archetype": "diver",
+      "secondary_archetypes": [
+        "skirmisher"
+      ],
+      "riot_roles": [
+        "Diver",
+        "Skirmisher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_backline_access",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "scaling_mid"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Amumu": {
+      "primary_archetype": "engage_tank",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Vanguard"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle",
+        "Support"
+      ]
+    },
+    "Anivia": {
+      "primary_archetype": "battle_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Battlemage"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_aoe",
+        "range_short",
+        "range_medium",
+        "mobility_medium",
+        "engage_frontline",
+        "engage_zone_control",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "cc_aoe",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Annie": {
+      "primary_archetype": "burst_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Burst"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_aoe",
+        "scaling_mid",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Aphelios": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
+    },
+    "Ashe": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom",
+        "Support"
+      ]
+    },
+    "AurelionSol": {
+      "primary_archetype": "battle_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Battlemage"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_aoe",
+        "range_short",
+        "range_medium",
+        "mobility_medium",
+        "engage_frontline",
+        "engage_zone_control",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "cc_aoe",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Aurora": {
+      "primary_archetype": "burst_mage",
+      "secondary_archetypes": [
+        "burst_assassin"
+      ],
+      "riot_roles": [
+        "Burst",
+        "Assassin"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_aoe",
+        "scaling_mid",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Top"
+      ]
+    },
+    "Azir": {
+      "primary_archetype": "specialist",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Specialist"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_mixed",
+        "damage_sustained",
+        "range_medium",
+        "mobility_medium",
+        "survive_mobility",
+        "flexible_multi_role",
+        "flexible_multi_lane",
+        "special_transformation",
+        "special_global"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Bard": {
+      "primary_archetype": "catcher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Catcher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_single_target",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_single",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "utility_vision",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    },
+    "Belveth": {
+      "primary_archetype": "skirmisher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Skirmisher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "survive_mobility",
+        "survive_sustain",
+        "scaling_items"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Blitzcrank": {
+      "primary_archetype": "catcher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Catcher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_single_target",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_single",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "utility_vision",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    },
+    "Brand": {
+      "primary_archetype": "burst_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Burst"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_aoe",
+        "scaling_mid",
+        "scaling_items"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle",
+        "Middle",
+        "Support"
+      ]
+    },
+    "Braum": {
+      "primary_archetype": "warden",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Warden"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_sustained",
+        "range_melee",
+        "range_short",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_single",
+        "utility_peel",
+        "scaling_levels"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    },
+    "Briar": {
+      "primary_archetype": "diver",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Diver"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_backline_access",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "scaling_mid"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Caitlyn": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
+    },
+    "Camille": {
+      "primary_archetype": "diver",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Diver"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_backline_access",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "scaling_mid"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Support"
+      ]
+    },
+    "Cassiopeia": {
+      "primary_archetype": "battle_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Battlemage"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_aoe",
+        "range_short",
+        "range_medium",
+        "mobility_medium",
+        "engage_frontline",
+        "engage_zone_control",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "cc_aoe",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Chogath": {
+      "primary_archetype": "specialist",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Specialist"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_mixed",
+        "damage_sustained",
+        "range_medium",
+        "mobility_medium",
+        "survive_mobility",
+        "flexible_multi_role",
+        "flexible_multi_lane",
+        "special_transformation",
+        "special_global"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Corki": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Darius": {
+      "primary_archetype": "juggernaut",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Juggernaut"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Diana": {
+      "primary_archetype": "burst_assassin",
+      "secondary_archetypes": [
+        "diver"
+      ],
+      "riot_roles": [
+        "Assassin",
+        "Diver"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_burst",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "engage_flank",
+        "engage_backline_access",
+        "survive_mobility",
+        "scaling_mid",
+        "scaling_items",
+        "special_reset"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle",
+        "Middle"
+      ]
+    },
+    "Draven": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
+    },
+    "DrMundo": {
+      "primary_archetype": "juggernaut",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Juggernaut"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Ekko": {
+      "primary_archetype": "burst_assassin",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Assassin"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_burst",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "engage_flank",
+        "engage_backline_access",
+        "survive_mobility",
+        "scaling_mid",
+        "scaling_items",
+        "special_reset"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle",
+        "Middle"
+      ]
+    },
+    "Elise": {
+      "primary_archetype": "diver",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Diver"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_backline_access",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "scaling_mid"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Evelynn": {
+      "primary_archetype": "burst_assassin",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Assassin"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_burst",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "engage_flank",
+        "engage_backline_access",
+        "survive_mobility",
+        "scaling_mid",
+        "scaling_items",
+        "special_reset"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Ezreal": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
+    },
+    "Fiddlesticks": {
+      "primary_archetype": "specialist",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Specialist"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_mixed",
+        "damage_sustained",
+        "range_medium",
+        "mobility_medium",
+        "survive_mobility",
+        "flexible_multi_role",
+        "flexible_multi_lane",
+        "special_transformation",
+        "special_global"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Fiora": {
+      "primary_archetype": "skirmisher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Skirmisher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "survive_mobility",
+        "survive_sustain",
+        "scaling_items"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Fizz": {
+      "primary_archetype": "burst_assassin",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Assassin"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_burst",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "engage_flank",
+        "engage_backline_access",
+        "survive_mobility",
+        "scaling_mid",
+        "scaling_items",
+        "special_reset"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Galio": {
+      "primary_archetype": "warden",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Warden"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_sustained",
+        "range_melee",
+        "range_short",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_single",
+        "utility_peel",
+        "scaling_levels"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support"
+      ]
+    },
+    "Gangplank": {
+      "primary_archetype": "specialist",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Specialist"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_mixed",
+        "damage_sustained",
+        "range_medium",
+        "mobility_medium",
+        "survive_mobility",
+        "flexible_multi_role",
+        "flexible_multi_lane",
+        "special_transformation",
+        "special_global"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Garen": {
+      "primary_archetype": "juggernaut",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Juggernaut"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Gnar": {
+      "primary_archetype": "specialist",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Specialist"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_mixed",
+        "damage_sustained",
+        "range_medium",
+        "mobility_medium",
+        "survive_mobility",
+        "flexible_multi_role",
+        "flexible_multi_lane",
+        "special_transformation",
+        "special_global"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Gragas": {
+      "primary_archetype": "engage_tank",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Vanguard"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle",
+        "Middle"
+      ]
+    },
+    "Graves": {
+      "primary_archetype": "specialist",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Specialist"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_mixed",
+        "damage_sustained",
+        "range_medium",
+        "mobility_medium",
+        "survive_mobility",
+        "flexible_multi_role",
+        "flexible_multi_lane",
+        "special_transformation",
+        "special_global"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Gwen": {
+      "primary_archetype": "skirmisher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Skirmisher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "survive_mobility",
+        "survive_sustain",
+        "scaling_items"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle"
+      ]
+    },
+    "Hecarim": {
+      "primary_archetype": "diver",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Diver"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_backline_access",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "scaling_mid"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Heimerdinger": {
+      "primary_archetype": "specialist",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Specialist"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_mixed",
+        "damage_sustained",
+        "range_medium",
+        "mobility_medium",
+        "survive_mobility",
+        "flexible_multi_role",
+        "flexible_multi_lane",
+        "special_transformation",
+        "special_global"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle",
+        "Support"
+      ]
+    },
+    "Hwei": {
+      "primary_archetype": "artillery_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Artillery"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_soft",
+        "cc_aoe",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support"
+      ]
+    },
+    "Illaoi": {
+      "primary_archetype": "juggernaut",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Juggernaut"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Irelia": {
+      "primary_archetype": "diver",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Diver"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_backline_access",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "scaling_mid"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle"
+      ]
+    },
+    "Ivern": {
+      "primary_archetype": "catcher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Catcher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_single_target",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_single",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "utility_vision",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Janna": {
+      "primary_archetype": "enchanter",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Enchanter"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_single_target",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "utility_peel",
+        "utility_vision",
+        "scaling_items"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    },
+    "JarvanIV": {
+      "primary_archetype": "diver",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Diver"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_backline_access",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "scaling_mid"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Jax": {
+      "primary_archetype": "skirmisher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Skirmisher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "survive_mobility",
+        "survive_sustain",
+        "scaling_items"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle"
+      ]
+    },
+    "Jayce": {
+      "primary_archetype": "artillery_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Artillery"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_soft",
+        "cc_aoe",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle"
+      ]
+    },
+    "Jhin": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [
+        "catcher"
+      ],
+      "riot_roles": [
+        "Marksman",
+        "Catcher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
+    },
+    "Jinx": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
+    },
+    "Kaisa": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
+    },
+    "Kalista": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
+    },
+    "Karma": {
+      "primary_archetype": "burst_mage",
+      "secondary_archetypes": [
+        "enchanter"
+      ],
+      "riot_roles": [
+        "Burst",
+        "Enchanter"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_aoe",
+        "scaling_mid",
+        "scaling_items"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle",
+        "Support"
+      ]
+    },
+    "Karthus": {
+      "primary_archetype": "battle_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Battlemage"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_aoe",
+        "range_short",
+        "range_medium",
+        "mobility_medium",
+        "engage_frontline",
+        "engage_zone_control",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "cc_aoe",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Kassadin": {
+      "primary_archetype": "burst_assassin",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Assassin"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_burst",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "engage_flank",
+        "engage_backline_access",
+        "survive_mobility",
+        "scaling_mid",
+        "scaling_items",
+        "special_reset"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Katarina": {
+      "primary_archetype": "burst_assassin",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Assassin"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_burst",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "engage_flank",
+        "engage_backline_access",
+        "survive_mobility",
+        "scaling_mid",
+        "scaling_items",
+        "special_reset"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Kayle": {
+      "primary_archetype": "specialist",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Specialist"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_mixed",
+        "damage_sustained",
+        "range_medium",
+        "mobility_medium",
+        "survive_mobility",
+        "flexible_multi_role",
+        "flexible_multi_lane",
+        "special_transformation",
+        "special_global"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Kayn": {
+      "primary_archetype": "skirmisher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Skirmisher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "survive_mobility",
+        "survive_sustain",
+        "scaling_items"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Kennen": {
+      "primary_archetype": "specialist",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Specialist"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_mixed",
+        "damage_sustained",
+        "range_medium",
+        "mobility_medium",
+        "survive_mobility",
+        "flexible_multi_role",
+        "flexible_multi_lane",
+        "special_transformation",
+        "special_global"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Khazix": {
+      "primary_archetype": "burst_assassin",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Assassin"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_burst",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "engage_flank",
+        "engage_backline_access",
+        "survive_mobility",
+        "scaling_mid",
+        "scaling_items",
+        "special_reset"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Kindred": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Kled": {
+      "primary_archetype": "skirmisher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Skirmisher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "survive_mobility",
+        "survive_sustain",
+        "scaling_items"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "KogMaw": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
+    },
+    "KSante": {
+      "primary_archetype": "warden",
+      "secondary_archetypes": [
+        "skirmisher"
+      ],
+      "riot_roles": [
+        "Warden",
+        "Skirmisher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_sustained",
+        "range_melee",
+        "range_short",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_single",
+        "utility_peel",
+        "scaling_levels"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Leblanc": {
+      "primary_archetype": "burst_mage",
+      "secondary_archetypes": [
+        "burst_assassin"
+      ],
+      "riot_roles": [
+        "Burst",
+        "Assassin"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_aoe",
+        "scaling_mid",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "LeeSin": {
+      "primary_archetype": "diver",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Diver"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_backline_access",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "scaling_mid"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Leona": {
+      "primary_archetype": "engage_tank",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Vanguard"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    },
+    "Lillia": {
+      "primary_archetype": "skirmisher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Skirmisher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "survive_mobility",
+        "survive_sustain",
+        "scaling_items"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Lissandra": {
+      "primary_archetype": "burst_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Burst"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_aoe",
+        "scaling_mid",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Lucian": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
+    },
+    "Lulu": {
+      "primary_archetype": "enchanter",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Enchanter"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_single_target",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "utility_peel",
+        "utility_vision",
+        "scaling_items"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    },
+    "Lux": {
+      "primary_archetype": "burst_mage",
+      "secondary_archetypes": [
+        "artillery_mage"
+      ],
+      "riot_roles": [
+        "Burst",
+        "Artillery"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_aoe",
+        "scaling_mid",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support"
+      ]
+    },
+    "Malphite": {
+      "primary_archetype": "engage_tank",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Vanguard"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle",
+        "Support"
+      ]
+    },
+    "Malzahar": {
+      "primary_archetype": "battle_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Battlemage"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_aoe",
+        "range_short",
+        "range_medium",
+        "mobility_medium",
+        "engage_frontline",
+        "engage_zone_control",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "cc_aoe",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Maokai": {
+      "primary_archetype": "engage_tank",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Vanguard"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle",
+        "Support"
+      ]
+    },
+    "MasterYi": {
+      "primary_archetype": "skirmisher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Skirmisher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "survive_mobility",
+        "survive_sustain",
+        "scaling_items"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Mel": {
+      "primary_archetype": "artillery_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Artillery"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_soft",
+        "cc_aoe",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support"
+      ]
+    },
+    "Milio": {
+      "primary_archetype": "enchanter",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Enchanter"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_single_target",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "utility_peel",
+        "utility_vision",
+        "scaling_items"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    },
+    "MissFortune": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
+    },
+    "MonkeyKing": {
+      "primary_archetype": "diver",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Diver"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_backline_access",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "scaling_mid"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle"
+      ]
+    },
+    "Mordekaiser": {
+      "primary_archetype": "juggernaut",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Juggernaut"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Morgana": {
+      "primary_archetype": "catcher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Catcher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_single_target",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_single",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "utility_vision",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support",
+        "Middle"
+      ]
+    },
+    "Naafiri": {
+      "primary_archetype": "burst_assassin",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Assassin"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_burst",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "engage_flank",
+        "engage_backline_access",
+        "survive_mobility",
+        "scaling_mid",
+        "scaling_items",
+        "special_reset"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Nami": {
+      "primary_archetype": "enchanter",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Enchanter"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_single_target",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "utility_peel",
+        "utility_vision",
+        "scaling_items"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    },
+    "Nasus": {
+      "primary_archetype": "juggernaut",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Juggernaut"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Nautilus": {
+      "primary_archetype": "engage_tank",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Vanguard"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    },
+    "Neeko": {
+      "primary_archetype": "burst_mage",
+      "secondary_archetypes": [
+        "catcher"
+      ],
+      "riot_roles": [
+        "Burst",
+        "Catcher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_aoe",
+        "scaling_mid",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support"
+      ]
+    },
+    "Nidalee": {
+      "primary_archetype": "specialist",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Specialist"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_mixed",
+        "damage_sustained",
+        "range_medium",
+        "mobility_medium",
+        "survive_mobility",
+        "flexible_multi_role",
+        "flexible_multi_lane",
+        "special_transformation",
+        "special_global"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Nilah": {
+      "primary_archetype": "skirmisher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Skirmisher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "survive_mobility",
+        "survive_sustain",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
+    },
+    "Nocturne": {
+      "primary_archetype": "burst_assassin",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Assassin"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_burst",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "engage_flank",
+        "engage_backline_access",
+        "survive_mobility",
+        "scaling_mid",
+        "scaling_items",
+        "special_reset"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Nunu": {
+      "primary_archetype": "engage_tank",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Vanguard"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Olaf": {
+      "primary_archetype": "diver",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Diver"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_backline_access",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "scaling_mid"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Orianna": {
+      "primary_archetype": "burst_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Burst"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_aoe",
+        "scaling_mid",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Ornn": {
+      "primary_archetype": "engage_tank",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Vanguard"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Pantheon": {
+      "primary_archetype": "diver",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Diver"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_backline_access",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "scaling_mid"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle",
+        "Middle",
+        "Support"
+      ]
+    },
+    "Poppy": {
+      "primary_archetype": "warden",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Warden"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_sustained",
+        "range_melee",
+        "range_short",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_single",
+        "utility_peel",
+        "scaling_levels"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle"
+      ]
+    },
+    "Pyke": {
+      "primary_archetype": "burst_assassin",
+      "secondary_archetypes": [
+        "catcher"
+      ],
+      "riot_roles": [
+        "Assassin",
+        "Catcher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_burst",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "engage_flank",
+        "engage_backline_access",
+        "survive_mobility",
+        "scaling_mid",
+        "scaling_items",
+        "special_reset"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    },
+    "Qiyana": {
+      "primary_archetype": "burst_assassin",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Assassin"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_burst",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "engage_flank",
+        "engage_backline_access",
+        "survive_mobility",
+        "scaling_mid",
+        "scaling_items",
+        "special_reset"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Quinn": {
+      "primary_archetype": "specialist",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Specialist"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_mixed",
+        "damage_sustained",
+        "range_medium",
+        "mobility_medium",
+        "survive_mobility",
+        "flexible_multi_role",
+        "flexible_multi_lane",
+        "special_transformation",
+        "special_global"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Rakan": {
+      "primary_archetype": "catcher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Catcher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_single_target",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_single",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "utility_vision",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    },
+    "Rammus": {
+      "primary_archetype": "engage_tank",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Vanguard"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "RekSai": {
+      "primary_archetype": "diver",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Diver"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_backline_access",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "scaling_mid"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Rell": {
+      "primary_archetype": "engage_tank",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Vanguard"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    },
+    "Renata": {
+      "primary_archetype": "enchanter",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Enchanter"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_single_target",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "utility_peel",
+        "utility_vision",
+        "scaling_items"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    },
+    "Renekton": {
+      "primary_archetype": "diver",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Diver"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_backline_access",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "scaling_mid"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Rengar": {
+      "primary_archetype": "burst_assassin",
+      "secondary_archetypes": [
+        "diver"
+      ],
+      "riot_roles": [
+        "Assassin",
+        "Diver"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_burst",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "engage_flank",
+        "engage_backline_access",
+        "survive_mobility",
+        "scaling_mid",
+        "scaling_items",
+        "special_reset"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle"
+      ]
+    },
+    "Riven": {
+      "primary_archetype": "skirmisher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Skirmisher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "survive_mobility",
+        "survive_sustain",
+        "scaling_items"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Rumble": {
+      "primary_archetype": "battle_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Battlemage"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_aoe",
+        "range_short",
+        "range_medium",
+        "mobility_medium",
+        "engage_frontline",
+        "engage_zone_control",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "cc_aoe",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle"
+      ]
+    },
+    "Ryze": {
+      "primary_archetype": "battle_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Battlemage"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_aoe",
+        "range_short",
+        "range_medium",
+        "mobility_medium",
+        "engage_frontline",
+        "engage_zone_control",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "cc_aoe",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Samira": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
+    },
+    "Sejuani": {
+      "primary_archetype": "engage_tank",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Vanguard"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Senna": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [
+        "enchanter"
+      ],
+      "riot_roles": [
+        "Marksman",
+        "Enchanter"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom",
+        "Support"
+      ]
+    },
+    "Seraphine": {
+      "primary_archetype": "burst_mage",
+      "secondary_archetypes": [
+        "enchanter"
+      ],
+      "riot_roles": [
+        "Burst",
+        "Enchanter"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_aoe",
+        "scaling_mid",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom",
+        "Support"
+      ]
+    },
+    "Sett": {
+      "primary_archetype": "juggernaut",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Juggernaut"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Shaco": {
+      "primary_archetype": "burst_assassin",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Assassin"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_burst",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "engage_flank",
+        "engage_backline_access",
+        "survive_mobility",
+        "scaling_mid",
+        "scaling_items",
+        "special_reset"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle",
+        "Support"
+      ]
+    },
+    "Shen": {
+      "primary_archetype": "warden",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Warden"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_sustained",
+        "range_melee",
+        "range_short",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_single",
+        "utility_peel",
+        "scaling_levels"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Support"
+      ]
+    },
+    "Shyvana": {
+      "primary_archetype": "juggernaut",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Juggernaut"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Singed": {
+      "primary_archetype": "specialist",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Specialist"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_mixed",
+        "damage_sustained",
+        "range_medium",
+        "mobility_medium",
+        "survive_mobility",
+        "flexible_multi_role",
+        "flexible_multi_lane",
+        "special_transformation",
+        "special_global"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Sion": {
+      "primary_archetype": "engage_tank",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Vanguard"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Sivir": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
+    },
+    "Skarner": {
+      "primary_archetype": "engage_tank",
+      "secondary_archetypes": [
+        "juggernaut"
+      ],
+      "riot_roles": [
+        "Vanguard",
+        "Juggernaut"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle",
+        "Top"
+      ]
+    },
+    "Smolder": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle",
+        "Bottom"
+      ]
+    },
+    "Sona": {
+      "primary_archetype": "enchanter",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Enchanter"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_single_target",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "utility_peel",
+        "utility_vision",
+        "scaling_items"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    },
+    "Soraka": {
+      "primary_archetype": "enchanter",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Enchanter"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_single_target",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "utility_peel",
+        "utility_vision",
+        "scaling_items"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    },
+    "Swain": {
+      "primary_archetype": "battle_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Battlemage"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_aoe",
+        "range_short",
+        "range_medium",
+        "mobility_medium",
+        "engage_frontline",
+        "engage_zone_control",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "cc_aoe",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support",
+        "Bottom"
+      ]
+    },
+    "Sylas": {
+      "primary_archetype": "burst_mage",
+      "secondary_archetypes": [
+        "skirmisher"
+      ],
+      "riot_roles": [
+        "Burst",
+        "Skirmisher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_aoe",
+        "scaling_mid",
+        "scaling_items"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle"
+      ]
+    },
+    "Syndra": {
+      "primary_archetype": "burst_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Burst"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_aoe",
+        "scaling_mid",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "TahmKench": {
+      "primary_archetype": "warden",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Warden"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_sustained",
+        "range_melee",
+        "range_short",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_single",
+        "utility_peel",
+        "scaling_levels"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Support"
+      ]
+    },
+    "Taliyah": {
+      "primary_archetype": "battle_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Battlemage"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_aoe",
+        "range_short",
+        "range_medium",
+        "mobility_medium",
+        "engage_frontline",
+        "engage_zone_control",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "cc_aoe",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle",
+        "Middle"
+      ]
+    },
+    "Talon": {
+      "primary_archetype": "burst_assassin",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Assassin"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_burst",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "engage_flank",
+        "engage_backline_access",
+        "survive_mobility",
+        "scaling_mid",
+        "scaling_items",
+        "special_reset"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Taric": {
+      "primary_archetype": "enchanter",
+      "secondary_archetypes": [
+        "warden"
+      ],
+      "riot_roles": [
+        "Enchanter",
+        "Warden"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_single_target",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "utility_peel",
+        "utility_vision",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support"
+      ]
+    },
+    "Teemo": {
+      "primary_archetype": "specialist",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Specialist"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_mixed",
+        "damage_sustained",
+        "range_medium",
+        "mobility_medium",
+        "survive_mobility",
+        "flexible_multi_role",
+        "flexible_multi_lane",
+        "special_transformation",
+        "special_global"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle",
+        "Support"
+      ]
+    },
+    "Thresh": {
+      "primary_archetype": "catcher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Catcher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_single_target",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_single",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "utility_vision",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    },
+    "Tristana": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Bottom"
+      ]
+    },
+    "Trundle": {
+      "primary_archetype": "juggernaut",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Juggernaut"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle"
+      ]
+    },
+    "Tryndamere": {
+      "primary_archetype": "skirmisher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Skirmisher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "survive_mobility",
+        "survive_sustain",
+        "scaling_items"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "TwistedFate": {
+      "primary_archetype": "burst_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Burst"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_aoe",
+        "scaling_mid",
+        "scaling_items"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle",
+        "Bottom"
+      ]
+    },
+    "Twitch": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom",
+        "Support"
+      ]
+    },
+    "Udyr": {
+      "primary_archetype": "juggernaut",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Juggernaut"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle"
+      ]
+    },
+    "Urgot": {
+      "primary_archetype": "juggernaut",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Juggernaut"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Varus": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [
+        "artillery_mage"
+      ],
+      "riot_roles": [
+        "Marksman",
+        "Artillery"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
+    },
+    "Vayne": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Bottom"
+      ]
+    },
+    "Veigar": {
+      "primary_archetype": "burst_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Burst"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_aoe",
+        "scaling_mid",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support"
+      ]
+    },
+    "Velkoz": {
+      "primary_archetype": "artillery_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Artillery"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_soft",
+        "cc_aoe",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support"
+      ]
+    },
+    "Vex": {
+      "primary_archetype": "burst_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Burst"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_aoe",
+        "scaling_mid",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Vi": {
+      "primary_archetype": "diver",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Diver"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_backline_access",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "scaling_mid"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Viego": {
+      "primary_archetype": "skirmisher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Skirmisher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "survive_mobility",
+        "survive_sustain",
+        "scaling_items"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Viktor": {
+      "primary_archetype": "battle_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Battlemage"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_aoe",
+        "range_short",
+        "range_medium",
+        "mobility_medium",
+        "engage_frontline",
+        "engage_zone_control",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "cc_aoe",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Vladimir": {
+      "primary_archetype": "battle_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Battlemage"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_aoe",
+        "range_short",
+        "range_medium",
+        "mobility_medium",
+        "engage_frontline",
+        "engage_zone_control",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "cc_aoe",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle"
+      ]
+    },
+    "Volibear": {
+      "primary_archetype": "juggernaut",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Juggernaut"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle"
+      ]
+    },
+    "Warwick": {
+      "primary_archetype": "diver",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Diver"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_backline_access",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "scaling_mid"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle"
+      ]
+    },
+    "Xayah": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
+    },
+    "Xerath": {
+      "primary_archetype": "artillery_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Artillery"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_soft",
+        "cc_aoe",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Support"
+      ]
+    },
+    "XinZhao": {
+      "primary_archetype": "diver",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Diver"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_backline_access",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "scaling_mid"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle"
+      ]
+    },
+    "Yasuo": {
+      "primary_archetype": "skirmisher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Skirmisher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "survive_mobility",
+        "survive_sustain",
+        "scaling_items"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle",
+        "Bottom"
+      ]
+    },
+    "Yone": {
+      "primary_archetype": "burst_assassin",
+      "secondary_archetypes": [
+        "skirmisher"
+      ],
+      "riot_roles": [
+        "Assassin",
+        "Skirmisher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_burst",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "engage_flank",
+        "engage_backline_access",
+        "survive_mobility",
+        "scaling_mid",
+        "scaling_items",
+        "special_reset"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Middle"
+      ]
+    },
+    "Yorick": {
+      "primary_archetype": "juggernaut",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Juggernaut"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_aoe",
+        "range_melee",
+        "mobility_low",
+        "engage_frontline",
+        "survive_tank",
+        "survive_sustain",
+        "cc_soft",
+        "scaling_items",
+        "scaling_levels"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top"
+      ]
+    },
+    "Yunara": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
+    },
+    "Yuumi": {
+      "primary_archetype": "enchanter",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Enchanter"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_sustained",
+        "damage_single_target",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "utility_peel",
+        "utility_vision",
+        "scaling_items"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    },
+    "Zac": {
+      "primary_archetype": "engage_tank",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Vanguard"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_magic",
+        "damage_aoe",
+        "range_melee",
+        "mobility_medium",
+        "engage_dive",
+        "engage_frontline",
+        "survive_tank",
+        "survive_shields",
+        "cc_hard",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Top",
+      "viable_positions": [
+        "Top",
+        "Jungle",
+        "Support"
+      ]
+    },
+    "Zed": {
+      "primary_archetype": "burst_assassin",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Assassin"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_burst",
+        "damage_single_target",
+        "range_melee",
+        "mobility_high",
+        "engage_dive",
+        "engage_flank",
+        "engage_backline_access",
+        "survive_mobility",
+        "scaling_mid",
+        "scaling_items",
+        "special_reset"
+      ],
+      "primary_position": "Jungle",
+      "viable_positions": [
+        "Jungle",
+        "Middle"
+      ]
+    },
+    "Zeri": {
+      "primary_archetype": "marksman",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Marksman"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_physical",
+        "damage_sustained",
+        "damage_single_target",
+        "range_long",
+        "mobility_low",
+        "engage_backline_access",
+        "survive_range",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Bottom",
+      "viable_positions": [
+        "Bottom"
+      ]
+    },
+    "Ziggs": {
+      "primary_archetype": "artillery_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Artillery"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_soft",
+        "cc_aoe",
+        "scaling_late",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle",
+        "Bottom"
+      ]
+    },
+    "Zilean": {
+      "primary_archetype": "specialist",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Specialist"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_mixed",
+        "damage_sustained",
+        "range_medium",
+        "mobility_medium",
+        "survive_mobility",
+        "flexible_multi_role",
+        "flexible_multi_lane",
+        "special_transformation",
+        "special_global"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    },
+    "Zoe": {
+      "primary_archetype": "burst_mage",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Burst"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_aoe",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_aoe",
+        "scaling_mid",
+        "scaling_items"
+      ],
+      "primary_position": "Middle",
+      "viable_positions": [
+        "Middle"
+      ]
+    },
+    "Zyra": {
+      "primary_archetype": "catcher",
+      "secondary_archetypes": [],
+      "riot_roles": [
+        "Catcher"
+      ],
+      "source": "info.json",
+      "confidence": 1.0,
+      "attributes": [
+        "damage_magic",
+        "damage_burst",
+        "damage_single_target",
+        "range_medium",
+        "range_long",
+        "mobility_low",
+        "engage_zone_control",
+        "survive_range",
+        "cc_hard",
+        "cc_single",
+        "cc_aoe",
+        "utility_engage",
+        "utility_peel",
+        "utility_vision",
+        "scaling_early",
+        "scaling_mid"
+      ],
+      "primary_position": "Support",
+      "viable_positions": [
+        "Support"
+      ]
+    }
+  }
+}
