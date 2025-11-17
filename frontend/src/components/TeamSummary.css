@@ -1,0 +1,82 @@
+.team-summary-card {
+  background: rgba(6, 10, 18, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 16px 20px;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.team-summary-card.blue {
+  border-color: rgba(125, 249, 255, 0.4);
+}
+
+.team-summary-card.red {
+  border-color: rgba(255, 134, 213, 0.4);
+}
+
+.team-summary-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.team-summary-winrate {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.team-summary-identity {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #f7fbff;
+}
+
+.team-summary-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.team-summary-footer {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.favored-chip {
+  background: rgba(125, 249, 255, 0.18);
+  border: 1px solid rgba(125, 249, 255, 0.55);
+  color: #9defff;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.team-summary-card.red .favored-chip {
+  background: rgba(255, 134, 213, 0.16);
+  border-color: rgba(255, 134, 213, 0.45);
+  color: #ffc5ef;
+}
+
+.confidence-chip {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+}

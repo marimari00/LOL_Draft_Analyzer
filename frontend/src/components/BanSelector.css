@@ -1,0 +1,366 @@
+.ban-selector {
+  background: rgba(7, 11, 18, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+}
+
+.ban-selector-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.turn-label {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 4px 0 2px;
+}
+
+.ban-progress {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.ban-team-chip {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.ban-team-chip.blue {
+  background: rgba(125, 249, 255, 0.16);
+  color: #7df9ff;
+  border: 1px solid rgba(125, 249, 255, 0.45);
+}
+
+.ban-team-chip.red {
+  background: rgba(255, 156, 249, 0.16);
+  color: #ff9cf9;
+  border: 1px solid rgba(255, 156, 249, 0.45);
+}
+
+.ban-radar {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ban-radar-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.ban-radar-title {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 4px;
+}
+
+.ban-radar-context {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ban-phase-chip {
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.ban-context-line {
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.skip-ban-button {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.skip-ban-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ban-radar-loading,
+.ban-radar-empty {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ban-radar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.ban-reco-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: rgba(7, 11, 18, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.ban-reco-card:hover:not(:disabled) {
+  border-color: rgba(255, 99, 132, 0.6);
+  background: rgba(255, 99, 132, 0.08);
+}
+
+.ban-reco-card:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ban-reco-rank {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.ban-reco-main {
+  display: flex;
+  gap: 10px;
+}
+
+.ban-reco-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ban-reco-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ban-reco-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: baseline;
+}
+
+.ban-reco-name {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.ban-reco-category {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.ban-reco-reason {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+
+.ban-reco-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ban-score-chip {
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.ban-tag {
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.ban-search {
+  display: flex;
+  gap: 10px;
+}
+
+.ban-search input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: #f7fbff;
+}
+
+.ban-search input:focus {
+  outline: none;
+  border-color: rgba(125, 249, 255, 0.6);
+  box-shadow: 0 0 0 2px rgba(125, 249, 255, 0.2);
+}
+
+.ban-search button {
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  background: linear-gradient(120deg, #ff9cf9, #7df9ff);
+  color: #041423;
+}
+
+.ban-search button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.ban-status {
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+.ban-status.success {
+  background: rgba(125, 249, 255, 0.12);
+  color: #7df9ff;
+  border: 1px solid rgba(125, 249, 255, 0.25);
+}
+
+.ban-status.error {
+  background: rgba(255, 115, 155, 0.12);
+  color: #ff90bd;
+  border: 1px solid rgba(255, 115, 155, 0.25);
+}
+
+.ban-history {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 6px 16px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.history-label {
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.ban-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.ban-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 12px 10px;
+  text-align: center;
+  color: #fefefe;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.ban-card:hover:not(:disabled) {
+  border-color: rgba(125, 249, 255, 0.45);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35);
+  transform: translateY(-2px);
+}
+
+.ban-card:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ban-card-media {
+  display: inline-flex;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.ban-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ban-card-name {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.ban-card-roles {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.empty-search {
+  padding: 12px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.65);
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .ban-selector {
+    padding: 16px;
+  }
+
+  .ban-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}

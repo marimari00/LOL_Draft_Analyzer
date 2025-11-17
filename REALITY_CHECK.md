@@ -17,12 +17,15 @@ After expanding from 139 to 936 matches (6.7x increase), we discovered our initi
 ## Key Findings
 
 ### 1. Small Dataset Illusion
+
 - **139 matches** created inflated accuracy (66.2%)
 - Model memorized specific matchup patterns
 - Patterns didn't generalize to broader dataset
 
 ### 2. True Performance Ceiling
+
 With **936 Diamond+ matches** across EUW/KR:
+
 - **Best single model**: Logistic Regression at 53.4%
 - **Realistic range**: 50-54% for draft-only prediction
 - **Professional baseline**: 52-58% (analysts achieve similar)
@@ -30,6 +33,7 @@ With **936 Diamond+ matches** across EUW/KR:
 ### 3. Why Not Higher?
 
 **Draft is only 5-10% of match outcome**. Other factors dominate:
+
 - **Player skill variance** (Diamond ≠ Challenger ≠ Pro)
 - **Champion mastery** (OTP vs first-time)
 - **Execution quality** (mechanics, macro, teamwork)
@@ -40,6 +44,7 @@ With **936 Diamond+ matches** across EUW/KR:
 ### 4. What This Means
 
 **53.4% accuracy is actually excellent** for draft-only prediction:
+
 - Over 1000 games: **+34 extra wins** vs random (50%)
 - In ranked: Consistent small edge compounds over time
 - Matches professional analyst performance
@@ -47,25 +52,29 @@ With **936 Diamond+ matches** across EUW/KR:
 
 ## Statistical Confidence
 
-### With 936 Matches:
+### With 936 Matches
+
 - **820 attribute pairs** analyzed (30+ games each)
 - **1,681 attribute matchups** tracked
 - **15 statistically significant synergies** (p < 0.05)
 - **132 statistically significant counters** (p < 0.05)
 
-### Model Stability:
+### Model Stability
+
 - Logistic Regression: Stable across train/test splits
 - Cross-validation: 53-54% consistently
 - No medium/large effect sizes (draft impact is subtle)
 
 ## Why Previous Model Failed
 
-### Role-Aware (66.2% → 61.9%):
+### Role-Aware (66.2% → 61.9%)
+
 - **Overfitted on 139 matches**: Memorized specific champion combinations
 - **Too many parameters**: 6,865 role-pair synergies with sparse data
 - **Reality**: True patterns emerge with more data, lower but honest accuracy
 
-### Simple Statistical (57.6% → 48.4%):
+### Simple Statistical (57.6% → 48.4%)
+
 - **Linear scoring**: Assumed additive effects (too simplistic)
 - **No interaction terms**: Ignored complex synergies
 - **Fixed weights**: Didn't adapt to actual win rates
@@ -73,12 +82,14 @@ With **936 Diamond+ matches** across EUW/KR:
 ## Recommended Approach Going Forward
 
 ### ✅ Use Logistic Regression (53.4%)
+
 - Proven stable across datasets
 - Handles feature interactions well
 - Transparent, interpretable coefficients
 - Professional-grade performance
 
 ### ❌ Avoid Simple Rule-Based
+
 - Role-aware was overfit (61.9% is still inflated)
 - Will likely drop further with even more data
 - Better for explanation than prediction
@@ -109,6 +120,7 @@ To reach 55-58%, we need:
 ## Conclusion
 
 **The 66.2% accuracy was a false signal**. With proper validation:
+
 - **True ceiling**: ~53-54% for draft-only
 - **Professional grade**: We're already there
 - **Realistic improvement**: 55-58% maximum

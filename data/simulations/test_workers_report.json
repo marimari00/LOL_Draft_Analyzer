@@ -1,0 +1,10 @@
+{
+  "samples": 25,
+  "sample_rate": 0.1,
+  "avg_label": 0.48,
+  "avg_prediction": 0.4763741329037883,
+  "avg_ensemble_prob": 0.5109430849389262,
+  "calibration_mse_vs_ensemble": 0.23854096761847202,
+  "brier_score": 0.00033771173248703075,
+  "model_path": "models\\test_workers.pkl"
+}

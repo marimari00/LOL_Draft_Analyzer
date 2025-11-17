@@ -1,0 +1,341 @@
+.health-dashboard {
+  background: rgba(4, 8, 16, 0.95);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(125, 249, 255, 0.15);
+  color: #f5f8ff;
+}
+
+.health-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.health-subtitle {
+  margin: 4px 0 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.health-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.health-actions button {
+  border: 1px solid rgba(125, 249, 255, 0.5);
+  background: rgba(125, 249, 255, 0.15);
+  color: #e7fbff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.health-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.health-updated {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.health-error {
+  background: rgba(255, 80, 120, 0.15);
+  border: 1px solid rgba(255, 80, 120, 0.4);
+  color: #ffb1c9;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.health-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.health-card {
+  background: rgba(10, 18, 32, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.health-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.health-status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.health-status-pill.online {
+  background: rgba(116, 247, 209, 0.15);
+  color: #74f7d1;
+  border: 1px solid rgba(116, 247, 209, 0.6);
+}
+
+.health-status-pill.degraded {
+  background: rgba(255, 193, 7, 0.15);
+  color: #ffd75e;
+  border: 1px solid rgba(255, 193, 7, 0.6);
+}
+
+.health-status-pill.unknown {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.health-card dl {
+  margin: 0;
+}
+
+.health-card dl > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.health-card dt {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.health-card dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.health-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.health-card ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.health-card .label {
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.health-card .value {
+  font-weight: 600;
+}
+
+.health-card .value.success {
+  color: #74f7d1;
+}
+
+.health-card .value.danger {
+  color: #ff9ebc;
+}
+
+.data-path {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.55);
+  word-break: break-all;
+}
+
+.history-card {
+  margin-top: 12px;
+}
+
+.simulation-breakdown {
+  margin-top: 16px;
+}
+
+.sim-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.sim-path {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  word-break: break-all;
+}
+
+.sim-status {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sim-status.ready {
+  color: #74f7d1;
+  border-color: rgba(116, 247, 209, 0.6);
+}
+
+.sim-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.sim-metric {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sim-metric span {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.sim-metric strong {
+  font-size: 1.2rem;
+}
+
+.sim-matchup-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.sim-table {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.sim-table-header {
+  padding: 12px 16px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sim-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.sim-table th,
+.sim-table td {
+  padding: 8px 12px;
+}
+
+.sim-table tbody tr:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.sim-compositions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.composition-card {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.composition-card .comp-label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.composition-card .comp-value {
+  font-size: 1.4rem;
+}
+
+.composition-card .comp-meta {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.sim-warning {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: #ffd75e;
+}
+
+.history-list {
+  max-height: 260px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.history-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 4px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-dot.online {
+  background: #74f7d1;
+}
+
+.status-dot.degraded {
+  background: #ffd75e;
+}
+
+.status-dot.unknown {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .health-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .history-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

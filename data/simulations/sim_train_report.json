@@ -1,0 +1,10 @@
+{
+  "samples": 1615,
+  "sample_rate": 0.2,
+  "avg_label": 0.4804953560371517,
+  "avg_prediction": 0.4759742298202199,
+  "avg_ensemble_prob": 0.489451301020425,
+  "calibration_mse_vs_ensemble": 0.18255730748558213,
+  "brier_score": 0.05406283788904778,
+  "model_path": "models\\simulated_sgd.pkl"
+}

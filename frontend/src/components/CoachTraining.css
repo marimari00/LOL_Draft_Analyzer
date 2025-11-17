@@ -1,0 +1,797 @@
+.coach-training {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 0 2rem;
+}
+
+.coach-card {
+  background: #11141c;
+  border: 1px solid #1f2533;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.card-header p {
+  margin: 0.25rem 0 0;
+  color: #9aa5c4;
+}
+
+.coach-card button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.55rem 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.coach-card button.ghost {
+  background: transparent;
+  border: 1px solid #2e3648;
+  color: #c3ceef;
+}
+
+.coach-card button.ghost:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.duel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.team-column {
+  background: #0b0f16;
+  border-radius: 16px;
+  padding: 1rem;
+  border: 1px solid #1f2533;
+}
+
+.team-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.team-column li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 0.6rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.team-entry-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.team-entry-title {
+  font-weight: 600;
+}
+
+.mini-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.team-header {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.team-column.blue .team-header {
+  color: #7cc4ff;
+}
+
+.team-column.red .team-header {
+  color: #ff9bb0;
+}
+
+.champ-note {
+  font-size: 0.8rem;
+  color: #8ca8ff;
+}
+
+.guess-panel {
+  background: #0f1520;
+  border-radius: 16px;
+  border: 1px solid #273047;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.guess-buttons,
+.options-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.guess-buttons button {
+  border: none;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #1f2637;
+  color: #dfe9ff;
+  min-width: 120px;
+}
+
+.guess-buttons button:hover {
+  background: #2b3246;
+}
+
+.feedback {
+  border-radius: 12px;
+  padding: 0.75rem;
+  font-weight: 600;
+}
+
+.feedback.success {
+  background: rgba(53, 211, 153, 0.12);
+  border: 1px solid rgba(53, 211, 153, 0.4);
+  color: #35d399;
+}
+
+.feedback.fail {
+  background: rgba(255, 124, 124, 0.12);
+  border: 1px solid rgba(255, 124, 124, 0.4);
+  color: #ff8f8f;
+}
+
+.feedback.warn {
+  background: rgba(255, 205, 124, 0.12);
+  border: 1px solid rgba(255, 205, 124, 0.4);
+  color: #ffdd8f;
+}
+
+.feedback-detail {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  color: #c8d5ff;
+}
+
+.projection-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.6rem;
+}
+
+.projection-chip {
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.25rem 0.85rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #cfd8ff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.projection-chip.primary {
+  border-color: rgba(125, 249, 255, 0.4);
+  color: #7df9ff;
+}
+
+.label-outcome {
+  margin-top: 0.75rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px dashed rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 0.6rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.label-outcome .label-text {
+  font-size: 0.85rem;
+  color: #cfd8ff;
+}
+
+.label-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.label-buttons button {
+  border: 1px solid #2f384f;
+  background: transparent;
+  color: #cfd8ff;
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.label-buttons button:hover:not(:disabled) {
+  border-color: #7df9ff;
+  background: rgba(125, 249, 255, 0.08);
+}
+
+.label-buttons button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.label-status {
+  font-size: 0.8rem;
+  color: #9aa5c4;
+}
+
+
+.duel-explanation-grid {
+  margin-top: 0.85rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+
+.duel-explanation {
+  background: rgba(13, 20, 33, 0.9);
+  border: 1px solid rgba(125, 249, 255, 0.2);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  text-align: left;
+}
+
+.duel-explanation.favored.blue {
+  border-color: rgba(125, 249, 255, 0.35);
+}
+
+.duel-explanation.favored.red {
+  border-color: rgba(255, 134, 181, 0.35);
+}
+
+.duel-explanation.comeback.blue {
+  border-color: rgba(125, 249, 255, 0.2);
+}
+
+.duel-explanation.comeback.red {
+  border-color: rgba(255, 134, 181, 0.2);
+}
+
+.duel-explanation h5 {
+  margin: 0 0 0.35rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #7df9ff;
+}
+
+.duel-explanation ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #dfe6ff;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.reasoning-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+  text-align: left;
+  color: #cfd8ff;
+  font-size: 0.9rem;
+}
+
+.duel-pivot-grid {
+  margin-top: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+
+.pivot-card {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.65rem 0.85rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(10, 16, 26, 0.9);
+}
+
+.pivot-card.blue {
+  border-color: rgba(125, 249, 255, 0.4);
+}
+
+.pivot-card.red {
+  border-color: rgba(255, 134, 181, 0.4);
+}
+
+.pivot-avatar img {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
+}
+
+.pivot-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-align: left;
+}
+
+.pivot-headline {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #9aa5c4;
+}
+
+.pivot-label {
+  color: #e0e6ff;
+  font-weight: 600;
+}
+
+.pivot-role {
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 0.72rem;
+}
+
+.pivot-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.pivot-impact {
+  font-size: 0.85rem;
+  color: #cbd5ff;
+}
+
+.duel-history {
+  margin-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 1rem;
+}
+
+.duel-history h4 {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+  color: #cfd8ff;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.duel-history ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.duel-history li {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 0.65rem 0.85rem;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.history-winner {
+  font-size: 0.9rem;
+}
+
+.history-winner.blue {
+  color: #7df9ff;
+}
+
+.history-winner.red {
+  color: #ff96ba;
+}
+
+.history-metric {
+  font-size: 0.85rem;
+  color: #cbd5ff;
+}
+
+.history-footer {
+  margin-top: 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: #9aa5c4;
+}
+
+.history-note {
+  color: #dfe6ff;
+}
+
+.history-actions {
+  margin-top: 0.6rem;
+}
+
+.history-actions button {
+  border: 1px solid #2f384f;
+  background: transparent;
+  color: #cfd8ff;
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.history-actions button:hover:not(:disabled) {
+  border-color: #7df9ff;
+  background: rgba(125, 249, 255, 0.08);
+}
+
+.history-actions button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.history-label-status {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: #8fcfb7;
+}
+
+.history-labels {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  color: #9aa5c4;
+  font-size: 0.8rem;
+}
+
+.history-label-buttons {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.history-label-buttons button {
+  border: 1px solid #2f384f;
+  background: transparent;
+  color: #cfd8ff;
+  border-radius: 999px;
+  padding: 0.25rem 0.8rem;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.history-label-buttons button:hover:not(:disabled) {
+  border-color: #7df9ff;
+  background: rgba(125, 249, 255, 0.08);
+}
+
+.history-label-buttons button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.pick-history {
+  margin-top: 1.2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 1rem;
+}
+
+.pick-history h4 {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+  color: #cfd8ff;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pick-history ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.pick-history li {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 0.75rem 0.95rem;
+}
+
+.pick-history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #9aa5c4;
+}
+
+.pick-outcome-chip {
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pick-outcome-chip.perfect {
+  border-color: rgba(125, 249, 255, 0.45);
+  color: #03161c;
+  background: rgba(125, 249, 255, 0.3);
+}
+
+.pick-outcome-chip.positive {
+  border-color: rgba(255, 205, 124, 0.4);
+  color: #3a2605;
+  background: rgba(255, 205, 124, 0.25);
+}
+
+.pick-outcome-chip.miss {
+  border-color: rgba(255, 124, 124, 0.3);
+  color: #ffd0d0;
+  background: rgba(255, 124, 124, 0.15);
+}
+
+.pick-history-meta {
+  font-size: 0.75rem;
+  color: #9fb3e0;
+}
+
+.pick-history-body {
+  margin-top: 0.55rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  color: #dfe6ff;
+}
+
+.pick-history-slot {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.pick-history-choices {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr;
+  gap: 0.35rem;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.choice-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #9aa5c4;
+}
+
+.choice-label.best {
+  color: #ff9cf9;
+}
+
+.pick-history-teams {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.78rem;
+  color: #9db0da;
+}
+
+.pick-history-winrates {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  color: #9db0da;
+}
+
+.pick-history-notes {
+  margin: 0.4rem 0 0;
+  padding-left: 1rem;
+  color: #cbd5ff;
+  font-size: 0.8rem;
+}
+
+.pick-history-actions {
+  margin-top: 0.6rem;
+}
+
+.pick-history-actions button {
+  border: 1px solid #2f384f;
+  background: transparent;
+  color: #cfd8ff;
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.pick-history-actions button:hover:not(:disabled) {
+  border-color: #7df9ff;
+  background: rgba(125, 249, 255, 0.08);
+}
+
+.pick-history-actions button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.options-grid {
+  justify-content: flex-start;
+}
+
+.options-grid button {
+  width: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.35rem 0.6rem;
+  border: 1px solid #2f384f;
+  border-radius: 14px;
+  background: #161c2b;
+  color: #f0f5ff;
+  min-width: unset;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.options-grid button:hover {
+  border-color: #7df9ff;
+  background: #1f263c;
+  transform: translateY(-2px);
+}
+
+.option-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+.option-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #dfe9ff;
+  text-align: center;
+}
+
+.error-banner {
+  background: rgba(255, 134, 134, 0.12);
+  border: 1px solid rgba(255, 134, 134, 0.4);
+  color: #ffd0d0;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.coach-placeholder,
+.coach-notice {
+  color: #99a6c7;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.coach-notice {
+  border: 1px dashed #2f384f;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.stats-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.stat-block {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 0.65rem 0.9rem;
+  min-width: 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.stats-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #9aa5c4;
+}
+
+.stats-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #eef3ff;
+}
+
+.stats-reset {
+  border: 1px solid #303952;
+  background: transparent;
+  color: #cbd5ff;
+  padding: 0.55rem 1.1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.stats-reset:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #7df9ff;
+}
+
+.stats-reset:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+@media (max-width: 980px) {
+  .duel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guess-panel {
+    order: 3;
+  }
+}

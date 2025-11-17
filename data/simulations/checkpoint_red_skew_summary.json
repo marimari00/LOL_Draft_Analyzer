@@ -1,0 +1,168 @@
+{
+  "checkpoint": "data/simulations/checkpoints/simulation_checkpoint_1000000.json",
+  "total_samples": 2000,
+  "top_red_lanes": [
+    {
+      "role": "Bottom",
+      "blue_champion": "Smolder",
+      "red_champion": "Aphelios",
+      "occurrences": 7,
+      "weight": 1.9469225394235534,
+      "blue_win_rate": 0.2857142857142857,
+      "games": 7
+    },
+    {
+      "role": "Top",
+      "blue_champion": "Trundle",
+      "red_champion": "Yasuo",
+      "occurrences": 5,
+      "weight": 1.7786887432028737,
+      "blue_win_rate": 0.0,
+      "games": 1
+    },
+    {
+      "role": "Bottom",
+      "blue_champion": "Draven",
+      "red_champion": "Yasuo",
+      "occurrences": 5,
+      "weight": 1.7531321908899316,
+      "blue_win_rate": 0.0,
+      "games": 2
+    },
+    {
+      "role": "Bottom",
+      "blue_champion": "Vayne",
+      "red_champion": "Ezreal",
+      "occurrences": 5,
+      "weight": 1.6875442800621978,
+      "blue_win_rate": 0.4,
+      "games": 5
+    },
+    {
+      "role": "Support",
+      "blue_champion": "Karma",
+      "red_champion": "Rell",
+      "occurrences": 5,
+      "weight": 1.533180745694035,
+      "blue_win_rate": 0.5,
+      "games": 20
+    },
+    {
+      "role": "Bottom",
+      "blue_champion": "Samira",
+      "red_champion": "Draven",
+      "occurrences": 4,
+      "weight": 1.4892934450332538,
+      "blue_win_rate": 0.2,
+      "games": 5
+    },
+    {
+      "role": "Middle",
+      "blue_champion": "Diana",
+      "red_champion": "Veigar",
+      "occurrences": 4,
+      "weight": 1.4646343831506703,
+      "blue_win_rate": 0.0,
+      "games": 1
+    },
+    {
+      "role": "Bottom",
+      "blue_champion": "Yunara",
+      "red_champion": "Swain",
+      "occurrences": 4,
+      "weight": 1.4518824115976894,
+      "blue_win_rate": 0.0,
+      "games": 5
+    }
+  ],
+  "top_red_duos": [
+    {
+      "pair": "Bottom_Support",
+      "red_champions": [
+        "Caitlyn",
+        "Rell"
+      ],
+      "occurrences": 4,
+      "weight": 1.6176621289263309,
+      "win_rate": 0.6363636363636364,
+      "games": 22
+    },
+    {
+      "pair": "Bottom_Support",
+      "red_champions": [
+        "Yasuo",
+        "Zac"
+      ],
+      "occurrences": 4,
+      "weight": 1.5182914308113018,
+      "win_rate": 1.0,
+      "games": 2
+    },
+    {
+      "pair": "Top_Jungle",
+      "red_champions": [
+        "Volibear",
+        "Zed"
+      ],
+      "occurrences": 4,
+      "weight": 1.4990198255146596,
+      "win_rate": 0.0,
+      "games": 1
+    },
+    {
+      "pair": "Bottom_Support",
+      "red_champions": [
+        "Draven",
+        "Lulu"
+      ],
+      "occurrences": 4,
+      "weight": 1.3564224769055497,
+      "win_rate": 0.5384615384615384,
+      "games": 13
+    },
+    {
+      "pair": "Bottom_Support",
+      "red_champions": [
+        "TwistedFate",
+        "Blitzcrank"
+      ],
+      "occurrences": 4,
+      "weight": 1.289109544157046,
+      "win_rate": null,
+      "games": 0
+    },
+    {
+      "pair": "Top_Jungle",
+      "red_champions": [
+        "Garen",
+        "Taliyah"
+      ],
+      "occurrences": 3,
+      "weight": 1.223679994108275,
+      "win_rate": 0.6666666666666666,
+      "games": 6
+    },
+    {
+      "pair": "Bottom_Support",
+      "red_champions": [
+        "Ezreal",
+        "Amumu"
+      ],
+      "occurrences": 3,
+      "weight": 1.2232160215003112,
+      "win_rate": 1.0,
+      "games": 3
+    },
+    {
+      "pair": "Jungle_Middle",
+      "red_champions": [
+        "Poppy",
+        "Ekko"
+      ],
+      "occurrences": 3,
+      "weight": 1.2186933137735907,
+      "win_rate": 1.0,
+      "games": 1
+    }
+  ]
+}

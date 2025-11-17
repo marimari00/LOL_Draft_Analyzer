@@ -19,7 +19,7 @@ def test_ensemble_prediction():
         from validation.ensemble_prediction import load_ensemble_predictor
         
         print("\nLoading ensemble predictor...")
-        predictor = load_ensemble_predictor()
+        predictor = load_ensemble_predictor(matchups_path="data/matches/lane_duo_stats.json")
         
         # Test case: Front-to-back vs Dive
         print("\n📋 Scenario: Front-to-back vs Dive Composition")

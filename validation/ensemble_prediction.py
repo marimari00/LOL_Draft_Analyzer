@@ -8,10 +8,39 @@ Philosophy: Theoretical archetypal analysis, not live data competition.
 """
 
 import json
+import math
 import numpy as np
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional
 from dataclasses import dataclass
+
+try:
+    from validation.ml_simulation import build_match_feature_dict, features_to_vector
+except ModuleNotFoundError:
+    import sys as _sys
+    from pathlib import Path as _Path
+
+    _sys.path.insert(0, str(_Path(__file__).parent.parent))
+    from validation.ml_simulation import build_match_feature_dict, features_to_vector
+
+
+BLUE_PRIOR_FALLBACK = 0.4545
+EPSILON = 1e-6
+
+
+def _logit(value: float) -> float:
+    """Numerically stable logit."""
+    clipped = min(max(value, EPSILON), 1 - EPSILON)
+    return math.log(clipped / (1 - clipped))
+
+
+def _sigmoid(value: float) -> float:
+    """Numerically stable sigmoid."""
+    if value >= 0:
+        z = math.exp(-value)
+        return 1 / (1 + z)
+    z = math.exp(value)
+    return z / (1 + z)
 
 
 @dataclass
@@ -23,6 +52,7 @@ class PredictionResult:
     red_win_probability: float  # 0-1
     model_breakdown: Dict[str, float]  # Individual model predictions
     reasoning: List[str]  # Archetypal reasoning
+    feature_breakdown: Optional[Dict] = None
 
 
 class EnsemblePredictor:
@@ -38,107 +68,168 @@ class EnsemblePredictor:
         feature_names: List[str],  # Feature names used during training
         champion_data: Dict,
         attribute_data: Dict,
-        relationships: Dict
+        relationships: Dict,
+        matchup_stats: Optional[Dict],
+        blue_side_prior: Optional[float] = None,
+        logit_shift: float = 0.0
     ):
         self.models = models
         self.feature_names = feature_names
         self.champion_data = champion_data
         self.attribute_data = attribute_data
         self.relationships = relationships
-        
-        # Model weights based on test performance
-        # LR: 54.3%, GB: 50.0%, RF: 50.5%
+        self.matchup_stats = matchup_stats or {}
+        fallback = BLUE_PRIOR_FALLBACK
+        self.blue_side_prior = blue_side_prior if blue_side_prior is not None else fallback
+        self.logit_shift = logit_shift
         self.base_weights = {
-            "logistic": 0.543,  # Best performer
+            "logistic": 0.543,
             "gradient_boosting": 0.500,
             "random_forest": 0.505
         }
-        
-        # Normalize weights to sum to 1
         total = sum(self.base_weights.values())
-        self.base_weights = {k: v/total for k, v in self.base_weights.items()}
-    
+        self.base_weights = {k: v / total for k, v in self.base_weights.items()}
+        
+    def _to_lane_map(self, team: List[str], roles: List[str]) -> Dict[str, str]:
+        mapping: Dict[str, str] = {}
+        for champion, role in zip(team, roles):
+            if not champion:
+                continue
+            lane = None
+            if isinstance(role, str) and role:
+                lane = role.title()
+            if lane is None:
+                continue
+            if lane not in mapping:
+                mapping[lane] = champion
+        return mapping
+
+    def build_feature_vector(
+        self,
+        blue_team: List[str],
+        blue_roles: List[str],
+        red_team: List[str],
+        red_roles: List[str],
+        *,
+        include_feature_breakdown: bool = True
+    ) -> Tuple[List[float], Optional[Dict]]:
+        blue_team_dict = self._to_lane_map(blue_team, blue_roles)
+        red_team_dict = self._to_lane_map(red_team, red_roles)
+        feature_dict, feature_breakdown = build_match_feature_dict(
+            blue_team_dict,
+            red_team_dict,
+            self.champion_data,
+            self.matchup_stats,
+            include_details=include_feature_breakdown
+        )
+        feature_vector = features_to_vector(feature_dict, self.feature_names)
+        return feature_vector, feature_breakdown if include_feature_breakdown else None
+
     def predict(
         self,
         blue_team: List[str],
         blue_roles: List[str],
         red_team: List[str],
-        red_roles: List[str]
+        red_roles: List[str],
+        *,
+        include_reasoning: bool = True,
+        include_feature_breakdown: bool = True
     ) -> PredictionResult:
-        """
-        Predict match outcome using ensemble of models.
-        
-        Args:
-            blue_team: List of 5 champion names
-            blue_roles: List of 5 role strings (TOP, JUNGLE, MIDDLE, BOTTOM, UTILITY)
-            red_team: List of 5 champion names
-            red_roles: List of 5 role strings
-        
-        Returns:
-            PredictionResult with winner, confidence, and reasoning
-        """
-        import sys
-        from pathlib import Path
-        
-        # Add project root to path
-        sys.path.insert(0, str(Path(__file__).parent.parent))
-        
-        from validation.ml_simulation import extract_features_from_team, features_to_vector
-        
-        # Convert lists to dict format expected by extract_features_from_team
-        blue_team_dict = {role: champ for role, champ in zip(blue_roles, blue_team)}
-        red_team_dict = {role: champ for role, champ in zip(red_roles, red_team)}
-        
-        # Extract features
-        blue_features_dict = extract_features_from_team(blue_team_dict, self.champion_data)
-        red_features_dict = extract_features_from_team(red_team_dict, self.champion_data)
-        
-        # Convert to vectors using the SAME feature names from training
-        blue_vec = features_to_vector(blue_features_dict, self.feature_names)
-        red_vec = features_to_vector(red_features_dict, self.feature_names)
-        
-        # Feature difference (blue - red) - this is what models were trained on
-        feature_diff = [b - r for b, r in zip(blue_vec, red_vec)]
-        
-        # Get predictions from each model
+        feature_vector, feature_breakdown = self.build_feature_vector(
+            blue_team,
+            blue_roles,
+            red_team,
+            red_roles,
+            include_feature_breakdown=include_feature_breakdown
+        )
+
         model_predictions = {}
         model_confidences = {}
-        
         for model_name, model in self.models.items():
-            # Predict probability for blue team winning
-            # Models were trained on feature differences, so positive diff = blue advantage
-            blue_prob = model.predict_proba([feature_diff])[0][1]
+            blue_prob = model.predict_proba([feature_vector])[0][1]
             model_predictions[model_name] = blue_prob
-            
-            # Confidence is distance from 50% (0.5 = coin flip)
             model_confidences[model_name] = abs(blue_prob - 0.5) * 2
-        
-        # Weighted ensemble prediction
-        ensemble_prediction = self._weighted_average(
+
+        raw_prediction = self._weighted_average(
             model_predictions, model_confidences
         )
-        
-        # Calculate final confidence
+        ensemble_prediction = self._apply_logit_shift(raw_prediction)
         ensemble_confidence = self._calculate_ensemble_confidence(
             model_predictions, model_confidences
         )
-        
-        # Generate archetypal reasoning
-        reasoning = self._generate_reasoning(
-            blue_team, blue_roles, red_team, red_roles,
-            ensemble_prediction, model_predictions
-        )
-        
+        reasoning: List[str] = []
+        if include_reasoning:
+            reasoning = self._generate_reasoning(
+                blue_team, blue_roles, red_team, red_roles,
+                ensemble_prediction, model_predictions
+            )
         winner = "blue" if ensemble_prediction > 0.5 else "red"
-        
         return PredictionResult(
             winner=winner,
             confidence=ensemble_confidence,
             blue_win_probability=ensemble_prediction,
             red_win_probability=1 - ensemble_prediction,
             model_breakdown=model_predictions,
-            reasoning=reasoning
+            reasoning=reasoning,
+            feature_breakdown=feature_breakdown
         )
+
+    def batch_predict_from_vectors(
+        self,
+        feature_vectors: List[List[float]] | np.ndarray
+    ) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
+        matrix = np.asarray(feature_vectors, dtype=float)
+        if matrix.ndim != 2:
+            raise ValueError("feature_vectors must be a 2D array")
+        model_probs = {}
+        model_conf = {}
+        weighted_sum = np.zeros(matrix.shape[0], dtype=float)
+        total_weight = np.zeros(matrix.shape[0], dtype=float)
+        for model_name, model in self.models.items():
+            probs = model.predict_proba(matrix)[:, 1]
+            conf = np.abs(probs - 0.5) * 2
+            weight = self.base_weights[model_name] * (1 + conf)
+            weighted_sum += probs * weight
+            total_weight += weight
+            model_probs[model_name] = probs
+            model_conf[model_name] = conf
+        raw_prediction = np.divide(
+            weighted_sum,
+            total_weight,
+            out=np.full_like(weighted_sum, 0.5),
+            where=total_weight > 0
+        )
+        ensemble_prediction = self._apply_logit_shift_array(raw_prediction)
+        ensemble_confidence = self._calculate_batch_confidence(model_probs, model_conf)
+        red_probs = 1.0 - ensemble_prediction
+        return ensemble_prediction, red_probs, ensemble_confidence
+
+    def _apply_logit_shift_array(self, probabilities: np.ndarray) -> np.ndarray:
+        if abs(self.logit_shift) < 1e-9:
+            return probabilities
+        clipped = np.clip(probabilities, EPSILON, 1 - EPSILON)
+        logits = np.log(clipped / (1 - clipped)) - self.logit_shift
+        return 1.0 / (1.0 + np.exp(-logits))
+
+    def _calculate_batch_confidence(
+        self,
+        model_predictions: Dict[str, np.ndarray],
+        model_confidences: Dict[str, np.ndarray]
+    ) -> np.ndarray:
+        if not model_predictions:
+            return np.zeros(0, dtype=float)
+        winner_matrix = np.stack([preds > 0.5 for preds in model_predictions.values()], axis=1)
+        first_col = winner_matrix[:, [0]]
+        agreement = np.where(np.all(winner_matrix == first_col, axis=1), 1.0, 0.5)
+        avg_conf = np.mean(np.stack(list(model_confidences.values()), axis=1), axis=1)
+        return agreement * avg_conf
+
+    def _apply_logit_shift(self, probability: float) -> float:
+        """Adjust probability using learned logit shift to remove global bias."""
+        if abs(self.logit_shift) < 1e-9:
+            return probability
+        logit_value = _logit(probability) - self.logit_shift
+        return _sigmoid(logit_value)
     
     def _weighted_average(
         self,
@@ -235,6 +326,14 @@ class EnsemblePredictor:
                 archetype = self.champion_data["assignments"][champ]["primary_archetype"]
                 archetypes.append(archetype)
         return archetypes
+
+    def _get_champion_attributes(self, champion: str) -> List[str]:
+        """Return attribute list regardless of field naming."""
+        info = self.champion_data["assignments"].get(champion, {})
+        attrs = info.get("archetype_attributes")
+        if attrs is None:
+            attrs = info.get("attributes", [])
+        return list(attrs or [])
     
     def _analyze_archetype_composition(
         self,
@@ -295,7 +394,7 @@ class EnsemblePredictor:
             }
             for champ in team:
                 if champ in self.champion_data["assignments"]:
-                    attrs = self.champion_data["assignments"][champ].get("archetype_attributes", [])
+                    attrs = self._get_champion_attributes(champ)
                     for attr in counts.keys():
                         if attr in attrs:
                             counts[attr] += 1
@@ -349,7 +448,9 @@ def load_ensemble_predictor(
     models_path: str = "data/simulations/trained_models.pkl",
     champion_path: str = "data/processed/champion_archetypes.json",
     attribute_path: str = "data/processed/archetype_attributes.json",
-    relationships_path: str = "data/processed/role_aware_relationships.json"
+    relationships_path: str = "data/processed/role_aware_relationships.json",
+    matchups_path: str = "data/matches/lane_duo_stats.json",
+    calibration_path: str = "data/simulations/calibration.json"
 ) -> EnsemblePredictor:
     """
     Load trained models and create ensemble predictor.
@@ -372,6 +473,7 @@ def load_ensemble_predictor(
     # Extract models and feature names
     models = model_data['models']
     feature_names = model_data['feature_names']
+    blue_side_prior = model_data.get('blue_side_prior')
     
     # Load champion data
     with open(champion_path, "r", encoding="utf-8") as f:
@@ -384,13 +486,36 @@ def load_ensemble_predictor(
     # Load relationships
     with open(relationships_path, "r", encoding="utf-8") as f:
         relationships = json.load(f)
+
+    matchup_stats: Dict = {}
+    try:
+        with open(matchups_path, "r", encoding="utf-8") as f:
+            matchup_stats = json.load(f)
+    except FileNotFoundError:
+        matchup_stats = {}
+    except json.JSONDecodeError:
+        matchup_stats = {}
+
+    logit_shift = 0.0
+    if calibration_path:
+        try:
+            with open(calibration_path, "r", encoding="utf-8") as f:
+                calibration_data = json.load(f)
+                logit_shift = float(calibration_data.get("logit_shift", 0.0))
+        except FileNotFoundError:
+            logit_shift = 0.0
+        except (json.JSONDecodeError, ValueError, TypeError):
+            logit_shift = 0.0
     
     return EnsemblePredictor(
         models=models,
         feature_names=feature_names,
         champion_data=champion_data,
         attribute_data=attribute_data,
-        relationships=relationships
+        relationships=relationships,
+        matchup_stats=matchup_stats,
+        blue_side_prior=blue_side_prior,
+        logit_shift=logit_shift
     )
 
 

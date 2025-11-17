@@ -4,12 +4,15 @@ Fetches REAL match data from Riot API (Diamond+ ranked games EUW/KR).
 NO SAMPLE DATA - only actual game results.
 """
 
+import argparse
 import json
+import os
 import time
-import requests
 from pathlib import Path
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Callable, Set, Tuple
 from datetime import datetime
+
+import requests
 
 
 class MatchDataFetcher:
@@ -17,7 +20,7 @@ class MatchDataFetcher:
     
     def __init__(self, api_key: Optional[str] = None):
         """Initialize fetcher with Riot API key."""
-        self.api_key = api_key or "RGAPI-95df791c-5ac9-4230-ba2f-de7bf0aefe7c"
+        self.api_key = api_key or "RGAPI-afc82383-88fa-4e14-ad71-de8a2e524f1e"
         self.regions = {
             'euw1': 'https://euw1.api.riotgames.com',
             'kr': 'https://kr.api.riotgames.com'
@@ -119,9 +122,16 @@ class MatchDataFetcher:
         
         return self._make_request(url)
     
-    def fetch_high_elo_matches(self, regions: List[str] = ['euw1', 'kr'], 
-                              tiers: List[str] = ['challenger', 'grandmaster', 'master', 'diamond'],
-                              count: int = 1000) -> List[Dict]:
+    def fetch_high_elo_matches(
+        self,
+        regions: List[str] = ('euw1', 'kr'),
+        tiers: List[str] = ('challenger', 'grandmaster', 'master', 'diamond'),
+        count: int = 1000,
+        players_per_region: int = 200,
+        matches_per_player: int = 25,
+        existing_ids: Optional[Set[str]] = None,
+        on_match: Optional[Callable[[Dict], None]] = None
+    ) -> List[Dict]:
         """Fetch high elo ranked matches from multiple regions and tiers.
         
         Args:
@@ -138,9 +148,10 @@ class MatchDataFetcher:
         
         print(f"\nFetching {count} matches from {', '.join([r.upper() for r in regions])}...")
         print(f"Tiers: {', '.join(tiers)}")
+        print(f"Players/region cap: {players_per_region} | Matches/player: {matches_per_player}")
         
-        all_match_ids = set()
-        matches_per_region = count // len(regions)
+        all_match_ids = set(existing_ids or set())
+        matches_per_region = max(1, count // len(regions))
         
         for region in regions:
             print(f"\n{'='*60}")
@@ -158,14 +169,14 @@ class MatchDataFetcher:
             print(f"✓ Found {len(puuids)} total players across all tiers")
             
             # Collect unique match IDs
-            region_match_ids = set()
+            region_match_ids = set(mid for mid in all_match_ids if mid.startswith(region.upper()))
             print("\nStep 2: Collecting match IDs...")
             
             # Query more players to get enough unique matches
-            players_to_query = min(len(puuids), 100)  # Query up to 100 players
+            players_to_query = min(len(puuids), players_per_region)
             
             for i, puuid in enumerate(puuids[:players_to_query], 1):
-                match_ids = self.get_match_ids_for_puuid(puuid, region, count=20)
+                match_ids = self.get_match_ids_for_puuid(puuid, region, count=matches_per_player)
                 region_match_ids.update(match_ids)
                 
                 if i % 10 == 0 or i == players_to_query:
@@ -174,7 +185,11 @@ class MatchDataFetcher:
                 if len(region_match_ids) >= matches_per_region:
                     break
             
-            all_match_ids.update(list(region_match_ids)[:matches_per_region])
+            for match_id in region_match_ids:
+                all_match_ids.add(match_id)
+                if len(all_match_ids) >= count:
+                    break
+            
             print(f"✓ Collected {len(region_match_ids)} unique match IDs from {region.upper()}")
         
         # Fetch match details
@@ -196,6 +211,8 @@ class MatchDataFetcher:
                 parsed = self._parse_match_data(match_data)
                 if parsed:
                     matches.append(parsed)
+                    if on_match:
+                        on_match(parsed)
                     print(f"  ✓ Match {i}/{count}: {match_id}")
             
             if i % 10 == 0:
@@ -346,10 +363,10 @@ def parse_match_to_team_comp(match_data: List[Dict]) -> Dict:
 
 
 
-def save_match_data(matches: List[Dict], output_path: str):
+def save_match_data(matches: List[Dict], output_path: str, metadata: Optional[Dict] = None):
     """Save match data to JSON file."""
     output = {
-        'metadata': {
+        'metadata': metadata or {
             'total_matches': len(matches),
             'created': datetime.now().isoformat(),
             'source': 'Generated sample data'
@@ -364,103 +381,93 @@ def save_match_data(matches: List[Dict], output_path: str):
     print(f"\n✓ Saved {len(matches)} matches to: {output_path}")
 
 
+def load_existing_dataset(path: Path) -> Tuple[List[Dict], Set[str]]:
+    if not path.exists():
+        return [], set()
+    with path.open('r', encoding='utf-8') as handle:
+        payload = json.load(handle)
+    matches = payload.get('matches', [])
+    match_ids = {m.get('match_id') for m in matches if m.get('match_id')}
+    return matches, match_ids
+
+
 if __name__ == '__main__':
-    import sys
-    
     print("="*70)
     print("RIOT API MATCH DATA FETCHER - MULTI-REGION DIAMOND+ GAMES")
     print("="*70)
-    
-    fetcher = MatchDataFetcher()
-    
+
+    parser = argparse.ArgumentParser(description="Fetch high-elo ranked matches from Riot API")
+    parser.add_argument('--regions', default='euw1,kr', help='Comma-separated regions (euw1,kr)')
+    parser.add_argument('--tiers', default='challenger,grandmaster,master,diamond', help='Comma-separated tiers')
+    parser.add_argument('--target', type=int, default=1000, help='Target number of matches to fetch')
+    parser.add_argument('--players-per-region', type=int, default=200, help='Maximum players queried per region')
+    parser.add_argument('--matches-per-player', type=int, default=25, help='Recent matches requested per player')
+    parser.add_argument('--output', default='data/matches/multi_region_matches.json', help='Output JSON path')
+    parser.add_argument('--resume', action='store_true', help='Resume from existing output file')
+    parser.add_argument('--api-key', default=os.environ.get('RIOT_API_KEY'), help='Override Riot API key')
+
+    args = parser.parse_args()
+
+    fetcher = MatchDataFetcher(api_key=args.api_key)
+
     if not fetcher.api_key or not fetcher.api_key.startswith('RGAPI-'):
         print("\n✗ No valid Riot API key found")
-        print("  Get one from: https://developer.riotgames.com/")
-        sys.exit(1)
-    
+        print("  Export RIOT_API_KEY env var or pass --api-key")
+        raise SystemExit(1)
+
     print(f"\n✓ Riot API key loaded: {fetcher.api_key[:20]}...")
-    
-    # Parse arguments
-    regions = ['euw1', 'kr']
-    tiers = ['challenger', 'grandmaster', 'master', 'diamond']
-    count = 1000
-    
-    if '--regions' in sys.argv:
-        idx = sys.argv.index('--regions')
-        if idx + 1 < len(sys.argv):
-            regions = sys.argv[idx + 1].split(',')
-    
-    if '--tiers' in sys.argv:
-        idx = sys.argv.index('--tiers')
-        if idx + 1 < len(sys.argv):
-            tiers = sys.argv[idx + 1].split(',')
-    
-    if '--count' in sys.argv:
-        idx = sys.argv.index('--count')
-        if idx + 1 < len(sys.argv):
-            count = int(sys.argv[idx + 1])
-    
-    # Fetch matches
-    matches = fetcher.fetch_high_elo_matches(regions=regions, tiers=tiers, count=count)
-    
-    if matches:
-        # Save to combined file
-        output_path = f"data/matches/multi_region_{count}_matches.json"
-        output = {
-            'metadata': {
-                'total_matches': len(matches),
-                'created': datetime.now().isoformat(),
-                'source': f'Riot API - {", ".join([r.upper() for r in regions])}',
-                'tiers': tiers,
-                'regions': regions
-            },
-            'matches': matches
-        }
-        
-        Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-        with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(output, f, indent=2)
-        
-        print(f"\n✓ Saved {len(matches)} matches to: {output_path}")
-        print(f"✓ Successfully fetched {len(matches)} matches from {', '.join([r.upper() for r in regions])}")
-    else:
+
+    regions = [r.strip() for r in args.regions.split(',') if r.strip()]
+    tiers = [t.strip() for t in args.tiers.split(',') if t.strip()]
+    output_path = Path(args.output)
+
+    existing_matches, existing_ids = load_existing_dataset(output_path) if args.resume else ([], set())
+    already = len(existing_ids)
+    if already:
+        print(f"\n↻ Resume mode: {already} matches already stored. Deduping new fetch.")
+
+    matches = fetcher.fetch_high_elo_matches(
+        regions=regions,
+        tiers=tiers,
+        count=args.target,
+        players_per_region=args.players_per_region,
+        matches_per_player=args.matches_per_player,
+        existing_ids=existing_ids
+    )
+
+    if not matches and not existing_matches:
         print("\n✗ No matches fetched")
-    
-    if '--count' in sys.argv:
-        idx = sys.argv.index('--count')
-        if idx + 1 < len(sys.argv):
-            count = int(sys.argv[idx + 1])
-    
-    # Fetch matches
-    matches = fetcher.fetch_high_elo_matches(regions=regions, tiers=tiers, count=count)
-    
-    if matches:
-        # Save to combined file
-        output_path = f"data/matches/multi_region_{count}_matches.json"
-        output = {
-            'metadata': {
-                'total_matches': len(matches),
-                'created': datetime.now().isoformat(),
-                'source': f'Riot API - {", ".join([r.upper() for r in regions])}',
-                'tiers': tiers,
-                'regions': regions
-            },
-            'matches': matches
-        }
-        
-        Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-        with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(output, f, indent=2)
-        
-        print(f"\n✓ Saved {len(matches)} matches to: {output_path}")
-        print(f"✓ Successfully fetched {len(matches)} matches from {', '.join([r.upper() for r in regions])}")
-        
-        print("\nFirst 3 matches:")
-        for i, match in enumerate(matches[:3], 1):
-            print(f"\nMatch {i} (ID: {match['match_id']}):")
-            print(f"  Blue: {', '.join([f'{p}={c}' for p, c in match['blue_team'].items()])}")
-            print(f"  Red:  {', '.join([f'{p}={c}' for p, c in match['red_team'].items()])}")
-            print(f"  Winner: {match['winner']}")
-            print(f"  Duration: {match.get('duration', 'N/A')}s")
-    else:
-        print("\n✗ No matches fetched. Check API key and rate limits.")
+        raise SystemExit(1)
+
+    consolidated_ids = set(existing_ids)
+    new_matches: List[Dict] = []
+    for match in matches:
+        match_id = match.get('match_id')
+        if not match_id:
+            continue
+        if match_id in consolidated_ids:
+            continue
+        consolidated_ids.add(match_id)
+        new_matches.append(match)
+
+    combined = existing_matches + new_matches
+
+    metadata = {
+        'total_matches': len(combined),
+        'created': datetime.now().isoformat(),
+        'source': f'Riot API - {", ".join([r.upper() for r in regions])}',
+        'tiers': tiers,
+        'regions': regions,
+        'players_per_region': args.players_per_region,
+        'matches_per_player': args.matches_per_player
+    }
+
+    save_match_data(combined, output_path, metadata)
+
+    print(f"\nFirst 3 matches:")
+    for i, match in enumerate(combined[:3], 1):
+        print(f"\nMatch {i} (ID: {match.get('match_id')}):")
+        print(f"  Blue: {', '.join([f'{p}={c}' for p, c in match.get('blue_team', {}).items()])}")
+        print(f"  Red:  {', '.join([f'{p}={c}' for p, c in match.get('red_team', {}).items()])}")
+        print(f"  Winner: {match.get('winner')}")
+        print(f"  Duration: {match.get('duration', 'N/A')}s")

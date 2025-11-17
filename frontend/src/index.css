@@ -5,9 +5,12 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #0a1428 0%, #1a2332 100%);
-  color: #f0f0f0;
+  font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.08), transparent 45%),
+              radial-gradient(circle at 80% 0%, rgba(255, 0, 128, 0.12), transparent 40%),
+              radial-gradient(circle at 10% 80%, rgba(0, 255, 255, 0.18), transparent 35%),
+              #010309;
+  color: #f8fcff;
   min-height: 100vh;
 }
 

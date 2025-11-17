@@ -35,6 +35,7 @@ Combines 3 ML models with weighted averaging:
 **Weighting Strategy**: Models weighted by base performance × prediction confidence. High-confidence predictions from strong models get more weight.
 
 **Feature Extraction**: 78 features from team compositions:
+
 - 45 attribute counts (damage, range, mobility, cc, etc.)
 - 10 role-pair synergy scores
 - Damage/range/mobility/scaling distributions
@@ -52,6 +53,7 @@ GET /
 ```
 
 **Response:**
+
 ```json
 {
   "status": "online",
@@ -71,6 +73,7 @@ POST /draft/analyze
 Analyzes complete 5v5 team compositions and predicts match outcome.
 
 **Request Body:**
+
 ```json
 {
   "blue_team": ["Jinx", "Leona", "Orianna", "Vi", "Darius"],
@@ -81,6 +84,7 @@ Analyzes complete 5v5 team compositions and predicts match outcome.
 ```
 
 **Response:**
+
 ```json
 {
   "prediction": {
@@ -120,12 +124,14 @@ Analyzes complete 5v5 team compositions and predicts match outcome.
 ```
 
 **Analysis:**
+
 - **prediction**: Ensemble model prediction with individual model breakdowns
 - **blue_analysis**: Archetypal composition analysis for blue team
 - **red_analysis**: Archetypal composition analysis for red team
 - **archetypal_insights**: Theoretical reasoning for prediction
 
 **Composition Types:**
+
 - `front_to_back`: Tank + Marksman + Enchanter (protect the carry)
 - `dive`: Multiple divers/assassins (jump backline)
 - `poke`: Artillery mage + long range (whittle down before fight)
@@ -141,12 +147,14 @@ POST /draft/recommend
 ```
 
 Recommends champions for current draft state based on:
+
 1. **Team Composition Needs**: Filling missing archetypes (damage, tank, support)
 2. **Counter-Pick Opportunities**: Countering enemy threats
 3. **Role Synergies**: Attributes that synergize with existing picks
 4. **Archetypal Balance**: Maintaining compositional coherence
 
 **Request Body:**
+
 ```json
 {
   "draft_state": {
@@ -162,6 +170,7 @@ Recommends champions for current draft state based on:
 ```
 
 **Parameters:**
+
 - `draft_state.blue_picks`: List of blue team champions (0-5)
 - `draft_state.blue_bans`: List of blue team bans (0-5)
 - `draft_state.red_picks`: List of red team champions (0-5)
@@ -171,6 +180,7 @@ Recommends champions for current draft state based on:
 - `limit`: Number of recommendations to return (default: 5, max: 20)
 
 **Response:**
+
 ```json
 {
   "recommendations": [
@@ -209,6 +219,11 @@ Recommends champions for current draft state based on:
 }
 ```
 
+**Win Probability Context:**
+
+- `win_projection`: Baseline ensemble forecast for the current (possibly incomplete) draft. Contains blue/red win rates, favored side, consensus confidence, and short reasoning notes.
+- Each `recommendation` entry also exposes `projected_team_winrate` (team's win chance if that pick is locked) plus the global `projected_blue_winrate` reference so both sides can display their updated odds without baseline comparisons.
+
 **Scoring Factors:**
 
 1. **Fills Missing Archetypes** (+0.15):
@@ -240,11 +255,13 @@ GET /champions/{champion_name}
 Returns detailed information about a specific champion.
 
 **Example:**
+
 ```http
 GET /champions/Jinx
 ```
 
 **Response:**
+
 ```json
 {
   "name": "Jinx",
@@ -279,6 +296,7 @@ GET /archetypes
 Returns taxonomy of all 13 archetypes used for analysis.
 
 **Response:**
+
 ```json
 {
   "marksman": {
@@ -297,6 +315,7 @@ Returns taxonomy of all 13 archetypes used for analysis.
 ```
 
 **All 13 Archetypes:**
+
 - `marksman`: Ranged sustained DPS
 - `burst_mage`: High burst magic damage
 - `burst_assassin`: High mobility single-target burst
@@ -388,11 +407,13 @@ for champ in champions:
 This API analyzes drafts from a **theoretical archetypal perspective**, not historical win rates.
 
 **Why?**
+
 - Win rates are meta-dependent (patches change constantly)
 - Solo queue data is noisy (player skill variance >> draft impact)
 - Archetypes are timeless (engage counters poke, regardless of patch)
 
 **What This Means:**
+
 - Recommendations are based on compositional balance, not "what's meta"
 - Analysis explains *why* a pick is good (archetypal reasoning)
 - No champion tier lists - context matters
@@ -401,15 +422,18 @@ This API analyzes drafts from a **theoretical archetypal perspective**, not hist
 
 Champions are classified by their strategic role:
 
-**Example: Leona vs Janna**
+#### Example: Leona vs Janna
+
 - **Leona** (engage_tank): Initiates fights, locks down targets
 - **Janna** (enchanter): Disengages fights, protects carries
 
 **Synergies:**
+
 - Leona + Jinx = engage enables marksman positioning (+0.12 score)
 - Janna + Jinx = peel keeps marksman alive (+0.12 score)
 
 **Counters:**
+
 - Leona vs Zed = tank absorbs assassin burst (-0.15 for Zed)
 - Janna vs Leona = disengage counters engage (+0.08 for Janna)
 
@@ -422,6 +446,7 @@ Uses 3 models instead of 1 for robustness:
 - **Gradient Boosting**: Sequential learning, corrects errors
 
 **Consensus Matters:**
+
 - All 3 agree → High confidence
 - 2/3 agree → Moderate confidence
 - 1/2 split → Low confidence (close matchup)
@@ -456,7 +481,7 @@ Every recommendation includes reasoning:
 
 ### Dependencies
 
-```
+```text
 fastapi>=0.104.0
 uvicorn>=0.24.0
 pydantic>=2.0.0
@@ -474,6 +499,7 @@ numpy>=1.24.0
 ### Error Handling
 
 **400 Bad Request**: Invalid champion names or malformed request
+
 ```json
 {
   "detail": "Invalid champion names: InvalidChamp"
@@ -481,6 +507,7 @@ numpy>=1.24.0
 ```
 
 **404 Not Found**: Champion not in database
+
 ```json
 {
   "detail": "Champion 'InvalidName' not found"
@@ -488,6 +515,7 @@ numpy>=1.24.0
 ```
 
 **503 Service Unavailable**: Models not loaded (run `ml_simulation.py` first)
+
 ```json
 {
   "detail": "Models not loaded"
@@ -504,11 +532,13 @@ python test_api.py
 ```
 
 **Tests:**
+
 1. Ensemble prediction (no server required)
 2. API endpoints (requires server running)
 
 **Expected Output:**
-```
+
+```text
 ✓ Ensemble Prediction: PASSED
 ✓ API Endpoints: PASSED (or SKIPPED if server not running)
 ```
@@ -518,12 +548,14 @@ python test_api.py
 ## Roadmap
 
 ### Completed ✅
+
 - Ensemble prediction system
 - FastAPI server with 5 endpoints
 - Archetypal composition analysis
 - Draft recommendation with scoring
 
 ### Planned
+
 - WebSocket support for live draft updates
 - React frontend for visual draft board
 - Champion mastery integration (OTP boost)

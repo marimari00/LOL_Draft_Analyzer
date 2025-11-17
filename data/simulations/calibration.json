@@ -1,0 +1,9 @@
+{
+  "generated_at": "2025-11-17T15:50:50.360123+00:00",
+  "summary_path": "data\\simulations\\mass_15M_summary.json",
+  "total_games": 2300000,
+  "avg_blue_win_probability": 0.45453612758761464,
+  "target_probability": 0.5,
+  "confidence_half_width": 0.00014999379873352402,
+  "logit_shift": -0.18235917558823928
+}

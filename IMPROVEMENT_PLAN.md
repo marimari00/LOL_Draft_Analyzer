@@ -3,6 +3,7 @@
 ## ⚠️ MAJOR UPDATE: Overfitting Discovery
 
 After expanding to **936 matches** (6.7x more data), we discovered:
+
 - Previous **66.2%** accuracy was **overfitting** on 139 matches
 - True baseline with proper validation: **53.4%** (Logistic Regression)
 - This matches **professional analyst performance** (52-58%)
@@ -182,6 +183,7 @@ accuracy = cross_val_score(model, X, y, cv=5).mean()
 ## Realistic Target Timeline (Revised)
 
 **Why Draft Prediction is Hard:**
+
 - Player skill variance >> draft composition impact
 - Draft accounts for only ~5-10% of match outcome
 - Execution, mechanics, macro decisions dominate
@@ -227,3 +229,32 @@ accuracy = cross_val_score(model, X, y, cv=5).mean()
    - Expected: +1-2% accuracy improvement
 
 **Realistic Outcome:** 57-58% accuracy (top tier professional performance)
+
+## Simulation-Driven Expansion (November 2025)
+
+To push beyond the 936-match limit without waiting on new Riot API pulls, we are investing in massive simulation pipelines:
+
+- **Target Volume:** 15,000,000 simulated drafts per batch using the validated ensemble.
+- **Streaming Metrics:** Per-chunk confidence tracking (CI half-widths) so runs stop automatically once ±0.1% certainty is reached.
+- **Incremental Training:** Online SGD classifier (log-loss) trained on streaming feature diffs with Bernoulli-sampled outcomes. Sample-rate controls (default 30%) keep runtime manageable (~4.5M gradient steps for a 15M pass).
+- **Artifacts Written:**
+  - `data/simulations/mass_15M_summary.json` → archetype matchups + confidence intervals + full composition tables.
+  - `data/simulations/sim_train_report.json` → loss, Brier score, calibration MSE for the SGD model.
+  - `models/simulated_sgd.pkl` → joblib bundle with `model` + `feature_names` for backend inference.
+
+### Simulation Research Backlog
+
+1. **Champion-Pair Heatmaps** – extend the aggregator to track lane-by-lane champion matchups so we can learn lane weights directly from synthetic data.
+2. **Outcome Resampling** – instead of treating ensemble probabilities as ground truth, roll multiple stochastic outcomes per draft to reduce label noise and better approximate variance.
+3. **Curriculum Runs** – generate stratified drafts (mirror, poke vs dive, etc.) to ensure the SGD model sees enough edge cases instead of purely uniform random samples.
+4. **Streaming Calibration** – log reliability diagrams per million games to watch for drift between ensemble vs SGD probability surfaces.
+
+## UI / UX Research Notes
+
+- **Cognitive Load Reduction:** Added a persistent "insights ribbon" (team summaries + draft progress) inspired by Nielsen's “visibility of system status” heuristic so drafters always understand the current phase and confidence.
+- **Dual-Model Transparency:** The recommendation panel now surfaces ensemble vs simulation-trained probabilities; this satisfies the “explainability” requirement from users who want to know whether WR deltas come from real matches or large-scale sims.
+- **Actionable Next Steps:** The draft progress card highlights upcoming slots (pick vs ban) and surfaces the currently favored side, reducing context switching when alternating sides.
+- **Future Enhancements Under Investigation:**
+  1. Keyboard-first slot entry (one-keystroke champion locking) to speed up professional draft pods.
+  2. Inline matchup warnings (“Bruiser gap detected vs Dive”) derived from the 15M archetype tables.
+  3. Responsive mobile layout for analysts who annotate drafts on tablets backstage.

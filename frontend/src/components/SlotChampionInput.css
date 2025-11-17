@@ -1,0 +1,108 @@
+.slot-entry {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.slot-entry.active {
+  border-color: rgba(125, 249, 255, 0.5);
+  background: rgba(125, 249, 255, 0.08);
+  box-shadow: 0 0 16px rgba(125, 249, 255, 0.2);
+}
+
+.slot-entry.disabled {
+  opacity: 0.6;
+}
+
+.slot-entry-input-row {
+  display: flex;
+  gap: 8px;
+}
+
+.slot-entry-input {
+  flex: 1;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 9px 12px;
+  background: rgba(6, 10, 20, 0.65);
+  color: #f8f9ff;
+  font-size: 0.95rem;
+}
+
+.slot-entry-input:focus {
+  outline: none;
+  border-color: rgba(125, 249, 255, 0.7);
+  box-shadow: 0 0 12px rgba(125, 249, 255, 0.25);
+}
+
+.slot-entry-confirm {
+  width: 46px;
+  border: 1px solid rgba(125, 249, 255, 0.5);
+  border-radius: 8px;
+  background: rgba(125, 249, 255, 0.15);
+  color: #d8fbff;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.slot-entry-confirm:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.slot-entry-confirm:not(:disabled):hover {
+  background: rgba(125, 249, 255, 0.35);
+}
+
+.slot-entry-status {
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.slot-entry-status.success {
+  color: #74f7d1;
+}
+
+.slot-entry-status.error {
+  color: #ff9ebc;
+}
+
+.slot-entry-hints {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-height: 26px;
+}
+
+.slot-entry-hints.muted {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.8rem;
+}
+
+.slot-entry-chip {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  padding: 4px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #f3f7ff;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.slot-entry-chip:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.slot-entry-chip:not(:disabled):hover {
+  background: rgba(125, 249, 255, 0.15);
+  border-color: rgba(125, 249, 255, 0.4);
+}

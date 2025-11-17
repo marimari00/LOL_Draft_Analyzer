@@ -1,0 +1,595 @@
+{
+  "metadata": {
+    "games": 400,
+    "max_games": 2000,
+    "chunk_size": 200,
+    "seed": 42,
+    "confidence": 0.95,
+    "target_margin": null,
+    "achieved_margin": 0.01020609900885496,
+    "auto_mode": false,
+    "training_report": null,
+    "interrupted": false,
+    "checkpoint_index": 2,
+    "checkpoint_games": 400,
+    "checkpoint_margin": 0.01020609900885496,
+    "checkpoint_margin_percent": 1.02,
+    "checkpoint_ci_step": null,
+    "checkpoint_ci_decimals": 2,
+    "checkpoint_min_games": 200,
+    "checkpoint_dir": "data\\simulations\\checkpoints_dec"
+  },
+  "summary": {
+    "overall": {
+      "total_games": 400,
+      "avg_blue_win_probability": 0.45238771384044424,
+      "avg_confidence": 0.16939661434057224,
+      "confidence_half_width": 0.01020609900885496,
+      "confidence_level": 0.95
+    },
+    "top_matchups": [
+      {
+        "blue_comp": "bruiser",
+        "red_comp": "dive",
+        "games": 9,
+        "avg_blue_win_prob": 0.549033015902097,
+        "avg_red_win_prob": 0.45096698409790303,
+        "blue_ci_half_width": 0.04795620291591632,
+        "red_ci_half_width": 0.04795620291591644,
+        "blue_pred_win_rate": 0.6666666666666666,
+        "blue_favored_fraction": 0.6666666666666666
+      },
+      {
+        "blue_comp": "bruiser",
+        "red_comp": "mixed",
+        "games": 27,
+        "avg_blue_win_prob": 0.5259925644840844,
+        "avg_red_win_prob": 0.47400743551591557,
+        "blue_ci_half_width": 0.04421624747200906,
+        "red_ci_half_width": 0.044216247472009,
+        "blue_pred_win_rate": 0.5925925925925926,
+        "blue_favored_fraction": 0.5925925925925926
+      },
+      {
+        "blue_comp": "dive",
+        "red_comp": "protect_the_carry",
+        "games": 8,
+        "avg_blue_win_prob": 0.5239734616156339,
+        "avg_red_win_prob": 0.47602653838436615,
+        "blue_ci_half_width": 0.10689352248937803,
+        "red_ci_half_width": 0.10689352248937788,
+        "blue_pred_win_rate": 0.375,
+        "blue_favored_fraction": 0.375
+      },
+      {
+        "blue_comp": "protect_the_carry",
+        "red_comp": "dive",
+        "games": 2,
+        "avg_blue_win_prob": 0.508828308924458,
+        "avg_red_win_prob": 0.4911716910755421,
+        "blue_ci_half_width": 0.02640907702697009,
+        "red_ci_half_width": 0.02640907702696807,
+        "blue_pred_win_rate": 0.5,
+        "blue_favored_fraction": 0.5
+      },
+      {
+        "blue_comp": "mixed",
+        "red_comp": "protect_the_carry",
+        "games": 18,
+        "avg_blue_win_prob": 0.4765179093177504,
+        "avg_red_win_prob": 0.5234820906822497,
+        "blue_ci_half_width": 0.05947845806464956,
+        "red_ci_half_width": 0.05947845806464993,
+        "blue_pred_win_rate": 0.4444444444444444,
+        "blue_favored_fraction": 0.4444444444444444
+      },
+      {
+        "blue_comp": "mixed",
+        "red_comp": "dive",
+        "games": 41,
+        "avg_blue_win_prob": 0.4686641074904218,
+        "avg_red_win_prob": 0.5313358925095784,
+        "blue_ci_half_width": 0.028875840287234236,
+        "red_ci_half_width": 0.02887584028723359,
+        "blue_pred_win_rate": 0.3902439024390244,
+        "blue_favored_fraction": 0.3902439024390244
+      },
+      {
+        "blue_comp": "mixed",
+        "red_comp": "mixed",
+        "games": 160,
+        "avg_blue_win_prob": 0.45167238935965165,
+        "avg_red_win_prob": 0.5483276106403483,
+        "blue_ci_half_width": 0.015360199126745765,
+        "red_ci_half_width": 0.01536019912674601,
+        "blue_pred_win_rate": 0.3125,
+        "blue_favored_fraction": 0.3125
+      },
+      {
+        "blue_comp": "bruiser",
+        "red_comp": "bruiser",
+        "games": 4,
+        "avg_blue_win_prob": 0.44208642306569046,
+        "avg_red_win_prob": 0.5579135769343095,
+        "blue_ci_half_width": 0.13099089622848362,
+        "red_ci_half_width": 0.13099089622848348,
+        "blue_pred_win_rate": 0.25,
+        "blue_favored_fraction": 0.25
+      },
+      {
+        "blue_comp": "dive",
+        "red_comp": "dive",
+        "games": 17,
+        "avg_blue_win_prob": 0.4396414880091576,
+        "avg_red_win_prob": 0.5603585119908425,
+        "blue_ci_half_width": 0.056890911763482876,
+        "red_ci_half_width": 0.05689091176348271,
+        "blue_pred_win_rate": 0.35294117647058826,
+        "blue_favored_fraction": 0.35294117647058826
+      },
+      {
+        "blue_comp": "dive",
+        "red_comp": "mixed",
+        "games": 67,
+        "avg_blue_win_prob": 0.42277653860705244,
+        "avg_red_win_prob": 0.5772234613929477,
+        "blue_ci_half_width": 0.022340061575604055,
+        "red_ci_half_width": 0.02234006157560357,
+        "blue_pred_win_rate": 0.208955223880597,
+        "blue_favored_fraction": 0.208955223880597
+      },
+      {
+        "blue_comp": "protect_the_carry",
+        "red_comp": "mixed",
+        "games": 6,
+        "avg_blue_win_prob": 0.41234589040542496,
+        "avg_red_win_prob": 0.5876541095945752,
+        "blue_ci_half_width": 0.06106369203610135,
+        "red_ci_half_width": 0.06106369203610089,
+        "blue_pred_win_rate": 0.16666666666666666,
+        "blue_favored_fraction": 0.16666666666666666
+      },
+      {
+        "blue_comp": "dive",
+        "red_comp": "bruiser",
+        "games": 5,
+        "avg_blue_win_prob": 0.40897544720525447,
+        "avg_red_win_prob": 0.5910245527947455,
+        "blue_ci_half_width": 0.040425545936089824,
+        "red_ci_half_width": 0.04042554593609009,
+        "blue_pred_win_rate": 0.0,
+        "blue_favored_fraction": 0.0
+      },
+      {
+        "blue_comp": "protect_the_carry",
+        "red_comp": "bruiser",
+        "games": 2,
+        "avg_blue_win_prob": 0.4069552219266673,
+        "avg_red_win_prob": 0.5930447780733327,
+        "blue_ci_half_width": 0.0956028344337832,
+        "red_ci_half_width": 0.09560283443378265,
+        "blue_pred_win_rate": 0.0,
+        "blue_favored_fraction": 0.0
+      },
+      {
+        "blue_comp": "mixed",
+        "red_comp": "bruiser",
+        "games": 32,
+        "avg_blue_win_prob": 0.40251980562418166,
+        "avg_red_win_prob": 0.5974801943758181,
+        "blue_ci_half_width": 0.02579053630112183,
+        "red_ci_half_width": 0.025790536301121967,
+        "blue_pred_win_rate": 0.125,
+        "blue_favored_fraction": 0.125
+      },
+      {
+        "blue_comp": "bruiser",
+        "red_comp": "protect_the_carry",
+        "games": 2,
+        "avg_blue_win_prob": 0.38031794573325717,
+        "avg_red_win_prob": 0.6196820542667429,
+        "blue_ci_half_width": 0.16685106634624072,
+        "red_ci_half_width": 0.16685106634624042,
+        "blue_pred_win_rate": 0.0,
+        "blue_favored_fraction": 0.0
+      }
+    ],
+    "bottom_matchups": [
+      {
+        "blue_comp": "bruiser",
+        "red_comp": "dive",
+        "games": 9,
+        "avg_blue_win_prob": 0.549033015902097,
+        "avg_red_win_prob": 0.45096698409790303,
+        "blue_ci_half_width": 0.04795620291591632,
+        "red_ci_half_width": 0.04795620291591644,
+        "blue_pred_win_rate": 0.6666666666666666,
+        "blue_favored_fraction": 0.6666666666666666
+      },
+      {
+        "blue_comp": "bruiser",
+        "red_comp": "mixed",
+        "games": 27,
+        "avg_blue_win_prob": 0.5259925644840844,
+        "avg_red_win_prob": 0.47400743551591557,
+        "blue_ci_half_width": 0.04421624747200906,
+        "red_ci_half_width": 0.044216247472009,
+        "blue_pred_win_rate": 0.5925925925925926,
+        "blue_favored_fraction": 0.5925925925925926
+      },
+      {
+        "blue_comp": "dive",
+        "red_comp": "protect_the_carry",
+        "games": 8,
+        "avg_blue_win_prob": 0.5239734616156339,
+        "avg_red_win_prob": 0.47602653838436615,
+        "blue_ci_half_width": 0.10689352248937803,
+        "red_ci_half_width": 0.10689352248937788,
+        "blue_pred_win_rate": 0.375,
+        "blue_favored_fraction": 0.375
+      },
+      {
+        "blue_comp": "protect_the_carry",
+        "red_comp": "dive",
+        "games": 2,
+        "avg_blue_win_prob": 0.508828308924458,
+        "avg_red_win_prob": 0.4911716910755421,
+        "blue_ci_half_width": 0.02640907702697009,
+        "red_ci_half_width": 0.02640907702696807,
+        "blue_pred_win_rate": 0.5,
+        "blue_favored_fraction": 0.5
+      },
+      {
+        "blue_comp": "mixed",
+        "red_comp": "protect_the_carry",
+        "games": 18,
+        "avg_blue_win_prob": 0.4765179093177504,
+        "avg_red_win_prob": 0.5234820906822497,
+        "blue_ci_half_width": 0.05947845806464956,
+        "red_ci_half_width": 0.05947845806464993,
+        "blue_pred_win_rate": 0.4444444444444444,
+        "blue_favored_fraction": 0.4444444444444444
+      },
+      {
+        "blue_comp": "mixed",
+        "red_comp": "dive",
+        "games": 41,
+        "avg_blue_win_prob": 0.4686641074904218,
+        "avg_red_win_prob": 0.5313358925095784,
+        "blue_ci_half_width": 0.028875840287234236,
+        "red_ci_half_width": 0.02887584028723359,
+        "blue_pred_win_rate": 0.3902439024390244,
+        "blue_favored_fraction": 0.3902439024390244
+      },
+      {
+        "blue_comp": "mixed",
+        "red_comp": "mixed",
+        "games": 160,
+        "avg_blue_win_prob": 0.45167238935965165,
+        "avg_red_win_prob": 0.5483276106403483,
+        "blue_ci_half_width": 0.015360199126745765,
+        "red_ci_half_width": 0.01536019912674601,
+        "blue_pred_win_rate": 0.3125,
+        "blue_favored_fraction": 0.3125
+      },
+      {
+        "blue_comp": "bruiser",
+        "red_comp": "bruiser",
+        "games": 4,
+        "avg_blue_win_prob": 0.44208642306569046,
+        "avg_red_win_prob": 0.5579135769343095,
+        "blue_ci_half_width": 0.13099089622848362,
+        "red_ci_half_width": 0.13099089622848348,
+        "blue_pred_win_rate": 0.25,
+        "blue_favored_fraction": 0.25
+      },
+      {
+        "blue_comp": "dive",
+        "red_comp": "dive",
+        "games": 17,
+        "avg_blue_win_prob": 0.4396414880091576,
+        "avg_red_win_prob": 0.5603585119908425,
+        "blue_ci_half_width": 0.056890911763482876,
+        "red_ci_half_width": 0.05689091176348271,
+        "blue_pred_win_rate": 0.35294117647058826,
+        "blue_favored_fraction": 0.35294117647058826
+      },
+      {
+        "blue_comp": "dive",
+        "red_comp": "mixed",
+        "games": 67,
+        "avg_blue_win_prob": 0.42277653860705244,
+        "avg_red_win_prob": 0.5772234613929477,
+        "blue_ci_half_width": 0.022340061575604055,
+        "red_ci_half_width": 0.02234006157560357,
+        "blue_pred_win_rate": 0.208955223880597,
+        "blue_favored_fraction": 0.208955223880597
+      },
+      {
+        "blue_comp": "protect_the_carry",
+        "red_comp": "mixed",
+        "games": 6,
+        "avg_blue_win_prob": 0.41234589040542496,
+        "avg_red_win_prob": 0.5876541095945752,
+        "blue_ci_half_width": 0.06106369203610135,
+        "red_ci_half_width": 0.06106369203610089,
+        "blue_pred_win_rate": 0.16666666666666666,
+        "blue_favored_fraction": 0.16666666666666666
+      },
+      {
+        "blue_comp": "dive",
+        "red_comp": "bruiser",
+        "games": 5,
+        "avg_blue_win_prob": 0.40897544720525447,
+        "avg_red_win_prob": 0.5910245527947455,
+        "blue_ci_half_width": 0.040425545936089824,
+        "red_ci_half_width": 0.04042554593609009,
+        "blue_pred_win_rate": 0.0,
+        "blue_favored_fraction": 0.0
+      },
+      {
+        "blue_comp": "protect_the_carry",
+        "red_comp": "bruiser",
+        "games": 2,
+        "avg_blue_win_prob": 0.4069552219266673,
+        "avg_red_win_prob": 0.5930447780733327,
+        "blue_ci_half_width": 0.0956028344337832,
+        "red_ci_half_width": 0.09560283443378265,
+        "blue_pred_win_rate": 0.0,
+        "blue_favored_fraction": 0.0
+      },
+      {
+        "blue_comp": "mixed",
+        "red_comp": "bruiser",
+        "games": 32,
+        "avg_blue_win_prob": 0.40251980562418166,
+        "avg_red_win_prob": 0.5974801943758181,
+        "blue_ci_half_width": 0.02579053630112183,
+        "red_ci_half_width": 0.025790536301121967,
+        "blue_pred_win_rate": 0.125,
+        "blue_favored_fraction": 0.125
+      },
+      {
+        "blue_comp": "bruiser",
+        "red_comp": "protect_the_carry",
+        "games": 2,
+        "avg_blue_win_prob": 0.38031794573325717,
+        "avg_red_win_prob": 0.6196820542667429,
+        "blue_ci_half_width": 0.16685106634624072,
+        "red_ci_half_width": 0.16685106634624042,
+        "blue_pred_win_rate": 0.0,
+        "blue_favored_fraction": 0.0
+      }
+    ],
+    "composition_totals": [
+      {
+        "composition": "bruiser",
+        "games": 85,
+        "avg_blue_probability": 0.5548742448917912,
+        "ci_half_width": 0.022118778369729728
+      },
+      {
+        "composition": "mixed",
+        "games": 511,
+        "avg_blue_probability": 0.5003351895980924,
+        "ci_half_width": 0.009758841101791274
+      },
+      {
+        "composition": "protect_the_carry",
+        "games": 38,
+        "avg_blue_probability": 0.4941025382111503,
+        "ci_half_width": 0.04057359430598447
+      },
+      {
+        "composition": "dive",
+        "games": 166,
+        "avg_blue_probability": 0.4722199448647515,
+        "ci_half_width": 0.017205630434716176
+      }
+    ],
+    "raw_matchups": {
+      "dive__vs__dive": {
+        "blue_comp": "dive",
+        "red_comp": "dive",
+        "games": 17,
+        "avg_blue_win_prob": 0.4396414880091576,
+        "avg_red_win_prob": 0.5603585119908425,
+        "blue_ci_half_width": 0.056890911763482876,
+        "red_ci_half_width": 0.05689091176348271,
+        "blue_pred_win_rate": 0.35294117647058826,
+        "favored_blue": 6,
+        "favored_red": 11
+      },
+      "protect_the_carry__vs__mixed": {
+        "blue_comp": "protect_the_carry",
+        "red_comp": "mixed",
+        "games": 6,
+        "avg_blue_win_prob": 0.41234589040542496,
+        "avg_red_win_prob": 0.5876541095945752,
+        "blue_ci_half_width": 0.06106369203610135,
+        "red_ci_half_width": 0.06106369203610089,
+        "blue_pred_win_rate": 0.16666666666666666,
+        "favored_blue": 1,
+        "favored_red": 5
+      },
+      "mixed__vs__protect_the_carry": {
+        "blue_comp": "mixed",
+        "red_comp": "protect_the_carry",
+        "games": 18,
+        "avg_blue_win_prob": 0.4765179093177504,
+        "avg_red_win_prob": 0.5234820906822497,
+        "blue_ci_half_width": 0.05947845806464956,
+        "red_ci_half_width": 0.05947845806464993,
+        "blue_pred_win_rate": 0.4444444444444444,
+        "favored_blue": 8,
+        "favored_red": 10
+      },
+      "mixed__vs__mixed": {
+        "blue_comp": "mixed",
+        "red_comp": "mixed",
+        "games": 160,
+        "avg_blue_win_prob": 0.45167238935965165,
+        "avg_red_win_prob": 0.5483276106403483,
+        "blue_ci_half_width": 0.015360199126745765,
+        "red_ci_half_width": 0.01536019912674601,
+        "blue_pred_win_rate": 0.3125,
+        "favored_blue": 50,
+        "favored_red": 110
+      },
+      "mixed__vs__bruiser": {
+        "blue_comp": "mixed",
+        "red_comp": "bruiser",
+        "games": 32,
+        "avg_blue_win_prob": 0.40251980562418166,
+        "avg_red_win_prob": 0.5974801943758181,
+        "blue_ci_half_width": 0.02579053630112183,
+        "red_ci_half_width": 0.025790536301121967,
+        "blue_pred_win_rate": 0.125,
+        "favored_blue": 4,
+        "favored_red": 28
+      },
+      "dive__vs__mixed": {
+        "blue_comp": "dive",
+        "red_comp": "mixed",
+        "games": 67,
+        "avg_blue_win_prob": 0.42277653860705244,
+        "avg_red_win_prob": 0.5772234613929477,
+        "blue_ci_half_width": 0.022340061575604055,
+        "red_ci_half_width": 0.02234006157560357,
+        "blue_pred_win_rate": 0.208955223880597,
+        "favored_blue": 14,
+        "favored_red": 53
+      },
+      "bruiser__vs__mixed": {
+        "blue_comp": "bruiser",
+        "red_comp": "mixed",
+        "games": 27,
+        "avg_blue_win_prob": 0.5259925644840844,
+        "avg_red_win_prob": 0.47400743551591557,
+        "blue_ci_half_width": 0.04421624747200906,
+        "red_ci_half_width": 0.044216247472009,
+        "blue_pred_win_rate": 0.5925925925925926,
+        "favored_blue": 16,
+        "favored_red": 11
+      },
+      "bruiser__vs__bruiser": {
+        "blue_comp": "bruiser",
+        "red_comp": "bruiser",
+        "games": 4,
+        "avg_blue_win_prob": 0.44208642306569046,
+        "avg_red_win_prob": 0.5579135769343095,
+        "blue_ci_half_width": 0.13099089622848362,
+        "red_ci_half_width": 0.13099089622848348,
+        "blue_pred_win_rate": 0.25,
+        "favored_blue": 1,
+        "favored_red": 3
+      },
+      "mixed__vs__dive": {
+        "blue_comp": "mixed",
+        "red_comp": "dive",
+        "games": 41,
+        "avg_blue_win_prob": 0.4686641074904218,
+        "avg_red_win_prob": 0.5313358925095784,
+        "blue_ci_half_width": 0.028875840287234236,
+        "red_ci_half_width": 0.02887584028723359,
+        "blue_pred_win_rate": 0.3902439024390244,
+        "favored_blue": 16,
+        "favored_red": 25
+      },
+      "bruiser__vs__dive": {
+        "blue_comp": "bruiser",
+        "red_comp": "dive",
+        "games": 9,
+        "avg_blue_win_prob": 0.549033015902097,
+        "avg_red_win_prob": 0.45096698409790303,
+        "blue_ci_half_width": 0.04795620291591632,
+        "red_ci_half_width": 0.04795620291591644,
+        "blue_pred_win_rate": 0.6666666666666666,
+        "favored_blue": 6,
+        "favored_red": 3
+      },
+      "dive__vs__protect_the_carry": {
+        "blue_comp": "dive",
+        "red_comp": "protect_the_carry",
+        "games": 8,
+        "avg_blue_win_prob": 0.5239734616156339,
+        "avg_red_win_prob": 0.47602653838436615,
+        "blue_ci_half_width": 0.10689352248937803,
+        "red_ci_half_width": 0.10689352248937788,
+        "blue_pred_win_rate": 0.375,
+        "favored_blue": 3,
+        "favored_red": 5
+      },
+      "dive__vs__bruiser": {
+        "blue_comp": "dive",
+        "red_comp": "bruiser",
+        "games": 5,
+        "avg_blue_win_prob": 0.40897544720525447,
+        "avg_red_win_prob": 0.5910245527947455,
+        "blue_ci_half_width": 0.040425545936089824,
+        "red_ci_half_width": 0.04042554593609009,
+        "blue_pred_win_rate": 0.0,
+        "favored_blue": 0,
+        "favored_red": 5
+      },
+      "bruiser__vs__protect_the_carry": {
+        "blue_comp": "bruiser",
+        "red_comp": "protect_the_carry",
+        "games": 2,
+        "avg_blue_win_prob": 0.38031794573325717,
+        "avg_red_win_prob": 0.6196820542667429,
+        "blue_ci_half_width": 0.16685106634624072,
+        "red_ci_half_width": 0.16685106634624042,
+        "blue_pred_win_rate": 0.0,
+        "favored_blue": 0,
+        "favored_red": 2
+      },
+      "protect_the_carry__vs__bruiser": {
+        "blue_comp": "protect_the_carry",
+        "red_comp": "bruiser",
+        "games": 2,
+        "avg_blue_win_prob": 0.4069552219266673,
+        "avg_red_win_prob": 0.5930447780733327,
+        "blue_ci_half_width": 0.0956028344337832,
+        "red_ci_half_width": 0.09560283443378265,
+        "blue_pred_win_rate": 0.0,
+        "favored_blue": 0,
+        "favored_red": 2
+      },
+      "protect_the_carry__vs__dive": {
+        "blue_comp": "protect_the_carry",
+        "red_comp": "dive",
+        "games": 2,
+        "avg_blue_win_prob": 0.508828308924458,
+        "avg_red_win_prob": 0.4911716910755421,
+        "blue_ci_half_width": 0.02640907702697009,
+        "red_ci_half_width": 0.02640907702696807,
+        "blue_pred_win_rate": 0.5,
+        "favored_blue": 1,
+        "favored_red": 1
+      }
+    },
+    "raw_compositions": {
+      "dive": {
+        "games": 166,
+        "avg_blue_probability": 0.4722199448647515,
+        "ci_half_width": 0.017205630434716176
+      },
+      "protect_the_carry": {
+        "games": 38,
+        "avg_blue_probability": 0.4941025382111503,
+        "ci_half_width": 0.04057359430598447
+      },
+      "mixed": {
+        "games": 511,
+        "avg_blue_probability": 0.5003351895980924,
+        "ci_half_width": 0.009758841101791274
+      },
+      "bruiser": {
+        "games": 85,
+        "avg_blue_probability": 0.5548742448917912,
+        "ci_half_width": 0.022118778369729728
+      }
+    }
+  }
+}

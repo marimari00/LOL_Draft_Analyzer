@@ -14,7 +14,7 @@ An empirical draft prediction system that uses real Diamond+ match data, attribu
 - **Attribute System**: 45 attributes across 8 categories (damage, range, mobility, survive, cc, scaling, engage, special)
 - **ML Models**: Logistic Regression (54.3%), Random Forest (50.5%), Gradient Boosting (50.0%)
 - **Ensemble Prediction**: Weighted average achieves 54.3% accuracy
-- **FastAPI Backend**: 5 endpoints (analyze, recommend, champions, archetypes, health)
+- **FastAPI Backend**: 5 endpoints (analyze, recommend, champions, archetypes, `/health` with model + telemetry metrics)
 - **React Frontend**: Visual draft board with AI recommendations and composition analysis
 - **Validation**: 5-fold cross-validation, 80/20 train/test split
 - **Simulation**: 10,000 random game predictions
@@ -22,6 +22,8 @@ An empirical draft prediction system that uses real Diamond+ match data, attribu
 **📊 Key Insight**: Draft accounts for only 5-10% of match outcome. 53.4% matches professional analyst baseline (52-58%). See [REALITY_CHECK.md](REALITY_CHECK.md) for detailed analysis.
 
 **🎯 Next Target**: 57-58% accuracy via data quality improvements (Challenger-only, champion mastery, ensemble prediction)
+
+> **Release Notes:** Track feature drops and documentation updates in [`CHANGELOG.md`](CHANGELOG.md) and the companion [`docs/VERSIONS.md`](docs/VERSIONS.md).
 
 ---
 
@@ -49,6 +51,19 @@ START_HERE.bat
 
 The frontend opens at `http://localhost:3000` and proxies API calls to `http://localhost:8000`.
 
+### Production Launch
+
+```bash
+START_HERE_PROD.bat
+```
+
+This script installs frontend dependencies, builds the React bundle, then boots:
+
+- `uvicorn backend.draft_api:app --host 0.0.0.0 --port 8000`
+- `npx serve -s build -l 4173` (serves `frontend/build`)
+
+Point your browser to `http://localhost:4173` for the optimized UI once both terminals report "ready".
+
 ### Manual Commands (Optional)
 
 ```bash
@@ -56,14 +71,72 @@ python backend/draft_api.py          # Backend only
 cd frontend && npm start             # Frontend only
 ```
 
+### Backend Health Endpoint
+
+`GET http://localhost:8000/health` now surfaces operational metrics alongside the basic `/` ping.
+
+```json
+{
+    "status": "online",
+    "version": "1.0.0",
+    "models": {"predictor_loaded": true, "simulation_model_loaded": true},
+    "telemetry": {"backlog_events": 412, "last_event_ts": "2025-01-14T02:11:07Z"},
+    "calibration": {"last_report_ts": "2025-01-08T18:55:12Z", "ece": 0.034}
+}
+```
+
+- `models.*` confirms whether each artifact (ensemble predictor, champion index, simulation bundle) is in memory.
+- `telemetry.backlog_events` counts JSONL rows waiting for calibration; `last_event_ts` verifies recent writes.
+- `calibration.last_report_ts` reflects the `calibration_report.json` mtime so ops can see when reliability metrics were rebuilt.
+
 ### Using the Draft Board
 
 - Select team (Blue/Red)
-- Toggle Pick/Ban mode
+- Follow the guided Pick/Ban queue (auto-advances in official order)
+- Switch the ban phase between **PRO order** and **SoloQ simultaneous bans** using the new toggle above the queue
+- On 1920×1080 monitors we recommend setting the browser zoom to ~75% so the entire pick grid stays visible without scrolling
 - Filter by role (TOP, JUNGLE, MIDDLE, BOTTOM, UTILITY)
 - View AI recommendations with reasoning
 - Pick champions (click recommendations or use selector)
+- Ban champions with the Ban Control search when it's your turn
 - See winner prediction after 5v5 complete
+- Navigate with keyboard: the active slot auto-focuses when it's that team's turn, and Tab/Shift+Tab will move through every pick slot or ban button with high-contrast focus outlines.
+- Screen-reader friendly: each slot announces whether it's filled, the assigned role, and the draft status banner is exposed via `aria-live` so turns are read aloud automatically.
+- Recommendation panel auto-penalizes duplicate archetype families and requested roles so the top list always mixes distinct win conditions before the round-robin sampler slices results per family.
+- A global draft progress tracker now shows how many picks are locked, how many remain, and which slots are queued next, while the ban row renders champion portraits for instant recognition.
+- A horizontal pick-order timeline and color-coded role badges now pair every lane color with glyph + pattern overlays so color-blind coaches can see the queue instantly. Each recommendation card also surfaces the projected win rate delta that champion would add.
+- Recommendation cards keep a persistent "Lock In" call-to-action and animated hover/focus border so it's obvious every tile is actionable even before you click.
+- Responsive layouts collapse recommendation columns and slot headers on tablets/phones, while role-accent bars stay visible so the UX polish holds up on the coach laptop and the analyst's mobile device alike.
+- The analysis panel now stacks composition columns, pick-debt trackers, and insight grids on tablets/phones so both teams remain readable without sideways scrolling.
+- Filter the recommendation list with live rationale chips ("need engage", "want peel", etc.) to quickly zero in on picks that solve your current ask.
+- The analysis panel now carries a "Pick Debt" checklist that calls out missing engage, damage mix, peel, or range so you always know what the composition still owes.
+
+### Monitoring Backend Health
+
+- Click the **Health** tab in the UI header to open a lightweight admin dashboard powered by the FastAPI `/health` endpoint.
+- Cards surface overall service status, artifact load flags, telemetry backlog counts, and calibration recency plus ECE/Brier metrics.
+- A history strip logs the last ~25 telemetry samples so you can spot backlog spikes without opening a terminal.
+- Use the manual **Refresh** button for on-demand checks or leave the tab open to auto-poll every 15 seconds.
+
+### Telemetry Reports
+
+- Run `python tools/telemetry_report.py` to summarize `data/telemetry/prediction_log.jsonl` into event counts, accuracy/Brier score snapshots, and recent activity.
+- Pass a custom path if you archive logs elsewhere: `python tools/telemetry_report.py path/to/other_log.jsonl`.
+- The CLI fails fast when the log contains malformed JSON so you can catch corrupt files before running calibration jobs.
+
+## Continuous Integration
+
+A GitHub Actions workflow (`.github/workflows/ci.yml`) now runs on every push and pull request. It installs the Python stack, compiles the backend to catch syntax errors early, installs frontend dependencies via `npm ci`, and then executes `npm test -- --watchAll=false` with `CI=true` before building the production bundle. Treat it as the canonical verification chain before merging changes.
+
+Need to mirror CI locally? Follow the exact command list in [`VERIFY.md`](VERIFY.md) so reviewers and automation see the same signals (pip install ➜ backend pytest ➜ frontend Jest ➜ `npm run build`).
+
+### Backend Telemetry Tests
+
+Telemetry logging now ships with regression tests that stress numpy coercion and filesystem writes. Run them locally with:
+
+```bash
+pytest backend/tests/test_telemetry.py
+```
 
 ---
 
@@ -80,6 +153,26 @@ python validation/retrain_all_models.py
 # Generate predictions for 10,000 random team compositions
 python validation/ml_simulation.py
 ```
+
+### Mass Simulation + Streaming Training
+
+```bash
+# Run 15M synthetic drafts, stop when CI < ±1%, and train SGD model on-the-fly
+python validation/run_mass_simulation.py \
+    --games 15000000 \
+    --chunk-size 50000 \
+    --confidence 0.95 \
+    --train-model-path models/simulated_sgd.pkl \
+    --train-report data/simulations/sim_train_report.json \
+    --train-sample-rate 0.3 \
+    --output data/simulations/mass_15M_summary.json
+```
+
+Key flags:
+
+- `--target-margin` stops early when the overall win-rate CI half-width falls below your target.
+- `--train-sample-rate` throttles how many simulated games feed the SGD classifier (0-1).
+- `--train-model-path` writes a joblib bundle (`model`, `feature_names`) that the backend can load for blended win projections.
 
 ### Fetch Real Match Data
 
@@ -150,7 +243,7 @@ draft-analyzer/
 - **ML models**: Logistic Regression (54.3%), Random Forest (50.5%), Gradient Boosting (50.0%)
 - **Ensemble prediction**: Weighted average combining all 3 models
 - **10K simulation**: Validated model stability across 10,000 random team compositions
-- **FastAPI Backend**: 5 REST endpoints (analyze, recommend, champions, archetypes, health)
+- **FastAPI Backend**: 5 REST endpoints (analyze, recommend, champions, archetypes, `/health` diagnostics)
 - **React Frontend**: Interactive visual draft board with AI recommendations and composition analysis
 
 ### Critical Discovery: Overfitting Exposure

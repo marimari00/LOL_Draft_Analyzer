@@ -1,0 +1,166 @@
+{
+  "metadata": {
+    "games": 10,
+    "chunk_size": 5,
+    "seed": 42
+  },
+  "summary": {
+    "overall": {
+      "total_games": 10,
+      "avg_blue_win_probability": 0.41990949102794983,
+      "avg_confidence": 0.18831493373347488
+    },
+    "top_matchups": [
+      {
+        "blue_comp": "dive",
+        "red_comp": "dive",
+        "games": 1,
+        "avg_blue_win_prob": 0.6648888421725874,
+        "avg_red_win_prob": 0.33511115782741263,
+        "blue_pred_win_rate": 1.0,
+        "blue_favored_fraction": 1.0
+      },
+      {
+        "blue_comp": "mixed",
+        "red_comp": "mixed",
+        "games": 3,
+        "avg_blue_win_prob": 0.4315178749439126,
+        "avg_red_win_prob": 0.5684821250560874,
+        "blue_pred_win_rate": 0.0,
+        "blue_favored_fraction": 0.0
+      },
+      {
+        "blue_comp": "mixed",
+        "red_comp": "protect_the_carry",
+        "games": 2,
+        "avg_blue_win_prob": 0.3985712546934521,
+        "avg_red_win_prob": 0.6014287453065479,
+        "blue_pred_win_rate": 0.5,
+        "blue_favored_fraction": 0.5
+      },
+      {
+        "blue_comp": "bruiser",
+        "red_comp": "mixed",
+        "games": 1,
+        "avg_blue_win_prob": 0.3812344924153166,
+        "avg_red_win_prob": 0.6187655075846834,
+        "blue_pred_win_rate": 0.0,
+        "blue_favored_fraction": 0.0
+      },
+      {
+        "blue_comp": "mixed",
+        "red_comp": "bruiser",
+        "games": 1,
+        "avg_blue_win_prob": 0.38035487881494223,
+        "avg_red_win_prob": 0.6196451211850578,
+        "blue_pred_win_rate": 0.0,
+        "blue_favored_fraction": 0.0
+      },
+      {
+        "blue_comp": "protect_the_carry",
+        "red_comp": "mixed",
+        "games": 1,
+        "avg_blue_win_prob": 0.3582479644556565,
+        "avg_red_win_prob": 0.6417520355443436,
+        "blue_pred_win_rate": 0.0,
+        "blue_favored_fraction": 0.0
+      },
+      {
+        "blue_comp": "dive",
+        "red_comp": "mixed",
+        "games": 1,
+        "avg_blue_win_prob": 0.3226725982023533,
+        "avg_red_win_prob": 0.6773274017976467,
+        "blue_pred_win_rate": 0.0,
+        "blue_favored_fraction": 0.0
+      }
+    ],
+    "bottom_matchups": [
+      {
+        "blue_comp": "dive",
+        "red_comp": "dive",
+        "games": 1,
+        "avg_blue_win_prob": 0.6648888421725874,
+        "avg_red_win_prob": 0.33511115782741263,
+        "blue_pred_win_rate": 1.0,
+        "blue_favored_fraction": 1.0
+      },
+      {
+        "blue_comp": "mixed",
+        "red_comp": "mixed",
+        "games": 3,
+        "avg_blue_win_prob": 0.4315178749439126,
+        "avg_red_win_prob": 0.5684821250560874,
+        "blue_pred_win_rate": 0.0,
+        "blue_favored_fraction": 0.0
+      },
+      {
+        "blue_comp": "mixed",
+        "red_comp": "protect_the_carry",
+        "games": 2,
+        "avg_blue_win_prob": 0.3985712546934521,
+        "avg_red_win_prob": 0.6014287453065479,
+        "blue_pred_win_rate": 0.5,
+        "blue_favored_fraction": 0.5
+      },
+      {
+        "blue_comp": "bruiser",
+        "red_comp": "mixed",
+        "games": 1,
+        "avg_blue_win_prob": 0.3812344924153166,
+        "avg_red_win_prob": 0.6187655075846834,
+        "blue_pred_win_rate": 0.0,
+        "blue_favored_fraction": 0.0
+      },
+      {
+        "blue_comp": "mixed",
+        "red_comp": "bruiser",
+        "games": 1,
+        "avg_blue_win_prob": 0.38035487881494223,
+        "avg_red_win_prob": 0.6196451211850578,
+        "blue_pred_win_rate": 0.0,
+        "blue_favored_fraction": 0.0
+      },
+      {
+        "blue_comp": "protect_the_carry",
+        "red_comp": "mixed",
+        "games": 1,
+        "avg_blue_win_prob": 0.3582479644556565,
+        "avg_red_win_prob": 0.6417520355443436,
+        "blue_pred_win_rate": 0.0,
+        "blue_favored_fraction": 0.0
+      },
+      {
+        "blue_comp": "dive",
+        "red_comp": "mixed",
+        "games": 1,
+        "avg_blue_win_prob": 0.3226725982023533,
+        "avg_red_win_prob": 0.6773274017976467,
+        "blue_pred_win_rate": 0.0,
+        "blue_favored_fraction": 0.0
+      }
+    ],
+    "composition_totals": [
+      {
+        "composition": "protect_the_carry",
+        "games": 3,
+        "avg_blue_probability": 0.5203684850229174
+      },
+      {
+        "composition": "mixed",
+        "games": 12,
+        "avg_blue_probability": 0.5096118610940433
+      },
+      {
+        "composition": "bruiser",
+        "games": 2,
+        "avg_blue_probability": 0.5004398068001872
+      },
+      {
+        "composition": "dive",
+        "games": 3,
+        "avg_blue_probability": 0.4408908660674511
+      }
+    ]
+  }
+}
